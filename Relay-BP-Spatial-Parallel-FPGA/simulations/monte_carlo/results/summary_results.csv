@@ -1,0 +1,2 @@
+trial_count,sequential_average_latency_ms,parallel_average_latency_ms,sequential_worst_latency_ms,parallel_worst_latency_ms,sequential_average_iterations,parallel_average_iterations,sequential_success_rate,parallel_success_rate,average_latency_improvement_percent,parallel_winning_lane_histogram_text
+20,3.5211854468798265,8.965777046978474,10.223666002275422,18.798917008098215,45.0,30.0,0.0,0.0,-163.2297017403049,{}
