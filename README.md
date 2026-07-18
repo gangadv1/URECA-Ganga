@@ -14,7 +14,7 @@ https://share.gemini.google/UnNLO6ieRnBn
 
 ## Repository Structure
 
-The repository is organized around an FPGA-based Parallel Relay-BP research workflow. `Relay-BP-Spatial-Parallel-FPGA/` contains the project-specific materials, with `docs/` for literature, proposals, architecture notes, diagrams, meeting records, and future work. `simulations/` holds Python-based decoder studies and evaluation results, `relay_models/` captures model variants and scheduling experiments, `fpga/` contains the HLS, RTL, verification, synthesis, implementation, and report artifacts, and `datasets/`, `figures/`, and `scripts/` store shared inputs, visuals, and supporting utilities.
+The repository is organized around an FPGA-based Parallel Relay-BP research workflow. `Resource-Scalabe and Elastic Relay-BP Acceleration/` contains the project-specific materials, with `docs/` for literature, proposals, architecture notes, diagrams, meeting records, and future work. `simulations/` holds Python-based decoder studies and evaluation results, `relay_models/` captures model variants and scheduling experiments, `fpga/` contains the HLS, RTL, verification, synthesis, implementation, and report artifacts, and `datasets/`, `figures/`, and `scripts/` store shared inputs, visuals, and supporting utilities.
 
 ## Current Project Status
 
