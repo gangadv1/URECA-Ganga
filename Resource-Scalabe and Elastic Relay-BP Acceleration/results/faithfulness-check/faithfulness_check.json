@@ -1,4 +1,5 @@
 {
+  "all_passed": true,
   "checks": {
     "belief_restore_present": true,
     "float_decoder_has_no_noise_std": true,

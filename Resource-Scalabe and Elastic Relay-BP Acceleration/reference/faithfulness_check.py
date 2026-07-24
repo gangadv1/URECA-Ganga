@@ -20,7 +20,7 @@ def contains(path: Path, text: str) -> bool:
     return text in path.read_text(encoding="utf-8")
 
 
-def run_audit(out_dir: Path) -> Path:
+def run_audit(out_dir: Path) -> tuple[Path, bool]:
     decoder_path = PROJECT_ROOT / "simulations" / "sequential_relay" / "relay_bp_decoder.py"
     sim_path = PROJECT_ROOT / "simulations" / "sequential_relay" / "sequential_relay_bp_sim.py"
     hls_path = PROJECT_ROOT / "fpga" / "hls" / "relay_engine_hls.cpp"
@@ -34,8 +34,15 @@ def run_audit(out_dir: Path) -> Path:
         "hls_toy_size_noted": contains(hls_path, "MAX_VARIABLES = 16"),
         "hls_non_target_carry_noted": contains(hls_path, "/ 255"),
     }
+    all_passed = all(checks.values())
+    status = (
+        "scaffold audit passed; manual canonical trace-lock still required"
+        if all_passed
+        else "scaffold audit FAILED; fix the failing checks before trusting the reference"
+    )
     report = {
-        "status": "scaffold audit passed; manual canonical trace-lock still required",
+        "status": status,
+        "all_passed": all_passed,
         "checks": checks,
         "next_step": "Compare the float trace with the chosen canonical Relay-BP source before exporting headline vectors.",
     }
@@ -50,7 +57,7 @@ def run_audit(out_dir: Path) -> Path:
         out_dir,
         artifact_paths=[report_path],
     )
-    return report_path
+    return report_path, all_passed
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -60,8 +67,10 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
-    report_path = run_audit(build_parser().parse_args().out_dir)
+    report_path, all_passed = run_audit(build_parser().parse_args().out_dir)
     print(f"Wrote faithfulness report to {report_path}")
+    if not all_passed:
+        raise SystemExit("faithfulness audit failed: one or more checks did not pass")
 
 
 if __name__ == "__main__":

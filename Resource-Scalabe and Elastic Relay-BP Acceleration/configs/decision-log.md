@@ -40,3 +40,18 @@ The first DEM package is code-capacity scaffolding. It keeps the same loader
 contract that later code should use, but the real circuit-level graph will
 regenerate counts, edges, schedules, masks, and vectors.
 
+## 2026-07-24 - Faithfulness Verdict Is Computed, Not Hardcoded
+
+The faithfulness check status is now derived from the checks. If any check
+fails, the report marks `all_passed: false` and the script exits non-zero. The
+audit is still a scaffold gate; a manual canonical trace-lock is still required
+before headline vectors.
+
+## 2026-07-24 - Shared-Scale Control For The Memory Coefficient
+
+`FixedConfig` gains `separate_scale`. The separate-scale design uses the
+independent power-of-two `M`. The shared-scale control ties the coefficient to
+the message scale `2**(b-1)`, so its resolution shrinks with `b`. This gives the
+shared-vs-separate coefficient ablation (A1) the proposal requires. Default is
+`separate_scale=True`, so existing tests and exported vectors are unchanged.
+

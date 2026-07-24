@@ -93,7 +93,7 @@ class FixedRelayBPDecoder:
                 relay_memory[var] = memory_mix(
                     y_prev=int(relay_memory[var]),
                     y_new=y_new,
-                    beta_int=beta_to_int(leg.carry_gamma, fixed.M),
+                    beta_int=beta_to_int(leg.carry_gamma, fixed.coefficient_M),
                     config=fixed,
                 )
                 prior_int[var] = sat_b(int(beliefs[var]) + int(relay_memory[var]), fixed)

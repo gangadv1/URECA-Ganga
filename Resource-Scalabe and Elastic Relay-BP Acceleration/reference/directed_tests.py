@@ -61,6 +61,22 @@ def test_check_node_zero_magnitude_sign() -> None:
     assert check_node_update([0, -4, 5], 0, config) == [-4, 0, 0]
 
 
+def test_shared_scale_control_rounds_coefficient_toward_zero() -> None:
+    # A1 control: the separate scale keeps an independent coefficient scale M,
+    # so a small memory weight survives; the shared-scale control ties the
+    # coefficient to the message scale 2**(b-1), which rounds the same weight to
+    # zero at low b and drops the previous memory from the mix.
+    beta = 0.05
+    separate = FixedConfig(b=4, g=2, M=16, clip=7, separate_scale=True)
+    shared = FixedConfig(b=4, g=2, M=16, clip=7, separate_scale=False)
+    assert separate.coefficient_M == 16
+    assert shared.coefficient_M == 8
+    assert beta_to_int(beta, separate.coefficient_M) == 1
+    assert beta_to_int(beta, shared.coefficient_M) == 0
+    assert memory_mix(y_prev=6, y_new=-6, beta_int=beta_to_int(beta, separate.coefficient_M), config=separate) == -5
+    assert memory_mix(y_prev=6, y_new=-6, beta_int=beta_to_int(beta, shared.coefficient_M), config=shared) == -6
+
+
 def run_all() -> None:
     for name, func in sorted(globals().items()):
         if name.startswith("test_"):
