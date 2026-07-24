@@ -1,0 +1,14 @@
+{
+  "all_passed": true,
+  "checks": {
+    "belief_restore_present": true,
+    "float_decoder_has_no_noise_std": true,
+    "hls_non_target_carry_noted": true,
+    "hls_toy_size_noted": true,
+    "memory_update_called_between_legs": true,
+    "memory_update_function_present": true,
+    "separate_sim_noise_noted": true
+  },
+  "next_step": "Compare the float trace with the chosen canonical Relay-BP source before exporting headline vectors.",
+  "status": "scaffold audit passed; manual canonical trace-lock still required"
+}

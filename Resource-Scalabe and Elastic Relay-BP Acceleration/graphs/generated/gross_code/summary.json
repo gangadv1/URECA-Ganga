@@ -1,0 +1,26 @@
+{
+  "code_name": "gross [[144,12,12]]",
+  "n": 144,
+  "k": 12,
+  "d": 12,
+  "ell": 12,
+  "m": 6,
+  "hx_shape": [
+    72,
+    144
+  ],
+  "hz_shape": [
+    72,
+    144
+  ],
+  "hx_row_weight_min": 6,
+  "hx_row_weight_max": 6,
+  "hz_row_weight_min": 6,
+  "hz_row_weight_max": 6,
+  "hx_col_weight_min": 3,
+  "hx_col_weight_max": 3,
+  "hz_col_weight_min": 3,
+  "hz_col_weight_max": 3,
+  "commute": true,
+  "content_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407"
+}

@@ -1,0 +1,9 @@
+name,input,expected
+sat_high,100,7
+sat_low,-100,-7
+round_pos_half,1/2,1
+round_neg_half,-1/2,-1
+memory_beta_zero,"prev=3,new=-5,beta=0",-5
+memory_beta_full,"prev=3,new=-5,beta=8",3
+memory_beta_half,"prev=3,new=-5,beta=4",-1
+check_node_equal,"[3,-3,3],syn=0",-3 3 -3

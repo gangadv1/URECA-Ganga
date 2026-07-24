@@ -1,0 +1,48 @@
+{
+  "detector_count": 144,
+  "edge_count": 864,
+  "fault_count": 288,
+  "files": {
+    "dem": "code_capacity.dem",
+    "incidence": "incidence.csv"
+  },
+  "gross_code": {
+    "code_name": "gross [[144,12,12]]",
+    "commute": true,
+    "content_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+    "d": 12,
+    "ell": 12,
+    "hx_col_weight_max": 3,
+    "hx_col_weight_min": 3,
+    "hx_row_weight_max": 6,
+    "hx_row_weight_min": 6,
+    "hx_shape": [
+      72,
+      144
+    ],
+    "hz_col_weight_max": 3,
+    "hz_col_weight_min": 3,
+    "hz_row_weight_max": 6,
+    "hz_row_weight_min": 6,
+    "hz_shape": [
+      72,
+      144
+    ],
+    "k": 12,
+    "m": 6,
+    "n": 144
+  },
+  "headline_ready": false,
+  "hx_shape": [
+    72,
+    144
+  ],
+  "hz_shape": [
+    72,
+    144
+  ],
+  "loader_contract_version": 1,
+  "note": "This package is for early software and RTL testing only.",
+  "source_graph_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+  "tier": "tier-1-code-capacity"
+}
