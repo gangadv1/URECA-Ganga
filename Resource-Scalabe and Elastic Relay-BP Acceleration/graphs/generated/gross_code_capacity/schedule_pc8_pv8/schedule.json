@@ -1,0 +1,15 @@
+{
+  "P_C": 8,
+  "P_V": 8,
+  "check_phase_cycles": 110,
+  "detector_count": 144,
+  "edge_count": 864,
+  "fault_count": 288,
+  "graph_tier": "tier-1-code-capacity",
+  "minimum_cycles_per_iteration": 222,
+  "note": "Tier-1 only; regenerate for circuit-level DEM.",
+  "parallel_edges_per_slot": 8,
+  "schedule_version": 1,
+  "source_graph_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+  "variable_phase_cycles": 110
+}

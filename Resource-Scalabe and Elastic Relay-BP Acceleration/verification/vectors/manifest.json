@@ -17,13 +17,14 @@
   "notes": [],
   "provenance": {
     "artifact_hashes": {
-      "/home/iloveangpao/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/verification/vectors/directed_vectors.csv": "9dc66ee6dc0758196d7ef58a0f8a9a346f67b2838239b3581ddf691aaf10e99a"
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/verification/vectors/directed_vectors.csv": "9dc66ee6dc0758196d7ef58a0f8a9a346f67b2838239b3581ddf691aaf10e99a",
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/verification/vectors/memory_mix_vectors.svh": "4fda7c464272d894015f00fcb8c310ad6ab2ce6147ea6aa3009879e5cd6a87b3"
     },
-    "git_commit": "047288b992f66c3913d810de8be9666d237b6f3e",
+    "git_commit": "23a9fc58bc836d20fed625e4726ce62c8fdaf5fa",
     "sot_doc_hashes": {
       "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
       "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"
     },
-    "sot_git_status": "?? master-proposal/"
+    "sot_git_status": ""
   }
 }

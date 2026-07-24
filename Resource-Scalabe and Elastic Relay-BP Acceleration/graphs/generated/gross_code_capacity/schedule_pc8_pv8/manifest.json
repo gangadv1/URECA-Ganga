@@ -1,0 +1,35 @@
+{
+  "architecture": {
+    "P_C": 8,
+    "P_V": 8,
+    "schedule_version": 1
+  },
+  "arithmetic": {},
+  "circuit": {},
+  "decoder": {},
+  "experiment": {
+    "purpose": "conflict-free folded tier-1 schedule"
+  },
+  "graph": {
+    "edge_count": 864,
+    "graph_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+    "tier": "tier-1-code-capacity"
+  },
+  "hardware": {},
+  "notes": [
+    "Regenerate this schedule for a circuit-level graph package."
+  ],
+  "provenance": {
+    "artifact_hashes": {
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/schedule_pc8_pv8/gross_code_tier1_graph_pkg.sv": "ca1b8cef058484bd3402ebf9ac169fcdb033db8cc5a81587d0e568538bdef378",
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/schedule_pc8_pv8/schedule.csv": "e0572913f2fb064c6af05be80af7aa02a2692fa86d012498297259bf1ebc4c0b",
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/schedule_pc8_pv8/schedule.json": "4f80beabd067a30076525d506d0bbb8e08d86bbf1556622eae2f2b020ae261e3"
+    },
+    "git_commit": "23a9fc58bc836d20fed625e4726ce62c8fdaf5fa",
+    "sot_doc_hashes": {
+      "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
+      "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"
+    },
+    "sot_git_status": ""
+  }
+}

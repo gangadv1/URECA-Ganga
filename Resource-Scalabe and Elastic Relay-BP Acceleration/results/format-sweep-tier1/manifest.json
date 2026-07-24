@@ -1,0 +1,43 @@
+{
+  "architecture": {},
+  "arithmetic": {
+    "M": [
+      4,
+      8,
+      16
+    ],
+    "b": [
+      4,
+      6,
+      8
+    ],
+    "g": 3
+  },
+  "circuit": {},
+  "decoder": {},
+  "experiment": {
+    "purpose": "tier-1 deterministic paired format screening",
+    "seed": 20260724,
+    "shots": 8
+  },
+  "graph": {
+    "graph_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+    "tier": "tier-1-code-capacity"
+  },
+  "hardware": {},
+  "notes": [
+    "Not a circuit-level or headline accuracy result.",
+    "Float baseline is deterministic but awaits canonical trace lock."
+  ],
+  "provenance": {
+    "artifact_hashes": {
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/format-sweep-tier1/format_sweep.csv": "5cfdbcc2c3e3509034b30400f391ae794aad96a66c456385643df4307373d0dd"
+    },
+    "git_commit": "23a9fc58bc836d20fed625e4726ce62c8fdaf5fa",
+    "sot_doc_hashes": {
+      "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
+      "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"
+    },
+    "sot_git_status": ""
+  }
+}
