@@ -23,15 +23,15 @@
   ],
   "provenance": {
     "artifact_hashes": {
-      "/home/iloveangpao/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/code_capacity.dem": "5c8e84d3706796f55c54cba201db5da2598c54e466e3ad4a9aeb8d49b731c4ef",
-      "/home/iloveangpao/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/incidence.csv": "3a8c4e7a45d9f1bb16a99d49721c196d904cde25fbc94cc059c512de3e4b0cef",
-      "/home/iloveangpao/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/package.json": "a8ff1b9990061ee1720c01bc35f99097454f715daa31b80d13f27e58e492898a"
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/code_capacity.dem": "5c8e84d3706796f55c54cba201db5da2598c54e466e3ad4a9aeb8d49b731c4ef",
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/incidence.csv": "3a8c4e7a45d9f1bb16a99d49721c196d904cde25fbc94cc059c512de3e4b0cef",
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_code_capacity/package.json": "a8ff1b9990061ee1720c01bc35f99097454f715daa31b80d13f27e58e492898a"
     },
-    "git_commit": "047288b992f66c3913d810de8be9666d237b6f3e",
+    "git_commit": null,
     "sot_doc_hashes": {
       "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
       "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"
     },
-    "sot_git_status": "?? master-proposal/"
+    "sot_git_status": ""
   }
 }

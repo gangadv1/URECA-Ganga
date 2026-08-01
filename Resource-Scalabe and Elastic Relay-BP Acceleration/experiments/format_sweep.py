@@ -21,6 +21,7 @@ for path in (PROJECT_ROOT / "reference", PROJECT_ROOT):
 
 from configs.manifest import ManifestConfig, write_manifest  # noqa: E402
 from graph_loader import load_graph_package  # noqa: E402
+from relay_reference import HighPrecisionRelayBPDecoder  # noqa: E402
 from fixedpoint import FixedConfig  # noqa: E402
 from relay_bp_fixed import FixedRelayBPDecoder, FixedRelayConfig, FixedRelayLegConfig  # noqa: E402
 from relay_bp_float import FloatRelayBPDecoder  # noqa: E402
@@ -44,8 +45,14 @@ def run_sweep(package_path: Path, out_dir: Path, shots: int = 32, seed: int = 20
         "shots": shots, "converged": sum(result.converged for result in float_outcomes),
         "mean_iterations_x1000": round(1000 * sum(result.total_iterations for result in float_outcomes) / shots),
     })
-    formats = [("high_precision_integer", 16, 16, True)]
-    formats += [("shared_scale", b, M, False) for b in (4, 6, 8) for M in (4, 8, 16)]
+    high_precision = HighPrecisionRelayBPDecoder(graph.h_matrix, scale=1 << 20, max_iterations=3)
+    high_precision_outcomes = [high_precision.decode(prior, syndrome) for syndrome in cases]
+    rows.append({
+        "family": "high_precision_integer", "b": 16, "g": 16, "M": 16, "separate_scale": 1,
+        "shots": shots, "converged": sum(result.converged for result in high_precision_outcomes),
+        "mean_iterations_x1000": round(1000 * sum(result.total_iterations for result in high_precision_outcomes) / shots),
+    })
+    formats = [("shared_scale", b, M, False) for b in (4, 6, 8) for M in (4, 8, 16)]
     formats += [("separate_M", b, M, True) for b in (4, 6, 8) for M in (4, 8, 16)]
     for label, b, M, separate_scale in formats:
         decoder = FixedRelayBPDecoder(

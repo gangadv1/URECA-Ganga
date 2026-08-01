@@ -1,0 +1,178 @@
+{
+  "format_version": 1,
+  "tests": [
+    {
+      "expected": 7,
+      "inputs": [
+        3,
+        4
+      ],
+      "name": "add_pos"
+    },
+    {
+      "expected": -7,
+      "inputs": [
+        -3,
+        -4
+      ],
+      "name": "add_neg"
+    },
+    {
+      "expected": -1,
+      "inputs": [
+        3,
+        4
+      ],
+      "name": "sub_pos"
+    },
+    {
+      "expected": 1,
+      "inputs": [
+        -3,
+        -4
+      ],
+      "name": "sub_neg"
+    },
+    {
+      "expected": -12,
+      "inputs": [
+        3,
+        -4
+      ],
+      "name": "mul_posneg"
+    },
+    {
+      "expected": -49,
+      "inputs": [
+        -7,
+        7
+      ],
+      "name": "widened_product"
+    },
+    {
+      "expected": 10,
+      "inputs": [
+        7,
+        -3,
+        -4,
+        10
+      ],
+      "name": "widened_sum"
+    },
+    {
+      "expected": 5,
+      "inputs": [
+        12,
+        -5,
+        5
+      ],
+      "name": "clip_high"
+    },
+    {
+      "expected": -5,
+      "inputs": [
+        -12,
+        -5,
+        5
+      ],
+      "name": "clip_low"
+    },
+    {
+      "expected": 7,
+      "inputs": [
+        12
+      ],
+      "name": "sat_high"
+    },
+    {
+      "expected": -7,
+      "inputs": [
+        -12
+      ],
+      "name": "sat_low"
+    },
+    {
+      "expected": 3,
+      "inputs": [
+        5,
+        1
+      ],
+      "name": "round_half_pos"
+    },
+    {
+      "expected": -3,
+      "inputs": [
+        -5,
+        1
+      ],
+      "name": "round_half_neg"
+    },
+    {
+      "expected": 0,
+      "inputs": [
+        0.0,
+        8
+      ],
+      "name": "beta_scale_zero"
+    },
+    {
+      "expected": 4,
+      "inputs": [
+        0.5,
+        8
+      ],
+      "name": "beta_scale_half"
+    },
+    {
+      "expected": 8,
+      "inputs": [
+        1.0,
+        8
+      ],
+      "name": "beta_scale_one"
+    },
+    {
+      "expected": -5,
+      "inputs": [
+        3,
+        -5,
+        0
+      ],
+      "name": "memory_mix_zero_beta"
+    },
+    {
+      "expected": -1,
+      "inputs": [
+        3,
+        -5,
+        4
+      ],
+      "name": "memory_mix_half_beta"
+    },
+    {
+      "expected": 3,
+      "inputs": [
+        3,
+        -5,
+        8
+      ],
+      "name": "memory_mix_full_beta"
+    },
+    {
+      "expected": [
+        -3,
+        3,
+        -3
+      ],
+      "inputs": [
+        [
+          3,
+          -3,
+          3
+        ],
+        0
+      ],
+      "name": "check_node_equal"
+    }
+  ]
+}

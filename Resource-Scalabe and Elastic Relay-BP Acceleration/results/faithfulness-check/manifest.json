@@ -13,9 +13,9 @@
   ],
   "provenance": {
     "artifact_hashes": {
-      "/home/iloveangpao/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/faithfulness-check/faithfulness_check.json": "e87c65b19da05cb9d6977a015fccaf9fe972a48cf1515ec740bbc1a60f76416e"
+      "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/faithfulness-check/faithfulness_check.json": "e87c65b19da05cb9d6977a015fccaf9fe972a48cf1515ec740bbc1a60f76416e"
     },
-    "git_commit": "8ee91c8644cc601d3027eff849a9b78695f1956f",
+    "git_commit": null,
     "sot_doc_hashes": {
       "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
       "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"

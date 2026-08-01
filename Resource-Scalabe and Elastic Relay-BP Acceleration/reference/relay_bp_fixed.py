@@ -1,13 +1,16 @@
-"""A small fixed-point Relay-BP decoder for early tests."""
+"""Compatibility wrapper for the fixed-point Relay-BP reference."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Sequence
 
 import numpy as np
 
-from fixedpoint import FixedConfig, beta_to_int, check_node_update, memory_mix, round_div, sat_b, variable_belief
+from fixedpoint import FixedConfig
+from relay_reference import FixedPointRelayBPDecoder as _FixedPointRelayBPDecoder
+from relay_reference import RelayLegConfig, RelayTraceRecord
 
 
 @dataclass(frozen=True)
@@ -33,70 +36,46 @@ class FixedRelayResult:
     final_syndrome: np.ndarray
     beliefs: np.ndarray
     relay_memory: np.ndarray
+    trace: list[RelayTraceRecord] = field(default_factory=list)
+    metadata: dict[str, object] = field(default_factory=dict)
+
+    def to_json_dict(self) -> dict[str, object]:
+        return {
+            "converged": self.converged,
+            "total_iterations": self.total_iterations,
+            "relay_legs": self.relay_legs,
+            "decoded_error": self.decoded_error.tolist(),
+            "final_syndrome": self.final_syndrome.tolist(),
+            "beliefs": self.beliefs.tolist(),
+            "relay_memory": self.relay_memory.tolist(),
+            "trace": [record.__dict__ for record in self.trace],
+            "metadata": self.metadata,
+        }
 
 
 class FixedRelayBPDecoder:
-    """Minimal decoder used to generate early integer traces."""
+    """Minimal decoder used to generate fixed-point Relay-BP traces."""
 
-    def __init__(self, h_matrix: np.ndarray, config: FixedRelayConfig):
-        self.h = h_matrix.astype(np.uint8)
-        self.config = config
-        self.check_to_vars = [list(np.flatnonzero(row)) for row in self.h]
-        self.var_to_checks = [list(np.flatnonzero(self.h[:, col])) for col in range(self.h.shape[1])]
+    def __init__(self, h_matrix: np.ndarray | Path | str, config: FixedRelayConfig):
+        leg_configs = tuple(RelayLegConfig(tuple(leg.gamma_schedule), carry_gamma=float(leg.carry_gamma)) for leg in config.leg_configs)
+        self._decoder = _FixedPointRelayBPDecoder(
+            h_matrix,
+            fixed=config.fixed,
+            leg_configs=leg_configs,
+            max_iterations_per_leg=config.max_iterations_per_leg,
+            gamma_scale=config.gamma_scale,
+        )
 
-    def _gamma_int(self, gamma: float) -> int:
-        return beta_to_int(gamma, self.config.gamma_scale)
-
-    def _syndrome(self, decoded_error: np.ndarray, target_syndrome: np.ndarray) -> np.ndarray:
-        return ((self.h @ decoded_error.astype(np.uint8)) % 2) ^ target_syndrome.astype(np.uint8)
-
-    def decode(self, prior: np.ndarray, syndrome: np.ndarray) -> FixedRelayResult:
-        fixed = self.config.fixed
-        prior_int = np.array([sat_b(int(value), fixed) for value in prior], dtype=int)
-        relay_memory = np.zeros(self.h.shape[1], dtype=int)
-        beliefs = prior_int.copy()
-        var_to_check = np.zeros(self.h.shape, dtype=int)
-        check_to_var = np.zeros(self.h.shape, dtype=int)
-        decoded = (beliefs < 0).astype(np.uint8)
-        final_syndrome = self._syndrome(decoded, syndrome)
-        total_iterations = 0
-        legs_used = 0
-
-        for leg_index, leg in enumerate(self.config.leg_configs):
-            legs_used = leg_index + 1
-            for iteration in range(self.config.max_iterations_per_leg):
-                gamma = leg.gamma_schedule[min(iteration, len(leg.gamma_schedule) - 1)] if leg.gamma_schedule else 0.0
-                gamma_int = self._gamma_int(float(gamma))
-
-                for var in range(self.h.shape[1]):
-                    relay_term = round_div(int(relay_memory[var]) * gamma_int, self.config.gamma_scale)
-                    incoming = [check_to_var[check, var] for check in self.var_to_checks[var]]
-                    beliefs[var] = variable_belief(prior_int[var], incoming, relay_term, fixed)
-                    for check in self.var_to_checks[var]:
-                        var_to_check[check, var] = sat_b(beliefs[var] - check_to_var[check, var], fixed)
-
-                for check, variables in enumerate(self.check_to_vars):
-                    incoming = [var_to_check[check, var] for var in variables]
-                    outgoing = check_node_update(incoming, int(syndrome[check]), fixed)
-                    for var, message in zip(variables, outgoing):
-                        check_to_var[check, var] = message
-
-                decoded = (beliefs < 0).astype(np.uint8)
-                final_syndrome = self._syndrome(decoded, syndrome)
-                total_iterations += 1
-                if np.all(final_syndrome == 0):
-                    return FixedRelayResult(True, total_iterations, legs_used, decoded, final_syndrome, beliefs.copy(), relay_memory.copy())
-
-            for var in range(self.h.shape[1]):
-                decision = int(decoded[var])
-                y_new = int(beliefs[var]) - 2 * decision
-                relay_memory[var] = memory_mix(
-                    y_prev=int(relay_memory[var]),
-                    y_new=y_new,
-                    beta_int=beta_to_int(leg.carry_gamma, fixed.coefficient_M),
-                    config=fixed,
-                )
-                prior_int[var] = sat_b(int(beliefs[var]) + int(relay_memory[var]), fixed)
-
-        return FixedRelayResult(False, total_iterations, legs_used, decoded, final_syndrome, beliefs.copy(), relay_memory.copy())
-
+    def decode(self, prior: Sequence[float | int], syndrome: Sequence[int], trace_path: Path | None = None) -> FixedRelayResult:
+        result = self._decoder.decode(prior, syndrome, trace_path=trace_path)
+        return FixedRelayResult(
+            converged=result.converged,
+            total_iterations=result.total_iterations,
+            relay_legs=result.relay_legs,
+            decoded_error=result.decoded_error,
+            final_syndrome=result.final_syndrome,
+            beliefs=result.beliefs,
+            relay_memory=result.relay_memory,
+            trace=result.trace,
+            metadata=result.metadata,
+        )

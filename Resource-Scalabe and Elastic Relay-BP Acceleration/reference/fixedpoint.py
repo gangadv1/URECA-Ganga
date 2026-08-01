@@ -58,6 +58,36 @@ def sat_b(value: int, config: FixedConfig) -> int:
     return max(config.min_value, min(config.max_value, int(value)))
 
 
+def signed_add(lhs: int, rhs: int) -> int:
+    return int(lhs) + int(rhs)
+
+
+def signed_sub(lhs: int, rhs: int) -> int:
+    return int(lhs) - int(rhs)
+
+
+def signed_mul(lhs: int, rhs: int) -> int:
+    return int(lhs) * int(rhs)
+
+
+def widened_sum(values: Sequence[int]) -> int:
+    return sum(int(value) for value in values)
+
+
+def widened_product(lhs: int, rhs: int) -> int:
+    return signed_mul(lhs, rhs)
+
+
+def clip_to_bounds(value: int, lower: int, upper: int) -> int:
+    if lower > upper:
+        raise ValueError("lower must be <= upper")
+    return max(int(lower), min(int(upper), int(value)))
+
+
+def saturate_value(value: int, config: FixedConfig) -> int:
+    return sat_b(value, config)
+
+
 def round_div(value: int, denominator: int) -> int:
     """Round `value / denominator` to nearest, ties away from zero."""
     if denominator <= 0:
@@ -79,6 +109,10 @@ def beta_to_int(beta: float, M: int) -> int:
     if scaled >= 0:
         return int(floor(scaled + 0.5))
     return -int(floor(abs(scaled) + 0.5))
+
+
+def scale_beta(beta: float, M: int) -> int:
+    return beta_to_int(beta, M)
 
 
 def memory_mix(y_prev: int, y_new: int, beta_int: int, config: FixedConfig) -> int:

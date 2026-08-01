@@ -21,6 +21,59 @@ from bb_code import build_matrices, content_hash, summarize  # noqa: E402
 from configs.manifest import ManifestConfig, write_manifest  # noqa: E402
 
 
+def validate_dem_text(dem_text: str) -> None:
+    lines = [line.strip() for line in dem_text.splitlines() if line.strip()]
+    if not lines:
+        raise RuntimeError("DEM file is empty")
+    for line in lines:
+        if not line.startswith("error("):
+            raise RuntimeError(f"Unexpected DEM line: {line}")
+        prefix, separator, suffix = line.partition(")")
+        if not separator:
+            raise RuntimeError(f"Malformed DEM line: {line}")
+        try:
+            float(prefix[len("error(") :])
+        except ValueError as error:
+            raise RuntimeError(f"Invalid DEM probability in line: {line}") from error
+        for token in suffix.split():
+            if not token.startswith("D") or not token[1:].isdigit():
+                raise RuntimeError(f"Invalid detector token in line: {line}")
+
+
+def validate_incidence_table(path: Path, detector_count: int, fault_count: int, edge_count: int, probability: float) -> None:
+    required_fields = ["fault_index", "basis", "qubit", "detectors", "prior"]
+    seen_faults: set[int] = set()
+    observed_edges = 0
+    with path.open(newline="", encoding="utf-8") as source:
+        reader = csv.DictReader(source)
+        if reader.fieldnames != required_fields:
+            raise RuntimeError(f"Unexpected incidence header: {reader.fieldnames}")
+        for row in reader:
+            fault_index = int(row["fault_index"])
+            if fault_index in seen_faults:
+                raise RuntimeError(f"Duplicate fault index in incidence table: {fault_index}")
+            if fault_index < 0 or fault_index >= fault_count:
+                raise RuntimeError(f"Fault index out of range: {fault_index}")
+            seen_faults.add(fault_index)
+            if row["basis"] not in {"x", "z"}:
+                raise RuntimeError(f"Unexpected basis value: {row['basis']}")
+            prior = float(row["prior"])
+            if abs(prior - probability) > 1e-12:
+                raise RuntimeError(f"Unexpected prior value: {prior}")
+            detectors = row["detectors"].split()
+            if not detectors:
+                raise RuntimeError(f"Fault {fault_index} has no detectors")
+            for detector_text in detectors:
+                detector = int(detector_text)
+                if detector < 0 or detector >= detector_count:
+                    raise RuntimeError(f"Detector index out of range: {detector}")
+            observed_edges += len(detectors)
+    if len(seen_faults) != fault_count:
+        raise RuntimeError(f"Expected {fault_count} faults, found {len(seen_faults)}")
+    if observed_edges != edge_count:
+        raise RuntimeError(f"Expected {edge_count} edges, found {observed_edges}")
+
+
 def detector_terms(matrix: np.ndarray, offset: int = 0) -> list[list[int]]:
     terms: list[list[int]] = []
     for col in range(matrix.shape[1]):
@@ -85,6 +138,7 @@ def write_dem_package(out_dir: Path, probability: float) -> Path:
     package_path.write_text(json.dumps(package, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     validate_dem(dem_path)
+    validate_incidence_table(incidence_path, package["detector_count"], package["fault_count"], package["edge_count"], probability)
     write_manifest(
         ManifestConfig(
             graph={
@@ -106,9 +160,13 @@ def write_dem_package(out_dir: Path, probability: float) -> Path:
 
 
 def validate_dem(path: Path) -> None:
-    import stim
-
-    stim.DetectorErrorModel(path.read_text(encoding="utf-8"))
+    dem_text = path.read_text(encoding="utf-8")
+    try:
+        import stim
+    except ModuleNotFoundError:
+        validate_dem_text(dem_text)
+        return
+    stim.DetectorErrorModel(dem_text)
 
 
 def load_package(package_path: Path) -> dict:
