@@ -1,8 +1,9 @@
 # Graphs
 
-This folder builds the first gross-code graph package.
+This folder builds gross-code graph packages.
 
-For now, the package is code-capacity scaffolding. It is useful for building
-and testing the software and RTL flow. Later, the circuit-level package will
-replace the graph instance while keeping the same loader fields.
-
+`build_dem.py` retains the original Tier-1 code-capacity scaffolding.
+`build_circuit_level.py` independently builds the Tier-2 circuit-level STIM
+package from an audited circuit source. The Tier-2 output preserves the full
+hypergraph detector error model, fault probabilities, detector and observable
+incidence, and deterministic circuit/DEM samples.

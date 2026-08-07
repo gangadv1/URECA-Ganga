@@ -1,0 +1,26 @@
+[
+  {
+    "configuration": "low_latency",
+    "logical_successes": 125,
+    "syndrome_converged": 125,
+    "average_iterations": 46.9140625,
+    "average_relay_legs": 1.2578125,
+    "average_selected_solution_weight": 341.9714735560919
+  },
+  {
+    "configuration": "balanced",
+    "logical_successes": 127,
+    "syndrome_converged": 127,
+    "average_iterations": 67.75,
+    "average_relay_legs": 1.5625,
+    "average_selected_solution_weight": 345.23578159964825
+  },
+  {
+    "configuration": "high_success",
+    "logical_successes": 128,
+    "syndrome_converged": 128,
+    "average_iterations": 100.453125,
+    "average_relay_legs": 1.84375,
+    "average_selected_solution_weight": 345.8859177519909
+  }
+]

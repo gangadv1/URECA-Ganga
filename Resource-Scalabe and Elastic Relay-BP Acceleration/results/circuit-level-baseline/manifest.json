@@ -1,0 +1,86 @@
+{
+  "study": "small paired Tier-2 canonical-float Relay-BP baseline",
+  "graph": {
+    "code": "gross [[144,12,12]]",
+    "tier": "tier-2-circuit-level",
+    "memory_basis": "Z",
+    "detectors": 1728,
+    "fault_variables": 67752,
+    "logical_observables": 12,
+    "detector_edges": 391320,
+    "logical_edges": 110971,
+    "package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "package_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+    "detector_incidence_sha256": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad",
+    "source_circuit_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20"
+  },
+  "circuit": {
+    "noisy_rounds": 12,
+    "final_perfect_measurement": true,
+    "physical_error_rate": 0.003,
+    "noise_source": "direct samples from the packaged STIM circuit"
+  },
+  "shots": {
+    "count": 32,
+    "seed": 20260808,
+    "paired_across_decoders": true
+  },
+  "decoder": {
+    "prior": "per-fault DEM LLR log((1-p_j)/p_j)",
+    "seed": 91,
+    "standard_bp": {
+      "S": 1,
+      "R": 1,
+      "legs": [
+        {
+          "max_iterations": 80,
+          "gamma": 0.0
+        }
+      ]
+    },
+    "uniform_mem_bp": {
+      "S": 1,
+      "R": 1,
+      "legs": [
+        {
+          "max_iterations": 80,
+          "gamma": 0.125
+        }
+      ]
+    },
+    "relay_bp": {
+      "S": 1,
+      "R": 301,
+      "first_leg": {
+        "max_iterations": 80,
+        "gamma": 0.125
+      },
+      "later_legs": {
+        "max_iterations": 60,
+        "per_node_gamma_uniform": [
+          -0.24,
+          0.66
+        ]
+      }
+    },
+    "syndrome_criterion": "H @ e_hat mod 2 == detector sample",
+    "logical_criterion": "A @ e_hat mod 2 == observed logical outcome"
+  },
+  "software": {
+    "git_commit": "9ef085ba321e317b28d440c5acb549d7c74bf86a",
+    "git_worktree_dirty": true,
+    "canonical_float_source": "reference/relay_bp_float.py",
+    "canonical_float_source_sha256": "3bd1bf4a8fa13818a3466ba058007d1aa2391fb2ea2af6ab31b975690962220d",
+    "numpy_version": "2.4.5",
+    "scipy_version": "1.17.1",
+    "stim_version": "1.15.0"
+  },
+  "artifacts": [
+    "manifest.json",
+    "summary.json",
+    "per_shot_results.csv",
+    "paired_samples.npz",
+    "selected_corrections.npz",
+    "run_circuit_level_baseline.py"
+  ]
+}

@@ -34,7 +34,7 @@
       "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/verification/vectors/rtl_vectors.json": "43ab42c622069659203db0e6261514c9a55051723d66c4a17c960d3022608427",
       "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/verification/vectors/rtl_vectors_pkg.sv": "3b9a130fe4fb22a9466b586b0cb23cdfec4f972c027a679fd64506b55bb87246"
     },
-    "git_commit": null,
+    "git_commit": "9ef085ba321e317b28d440c5acb549d7c74bf86a",
     "sot_doc_hashes": {
       "master-proposal/qLDPC_Project_Blueprint.md": "f9a33adc28a0228ff5aecab361e52f3851a23d5abe467a4628cf3ad95e49b1ef",
       "master-proposal/qLDPC_Technical_Specification_and_Verification.md": "8df85fb92ca746876159f6cf9db727c6d1e559569f20df7502a67d4802214302"

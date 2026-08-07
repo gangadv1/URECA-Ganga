@@ -1,0 +1,10 @@
+{
+  "code": "gross [[144,12,12]]",
+  "memory_basis": "Z",
+  "noise_model": "uniform_circuit",
+  "noisy_qec_rounds": 12,
+  "physical_error_probability": 0.003,
+  "repository": "https://github.com/trmue/relay",
+  "repository_commit": "d185194ba0cb4101ced4340d82b2ee6d42f225f0",
+  "source_path": "tests/testdata/bicycle_bivariate/circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,error_rate=0.003,noise_model=uniform_circuit,basis=CX,A=x^3+y+y^2,B=y^3+x+x^2.stim"
+}

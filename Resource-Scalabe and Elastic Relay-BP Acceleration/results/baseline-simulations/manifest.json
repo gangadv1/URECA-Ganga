@@ -1,0 +1,80 @@
+{
+  "study": "small paired canonical-float Relay-BP baseline",
+  "headline_ready": false,
+  "graph": {
+    "code": "gross [[144,12,12]]",
+    "tier": "tier-1-code-capacity",
+    "package": "graphs/generated/gross_code_capacity/package.json",
+    "source_graph_hash": "048f01b4a68442eb6ec4941c99e8dbd14e26221256ba02e651333d3ab5bea407",
+    "detectors": 144,
+    "fault_variables": 288
+  },
+  "noise": {
+    "source": "independent Bernoulli code-capacity faults over packaged variables",
+    "physical_error_rate": 0.03,
+    "decoder_priors": "uniform and matched to physical_error_rate"
+  },
+  "shots": {
+    "count": 64,
+    "seed": 20260807,
+    "paired_across_decoders": true
+  },
+  "decoder_seed": 91,
+  "decoders": {
+    "standard_bp": {
+      "S": 1,
+      "R": 1,
+      "legs": [
+        {
+          "max_iterations": 80,
+          "gamma": 0.0
+        }
+      ]
+    },
+    "uniform_mem_bp": {
+      "S": 1,
+      "R": 1,
+      "legs": [
+        {
+          "max_iterations": 80,
+          "gamma": 0.125
+        }
+      ]
+    },
+    "relay_bp": {
+      "S": 3,
+      "R": 12,
+      "first_leg": {
+        "max_iterations": 80,
+        "gamma": 0.125
+      },
+      "later_legs": {
+        "count": 11,
+        "max_iterations": 60,
+        "gamma_distribution": [
+          -0.24,
+          0.66
+        ]
+      }
+    }
+  },
+  "logical_scoring": {
+    "available": false,
+    "status": "placeholder",
+    "note": "Logical masks are needed before headline logical-error results."
+  },
+  "software": {
+    "git_commit": "9ef085ba321e317b28d440c5acb549d7c74bf86a",
+    "git_worktree_dirty": true,
+    "canonical_float_source": "reference/relay_bp_float.py",
+    "canonical_float_source_sha256": "78c8866bac9b9f12c9f0243ced174e1405a290b49833a56f8522f2eb8a3dad99",
+    "numpy_version": "2.2.6"
+  },
+  "artifacts": [
+    "manifest.json",
+    "summary.json",
+    "per_shot_results.csv",
+    "paired_shots.npz",
+    "run_baseline.py"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "study": "small paired Tier-2 circuit-level Relay-BP behavior ablation",
+  "graph": {
+    "code": "gross [[144,12,12]]",
+    "memory_basis": "Z",
+    "dimensions": {
+      "detectors": 1728,
+      "faults": 67752,
+      "logical_observables": 12
+    },
+    "package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "package_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+    "detector_incidence_sha256": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad",
+    "source_circuit_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20"
+  },
+  "circuit": {
+    "physical_error_rate": 0.003,
+    "noisy_rounds": 12,
+    "memory_basis": "Z"
+  },
+  "shots": {
+    "count": 32,
+    "sample_seed": 20260808,
+    "source": "results/circuit-level-baseline/paired_samples.npz",
+    "source_sha256": "e7d2d8edc90c4f09148d390b064a33378bc197d6285f35c0717129b45e83cd02",
+    "paired_across_all_decoders": true
+  },
+  "decoder": {
+    "per_shot_seed": "91 + shot_index",
+    "R": 301,
+    "first_leg": {
+      "gamma": 0.125,
+      "max_iterations": 80
+    },
+    "later_leg_max_iterations": 60,
+    "positive_only_interval": [
+      0.0,
+      0.66
+    ],
+    "paper_interval": [
+      -0.24,
+      0.66
+    ],
+    "independent_ensemble": "same per-shot/per-leg draws as relay_s3_paper; M(0) resets to lambda",
+    "prior": "per-fault DEM LLR log((1-p_j)/p_j)"
+  },
+  "software": {
+    "git_commit": "9ef085ba321e317b28d440c5acb549d7c74bf86a",
+    "git_worktree_dirty": true,
+    "canonical_float_source_sha256": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "numpy_version": "2.4.5",
+    "scipy_version": "1.17.1",
+    "stim_version": "1.15.0"
+  },
+  "artifacts": [
+    "manifest.json",
+    "summary.json",
+    "per_shot_results.csv",
+    "difference_analysis.json",
+    "selected_corrections.npz",
+    "run_circuit_level_ablation.py"
+  ]
+}

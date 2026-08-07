@@ -1,0 +1,117 @@
+{
+  "pairwise_selected_correction_difference_counts": {
+    "standard_bp__vs__uniform_mem_bp": 7,
+    "standard_bp__vs__relay_s1_positive_only": 7,
+    "standard_bp__vs__relay_s1_paper_interval": 7,
+    "standard_bp__vs__relay_s3_paper_interval": 6,
+    "standard_bp__vs__independent_s3_paper_interval": 6,
+    "uniform_mem_bp__vs__relay_s1_positive_only": 0,
+    "uniform_mem_bp__vs__relay_s1_paper_interval": 0,
+    "uniform_mem_bp__vs__relay_s3_paper_interval": 1,
+    "uniform_mem_bp__vs__independent_s3_paper_interval": 1,
+    "relay_s1_positive_only__vs__relay_s1_paper_interval": 0,
+    "relay_s1_positive_only__vs__relay_s3_paper_interval": 1,
+    "relay_s1_positive_only__vs__independent_s3_paper_interval": 1,
+    "relay_s1_paper_interval__vs__relay_s3_paper_interval": 1,
+    "relay_s1_paper_interval__vs__independent_s3_paper_interval": 1,
+    "relay_s3_paper_interval__vs__independent_s3_paper_interval": 0
+  },
+  "pairwise_selected_correction_difference_shots": {
+    "standard_bp__vs__uniform_mem_bp": [
+      6,
+      28,
+      37,
+      42,
+      46,
+      49,
+      57
+    ],
+    "standard_bp__vs__relay_s1_positive_only": [
+      6,
+      28,
+      37,
+      42,
+      46,
+      49,
+      57
+    ],
+    "standard_bp__vs__relay_s1_paper_interval": [
+      6,
+      28,
+      37,
+      42,
+      46,
+      49,
+      57
+    ],
+    "standard_bp__vs__relay_s3_paper_interval": [
+      6,
+      28,
+      37,
+      46,
+      49,
+      57
+    ],
+    "standard_bp__vs__independent_s3_paper_interval": [
+      6,
+      28,
+      37,
+      46,
+      49,
+      57
+    ],
+    "uniform_mem_bp__vs__relay_s1_positive_only": [],
+    "uniform_mem_bp__vs__relay_s1_paper_interval": [],
+    "uniform_mem_bp__vs__relay_s3_paper_interval": [
+      42
+    ],
+    "uniform_mem_bp__vs__independent_s3_paper_interval": [
+      42
+    ],
+    "relay_s1_positive_only__vs__relay_s1_paper_interval": [],
+    "relay_s1_positive_only__vs__relay_s3_paper_interval": [
+      42
+    ],
+    "relay_s1_positive_only__vs__independent_s3_paper_interval": [
+      42
+    ],
+    "relay_s1_paper_interval__vs__relay_s3_paper_interval": [
+      42
+    ],
+    "relay_s1_paper_interval__vs__independent_s3_paper_interval": [
+      42
+    ],
+    "relay_s3_paper_interval__vs__independent_s3_paper_interval": []
+  },
+  "focus_details": {
+    "negative_vs_positive_s1": [],
+    "s3_vs_s1_paper_interval": [
+      {
+        "shot": 42,
+        "sampled_error_weight": 13,
+        "syndrome_weight": 25,
+        "relay_s3_paper_interval": {
+          "converged": true,
+          "iterations": 70,
+          "legs": 3,
+          "weights": [
+            45.18928296785855,
+            45.18928296785855,
+            45.189282967858546
+          ],
+          "selected_weight": 45.189282967858546
+        },
+        "relay_s1_paper_interval": {
+          "converged": true,
+          "iterations": 14,
+          "legs": 1,
+          "weights": [
+            45.18928296785855
+          ],
+          "selected_weight": 45.18928296785855
+        }
+      }
+    ],
+    "relay_vs_independent_s3": []
+  }
+}

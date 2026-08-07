@@ -1,0 +1,88 @@
+{
+  "study": "first Tier-2 fixed-point characterization",
+  "shots": {
+    "count": 128,
+    "sample_seed": 20260809,
+    "paired": true
+  },
+  "graph": {
+    "package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "dimensions": {
+      "detectors": 1728,
+      "faults": 67752,
+      "logical_observables": 12
+    },
+    "package_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+    "detector_incidence_sha256": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad"
+  },
+  "configurations": {
+    "low_latency": {
+      "first_gamma": 0.25,
+      "interval": [
+        0.0,
+        0.66
+      ],
+      "S": 1,
+      "R": 4
+    },
+    "balanced": {
+      "first_gamma": 0.25,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "S": 1,
+      "R": 16
+    },
+    "high_success": {
+      "first_gamma": 0.125,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "S": 1,
+      "R": 32
+    }
+  },
+  "formats": {
+    "message_width_b": [
+      4,
+      6,
+      8
+    ],
+    "coefficient_scale_M": [
+      4,
+      8,
+      16
+    ]
+  },
+  "arithmetic": {
+    "guard_bits": 4,
+    "guard_width": "b + 4 signed bits",
+    "message_clipping": "full signed b-bit range; clip=None",
+    "rounding": "nearest, ties away from zero",
+    "saturation": "after physical-prior, bias, check-message, variable-message and marginal storage",
+    "coefficient_quantization": "round(gamma*M), signed; independent per-node gamma fixed within leg",
+    "relay_handoff": "only previous-leg final marginals; edge messages reset"
+  },
+  "audit": {
+    "existing_fixed_required_correction": true,
+    "removed_semantics": [
+      "carry_gamma",
+      "relay_memory mixing",
+      "belief-plus-memory leg transfer"
+    ],
+    "fixed_source_sha256": "e861edfde097bbd66317444a079813bd77627da910fcfab12f51e260cf2e941b",
+    "float_oracle_sha256": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42"
+  },
+  "artifacts": [
+    "manifest.json",
+    "float_summary.json",
+    "fixed_summary.json",
+    "per_shot_results.csv",
+    "float_per_shot.json",
+    "float_corrections.npz",
+    "first_mismatch_traces.json",
+    "run_characterization.py"
+  ]
+}

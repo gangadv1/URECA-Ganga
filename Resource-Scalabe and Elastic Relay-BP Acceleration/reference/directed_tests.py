@@ -181,8 +181,9 @@ def test_float_integer_and_fixed_reference_decode_zero_syndrome() -> None:
         graph.h_matrix,
         FixedRelayConfig(
             fixed=FixedConfig(b=4, g=2, M=8, clip=7, separate_scale=True),
-            leg_configs=(FixedRelayLegConfig((0.25, 0.25, 0.25), carry_gamma=0.25),),
-            max_iterations_per_leg=3,
+            leg_configs=(FixedRelayLegConfig(max_iterations=3, gamma=0.25),),
+            S=1,
+            R=1,
         ),
     )
     fixed_result = fixed_decoder.decode(np.ones(graph.h_matrix.shape[1], dtype=int), syndrome)
@@ -232,4 +233,3 @@ def run_all() -> None:
 if __name__ == "__main__":
     run_all()
     print("directed fixed-point tests passed")
-

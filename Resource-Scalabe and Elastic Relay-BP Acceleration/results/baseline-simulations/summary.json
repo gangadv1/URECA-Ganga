@@ -1,0 +1,44 @@
+[
+  {
+    "decoder": "standard_bp",
+    "shots": 64,
+    "converged": 59,
+    "convergence_rate": 0.921875,
+    "non_converged": 5,
+    "non_convergence_rate": 0.078125,
+    "logical_or_block_error_rate": null,
+    "average_iterations": 27.859375,
+    "average_relay_legs": 1.0,
+    "total_valid_solutions": 59,
+    "average_valid_solutions": 0.921875,
+    "average_selected_solution_weight": 29.929798888751165
+  },
+  {
+    "decoder": "uniform_mem_bp",
+    "shots": 64,
+    "converged": 64,
+    "convergence_rate": 1.0,
+    "non_converged": 0,
+    "non_convergence_rate": 0.0,
+    "logical_or_block_error_rate": null,
+    "average_iterations": 5.140625,
+    "average_relay_legs": 1.0,
+    "total_valid_solutions": 64,
+    "average_valid_solutions": 1.0,
+    "average_selected_solution_weight": 30.68743374620202
+  },
+  {
+    "decoder": "relay_bp",
+    "shots": 64,
+    "converged": 64,
+    "convergence_rate": 1.0,
+    "non_converged": 0,
+    "non_convergence_rate": 0.0,
+    "logical_or_block_error_rate": null,
+    "average_iterations": 22.109375,
+    "average_relay_legs": 3.03125,
+    "total_valid_solutions": 192,
+    "average_valid_solutions": 3.0,
+    "average_selected_solution_weight": 30.68743374620202
+  }
+]
