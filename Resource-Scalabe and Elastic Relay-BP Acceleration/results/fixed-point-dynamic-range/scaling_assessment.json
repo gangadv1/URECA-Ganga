@@ -1,0 +1,19 @@
+{
+  "evaluated": false,
+  "candidate_assessed": "static common power-of-two normalization x_scaled = 2^(-k) x",
+  "preservation_property": "In exact arithmetic, applying one common positive scale to priors, messages, biases, and marginals preserves signs and min-sum magnitude ordering.",
+  "rejection_reason": "The observed dynamic range cannot fit in the tested integer formats under one static scale while retaining a nonzero physical prior.",
+  "fourteen_bit_examples": {
+    "signed_positive_limit": 8191,
+    "low_latency_marginal_p99_99": 3349654391578.2793,
+    "low_latency_required_right_shift": 29,
+    "high_success_marginal_p99_99": 74989420.93324588,
+    "high_success_required_right_shift": 14,
+    "physical_prior_range": [
+      4.582894720694937,
+      8.515591067353995
+    ],
+    "result": "Either required shift rounds every physical prior to zero in the current integer-message representation."
+  },
+  "dynamic_scaling_note": "Iteration-dependent block floating point could retain a shared exponent, but requires exponent state, global or hierarchical magnitude detection, aligned additions, and a separate numerical study. It was not treated as a simple scale or silently added to the canonical fixed-point path."
+}

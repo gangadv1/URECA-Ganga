@@ -1,0 +1,79 @@
+{
+  "study": "Tier-2 float dynamic range and wider fixed-point characterization",
+  "shots": {
+    "count": 128,
+    "sample_seed": 20260809,
+    "paired": true
+  },
+  "graph": {
+    "package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "dimensions": {
+      "detectors": 1728,
+      "faults": 67752,
+      "logical_observables": 12
+    },
+    "package_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+    "detector_incidence_sha256": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad"
+  },
+  "configurations": {
+    "low_latency": {
+      "first_gamma": 0.25,
+      "interval": [
+        0.0,
+        0.66
+      ],
+      "R": 4
+    },
+    "balanced": {
+      "first_gamma": 0.25,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 16
+    },
+    "high_success": {
+      "first_gamma": 0.125,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 32
+    }
+  },
+  "fixed_formats": {
+    "b": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "M": [
+      4,
+      16
+    ],
+    "guard_bits": 4
+  },
+  "dynamic_range_method": {
+    "min_max": "exact over every full float array at every executed iteration",
+    "percentiles": "estimated by deterministic sampled panels and 0.05-decade log histogram",
+    "panel_size": 2048,
+    "panels": 16
+  },
+  "scaling_part_c": {
+    "evaluated": false,
+    "reason": "No single static power-of-two scale is numerically viable: fitting the measured p99.99 message tails into 14 signed bits requires shifts that quantize every 4.58--8.52 physical prior to zero. A dynamic shared-exponent/block-floating scheme would be a new stateful architecture, not the requested simple normalization, so it was not introduced without a separate characterization design."
+  },
+  "software": {
+    "float_oracle_sha256": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "fixed_decoder_sha256": "e861edfde097bbd66317444a079813bd77627da910fcfab12f51e260cf2e941b"
+  },
+  "artifacts": [
+    "manifest.json",
+    "float_dynamic_range.json",
+    "wide_fixed_summary.json",
+    "per_shot_results.csv",
+    "run_dynamic_range.py",
+    "scaling_assessment.json"
+  ]
+}
