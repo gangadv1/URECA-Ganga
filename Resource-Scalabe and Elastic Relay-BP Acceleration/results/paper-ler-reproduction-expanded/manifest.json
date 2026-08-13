@@ -1,0 +1,99 @@
+{
+  "study": "expanded canonical Relay-BP paper-LER validation",
+  "continues_original_screening": true,
+  "original_results": "results/paper-ler-reproduction",
+  "target_failures_per_p": 20,
+  "maximum_shots_per_p": 10000,
+  "batch_size": 256,
+  "decoder": {
+    "implementation": "reference/relay_bp_float.py",
+    "S": 1,
+    "R": 301,
+    "first_leg": {
+      "gamma": 0.125,
+      "max_iterations": 80
+    },
+    "later_legs": {
+      "per_node_gamma_uniform": [
+        -0.24,
+        0.66
+      ],
+      "max_iterations": 60
+    },
+    "prior": "per-fault DEM LLR log((1-p_j)/p_j)",
+    "non_convergence_is_failure": true
+  },
+  "circuit": {
+    "code": "gross [[144,12,12]]",
+    "memory_basis": "Z",
+    "noisy_rounds": 12,
+    "detectors": 1728,
+    "faults": 67752,
+    "logical_observables": 12
+  },
+  "duplicate_check": {
+    "unique_batch_seeds": true,
+    "unique_complete_batch_sample_matrices": true,
+    "repeated_outcome_patterns": 0,
+    "note": "Repeated detector/logical outcomes can occur naturally; unique seeds and complete batch hashes exclude accidental batch replay."
+  },
+  "runtime_stop": {
+    "stopped_early": true,
+    "reason": "Canonical sparse Python decoding developed extreme 301-leg tails; completed batches were preserved rather than launching blindly toward 10,000 shots.",
+    "incomplete_batches_excluded": [
+      {
+        "p": 0.004,
+        "batch": 1,
+        "requested_shots": 256,
+        "superseded_by_completed_shots": 16
+      },
+      {
+        "p": 0.005,
+        "batch": 1,
+        "requested_shots": 256
+      },
+      {
+        "p": 0.005,
+        "batch": 1,
+        "requested_shots": 16
+      }
+    ]
+  },
+  "package_hashes": {
+    "0.001": {
+      "manifest_sha256": "fc66be7219755f6cf75b15f5cb20bc123de740f02671d3aefc78ddf521b9c513",
+      "source_sha256": "97ed68e3859e10ebdfd0a13c5c6abd623084ee1bd11d88287af6a67abfdd24f2"
+    },
+    "0.002": {
+      "manifest_sha256": "09f8a730111c0e15f879456e9f30b43ded4da7ffd649c6ae6eae71b50626ccad",
+      "source_sha256": "d935f128b5ea8d225f7ba523f7dab4561580e2cc6ab95942c6d15245892f5cde"
+    },
+    "0.003": {
+      "manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+      "source_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20"
+    },
+    "0.004": {
+      "manifest_sha256": "a7fd1e4421b2883f27e1a2921192e9967aadb988c23bcfd1c6bf773a2c28cf89",
+      "source_sha256": "a4ad4c07875ff213ce2cd6dc978f9460f10783225e449f17c9039df0f1972e53"
+    },
+    "0.005": {
+      "manifest_sha256": "18bc540b00db639042e9ec025cd6ed7cfe8f0305542918791a77e09f5e6b40f6",
+      "source_sha256": "a75a7c020ccc28ea83549b1d742410d08d22e603b126700cea098dd5965a5a21"
+    }
+  },
+  "canonical_float_sha256": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+  "software": {
+    "numpy": "2.4.5",
+    "scipy": "1.17.1",
+    "stim": "1.15.0",
+    "git_commit": "b06cff96dcf7e818f69e20ff8298205aceb9f68b"
+  },
+  "artifacts": [
+    "manifest.json",
+    "summary.json",
+    "per_p_summary.csv",
+    "per_shot_results.csv",
+    "batches.json",
+    "run_expanded_ler.py"
+  ]
+}

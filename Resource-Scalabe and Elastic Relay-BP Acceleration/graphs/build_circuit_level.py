@@ -45,12 +45,26 @@ def default_output(probability: float) -> Path:
     return CURRENT_DIR / "generated" / "gross_circuit_level" / f"memory_Z_r12_p{label}"
 
 
+def upstream_source_path(probability: float) -> str:
+    label = probability_label(probability)
+    return "tests/testdata/bicycle_bivariate/" + (
+        "circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,"
+        f"error_rate={label},noise_model=uniform_circuit,basis=CX,"
+        "A=x^3+y+y^2,B=y^3+x+x^2.stim"
+    )
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as source:
         for chunk in iter(lambda: source.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def git_blob_sha1(path: Path) -> str:
+    data = path.read_bytes()
+    return hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
 
 
 def git_commit() -> str | None:
@@ -373,10 +387,8 @@ def write_package(source_path: Path, out_dir: Path, probability: float, rounds: 
             "project_git_commit": git_commit(),
             "upstream_repository": UPSTREAM_REPOSITORY,
             "upstream_commit": UPSTREAM_COMMIT,
-            "upstream_source_path": "tests/testdata/bicycle_bivariate/" + (
-                "circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,"
-                "error_rate=0.003,noise_model=uniform_circuit,basis=CX,A=x^3+y+y^2,B=y^3+x+x^2.stim"
-            ),
+            "upstream_source_path": upstream_source_path(probability),
+            "upstream_source_blob_sha1": git_blob_sha1(source_path),
             "source_circuit_sha256": sha256_file(source_path),
             "artifact_hashes": {path.name: sha256_file(path) for path in artifact_paths},
             "artifact_paths": [str(path.relative_to(PROJECT_ROOT)) for path in artifact_paths],

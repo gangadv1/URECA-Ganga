@@ -3,8 +3,34 @@
   "memory_basis": "Z",
   "noise_model": "uniform_circuit",
   "noisy_qec_rounds": 12,
-  "physical_error_probability": 0.003,
   "repository": "https://github.com/trmue/relay",
   "repository_commit": "d185194ba0cb4101ced4340d82b2ee6d42f225f0",
-  "source_path": "tests/testdata/bicycle_bivariate/circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,error_rate=0.003,noise_model=uniform_circuit,basis=CX,A=x^3+y+y^2,B=y^3+x+x^2.stim"
+  "sources": {
+    "0.001": {
+      "local_file": "gross_144_12_12_memory_Z_r12_p0.001.stim",
+      "upstream_blob_sha1": "eaf47ba20c56123a5b95a8a3e09c5a8d4f2c0fe6",
+      "sha256": "97ed68e3859e10ebdfd0a13c5c6abd623084ee1bd11d88287af6a67abfdd24f2"
+    },
+    "0.002": {
+      "local_file": "gross_144_12_12_memory_Z_r12_p0.002.stim",
+      "upstream_blob_sha1": "996811709817490429cb38153979264ab2e43f63",
+      "sha256": "d935f128b5ea8d225f7ba523f7dab4561580e2cc6ab95942c6d15245892f5cde"
+    },
+    "0.003": {
+      "local_file": "gross_144_12_12_memory_Z_r12_p0.003.stim",
+      "upstream_blob_sha1": "b61b0ca7db92ac219f0328c5cd5a5f0f29a0306d",
+      "sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20"
+    },
+    "0.004": {
+      "local_file": "gross_144_12_12_memory_Z_r12_p0.004.stim",
+      "upstream_blob_sha1": "28825c8c3c8b535be8b747306d20f0aad2850e05",
+      "sha256": "a4ad4c07875ff213ce2cd6dc978f9460f10783225e449f17c9039df0f1972e53"
+    },
+    "0.005": {
+      "local_file": "gross_144_12_12_memory_Z_r12_p0.005.stim",
+      "upstream_blob_sha1": "6b2bde639bdb217c87227dfff1c3633f11de8279",
+      "sha256": "a75a7c020ccc28ea83549b1d742410d08d22e603b126700cea098dd5965a5a21"
+    }
+  },
+  "upstream_path_template": "tests/testdata/bicycle_bivariate/circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,error_rate={p},noise_model=uniform_circuit,basis=CX,A=x^3+y+y^2,B=y^3+x+x^2.stim"
 }

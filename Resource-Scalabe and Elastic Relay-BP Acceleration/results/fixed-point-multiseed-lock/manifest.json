@@ -1,0 +1,60 @@
+{
+  "study": "multiseed lock study for unscaled saturating fixed-point Relay-BP",
+  "tier2_package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "paired_sample_source": "results/circuit-level-multiseed/paired_samples.npz",
+  "float_result_source": "results/circuit-level-multiseed/per_shot_results.csv",
+  "sample_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812,
+    20260813
+  ],
+  "shots_per_seed": 128,
+  "paired_shots_per_configuration": 640,
+  "configs": {
+    "low_latency": {
+      "first_gamma": 0.25,
+      "interval": [
+        0.0,
+        0.66
+      ],
+      "R": 4
+    },
+    "balanced": {
+      "first_gamma": 0.25,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 16
+    },
+    "high_success": {
+      "first_gamma": 0.125,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 32
+    }
+  },
+  "formats": {
+    "b": [
+      14,
+      16,
+      18
+    ],
+    "M": 16,
+    "guard_bits": 4,
+    "stored": "signed saturating integer",
+    "dynamic_scaling": false
+  },
+  "saturation_rate_denominator": "all physical-prior, lambda, check-message, variable-message, and marginal store operations",
+  "git_commit": "b06cff96dcf7e818f69e20ff8298205aceb9f68b",
+  "hashes": {
+    "fixed_decoder": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+    "float_decoder": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "tier2_manifest": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609"
+  }
+}

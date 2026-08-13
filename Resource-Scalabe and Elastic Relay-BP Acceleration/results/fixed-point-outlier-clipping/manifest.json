@@ -1,0 +1,53 @@
+{
+  "study": "Tier-2 controlled node-state outlier clipping",
+  "shots": 128,
+  "paired_sample_source": "results/circuit-level-sweeps/paired_samples.npz",
+  "configurations": {
+    "low_latency": {
+      "first_gamma": 0.25,
+      "interval": [
+        0.0,
+        0.66
+      ],
+      "R": 4
+    },
+    "balanced": {
+      "first_gamma": 0.25,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 16
+    },
+    "high_success": {
+      "first_gamma": 0.125,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 32
+    }
+  },
+  "policies": {
+    "A_max": null,
+    "B_p99p9": 99.9,
+    "C_p99p5": 99.5,
+    "D_p99": 99.0
+  },
+  "format": {
+    "mantissa_bits": 12,
+    "exponent_bits_unsigned": 6,
+    "M": 16,
+    "guard_bits": 4
+  },
+  "percentile_definition": "numpy exact linear percentile over abs(lambda) concatenated with abs(provisional marginal), independently each iteration",
+  "clipping": "symmetric clip to exact percentile threshold before state exponent selection and quantization; edge block unchanged",
+  "rtl_feasibility_proxy": "leading-one bucket counts at and above exact threshold are recorded; no approximate selector implemented",
+  "physical_prior_exponent": 0,
+  "hashes": {
+    "fixed_decoder": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+    "float_oracle": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "paired_samples": "71c6529e40e43d59c48b571dc3ef7db18a0eff3ada58f5df13bb75e667904a44",
+    "tier2_manifest": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609"
+  }
+}

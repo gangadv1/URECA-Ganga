@@ -1,0 +1,101 @@
+[
+  {
+    "p": 0.001,
+    "batch": 0,
+    "shots": 256,
+    "sample_seed": 2026081001,
+    "decoder_seed": 250601779,
+    "sample_matrix_sha256": "b60fff3f488bcedf870940852ec35502ee7b9ea3f2c818ab439114666522b409",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.001,
+    "batch": 1,
+    "shots": 256,
+    "sample_seed": 202608130001,
+    "decoder_seed": 250701780,
+    "sample_matrix_sha256": "b40501c4bd45860e819e2f755ca88643c57bcf006a186ebb912bc39375685ed8",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.002,
+    "batch": 0,
+    "shots": 256,
+    "sample_seed": 2026081002,
+    "decoder_seed": 250601779,
+    "sample_matrix_sha256": "a7e4dc482396778456b3b1be546eeabd884ec3a8c07ccdd2433c114fef8a0ab5",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.002,
+    "batch": 1,
+    "shots": 256,
+    "sample_seed": 202608140001,
+    "decoder_seed": 250801780,
+    "sample_matrix_sha256": "9418ec89e9c77133b693857682afba7db177f96f92d022dda0caf416551836db",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.003,
+    "batch": 0,
+    "shots": 256,
+    "sample_seed": 2026081003,
+    "decoder_seed": 250601779,
+    "sample_matrix_sha256": "6bb97c48d7f069f12f46c0fb559d673f0b9e5f03fcd96cd259252c446d3b1f78",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.003,
+    "batch": 1,
+    "shots": 256,
+    "sample_seed": 202608150001,
+    "decoder_seed": 250901780,
+    "sample_matrix_sha256": "8d6ea4fb1a24ad1e02778570528da4eee235a7253b36e0bd26fec859d9465f94",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.004,
+    "batch": 0,
+    "shots": 256,
+    "sample_seed": 2026081004,
+    "decoder_seed": 250601779,
+    "sample_matrix_sha256": "c40eabec76e40a3103e08474aa8bbb25cb904dee334d0caf70d8c4097504c660",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.004,
+    "batch": 1,
+    "shots": 16,
+    "sample_seed": 202608160001,
+    "decoder_seed": 251001780,
+    "sample_matrix_sha256": "353292c27637dc71434c527b48e60d484aae469929c7c3ae6d94f0cd3639239e",
+    "failures": 0,
+    "non_convergence": 0,
+    "syndrome_valid_logical_errors": 0
+  },
+  {
+    "p": 0.005,
+    "batch": 0,
+    "shots": 256,
+    "sample_seed": 2026081005,
+    "decoder_seed": 250601779,
+    "sample_matrix_sha256": "9f42e44d37d02ff524a24abc3acb8c7599b56dbcb6a3cf20796feafe727860bb",
+    "failures": 19,
+    "non_convergence": 19,
+    "syndrome_valid_logical_errors": 0
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "study": "parallel independent canonical b18 Relay-BP trajectory timing model",
+  "shots": 640,
+  "sample_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812,
+    20260813
+  ],
+  "engine_count_modeled": 4,
+  "engine_seed": "9100 + shot + engine*1000003",
+  "configuration": {
+    "first_gamma": 0.125,
+    "later_interval": [
+      -0.12,
+      0.54
+    ],
+    "S": 1,
+    "R": 32,
+    "first_iterations": 80,
+    "later_iterations": 60
+  },
+  "format": {
+    "b": 18,
+    "guard_bits": 4,
+    "M": 16,
+    "P_hardware_assumption": 4
+  },
+  "timing_unit": "canonical fixed decoder iterations; assumes identical P=4 engines and no shared-memory stalls",
+  "tie_break": "lowest engine index among syndrome-valid candidates completing at the same iteration",
+  "hashes": {
+    "decoder": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "tier2": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609"
+  },
+  "git_commit": "b06cff96dcf7e818f69e20ff8298205aceb9f68b"
+}

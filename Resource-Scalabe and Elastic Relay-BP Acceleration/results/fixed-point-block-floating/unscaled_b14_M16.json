@@ -1,0 +1,95 @@
+[
+  {
+    "configuration": "low_latency",
+    "b": 14,
+    "M": 16,
+    "guard_bits": 4,
+    "logical_successes": 126,
+    "syndrome_converged": 126,
+    "logical_classification_agreement_shots": 127,
+    "exact_correction_agreement_shots": 1,
+    "mean_correction_hamming_distance": 20.890625,
+    "iteration_agreement_shots": 5,
+    "leg_agreement_shots": 100,
+    "average_iterations": 49.46875,
+    "p99_iterations": 249.47000000000014,
+    "average_relay_legs": 1.2734375,
+    "average_selected_solution_weight": 346.9852320208923,
+    "saturation_counts": {
+      "physical_prior": 0,
+      "lambda_bias": 0,
+      "check_messages": 0,
+      "guard_accumulator": 0,
+      "variable_messages": 769751461,
+      "marginals": 130789705
+    },
+    "saturation_rates": {
+      "physical_prior": 0.0,
+      "variable_messages": 0.3106544440931705,
+      "marginals": 0.3048670821278481,
+      "guard_accumulator": 0.0
+    }
+  },
+  {
+    "configuration": "balanced",
+    "b": 14,
+    "M": 16,
+    "guard_bits": 4,
+    "logical_successes": 127,
+    "syndrome_converged": 127,
+    "logical_classification_agreement_shots": 128,
+    "exact_correction_agreement_shots": 1,
+    "mean_correction_hamming_distance": 23.3359375,
+    "iteration_agreement_shots": 4,
+    "leg_agreement_shots": 99,
+    "average_iterations": 65.640625,
+    "p99_iterations": 552.9900000000015,
+    "average_relay_legs": 1.5,
+    "average_selected_solution_weight": 347.21018963000336,
+    "saturation_counts": {
+      "physical_prior": 0,
+      "lambda_bias": 0,
+      "check_messages": 0,
+      "guard_accumulator": 0,
+      "variable_messages": 607577393,
+      "marginals": 102734834
+    },
+    "saturation_rates": {
+      "physical_prior": 0.0,
+      "variable_messages": 0.1847935820856991,
+      "marginals": 0.18047328623548267,
+      "guard_accumulator": 0.0
+    }
+  },
+  {
+    "configuration": "high_success",
+    "b": 14,
+    "M": 16,
+    "guard_bits": 4,
+    "logical_successes": 127,
+    "syndrome_converged": 127,
+    "logical_classification_agreement_shots": 127,
+    "exact_correction_agreement_shots": 0,
+    "mean_correction_hamming_distance": 25.2265625,
+    "iteration_agreement_shots": 3,
+    "leg_agreement_shots": 70,
+    "average_iterations": 110.4921875,
+    "p99_iterations": 354.11,
+    "average_relay_legs": 1.96875,
+    "average_selected_solution_weight": 350.84214158657204,
+    "saturation_counts": {
+      "physical_prior": 0,
+      "lambda_bias": 0,
+      "check_messages": 0,
+      "guard_accumulator": 0,
+      "variable_messages": 413275326,
+      "marginals": 71054500
+    },
+    "saturation_rates": {
+      "physical_prior": 0.0,
+      "variable_messages": 0.07467339398295195,
+      "marginals": 0.07415286350266032,
+      "guard_accumulator": 0.0
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "study": "Tier-2 iteration-shared block-floating fixed-point characterization",
+  "shots": 128,
+  "paired_sample_source": "results/circuit-level-sweeps/paired_samples.npz",
+  "configurations": {
+    "low_latency": {
+      "first_gamma": 0.25,
+      "interval": [
+        0.0,
+        0.66
+      ],
+      "R": 4
+    },
+    "balanced": {
+      "first_gamma": 0.25,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 16
+    },
+    "high_success": {
+      "first_gamma": 0.125,
+      "interval": [
+        -0.12,
+        0.54
+      ],
+      "R": 32
+    }
+  },
+  "formats": {
+    "mantissa_bits": [
+      8,
+      10,
+      12
+    ],
+    "M": 16,
+    "guard_bits": 4
+  },
+  "scheme": {
+    "physical_prior": "signed mantissa, exponent 0",
+    "mutable_block": "one shared exponent for lambda, mu, nu, and marginals per iteration",
+    "selection": "smallest e>=0 fitting provisional maximum absolute value",
+    "rescaling": "round(real/2^e), nearest ties away from zero",
+    "exponent_change": "once per iteration before stored mutable values are committed"
+  },
+  "hashes": {
+    "fixed_decoder": "1ba26c28fe4476628a1b47b33e9d190f52c818da21dd08f60805e636378f7321",
+    "float_oracle": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "tier2_manifest": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609"
+  }
+}

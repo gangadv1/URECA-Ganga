@@ -1,0 +1,10 @@
+{
+  "exact_method": "full np.percentile over abs(lambda)||abs(marginal), linear interpolation",
+  "state_values_per_iteration": 135504,
+  "candidate_approximations": [
+    "leading-one histogram with 6-bit exponent buckets and cumulative tail counter",
+    "fixed rejection count using streaming top-K threshold"
+  ],
+  "not_implemented": true,
+  "note": "bucket-equal and bucket-above counts are recorded to judge power-of-two histogram coarseness"
+}
