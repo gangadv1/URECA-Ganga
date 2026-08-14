@@ -1,0 +1,9 @@
+{
+  "shots": 3,
+  "iteration_records": 12,
+  "checks": 12,
+  "variables": 20,
+  "incidences": 76,
+  "first_limit": 2,
+  "later_limit": 3
+}

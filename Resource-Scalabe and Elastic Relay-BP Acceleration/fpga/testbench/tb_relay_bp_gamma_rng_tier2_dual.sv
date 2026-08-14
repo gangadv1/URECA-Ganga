@@ -1,0 +1,8 @@
+`timescale 1ns/1ps
+module tb_relay_bp_gamma_rng_tier2_dual;
+ localparam V=67752;logic clk=0,rst=1,load=0,start=0;logic v0,v1,d0,d1,seen0,seen1;logic[16:0]i0,i1;logic signed[4:0]x0,x1;logic[63:0]s0,s1;logic[31:0]w0,w1,r0,r1;integer cycles,n0,n1,overlap;
+ always #1 clk=~clk;always_ff @(posedge clk)begin cycles<=cycles+1;if(rst)begin seen0<=0;seen1<=0;end else begin if(d0)seen0<=1;if(d1)seen1<=1;end if(v0)begin n0<=n0+1;if(v1&&i0==i1&&x0==x1)overlap<=overlap+1;end if(v1)n1<=n1+1;end
+ relay_bp_gamma_rng rnga(.clk,.rst,.seed_load(load),.seed_value(64'h0123456789abcdef),.gamma_start(start),.leg_index(2'd1),.variable_count(V),.gamma_ready(1'b1),.gamma_abort(1'b0),.gamma_valid(v0),.gamma_variable_index(i0),.gamma_value(x0),.gamma_done(d0),.abort_done(),.idle(),.rng_state(s0),.raw_random_word(),.words_consumed(w0),.rejected_words(r0));
+ relay_bp_gamma_rng rngb(.clk,.rst,.seed_load(load),.seed_value(64'hfedcba9876543210),.gamma_start(start),.leg_index(2'd1),.variable_count(V),.gamma_ready(1'b1),.gamma_abort(1'b0),.gamma_valid(v1),.gamma_variable_index(i1),.gamma_value(x1),.gamma_done(d1),.abort_done(),.idle(),.rng_state(s1),.raw_random_word(),.words_consumed(w1),.rejected_words(r1));
+ initial begin cycles=0;n0=0;n1=0;overlap=0;repeat(2)@(posedge clk);rst=0;@(negedge clk)load=1;@(negedge clk)load=0;@(negedge clk)start=1;@(negedge clk)start=0;wait(seen0&&seen1);#1;if(n0!=V||n1!=V||s0==s1)$fatal(1,"Tier2 dual gamma failure");$display("TIER2_DUAL_GAMMA_RESULT per_engine=%0d cycles=%0d words0=%0d reject0=%0d state0=%h words1=%0d reject1=%0d state1=%h equal_positions=%0d pass=1",V,cycles,w0,r0,s0,w1,r1,s1,overlap);$finish;end
+endmodule

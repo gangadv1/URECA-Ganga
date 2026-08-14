@@ -1,0 +1,25 @@
+{
+  "milestone": "Synchronous-memory-backed P=4 single engine",
+  "decision": "FAIL",
+  "completed": [
+    "one-cycle P=4 packed synchronous memory with response-valid and masked read-first writes",
+    "one-cycle scalar synchronous memory",
+    "four-bank conflict-detecting arbitrary gather memory",
+    "deterministic sparse-graph-to-memory-image converter with hashes and padding metadata",
+    "12-check intermediate graph fixture and Python oracle",
+    "Tier-2 width audit"
+  ],
+  "additional_verified_infrastructure": [
+    "unified registered sparse-memory transaction service elaborates independently"
+  ],
+  "not_completed": [
+    "complete engine FSM conversion from internal arrays to request/response memory ports",
+    "conflict-subset retry scheduler for variable-order arbitrary edge accesses",
+    "intermediate end-to-end RTL run through synchronous memories",
+    "transactional syndrome fetch and node-state write-commit sequencing",
+    "relay initialization prior gather before nu writes"
+  ],
+  "semantic_changes": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

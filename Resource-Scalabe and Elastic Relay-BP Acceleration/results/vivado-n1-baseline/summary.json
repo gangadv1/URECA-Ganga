@@ -1,0 +1,27 @@
+{
+  "status": "blocked_before_synthesis",
+  "required_message": "TARGET FPGA REQUIRED",
+  "vivado_available_on_path": false,
+  "vivado_version": null,
+  "target_part": null,
+  "target_board": null,
+  "clock_constraint": null,
+  "repository_xdc_count": 0,
+  "repository_xpr_count": 0,
+  "repository_synthesis_tcl_count": 0,
+  "synthesis_launched": false,
+  "resource_report_available": false,
+  "timing_report_available": false,
+  "memory_inference_report_available": false,
+  "power_report_available": false,
+  "decisions": {
+    "n1_vivado_synthesis": "FAIL_NOT_RUN",
+    "ready_to_synthesize_n2": false
+  },
+  "blockers": [
+    "Exact Xilinx device/part is not specified in the repository",
+    "No target board or SoC is specified",
+    "No XDC, Vivado project, or synthesis Tcl exists",
+    "Vivado is not installed or not available on PATH in this environment"
+  ]
+}

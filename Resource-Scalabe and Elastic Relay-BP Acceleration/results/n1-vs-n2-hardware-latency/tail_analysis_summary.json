@@ -1,0 +1,120 @@
+{
+  "top10_percent": {
+    "shots": 13,
+    "engine1_wins": 11,
+    "parallel_rescues": 3,
+    "engine1_fewer_legs": 11,
+    "mean_cycle_reduction": 2075943520.0,
+    "mean_relative_reduction": 0.48256275769299434,
+    "shot_ids": [
+      [
+        20260811,
+        26
+      ],
+      [
+        20260809,
+        18
+      ],
+      [
+        20260810,
+        26
+      ],
+      [
+        20260810,
+        9
+      ],
+      [
+        20260810,
+        4
+      ],
+      [
+        20260812,
+        15
+      ],
+      [
+        20260812,
+        20
+      ],
+      [
+        20260809,
+        29
+      ],
+      [
+        20260810,
+        19
+      ],
+      [
+        20260811,
+        28
+      ],
+      [
+        20260811,
+        15
+      ],
+      [
+        20260812,
+        24
+      ],
+      [
+        20260812,
+        14
+      ]
+    ]
+  },
+  "top5_percent": {
+    "shots": 7,
+    "engine1_wins": 7,
+    "parallel_rescues": 3,
+    "engine1_fewer_legs": 7,
+    "mean_cycle_reduction": 3314185075.142857,
+    "mean_relative_reduction": 0.6347847187074017,
+    "shot_ids": [
+      [
+        20260811,
+        26
+      ],
+      [
+        20260809,
+        18
+      ],
+      [
+        20260810,
+        26
+      ],
+      [
+        20260810,
+        9
+      ],
+      [
+        20260810,
+        4
+      ],
+      [
+        20260812,
+        15
+      ],
+      [
+        20260812,
+        20
+      ]
+    ]
+  },
+  "top1_percent": {
+    "shots": 2,
+    "engine1_wins": 2,
+    "parallel_rescues": 2,
+    "engine1_fewer_legs": 2,
+    "mean_cycle_reduction": 3891630674.0,
+    "mean_relative_reduction": 0.5270110934098635,
+    "shot_ids": [
+      [
+        20260811,
+        26
+      ],
+      [
+        20260809,
+        18
+      ]
+    ]
+  }
+}

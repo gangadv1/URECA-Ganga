@@ -1,0 +1,25 @@
+{
+  "decision": "PASS",
+  "scope": "complete S=1 synchronous-memory-backed P=4 single trajectory engine",
+  "fixture": {"checks": 12, "variables": 20, "incidences": 76, "shots": 3, "iteration_records": 12},
+  "results": [
+    {"shot": 0, "case": "budget exhaustion", "converged": false, "iterations": 5, "legs": 2},
+    {"shot": 1, "case": "relay rescue", "converged": true, "iterations": 5, "legs": 2, "weight": -60},
+    {"shot": 2, "case": "first-leg convergence", "converged": true, "iterations": 2, "legs": 1, "weight": -27}
+  ],
+  "bit_exact": {"mu": true, "nu": true, "marginals": true, "decisions": true,
+    "convergence": true, "weights": true, "iteration_counts": true, "leg_counts": true,
+    "final_corrections": true, "mismatches": 0},
+  "no_stall_cycles": [5960,5961,2441],
+  "stall_period_7_cycles": [6389,6392,2618],
+  "stall_wait_cycles": [429,431,177],
+  "no_stall_phase_cycles": {
+    "shots_0_and_1": {"check":1145,"variable":2820,"convergence":1400,"relay_initialization":556},
+    "shot_2": {"check":458,"variable":1128,"convergence":560,"relay_initialization":278}
+  },
+  "average_cycles_per_iteration_no_stall": 1196.8333333333,
+  "backpressure_results_unchanged": true,
+  "transaction_owner_assertions_passed": true,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

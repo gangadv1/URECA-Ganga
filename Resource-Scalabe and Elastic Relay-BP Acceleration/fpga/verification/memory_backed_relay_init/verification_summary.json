@@ -1,0 +1,22 @@
+{
+  "decision": "PASS",
+  "scope": "standalone synchronous-memory-backed P=4 relay initialization only",
+  "fixture": {"variables": 20, "incidences": 76, "cases": 5},
+  "comparisons": {"nu_resets": 380, "marginal_preservation": 100,
+    "prior_preservation": 100, "gamma_loads": 100, "reported_total": 680, "mismatches": 0},
+  "transactions_per_phase": {"reads": 73, "responses": 73, "writes": 39,
+    "edge_metadata_reads": 19, "prior_gather_reads": 34, "gamma_source_reads": 20,
+    "nu_chunk_writes": 19, "gamma_writes": 20},
+  "conflicts": {"prior_gather_retry_subsets": 15, "nu_write_conflicts": 0,
+    "nu_explanation": "four consecutive edge addresses map one-to-one to four modulo-4 banks"},
+  "latency_with_stall_period_5": {"cycles": [309,310,310,310,310],
+    "wait_cycles": [31,32,32,32,32], "cycles_per_incidence_mean": 4.0763157895,
+    "cycles_per_variable_mean": 15.49},
+  "mu_semantics": "not physically cleared; mu_valid remains zero until CHECK_UPDATE overwrites the full mu buffer",
+  "marginals_modified": false,
+  "priors_modified": false,
+  "gamma_signed_5bit": true,
+  "full_engine_integration": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

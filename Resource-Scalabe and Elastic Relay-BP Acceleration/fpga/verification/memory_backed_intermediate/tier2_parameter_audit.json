@@ -1,0 +1,22 @@
+{
+  "target": {"checks": 1728, "variables": 67752, "incidences": 391320,
+    "maximum_check_degree": 242, "maximum_variable_degree": 9, "P": 4},
+  "required_widths": {
+    "check_index": 11,
+    "variable_index": 17,
+    "edge_index": 19,
+    "row_pointer": 19,
+    "check_degree_counter": 8,
+    "variable_degree_counter": 4,
+    "edge_word_index": 17,
+    "variable_word_index": 15,
+    "check_word_index": 9
+  },
+  "partial_groups": {
+    "edge_tail_valid_lanes": 4,
+    "variable_tail_valid_lanes": 4,
+    "check_tail_valid_lanes": 4,
+    "row_tail_mask_required": true
+  },
+  "status": "generic memory wrappers represent these widths; memory-backed engine traversal integration pending"
+}

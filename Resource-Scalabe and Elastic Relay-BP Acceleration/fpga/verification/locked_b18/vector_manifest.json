@@ -1,0 +1,18 @@
+{
+  "arithmetic_vectors": 23,
+  "bias_vectors": 15,
+  "check_vectors": 11,
+  "variable_vectors": 14,
+  "oracle": "integer rules matching reference/relay_bp_fixed.py",
+  "coverage": [
+    "zero",
+    "signed extrema",
+    "saturation",
+    "gamma 0/2/4/-4/11",
+    "positive/negative half rounding",
+    "equal/repeated minima",
+    "syndrome 0/1",
+    "marginal zero",
+    "variable degree 1..9"
+  ]
+}

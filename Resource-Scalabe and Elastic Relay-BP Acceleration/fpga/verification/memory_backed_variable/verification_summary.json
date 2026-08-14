@@ -1,0 +1,20 @@
+{
+  "decision": "PASS",
+  "scope": "standalone synchronous-memory-backed P=4 variable update only",
+  "fixture": {"variables": 20, "incidences": 76, "cases": 4, "degree_range": [1, 9]},
+  "comparisons": {"variable_traces": 80, "bias": 80, "incoming_sum": 80,
+    "marginal": 80, "decision": 80, "nu_values": 304, "candidate_weights": 4,
+    "reported_scalar_and_nu_comparisons": 624, "mismatches": 0},
+  "transactions_per_phase": {"read_requests": 167, "responses": 167, "writes": 81,
+    "mu_conflict_retries": 15, "nu_conflict_retries": 15, "extra_subsets": 30},
+  "latency_with_stall_period_7": {"cycles": [610, 609, 609, 609],
+    "wait_cycles": [46, 45, 45, 45], "cycles_per_variable_mean": 30.4625,
+    "cycles_per_incidence_mean": 8.0164473684},
+  "coverage": ["degree 1 through 9", "positive and negative gamma", "marginal exactly zero",
+    "positive and negative saturation", "same-bank mu gathers", "same-bank nu writes", "partial P=4 chunks"],
+  "response_safety_assertions_passed": true,
+  "convergence_implemented": false,
+  "relay_initialization_implemented": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

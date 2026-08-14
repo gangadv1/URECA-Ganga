@@ -1,0 +1,53 @@
+{
+  "stage": "screening",
+  "p": 0.003,
+  "shots": 128,
+  "sample_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812
+  ],
+  "configuration": {
+    "first_gamma_encoded": 2,
+    "later_interval": [
+      -0.24,
+      0.66
+    ],
+    "distribution_counts_per_720": {
+      "-4": 17,
+      "-3_through_10": 50,
+      "11": 3
+    },
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60,
+    "b": 18,
+    "accumulator_bits": 22,
+    "M": 16,
+    "P": 4
+  },
+  "cycle_model": {
+    "calibration": "exhaustive Tier-2 RTL one iteration and complete intermediate multi-leg RTL",
+    "check": 508753,
+    "variable": 2489173,
+    "convergence": 790855,
+    "relay_init": 969916,
+    "metric": "architectural cycles, candidate-valid for success and failure completion for non-convergence"
+  },
+  "rng": {
+    "algorithm": "xorshift64(13,7,17)",
+    "base_seed": 7640891576956012809,
+    "pairing": "N1 S0 equals N2 engine0 S0; N2 engine1 uses independent S1"
+  },
+  "hashes": {
+    "package_manifest": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "fixed_decoder": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+    "rng_reference": "8024fa22ff0e70ad24acf097ef186edb13ddc5bf2982977a16b7abd6c9f505a8",
+    "n2_rtl": "d188640c1cecdccf510750a7f9a000ba554895f1483e4579be425d011614c2e3",
+    "rng_rtl": "841832bd82d0bcf1bf8fdaed37f2546d7830b2afe3866f288d224f116bc8d13f"
+  },
+  "git_commit": "7ae09214cf33a8dd4358ee14b45094991188aa74"
+}

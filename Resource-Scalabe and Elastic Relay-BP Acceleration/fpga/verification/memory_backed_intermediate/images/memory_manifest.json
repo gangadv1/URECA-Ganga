@@ -1,0 +1,51 @@
+{
+  "checks": 12,
+  "variables": 20,
+  "incidences": 76,
+  "P": 4,
+  "packing": "logical index e -> word floor(e/4), lane e mod 4; zero padded tail",
+  "padding": {
+    "edge_words": 0,
+    "variable_words": 0,
+    "check_words": 0
+  },
+  "widths": {
+    "pointer": 7,
+    "edge_id": 7,
+    "variable_id": 5,
+    "check_id": 4,
+    "message": 18,
+    "gamma": 5,
+    "decision": 1
+  },
+  "files": {
+    "check_ptr": {
+      "path": "check_ptr.json",
+      "sha256": "b5872a3c8742e03f7b3ca58b13da7b8f5204e9048954dd84ae431f977c906ba2"
+    },
+    "edge_var": {
+      "path": "edge_var.json",
+      "sha256": "d0ee4035993a07786efca51e85ddc6acfe2a71215c1d0163ac5a811fbe3a04c1"
+    },
+    "var_ptr": {
+      "path": "var_ptr.json",
+      "sha256": "68815659f08b86eb767a383c0629c16eae6bdb5f48f0ba1a622aa8724aa1b09f"
+    },
+    "var_edge": {
+      "path": "var_edge.json",
+      "sha256": "85afdfe100252ea5f58ee461e37bf3bc770870605c8c3747113349550f696f31"
+    },
+    "prior": {
+      "path": "prior.json",
+      "sha256": "7601628b4f0c63e81ca91ffa3acb8039c10121d3d029e763bc23ffea65d16ce2"
+    },
+    "syndrome": {
+      "path": "syndrome.json",
+      "sha256": "9f0257c504d481dbffefd37cff09da60bf7090108b3d169078727ca6ab5f6614"
+    },
+    "gamma": {
+      "path": "gamma.json",
+      "sha256": "f7a58c6da30efd7cff8a2da0ef3d212b4c7353c3db23870f15364ac118e4761a"
+    }
+  }
+}

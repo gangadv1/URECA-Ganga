@@ -1,0 +1,20 @@
+{
+  "decision": "PASS",
+  "scope": "standalone synchronous-memory-backed P=4 check update only",
+  "fixture": {"checks": 12, "variables": 20, "incidences": 76, "cases": 4},
+  "comparisons": {"check_rows": 48, "mu_values": 304, "mismatches": 0},
+  "transactions_per_phase": {"read_requests": 84, "responses": 84, "mu_writes": 24},
+  "latency": {
+    "unstalled_cycles": 229,
+    "unstalled_cycles_per_incidence": 3.0131578947,
+    "stall_period": 5,
+    "stressed_cycles": [241, 243, 243, 243],
+    "stressed_results_unchanged": true
+  },
+  "coverage": ["syndrome 0 and 1", "degrees 3 through 9", "partial P=4 chunks",
+    "unaligned CSR rows", "equal and repeated minima", "positive, negative and zero nu", "18-bit extrema"],
+  "response_safety_assertions_passed": true,
+  "variable_update_implemented": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

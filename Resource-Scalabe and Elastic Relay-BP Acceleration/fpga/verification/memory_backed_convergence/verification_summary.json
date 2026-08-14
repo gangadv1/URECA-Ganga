@@ -1,0 +1,19 @@
+{
+  "decision": "PASS",
+  "scope": "standalone synchronous-memory-backed P=4 convergence check only",
+  "fixture": {"checks": 12, "variables": 20, "incidences": 76, "decision_vectors": 6},
+  "comparisons": {"predicted_syndrome_bits": 72, "incidence_contributions": 456,
+    "residual_weights": 6, "converged_flags": 6, "mismatches": 0},
+  "transactions_per_traversal": {"read_requests": 97, "responses": 97,
+    "decision_conflict_retries": 13, "retry_subsets": 13},
+  "latency_with_stall_period_6": {"cycles": 292, "wait_cycles": 12,
+    "cycles_per_check": 24.3333333333, "cycles_per_incidence": 3.8421052632},
+  "coverage": ["valid correction", "one-bit perturbation", "multiple mismatches",
+    "all-zero", "all-one", "Relay-BP trace decision", "same-bank decision gathers",
+    "partial P=4 rows", "unaligned rows", "request-ready stalls"],
+  "response_safety_assertions_passed": true,
+  "relay_initialization_implemented": false,
+  "full_engine_integration": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

@@ -1,0 +1,21 @@
+{
+  "milestone": "Bit-exact fixed-point Relay-BP datapath primitives and P=4 single-engine structural foundation",
+  "simulator": "Icarus Verilog",
+  "numerical_format": {
+    "stored_message_bits": 18,
+    "accumulator_bits": 22,
+    "gamma_scale": 16,
+    "rounding": "nearest, ties away from zero",
+    "stored_range": [-131072, 131071]
+  },
+  "tests": {
+    "saturation_and_rounding": {"vectors": 23, "passed": 23, "failed": 0},
+    "gamma_adjusted_bias": {"vectors": 15, "passed": 15, "failed": 0},
+    "check_node": {"vectors": 11, "passed": 11, "failed": 0},
+    "variable_node": {"vectors": 14, "passed": 14, "failed": 0},
+    "p4_structural_shell": {"elaborated": true}
+  },
+  "complete_decoder_implemented": false,
+  "vivado_synthesis_run": false,
+  "n2_replication_implemented": false
+}

@@ -1,0 +1,16 @@
+{
+  "milestone": "Complete P=4 single-engine Relay-BP RTL on a small sparse graph",
+  "graph": {"checks": 3, "variables": 4, "incidences": 9, "max_check_degree": 3, "max_variable_degree": 3},
+  "shots": 3,
+  "iteration_records_compared": 10,
+  "relay_transition_shots": 2,
+  "converged_shots": 2,
+  "budget_exhausted_shots": 1,
+  "mismatches": 0,
+  "bit_exact_fields": ["mu", "marginal", "nu", "hard_decision", "convergence", "total_iterations", "relay_legs", "final_correction", "candidate_weight"],
+  "primitive_regression": "pass",
+  "python_directed_regression": "pass",
+  "tier2_simulation_run": false,
+  "n2_implemented": false,
+  "vivado_synthesis_run": false
+}

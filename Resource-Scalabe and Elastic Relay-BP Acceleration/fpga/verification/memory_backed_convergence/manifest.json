@@ -1,0 +1,44 @@
+{
+  "checks": 12,
+  "variables": 20,
+  "incidences": 76,
+  "cases": [
+    {
+      "case": 0,
+      "name": "valid",
+      "mismatches": 0,
+      "converged": 1
+    },
+    {
+      "case": 1,
+      "name": "one_bit_perturbation",
+      "mismatches": 7,
+      "converged": 0
+    },
+    {
+      "case": 2,
+      "name": "multiple_mismatches",
+      "mismatches": 9,
+      "converged": 0
+    },
+    {
+      "case": 3,
+      "name": "all_zero",
+      "mismatches": 7,
+      "converged": 0
+    },
+    {
+      "case": 4,
+      "name": "all_one",
+      "mismatches": 8,
+      "converged": 0
+    },
+    {
+      "case": 5,
+      "name": "relay_trace_decision",
+      "mismatches": 0,
+      "converged": 1
+    }
+  ],
+  "predicted_syndrome_comparisons": 72
+}
