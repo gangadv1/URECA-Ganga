@@ -1,0 +1,40 @@
+{
+  "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+  "python_version": "3.13.6",
+  "python_interfaces": {
+    "pymetis": {
+      "importable": false,
+      "version": null
+    },
+    "metis": {
+      "importable": false,
+      "version": null
+    },
+    "networkit": {
+      "importable": false,
+      "version": null
+    },
+    "nxmetis": {
+      "importable": false,
+      "version": null
+    }
+  },
+  "metis_executables": {
+    "gpmetis": null,
+    "mpmetis": null,
+    "ndmetis": null
+  },
+  "available_python_interfaces": [],
+  "available_metis_executables": [],
+  "metis_compatible_interface_available": false,
+  "packages_installed_by_experiment": [],
+  "experiment_status": "blocked_before_partition_execution",
+  "reason": "No installed METIS-compatible Python interface or executable was found.",
+  "metis_run_count": 0,
+  "partition_assignments_created": false,
+  "control_assignments_created": false,
+  "permutations_created": false,
+  "relay_bp_run": false,
+  "rtl_modified": false,
+  "multi_constraint_support": "not assessable until an interface is available"
+}

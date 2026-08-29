@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Sequence
+from typing import Callable, Sequence
 
 import numpy as np
 
@@ -106,6 +106,7 @@ class FloatRelayBPDecoder:
         gamma: float | None = None,
         leg_configs: Sequence[RelayLegConfig] | None = None,
         trace_messages: bool = False,
+        iteration_callback: Callable[[dict[str, object]], None] | None = None,
         *,
         S: int = 1,
         R: int = 301,
@@ -138,6 +139,11 @@ class FloatRelayBPDecoder:
         # one persistent stream across sequential decode calls.
         self._rng = np.random.default_rng(self.seed)
         self.trace_messages = bool(trace_messages)
+        # Optional analysis-only observation hook.  The callback is disabled by
+        # default and is deliberately outside the decoder's state transitions:
+        # it observes the completed iteration before the normal convergence
+        # break and must not mutate the supplied arrays.
+        self.iteration_callback = iteration_callback
 
         if leg_configs is not None:
             if not leg_configs:
@@ -326,6 +332,21 @@ class FloatRelayBPDecoder:
                             var_to_check=nu_trace,
                             check_to_var=mu_trace,
                         )
+                    )
+
+                if self.iteration_callback is not None:
+                    self.iteration_callback(
+                        {
+                            "leg_index": leg_index,
+                            "iteration": iteration,
+                            "global_iteration": total_iterations,
+                            "gamma": gamma_values,
+                            "lambda_bias": lambda_bias,
+                            "beliefs": final_marginals,
+                            "decoded_error": last_decision,
+                            "residual": last_residual,
+                            "converged": converged,
+                        }
                     )
 
                 nu_previous = nu_current

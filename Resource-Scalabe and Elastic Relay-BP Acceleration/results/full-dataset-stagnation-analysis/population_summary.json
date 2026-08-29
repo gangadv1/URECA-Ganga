@@ -1,0 +1,204 @@
+{
+  "shots": 128,
+  "iterations": 24433,
+  "legs": 419,
+  "trajectory_outcomes": {
+    "one_leg_success": 69,
+    "multi_leg_success": 56,
+    "failure": 3
+  },
+  "leg_categories": {
+    "productive": 223,
+    "regressive": 101,
+    "stagnant": 95
+  },
+  "leg_category_fractions": {
+    "productive": 0.5322195704057279,
+    "regressive": 0.24105011933174225,
+    "stagnant": 0.22673031026252982
+  },
+  "thresholds": [
+    10,
+    20,
+    40,
+    60,
+    80,
+    120,
+    180,
+    240
+  ],
+  "target_definitions": {
+    "1": "next relay leg has no strict global-best residual improvement",
+    "2": "neither of next two relay legs has a strict global-best residual improvement",
+    "3": "none of next three relay legs has a strict global-best residual improvement",
+    "4": "120 subsequent iterations elapse without a strict global-best residual improvement"
+  },
+  "eligibility": "A negative target is determinable as soon as a future improvement occurs; a positive target requires the full requested future horizon. Converged observation points are excluded.",
+  "representative_false_positives": {
+    "rule": "leg boundary, stagnation >=120, Target 3",
+    "count": 46,
+    "unique_shots": 20,
+    "examples": [
+      {
+        "sample_seed": 20260809,
+        "shot": 16,
+        "relay_leg": 3,
+        "iterations_since_best": 147,
+        "end_residual": 17,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 18,
+        "relay_leg": 4,
+        "iterations_since_best": 151,
+        "end_residual": 17,
+        "running_best": 5
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 27,
+        "relay_leg": 3,
+        "iterations_since_best": 159,
+        "end_residual": 36,
+        "running_best": 2
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 29,
+        "relay_leg": 6,
+        "iterations_since_best": 271,
+        "end_residual": 18,
+        "running_best": 3
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 29,
+        "relay_leg": 7,
+        "iterations_since_best": 331,
+        "end_residual": 11,
+        "running_best": 3
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 29,
+        "relay_leg": 8,
+        "iterations_since_best": 391,
+        "end_residual": 13,
+        "running_best": 3
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 4,
+        "relay_leg": 6,
+        "iterations_since_best": 148,
+        "end_residual": 45,
+        "running_best": 3
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 4,
+        "relay_leg": 7,
+        "iterations_since_best": 208,
+        "end_residual": 81,
+        "running_best": 3
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 4,
+        "relay_leg": 13,
+        "iterations_since_best": 327,
+        "end_residual": 10,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 4,
+        "relay_leg": 14,
+        "iterations_since_best": 387,
+        "end_residual": 141,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 4,
+        "relay_leg": 15,
+        "iterations_since_best": 447,
+        "end_residual": 398,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 9,
+        "relay_leg": 4,
+        "iterations_since_best": 158,
+        "end_residual": 10,
+        "running_best": 8
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 9,
+        "relay_leg": 21,
+        "iterations_since_best": 926,
+        "end_residual": 14,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 9,
+        "relay_leg": 22,
+        "iterations_since_best": 986,
+        "end_residual": 3,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 9,
+        "relay_leg": 23,
+        "iterations_since_best": 1046,
+        "end_residual": 164,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 19,
+        "relay_leg": 6,
+        "iterations_since_best": 261,
+        "end_residual": 21,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 19,
+        "relay_leg": 7,
+        "iterations_since_best": 321,
+        "end_residual": 129,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 19,
+        "relay_leg": 8,
+        "iterations_since_best": 381,
+        "end_residual": 48,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 20,
+        "relay_leg": 3,
+        "iterations_since_best": 147,
+        "end_residual": 187,
+        "running_best": 1
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 20,
+        "relay_leg": 4,
+        "iterations_since_best": 207,
+        "end_residual": 6,
+        "running_best": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "baseline_artifacts": "results/graph-partitioning-baseline",
+  "combined_vertex_indexing": {
+    "check": "combined_id = detector_id, range 0..1727",
+    "fault": "combined_id = 1728 + fault_id, range 1728..69479"
+  },
+  "dimensions": {
+    "checks": 1728,
+    "faults": 67752,
+    "incidences": 391320,
+    "observables": 12,
+    "combined_vertices": 69480,
+    "undirected_edges": 391320,
+    "observable_fault_incidences": 110971
+  },
+  "balance_targets_k4": {
+    "checks_per_partition": 432.0,
+    "faults_per_partition": 16938.0,
+    "check_degree_work_per_partition": 97830.0,
+    "fault_degree_work_per_partition": 97830.0
+  },
+  "conceptual_vertex_weight_channels": {
+    "check_indicator": "1 for check vertices, 0 for fault vertices",
+    "fault_indicator": "0 for check vertices, 1 for fault vertices",
+    "check_degree": "detector-fault degree for checks, 0 for faults",
+    "fault_degree": "0 for checks, detector-fault degree for faults"
+  },
+  "validation": {
+    "dimensions_match_expected": true,
+    "fault_ids_in_range": true,
+    "detector_ids_in_range": true,
+    "observable_fault_ids_in_range": true,
+    "observable_ids_in_range": true,
+    "probability_shape_exact": true,
+    "duplicate_detector_fault_incidences": 0,
+    "no_detector_fault_incidence_duplicates": true
+  }
+}

@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Sequence
+from typing import Callable, Sequence
 
 import numpy as np
 from scipy import sparse
@@ -84,7 +84,12 @@ class FixedRelayBPDecoder:
     Every division rounds to nearest with ties away from zero.
     """
 
-    def __init__(self, h_matrix: np.ndarray | sparse.spmatrix | Path | str, config: FixedRelayConfig):
+    def __init__(
+        self,
+        h_matrix: np.ndarray | sparse.spmatrix | Path | str,
+        config: FixedRelayConfig,
+        iteration_callback: Callable[[dict[str, object]], None] | None = None,
+    ):
         if isinstance(h_matrix, (Path, str)):
             raise ValueError("Tier-2 fixed decoding requires an explicit sparse incidence matrix")
         if sparse.issparse(h_matrix):
@@ -111,6 +116,10 @@ class FixedRelayBPDecoder:
         self._edge_variables = h.indices.astype(np.int32, copy=True)
         self._edge_checks = np.repeat(np.arange(h.shape[0], dtype=np.int32), np.diff(h.indptr))
         self._saturations: dict[str, int] = {}
+        # Disabled-by-default analysis hook.  It observes a completed iteration
+        # before the existing convergence break and must not mutate supplied
+        # arrays.  No arithmetic, update ordering, or stopping rule depends on it.
+        self.iteration_callback = iteration_callback
 
     @property
     def message_min(self) -> int:
@@ -261,6 +270,24 @@ class FixedRelayBPDecoder:
                             "decision_weight": int(last_decision.sum()),
                             "belief_min": int(final_marginals.min()),
                             "belief_max": int(final_marginals.max()),
+                            "saturation_counts": dict(self._saturations),
+                        }
+                    )
+                if self.iteration_callback is not None:
+                    self.iteration_callback(
+                        {
+                            "leg_index": leg_index,
+                            "iteration": iteration,
+                            "global_iteration": total_iterations,
+                            "gamma_float": gamma_float,
+                            "gamma_int": gamma_int,
+                            "lambda_bias": lambda_bias,
+                            "check_to_var": mu,
+                            "var_to_check": nu_current,
+                            "beliefs": final_marginals,
+                            "decoded_error": last_decision,
+                            "residual": residual,
+                            "converged": bool(not residual.any()),
                             "saturation_counts": dict(self._saturations),
                         }
                     )

@@ -1,0 +1,108 @@
+{
+  "source": "fpga/verification/small_graph_b18/generate_small_graph_vectors.py",
+  "H": [
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1
+    ]
+  ],
+  "check_nodes": [
+    "C0",
+    "C1",
+    "C2"
+  ],
+  "fault_variable_nodes": [
+    "V0",
+    "V1",
+    "V2",
+    "V3"
+  ],
+  "edges": [
+    {
+      "check": "C0",
+      "variable": "V0"
+    },
+    {
+      "check": "C0",
+      "variable": "V1"
+    },
+    {
+      "check": "C0",
+      "variable": "V2"
+    },
+    {
+      "check": "C1",
+      "variable": "V1"
+    },
+    {
+      "check": "C1",
+      "variable": "V2"
+    },
+    {
+      "check": "C1",
+      "variable": "V3"
+    },
+    {
+      "check": "C2",
+      "variable": "V0"
+    },
+    {
+      "check": "C2",
+      "variable": "V2"
+    },
+    {
+      "check": "C2",
+      "variable": "V3"
+    }
+  ],
+  "check_to_variable": {
+    "C0": [
+      "V0",
+      "V1",
+      "V2"
+    ],
+    "C1": [
+      "V1",
+      "V2",
+      "V3"
+    ],
+    "C2": [
+      "V0",
+      "V2",
+      "V3"
+    ]
+  },
+  "variable_to_check": {
+    "V0": [
+      "C0",
+      "C2"
+    ],
+    "V1": [
+      "C0",
+      "C1"
+    ],
+    "V2": [
+      "C0",
+      "C1",
+      "C2"
+    ],
+    "V3": [
+      "C1",
+      "C2"
+    ]
+  }
+}

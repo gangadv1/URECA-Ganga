@@ -1,0 +1,114 @@
+{
+  "baseline": "unpartitioned",
+  "partition_count": null,
+  "permutation_applied": false,
+  "source": {
+    "package": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "tier": "tier-2-circuit-level",
+    "code": "gross_144_12_12",
+    "memory_basis": "Z",
+    "physical_error_probability": 0.003
+  },
+  "nodes": {
+    "checks": 1728,
+    "faults": 67752,
+    "logical_observables": 12,
+    "bipartite_total": 69480
+  },
+  "incidences": {
+    "detector_fault": 391320,
+    "observable_fault": 110971
+  },
+  "degree_statistics": {
+    "checks": {
+      "min": 51,
+      "max": 242,
+      "mean": 226.45833333333334,
+      "median": 242.0,
+      "percentiles": {
+        "1": 51.0,
+        "5": 115.0,
+        "25": 240.0,
+        "50": 242.0,
+        "75": 242.0,
+        "95": 242.0,
+        "99": 242.0
+      }
+    },
+    "faults": {
+      "min": 1,
+      "max": 9,
+      "mean": 5.7757704569606805,
+      "median": 6.0,
+      "percentiles": {
+        "1": 2.0,
+        "5": 3.0,
+        "25": 5.0,
+        "50": 6.0,
+        "75": 7.0,
+        "95": 9.0,
+        "99": 9.0
+      }
+    }
+  },
+  "degree_histograms": {
+    "checks": {
+      "51": 72,
+      "115": 72,
+      "221": 72,
+      "228": 72,
+      "230": 72,
+      "234": 72,
+      "242": 1296
+    },
+    "faults": {
+      "1": 144,
+      "2": 1872,
+      "3": 10008,
+      "4": 3312,
+      "5": 11880,
+      "6": 18792,
+      "7": 8064,
+      "8": 7560,
+      "9": 6120
+    }
+  },
+  "connectivity": {
+    "component_count": 1,
+    "largest_component_nodes": 69480,
+    "largest_component_fraction": 1.0,
+    "isolated_check_nodes": 0,
+    "isolated_fault_nodes": 0,
+    "isolated_nodes_total": 0,
+    "component_size_histogram": {
+      "69480": 1
+    }
+  },
+  "sparsity": {
+    "possible_detector_fault_pairs": 117075456,
+    "bipartite_density": 0.003342459755185579,
+    "matrix_sparsity_fraction": 0.9966575402448145,
+    "mean_degree_all_bipartite_nodes": 11.264248704663212
+  },
+  "array_hashes": {
+    "detector_edges": "683b7729b1145b1648e48ad89672ae208c64d32b88a83dbf87692c6a8ac88ecb",
+    "observable_edges": "a15e3c04fb805509da35d06342498f359e84a4605e1d88162e5a4c024dfd6568",
+    "fault_probabilities": "e9735a62c424a748775fe33d650a74400e157eb1e9df4f05521006f1bc556e09",
+    "H_indptr": "6d73a0cee48d64e55d357f73d1ec30b93944e1d6fd331819b4c996858e6c01fe",
+    "H_indices": "c8f2b4a124983db837919c3798395f52bf7a6db4a3a64d80ab5734c0efb4dcb1",
+    "A_indptr": "4407284098d68d8003e47329c174d5677e99501090dfd84cd67047b991babeb1",
+    "A_indices": "774343132edc3d84731701d1239ab26c36c06904bf991b9df39a20dc61cb9c6c"
+  },
+  "invariance_checks": {
+    "H_exact": true,
+    "A_exact": true,
+    "H_exact_vs_existing_tier2_baseline": true,
+    "A_exact_vs_existing_tier2_baseline": true,
+    "detector_fault_incidence_set_exact": true,
+    "observable_fault_incidence_set_exact": true,
+    "fault_probability_order_exact": true,
+    "fault_probability_order_exact_vs_existing_tier2_baseline": true,
+    "node_ids_unchanged": true,
+    "permutation_applied": false
+  }
+}

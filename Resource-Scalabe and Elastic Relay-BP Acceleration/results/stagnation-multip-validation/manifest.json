@@ -1,0 +1,66 @@
+{
+  "purpose": "out-of-sample validation; frozen rule, no tuning",
+  "packages": [
+    {
+      "p": 0.002,
+      "package_path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p002",
+      "existing_sample_path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p002/circuit_samples.npz",
+      "existing_samples": 16,
+      "existing_has_syndrome": true,
+      "existing_has_logical": true,
+      "validation_sample_seed": 20260902,
+      "validation_shots": 64
+    },
+    {
+      "p": 0.004,
+      "package_path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p004",
+      "existing_sample_path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p004/circuit_samples.npz",
+      "existing_samples": 16,
+      "existing_has_syndrome": true,
+      "existing_has_logical": true,
+      "validation_sample_seed": 20260904,
+      "validation_shots": 64
+    }
+  ],
+  "sample_archive": "validation_samples.npz",
+  "sample_generation": "stim circuit detector sampler, separate observables",
+  "decoder_seed_derivation": "splitmix64(BASE_SEED ^ sample_seed ^ (shot * 0x100000001b3))",
+  "base_decoder_seed": 7640891576956012809,
+  "configuration": {
+    "b": 18,
+    "accumulator_bits": 22,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_gamma_encoded": 2,
+    "first_limit": 80,
+    "later_limit": 60,
+    "later_gamma_interval": [
+      -0.24,
+      0.66
+    ],
+    "rng": "xorshift64(13,7,17)"
+  },
+  "frozen_rule": "iterations_since_last_strict_new_best >= 120 at completed relay-leg boundary",
+  "runtime_stop_rule": "p=.004 may stop after >=32 if projected 64-shot decoder time exceeds 45 minutes",
+  "runtime": {
+    "0.002": {
+      "shots_completed": 64,
+      "decoder_wall_seconds": 282.7920464181807,
+      "elapsed_wall_seconds": 282.81044275010936,
+      "mean_seconds_per_shot": 4.418625725284073,
+      "max_seconds_per_shot": 12.606456249952316,
+      "full_budget_trajectories": 0,
+      "projected_64_decoder_minutes": 4.713200773636345
+    },
+    "0.004": {
+      "shots_completed": 64,
+      "decoder_wall_seconds": 1328.8679927522317,
+      "elapsed_wall_seconds": 1328.8977903330233,
+      "mean_seconds_per_shot": 20.76356238675362,
+      "max_seconds_per_shot": 106.46389129199088,
+      "full_budget_trajectories": 8,
+      "projected_64_decoder_minutes": 22.147799879203863
+    }
+  }
+}

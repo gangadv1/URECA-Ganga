@@ -1,0 +1,452 @@
+{
+  "panel": [
+    [
+      20260809,
+      31
+    ],
+    [
+      20260810,
+      15
+    ],
+    [
+      20260811,
+      6
+    ],
+    [
+      20260809,
+      2
+    ],
+    [
+      20260810,
+      22
+    ],
+    [
+      20260811,
+      25
+    ],
+    [
+      20260812,
+      14
+    ],
+    [
+      20260811,
+      28
+    ],
+    [
+      20260810,
+      4
+    ],
+    [
+      20260810,
+      9
+    ],
+    [
+      20260809,
+      18
+    ],
+    [
+      20260810,
+      26
+    ],
+    [
+      20260811,
+      26
+    ]
+  ],
+  "trajectories_reproduced": 26,
+  "total": 26,
+  "mismatches": [],
+  "iterations_traced": 15123,
+  "relay_legs_traced": 254,
+  "checks": [
+    {
+      "sample_seed": 20260809,
+      "shot": 31,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260809,
+      "shot": 31,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 15,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 15,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 6,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 6,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260809,
+      "shot": 2,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260809,
+      "shot": 2,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 22,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 22,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 25,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 25,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260812,
+      "shot": 14,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260812,
+      "shot": 14,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 28,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 28,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 4,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 4,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 9,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 9,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260809,
+      "shot": 18,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260809,
+      "shot": 18,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 26,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260810,
+      "shot": 26,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 26,
+      "trajectory": "E0",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    },
+    {
+      "sample_seed": 20260811,
+      "shot": 26,
+      "trajectory": "E1",
+      "exact_reproduction": 1,
+      "match_convergence": 1,
+      "match_logical": 1,
+      "match_iterations": 1,
+      "match_legs": 1,
+      "match_weight": 1,
+      "match_final_rng_state": 1,
+      "match_rng_words": 1,
+      "match_accepted_gamma": 1
+    }
+  ],
+  "thresholds": {
+    "marginal_near_zero_abs_le": 16,
+    "meaningful_residual_improvement": 5,
+    "frozen_movement_le": 2,
+    "churning_movement_ge": 10
+  },
+  "leg_threshold_sensitivity": {
+    "1": {
+      "productive": 62,
+      "stagnant": 99,
+      "regressive": 93
+    },
+    "5": {
+      "productive": 48,
+      "stagnant": 118,
+      "weak": 14,
+      "regressive": 74
+    },
+    "10": {
+      "productive": 45,
+      "stagnant": 133,
+      "weak": 17,
+      "regressive": 59
+    }
+  }
+}

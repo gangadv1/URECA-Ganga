@@ -1,0 +1,17 @@
+node_type,degree,node_count
+check,51,72
+check,115,72
+check,221,72
+check,228,72
+check,230,72
+check,234,72
+check,242,1296
+fault,1,144
+fault,2,1872
+fault,3,10008
+fault,4,3312
+fault,5,11880
+fault,6,18792
+fault,7,8064
+fault,8,7560
+fault,9,6120
