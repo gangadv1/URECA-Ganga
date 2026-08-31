@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "trajectory": "E0",
+  "trajectories": 128,
+  "classification_counts": {
+    "EXACT MATCH": 128,
+    "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "all_exact": true,
+  "total_trace_iterations": 24433,
+  "converged": 125,
+  "failures": 3,
+  "archived_original_reproductions": 128,
+  "candidate_weight": {
+    "successful_candidates": 125,
+    "maximum_absolute_delta": 1.1368683772161603e-13,
+    "median_absolute_delta": 0.0,
+    "selection_affected": 0,
+    "S1_reporting_only": true
+  }
+}

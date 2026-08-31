@@ -1,0 +1,3 @@
+sample_seed,shot,policy,round_robin_winner,priority_winner,round_robin_cycles,priority_cycles,logical_correct,correction_hash
+20260811,25,P1_stagnation_1to2,1,0,2068055950.0,2216998115.0,1,cc22e709bdd945a3447d89cb83f9b89f1bc4e917d0771c438a98da27c2c16e94
+20260811,25,P2_stagnation_1to3,1,0,2068055950.0,2159134685.0,1,cc22e709bdd945a3447d89cb83f9b89f1bc4e917d0771c438a98da27c2c16e94

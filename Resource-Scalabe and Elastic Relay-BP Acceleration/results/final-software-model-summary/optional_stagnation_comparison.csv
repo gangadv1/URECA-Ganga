@@ -1,0 +1,3 @@
+condition,mean_modeled_change_percent,p95_modeled_change_percent,correctness_preservation,validation_scope
+BA2 shared-resource round-robin,0.0,0.0,"128/128 successes; zero regressions/starvation","p=0.003, 128 paired E0/E1 shots"
+BA2 + optional frozen 2:1 stagnation priority,-0.39228487362792386,-3.4737328428922076,"128/128 successes; zero regressions/starvation; all 48 late recoveries preserved","p=0.003 only; p=0.002/0.004 paired E1 archives unavailable"

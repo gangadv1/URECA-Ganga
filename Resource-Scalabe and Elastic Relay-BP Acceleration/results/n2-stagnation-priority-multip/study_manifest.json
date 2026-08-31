@@ -1,0 +1,58 @@
+{
+  "status": "incomplete_missing_archived_E1",
+  "purpose": "out-of-sample validation of frozen P1; no tuning",
+  "shared_resource_model": "unchanged from results/n2-stagnation-priority",
+  "policy": {
+    "threshold": 120,
+    "minimum_leg": 3,
+    "ratio": "2:1",
+    "both_or_neither": "1:1",
+    "strict_improvement": "clear flag immediately",
+    "termination": false
+  },
+  "inputs": {
+    "samples": "652e70dfc23191f3964a3ab8fb18914e635ee1153de7a77ab6e462d05b22c2bd",
+    "E0_metadata": "13f1252a5a10baad1b195bfccaa672c59765881ff6a9085938e2f052235dc585",
+    "E0_legs": "ceb04364933253b5f55e686f2a1e26197c2fb06dd42bc88dbfa041a71cb25c6e",
+    "p003_summary": "1628e8edf08670d4ffe040c1a052ef6ce448da7193b38e8d34fdb1a0faf07c46"
+  },
+  "dataset_audit": [
+    {
+      "p": "0.002",
+      "shots": 64,
+      "syndromes": "EXISTS",
+      "logical_outcomes": "EXISTS",
+      "E0_rng_seeds": "EXISTS",
+      "E0_trajectory_metadata": "EXISTS",
+      "E0_per_leg_trace": "EXISTS",
+      "E0_per_iteration_trace": "MISSING_BUT_REGENERABLE_FROM_ARCHIVED_SEED",
+      "E1_rng_seeds": "MISSING",
+      "E1_trajectory_metadata": "MISSING",
+      "E1_corrections": "MISSING",
+      "E1_final_rng_state": "MISSING",
+      "E1_trace": "MISSING",
+      "P0_P1_validation_status": "NOT_RUN_MISSING_PAIRED_E1",
+      "archived_E0_rows": 64,
+      "archived_E0_leg_rows": 81
+    },
+    {
+      "p": "0.004",
+      "shots": 64,
+      "syndromes": "EXISTS",
+      "logical_outcomes": "EXISTS",
+      "E0_rng_seeds": "EXISTS",
+      "E0_trajectory_metadata": "EXISTS",
+      "E0_per_leg_trace": "EXISTS",
+      "E0_per_iteration_trace": "MISSING_BUT_REGENERABLE_FROM_ARCHIVED_SEED",
+      "E1_rng_seeds": "MISSING",
+      "E1_trajectory_metadata": "MISSING",
+      "E1_corrections": "MISSING",
+      "E1_final_rng_state": "MISSING",
+      "E1_trace": "MISSING",
+      "P0_P1_validation_status": "NOT_RUN_MISSING_PAIRED_E1",
+      "archived_E0_rows": 64,
+      "archived_E0_leg_rows": 448
+    }
+  ],
+  "decision": "Do not derive or choose new E1 seeds retrospectively; acquire a predeclared paired E1 archive first."
+}

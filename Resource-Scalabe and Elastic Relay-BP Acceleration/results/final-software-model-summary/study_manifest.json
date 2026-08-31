@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "study_type": "consolidation_only",
+  "selected_layout": "BA2",
+  "new_decoder_runs": false,
+  "new_layout_variants": false,
+  "RTL_modified": false,
+  "synthesis_run": false,
+  "source_artifacts": {
+    "graph_baseline": {
+      "path": "results/graph-partitioning-baseline/graph_stats.json",
+      "sha256": "76b099330711989d16d060343f35ababf10d296d5269a49c9c587218ec01d403"
+    },
+    "METIS": {
+      "path": "results/graph-partitioning-metis/partition_metrics.json",
+      "sha256": "38cbad129806bc5627d8b404b952c39d40e745d240a94f0058e5598b15959fbb"
+    },
+    "BA2_structural": {
+      "path": "results/bank-aware-folding-layout/variant_comparison.csv",
+      "sha256": "0329e501dcddf3337c61e34c2afd8194edd704d7916c9eda9420b3aa216e9f72"
+    },
+    "BA2_trajectory": {
+      "path": "results/bank-aware-folding-layout/cycle_summary.csv",
+      "sha256": "77c46521bbbd89ce31760684050e81fb7d593061b0322af6ffca76f658670cc5"
+    },
+    "BA2_E0_equivalence": {
+      "path": "results/bank-aware-folding-layout-equivalence/e0_summary.json",
+      "sha256": "6c894191bec3257de3b30d564a77018efb9fe0a7c8f96eeaf98e5c4cec955231"
+    },
+    "BA2_E1_equivalence": {
+      "path": "results/bank-aware-folding-layout-equivalence/e1_summary.json",
+      "sha256": "24aa2a46667f9318fa7b31a86bd57024c73d3de65de820ff846e7c8e5b2b4c3d"
+    },
+    "layout_decision": {
+      "path": "results/bank-aware-layout-decision/decision_summary.json",
+      "sha256": "32d83d7c258e62294de294671a2b0f7c0a42e96eee3dc3bbb136c31a2e57ccbd"
+    },
+    "stagnation_priority": {
+      "path": "results/n2-stagnation-priority/policy_summary.csv",
+      "sha256": "1628e8edf08670d4ffe040c1a052ef6ce448da7193b38e8d34fdb1a0faf07c46"
+    },
+    "stagnation_cross_p_audit": {
+      "path": "results/n2-stagnation-priority-multip/study_manifest.json",
+      "sha256": "dbcf4d5c3763539e6399b5fce100460252f79e5fe4c8a193bc111f857c761cec"
+    }
+  },
+  "interpretation": {
+    "main_layout": "BA2",
+    "METIS": "valuable locality diagnostic but not a bank-compatible layout",
+    "stagnation_priority": "optional experimental scheduling signal, excluded from main architecture",
+    "hardware_claim": "none"
+  }
+}

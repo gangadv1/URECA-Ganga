@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "trajectories": 128,
+  "circuit_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812
+  ],
+  "shots_per_seed": 32,
+  "classification_counts": {
+    "EXACT MATCH": 128,
+    "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "all_exact": true,
+  "total_trace_iterations": 24433,
+  "candidate_weight": {
+    "successful_candidates": 125,
+    "maximum_absolute_delta": 1.1368683772161603e-13,
+    "median_absolute_delta": 0.0,
+    "selection_affected": 0,
+    "S=1_reporting_only": true
+  },
+  "optional_n2_run": false,
+  "optional_n2_reason": "N=1 broad equivalence completed first; N=2 would triple the paired decode workload and is deferred.",
+  "configuration": {
+    "decoder": "reference/relay_bp_fixed.py::FixedRelayBPDecoder",
+    "b": 18,
+    "g": 4,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  },
+  "dataset": {
+    "samples": "results/circuit-level-multiseed/paired_samples.npz",
+    "archive": "results/n1-vs-n2-hardware-latency/per_shot_results.csv",
+    "syndrome_storage": "paired_samples.npz boolean array [5,128,1728]",
+    "logical_storage": "paired_samples.npz boolean array [5,128,12]",
+    "gamma_metadata": "per_shot_results.csv s0/e0_* fields; xorshift64 reference generator"
+  },
+  "hashes": {
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "archive": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9",
+    "permutations": "c743f798176c3b7e45547a2323f16543a333f39e39ae9545e948fb361a23cfbd",
+    "decoder": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "gamma_reference": "8024fa22ff0e70ad24acf097ef186edb13ddc5bf2982977a16b7abd6c9f505a8"
+  }
+}

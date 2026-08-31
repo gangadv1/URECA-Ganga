@@ -1,0 +1,7 @@
+graph,source,checks,faults,incidences,logical_observables,physical_error_rate,sample_archive,Relay_BP_archive,meaningfully_different_topology
+Gross memory-Z r12 p=0.001,graphs/generated/gross_circuit_level/memory_Z_r12_p0p001,1728,67752,391320,12,0.001,16 circuit samples in package,none,no; incidence-identical to canonical
+Gross memory-Z r12 p=0.002,graphs/generated/gross_circuit_level/memory_Z_r12_p0p002,1728,67752,391320,12,0.002,16 circuit samples in package,64 archived fixed E0 only,no; incidence-identical to canonical
+Gross memory-Z r12 p=0.003,graphs/generated/gross_circuit_level/memory_Z_r12_p0p003,1728,67752,391320,12,0.003,16 circuit samples in package,128 archived fixed E0/E1,no; incidence-identical to canonical
+Gross memory-Z r12 p=0.004,graphs/generated/gross_circuit_level/memory_Z_r12_p0p004,1728,67752,391320,12,0.004,16 circuit samples in package,64 archived fixed E0 only,no; incidence-identical to canonical
+Gross memory-Z r12 p=0.005,graphs/generated/gross_circuit_level/memory_Z_r12_p0p005,1728,67752,391320,12,0.005,16 circuit samples in package,none,no; incidence-identical to canonical
+"Gross [[144,12,12]] code capacity",graphs/generated/gross_code_capacity,144,288,864,unavailable,0.001,64 synthetic paired shots at p=0.03 in results/baseline-simulations,canonical float only; no suitable fixed-point equivalence panel,yes; selected structural target

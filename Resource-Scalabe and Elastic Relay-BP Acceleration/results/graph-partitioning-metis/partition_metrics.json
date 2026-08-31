@@ -1,0 +1,873 @@
+{
+  "status": "complete",
+  "experiment_label": "LIMITED METIS BASELINE",
+  "interface": {
+    "name": "pymetis",
+    "version": "2025.2.2",
+    "python": "3.13.6",
+    "direct_kway": true,
+    "fixed_seed": true,
+    "imbalance_tolerance": true,
+    "multi_constraint_vertex_weights": false
+  },
+  "enforced_balance": "single scalar degree weight plus deterministic exact typed-count rebalancing",
+  "conceptual_workload_tolerance": 0.05,
+  "metis_options": {
+    "k": 4,
+    "recursive": false,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ufactor": 30,
+    "objtype": 0,
+    "ncuts": 1,
+    "niter": 10
+  },
+  "unpartitioned_reference": {
+    "vertices": 69480,
+    "edges": 391320,
+    "k4_cut_metrics": null
+  },
+  "metis_runs": [
+    {
+      "name": "metis_limited",
+      "seed": 1,
+      "runtime_seconds": 0.1367215829959605,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        100831,
+        94230,
+        102443,
+        93816
+      ],
+      "fault_degree_workloads": [
+        95711,
+        99692,
+        99820,
+        96097
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.04715322498211183,
+        "fault_work": 0.021660022487989372
+      },
+      "maximum_conceptual_imbalance": 0.04715322498211183,
+      "edge_cut_count": 47204,
+      "edge_cut_ratio": 0.12062761933967085,
+      "boundary_check_count": 1456,
+      "boundary_check_fraction": 0.8425925925925926,
+      "boundary_fault_count": 24150,
+      "boundary_fault_fraction": 0.3564470421537372,
+      "mean_partitions_touched_per_check": 1.8923611111111112,
+      "max_partitions_touched_per_check": 3,
+      "mean_partitions_touched_per_fault": 1.3504841185500058,
+      "max_partitions_touched_per_fault": 3,
+      "raw_metis_edge_cut_reported": 43001,
+      "raw_metis_metrics": {
+        "name": "raw_metis",
+        "seed": 1,
+        "runtime_seconds": 0.08280670800013468,
+        "check_counts": [
+          500,
+          375,
+          384,
+          469
+        ],
+        "fault_counts": [
+          17239,
+          16795,
+          16423,
+          17295
+        ],
+        "check_degree_workloads": [
+          104872,
+          90750,
+          92928,
+          102770
+        ],
+        "fault_degree_workloads": [
+          96666,
+          99217,
+          97039,
+          98398
+        ],
+        "imbalance_fraction": {
+          "check_count": 0.15740740740740744,
+          "fault_count": 0.030405006494273246,
+          "check_work": 0.07237043851579272,
+          "fault_work": 0.01417765511601754
+        },
+        "maximum_conceptual_imbalance": 0.15740740740740744,
+        "edge_cut_count": 43001,
+        "edge_cut_ratio": 0.10988704896248594,
+        "boundary_check_count": 1337,
+        "boundary_check_fraction": 0.7737268518518519,
+        "boundary_fault_count": 20846,
+        "boundary_fault_fraction": 0.3076809540677766,
+        "mean_partitions_touched_per_check": 1.7737268518518519,
+        "max_partitions_touched_per_check": 2,
+        "mean_partitions_touched_per_fault": 1.2994302751210296,
+        "max_partitions_touched_per_fault": 2
+      },
+      "typed_rebalance": {
+        "check_stage": {
+          "counts_before": [
+            500,
+            375,
+            384,
+            469
+          ],
+          "target_counts": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "counts_after": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "move_count": 105,
+          "sum_local_cut_delta": 5825
+        },
+        "fault_stage": {
+          "counts_before": [
+            17239,
+            16795,
+            16423,
+            17295
+          ],
+          "target_counts": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "counts_after": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "move_count": 658,
+          "sum_local_cut_delta": -1622
+        }
+      },
+      "acceptable": true
+    },
+    {
+      "name": "metis_limited",
+      "seed": 2,
+      "runtime_seconds": 0.12747633398976177,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        99685,
+        96140,
+        101679,
+        93816
+      ],
+      "fault_degree_workloads": [
+        96544,
+        98279,
+        100253,
+        96244
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.041030358785648535,
+        "fault_work": 0.02476745374629452
+      },
+      "maximum_conceptual_imbalance": 0.041030358785648535,
+      "edge_cut_count": 40882,
+      "edge_cut_ratio": 0.1044720433404886,
+      "boundary_check_count": 1356,
+      "boundary_check_fraction": 0.7847222222222222,
+      "boundary_fault_count": 23432,
+      "boundary_fault_fraction": 0.3458495690164128,
+      "mean_partitions_touched_per_check": 1.8003472222222223,
+      "max_partitions_touched_per_check": 3,
+      "mean_partitions_touched_per_fault": 1.3466761128822766,
+      "max_partitions_touched_per_fault": 3,
+      "raw_metis_edge_cut_reported": 37249,
+      "raw_metis_metrics": {
+        "name": "raw_metis",
+        "seed": 2,
+        "runtime_seconds": 0.07342637499095872,
+        "check_counts": [
+          491,
+          388,
+          383,
+          466
+        ],
+        "fault_counts": [
+          17588,
+          16308,
+          16456,
+          17400
+        ],
+        "check_degree_workloads": [
+          102694,
+          93896,
+          92686,
+          102044
+        ],
+        "fault_degree_workloads": [
+          98822,
+          96068,
+          97265,
+          99165
+        ],
+        "imbalance_fraction": {
+          "check_count": 0.13657407407407418,
+          "fault_count": 0.03837525091510208,
+          "check_work": 0.052581007870796226,
+          "fault_work": 0.018010835122150626
+        },
+        "maximum_conceptual_imbalance": 0.13657407407407418,
+        "edge_cut_count": 37249,
+        "edge_cut_ratio": 0.09518808136563427,
+        "boundary_check_count": 1161,
+        "boundary_check_fraction": 0.671875,
+        "boundary_fault_count": 20734,
+        "boundary_fault_fraction": 0.3060278663360491,
+        "mean_partitions_touched_per_check": 1.671875,
+        "max_partitions_touched_per_check": 2,
+        "mean_partitions_touched_per_fault": 1.3055850749793365,
+        "max_partitions_touched_per_fault": 2
+      },
+      "typed_rebalance": {
+        "check_stage": {
+          "counts_before": [
+            491,
+            388,
+            383,
+            466
+          ],
+          "target_counts": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "counts_after": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "move_count": 93,
+          "sum_local_cut_delta": 5539
+        },
+        "fault_stage": {
+          "counts_before": [
+            17588,
+            16308,
+            16456,
+            17400
+          ],
+          "target_counts": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "counts_after": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "move_count": 1112,
+          "sum_local_cut_delta": -1906
+        }
+      },
+      "acceptable": true
+    },
+    {
+      "name": "metis_limited",
+      "seed": 3,
+      "runtime_seconds": 0.1309709580091294,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        95567,
+        100067,
+        101870,
+        93816
+      ],
+      "fault_degree_workloads": [
+        98736,
+        96235,
+        100159,
+        96190
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.04129612593274046,
+        "fault_work": 0.023806603291423922
+      },
+      "maximum_conceptual_imbalance": 0.04129612593274046,
+      "edge_cut_count": 42464,
+      "edge_cut_ratio": 0.1085147705202903,
+      "boundary_check_count": 1411,
+      "boundary_check_fraction": 0.8165509259259259,
+      "boundary_fault_count": 23939,
+      "boundary_fault_fraction": 0.3533327429448577,
+      "mean_partitions_touched_per_check": 1.8489583333333333,
+      "max_partitions_touched_per_check": 3,
+      "mean_partitions_touched_per_fault": 1.3516796552131303,
+      "max_partitions_touched_per_fault": 3,
+      "raw_metis_edge_cut_reported": 39125,
+      "raw_metis_metrics": {
+        "name": "raw_metis",
+        "seed": 3,
+        "runtime_seconds": 0.07245375000638887,
+        "check_counts": [
+          383,
+          495,
+          383,
+          467
+        ],
+        "fault_counts": [
+          16526,
+          17403,
+          16464,
+          17359
+        ],
+        "check_degree_workloads": [
+          92686,
+          103662,
+          92686,
+          102286
+        ],
+        "fault_degree_workloads": [
+          97265,
+          97874,
+          97281,
+          98900
+        ],
+        "imbalance_fraction": {
+          "check_count": 0.14583333333333326,
+          "fault_count": 0.027984413744243763,
+          "check_work": 0.059613615455381685,
+          "fault_work": 0.010937340284166375
+        },
+        "maximum_conceptual_imbalance": 0.14583333333333326,
+        "edge_cut_count": 39125,
+        "edge_cut_ratio": 0.09998211182663805,
+        "boundary_check_count": 1230,
+        "boundary_check_fraction": 0.7118055555555556,
+        "boundary_fault_count": 20901,
+        "boundary_fault_fraction": 0.3084927382217499,
+        "mean_partitions_touched_per_check": 1.7118055555555556,
+        "max_partitions_touched_per_check": 2,
+        "mean_partitions_touched_per_fault": 1.3052751210296376,
+        "max_partitions_touched_per_fault": 2
+      },
+      "typed_rebalance": {
+        "check_stage": {
+          "counts_before": [
+            383,
+            495,
+            383,
+            467
+          ],
+          "target_counts": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "counts_after": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "move_count": 98,
+          "sum_local_cut_delta": 5249
+        },
+        "fault_stage": {
+          "counts_before": [
+            16526,
+            17403,
+            16464,
+            17359
+          ],
+          "target_counts": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "counts_after": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "move_count": 886,
+          "sum_local_cut_delta": -1910
+        }
+      },
+      "acceptable": true
+    },
+    {
+      "name": "metis_limited",
+      "seed": 4,
+      "runtime_seconds": 0.12722987501183525,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        98050,
+        96483,
+        98921,
+        97866
+      ],
+      "fault_degree_workloads": [
+        99667,
+        96419,
+        96403,
+        98831
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.01376878258203007,
+        "fault_work": 0.018777471123377243
+      },
+      "maximum_conceptual_imbalance": 0.018777471123377243,
+      "edge_cut_count": 45119,
+      "edge_cut_ratio": 0.11529949913114587,
+      "boundary_check_count": 1503,
+      "boundary_check_fraction": 0.8697916666666666,
+      "boundary_fault_count": 25495,
+      "boundary_fault_fraction": 0.3762988546463573,
+      "mean_partitions_touched_per_check": 1.9398148148148149,
+      "max_partitions_touched_per_check": 3,
+      "mean_partitions_touched_per_fault": 1.3764464517652615,
+      "max_partitions_touched_per_fault": 3,
+      "raw_metis_edge_cut_reported": 40342,
+      "raw_metis_metrics": {
+        "name": "raw_metis",
+        "seed": 4,
+        "runtime_seconds": 0.07355312499566935,
+        "check_counts": [
+          382,
+          469,
+          491,
+          386
+        ],
+        "fault_counts": [
+          16509,
+          17295,
+          17570,
+          16378
+        ],
+        "check_degree_workloads": [
+          92444,
+          102770,
+          102694,
+          93412
+        ],
+        "fault_degree_workloads": [
+          97521,
+          98415,
+          98843,
+          96541
+        ],
+        "imbalance_fraction": {
+          "check_count": 0.13657407407407418,
+          "fault_count": 0.03731255165899161,
+          "check_work": 0.055054686701420885,
+          "fault_work": 0.01317591740774815
+        },
+        "maximum_conceptual_imbalance": 0.13657407407407418,
+        "edge_cut_count": 40342,
+        "edge_cut_ratio": 0.10309209853828069,
+        "boundary_check_count": 1230,
+        "boundary_check_fraction": 0.7118055555555556,
+        "boundary_fault_count": 21174,
+        "boundary_fault_fraction": 0.31252213956783564,
+        "mean_partitions_touched_per_check": 1.7118055555555556,
+        "max_partitions_touched_per_check": 2,
+        "mean_partitions_touched_per_fault": 1.3112232849214784,
+        "max_partitions_touched_per_fault": 2
+      },
+      "typed_rebalance": {
+        "check_stage": {
+          "counts_before": [
+            382,
+            469,
+            491,
+            386
+          ],
+          "target_counts": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "counts_after": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "move_count": 96,
+          "sum_local_cut_delta": 5876
+        },
+        "fault_stage": {
+          "counts_before": [
+            16509,
+            17295,
+            17570,
+            16378
+          ],
+          "target_counts": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "counts_after": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "move_count": 989,
+          "sum_local_cut_delta": -1099
+        }
+      },
+      "acceptable": true
+    },
+    {
+      "name": "metis_limited",
+      "seed": 5,
+      "runtime_seconds": 0.12624333301209845,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        100067,
+        94230,
+        103207,
+        93816
+      ],
+      "fault_degree_workloads": [
+        96138,
+        99827,
+        99129,
+        96226
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.05496269038127366,
+        "fault_work": 0.020412961259327345
+      },
+      "maximum_conceptual_imbalance": 0.05496269038127366,
+      "edge_cut_count": 46358,
+      "edge_cut_ratio": 0.1184657058162118,
+      "boundary_check_count": 1447,
+      "boundary_check_fraction": 0.8373842592592593,
+      "boundary_fault_count": 24310,
+      "boundary_fault_fraction": 0.35880859605620496,
+      "mean_partitions_touched_per_check": 1.8738425925925926,
+      "max_partitions_touched_per_check": 3,
+      "mean_partitions_touched_per_fault": 1.3568160349509977,
+      "max_partitions_touched_per_fault": 3,
+      "raw_metis_edge_cut_reported": 42545,
+      "raw_metis_metrics": {
+        "name": "raw_metis",
+        "seed": 5,
+        "runtime_seconds": 0.07375325000612065,
+        "check_counts": [
+          497,
+          374,
+          387,
+          470
+        ],
+        "fault_counts": [
+          17350,
+          16825,
+          16342,
+          17235
+        ],
+        "check_degree_workloads": [
+          104146,
+          90508,
+          93654,
+          103012
+        ],
+        "fault_degree_workloads": [
+          97393,
+          99453,
+          96322,
+          98152
+        ],
+        "imbalance_fraction": {
+          "check_count": 0.15046296296296302,
+          "fault_count": 0.03518715314677057,
+          "check_work": 0.07484411734641727,
+          "fault_work": 0.016590003066544012
+        },
+        "maximum_conceptual_imbalance": 0.15046296296296302,
+        "edge_cut_count": 42545,
+        "edge_cut_ratio": 0.10872176224062148,
+        "boundary_check_count": 1262,
+        "boundary_check_fraction": 0.7303240740740741,
+        "boundary_fault_count": 20987,
+        "boundary_fault_fraction": 0.3097620734443264,
+        "mean_partitions_touched_per_check": 1.7303240740740742,
+        "max_partitions_touched_per_check": 2,
+        "mean_partitions_touched_per_fault": 1.3072234029991734,
+        "max_partitions_touched_per_fault": 2
+      },
+      "typed_rebalance": {
+        "check_stage": {
+          "counts_before": [
+            497,
+            374,
+            387,
+            470
+          ],
+          "target_counts": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "counts_after": [
+            432,
+            432,
+            432,
+            432
+          ],
+          "move_count": 103,
+          "sum_local_cut_delta": 5155
+        },
+        "fault_stage": {
+          "counts_before": [
+            17350,
+            16825,
+            16342,
+            17235
+          ],
+          "target_counts": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "counts_after": [
+            16938,
+            16938,
+            16938,
+            16938
+          ],
+          "move_count": 709,
+          "sum_local_cut_delta": -1342
+        }
+      },
+      "acceptable": false
+    }
+  ],
+  "controls": [
+    {
+      "name": "random_balanced",
+      "seed": 20260830,
+      "runtime_seconds": 0.0010867909877561033,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        98024,
+        98639,
+        97129,
+        97528
+      ],
+      "fault_degree_workloads": [
+        97595,
+        97915,
+        97811,
+        97999
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.008269446999897845,
+        "fault_work": 0.002402126137176719
+      },
+      "maximum_conceptual_imbalance": 0.008269446999897845,
+      "edge_cut_count": 293307,
+      "edge_cut_ratio": 0.7495323520392517,
+      "boundary_check_count": 1728,
+      "boundary_check_fraction": 1.0,
+      "boundary_fault_count": 67450,
+      "boundary_fault_fraction": 0.9955425670090919,
+      "mean_partitions_touched_per_check": 4.0,
+      "max_partitions_touched_per_check": 4,
+      "mean_partitions_touched_per_fault": 3.1413242413508087,
+      "max_partitions_touched_per_fault": 4
+    },
+    {
+      "name": "greedy_balanced",
+      "seed": null,
+      "runtime_seconds": 0.2127302500011865,
+      "check_counts": [
+        432,
+        432,
+        432,
+        432
+      ],
+      "fault_counts": [
+        16938,
+        16938,
+        16938,
+        16938
+      ],
+      "check_degree_workloads": [
+        97830,
+        97830,
+        97830,
+        97830
+      ],
+      "fault_degree_workloads": [
+        97829,
+        97830,
+        97830,
+        97831
+      ],
+      "imbalance_fraction": {
+        "check_count": 0.0,
+        "fault_count": 0.0,
+        "check_work": 0.0,
+        "fault_work": 1.0221813349753361e-05
+      },
+      "maximum_conceptual_imbalance": 1.0221813349753361e-05,
+      "edge_cut_count": 212760,
+      "edge_cut_ratio": 0.5436982520699172,
+      "boundary_check_count": 1728,
+      "boundary_check_fraction": 1.0,
+      "boundary_fault_count": 65904,
+      "boundary_fault_fraction": 0.9727240524264966,
+      "mean_partitions_touched_per_check": 4.0,
+      "max_partitions_touched_per_check": 4,
+      "mean_partitions_touched_per_fault": 3.226354941551541,
+      "max_partitions_touched_per_fault": 4
+    }
+  ],
+  "selected_seed": 2,
+  "small_graph": {
+    "k": 2,
+    "seed": 1,
+    "assignment": {
+      "C0": 0,
+      "C1": 1,
+      "C2": 0,
+      "V0": 0,
+      "V1": 0,
+      "V2": 1,
+      "V3": 1
+    },
+    "internal_edges": [
+      "C0 -- V0",
+      "C0 -- V1",
+      "C1 -- V2",
+      "C1 -- V3",
+      "C2 -- V0"
+    ],
+    "cross_partition_edges": [
+      "C0 -- V2",
+      "C1 -- V1",
+      "C2 -- V2",
+      "C2 -- V3"
+    ],
+    "cut_count": 4,
+    "balance": {
+      "total_nodes": [
+        4,
+        3
+      ],
+      "checks": [
+        2,
+        1
+      ],
+      "faults": [
+        2,
+        2
+      ]
+    }
+  }
+}

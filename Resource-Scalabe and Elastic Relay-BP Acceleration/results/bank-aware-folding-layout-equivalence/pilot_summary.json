@@ -1,0 +1,11 @@
+{
+  "trajectories": 4,
+  "classification_counts": {
+    "EXACT MATCH": 4,
+    "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "trace_iterations": 2630,
+  "all_exact": true
+}

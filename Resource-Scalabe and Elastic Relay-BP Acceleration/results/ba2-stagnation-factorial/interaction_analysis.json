@@ -1,0 +1,12 @@
+{
+  "layout_effect_mean_cycles": 109270405.2890625,
+  "stagnation_effect_mean_cycles": 0.0,
+  "combined_effect_mean_cycles": 109270405.2890625,
+  "interaction_cycles": 0.0,
+  "interaction_interpretation": "exactly additive with zero stagnation contribution; D equals C because the validated conservative policy is flag-only",
+  "mechanisms": {
+    "BA2": "fewer modulo-4 bank conflicts per unchanged iteration/leg",
+    "stagnation": "observability/deprioritization flag only; no work removed",
+    "overlap": "none credited"
+  }
+}

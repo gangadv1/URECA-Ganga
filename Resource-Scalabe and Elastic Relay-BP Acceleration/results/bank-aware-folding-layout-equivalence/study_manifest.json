@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "decoder": "reference/relay_bp_fixed.py::FixedRelayBPDecoder",
+  "configuration": {
+    "b": 18,
+    "g": 4,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  },
+  "graph": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "layout": "results/bank-aware-folding-layout",
+  "pilot": {
+    "trajectories": 4,
+    "classification_counts": {
+      "EXACT MATCH": 4,
+      "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+      "OUTCOME MISMATCH": 0,
+      "INVALID": 0
+    },
+    "trace_iterations": 2630,
+    "all_exact": true
+  },
+  "e0": {
+    "status": "complete",
+    "trajectory": "E0",
+    "trajectories": 128,
+    "classification_counts": {
+      "EXACT MATCH": 128,
+      "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+      "OUTCOME MISMATCH": 0,
+      "INVALID": 0
+    },
+    "all_exact": true,
+    "total_trace_iterations": 24433,
+    "converged": 125,
+    "failures": 3,
+    "archived_original_reproductions": 128,
+    "candidate_weight": {
+      "successful_candidates": 125,
+      "maximum_absolute_delta": 1.1368683772161603e-13,
+      "median_absolute_delta": 0.0,
+      "selection_affected": 0,
+      "S1_reporting_only": true
+    }
+  },
+  "e1": {
+    "status": "complete",
+    "trajectory": "E1",
+    "trajectories": 128,
+    "classification_counts": {
+      "EXACT MATCH": 128,
+      "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+      "OUTCOME MISMATCH": 0,
+      "INVALID": 0
+    },
+    "all_exact": true,
+    "total_trace_iterations": 23303,
+    "converged": 126,
+    "failures": 2,
+    "archived_original_reproductions": 128,
+    "candidate_weight": {
+      "successful_candidates": 126,
+      "maximum_absolute_delta": 1.1368683772161603e-13,
+      "median_absolute_delta": 0.0,
+      "selection_affected": 0,
+      "S1_reporting_only": true
+    },
+    "e1_wins": 33,
+    "parallel_rescues": 3,
+    "all_wins_exact": true,
+    "all_rescues_exact": true
+  },
+  "combined": {
+    "trajectories": 256,
+    "exact": 256,
+    "trace_iterations": 47736
+  },
+  "edge_order_analysis": "BA2 edge IDs are storage-address identities and are not consumed by FixedRelayBPDecoder. The decoder reconstructs CSR edge order from H; fault-column permutation changes CSR neighborhood order.",
+  "hashes": {
+    "permutations": "c743f798176c3b7e45547a2323f16543a333f39e39ae9545e948fb361a23cfbd",
+    "H": "b98562b6a42ced2f6af55d70d93628c906cb4a12bd002f9582f8edbb0c719894",
+    "A": "425c84496559be9c5b4eda0c24e9ab78a5917f88941768c5bd33537d544314c4",
+    "decoder": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "archive": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9"
+  }
+}

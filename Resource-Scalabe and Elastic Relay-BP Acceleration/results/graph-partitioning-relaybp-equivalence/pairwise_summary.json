@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "decoder": {
+    "file": "reference/relay_bp_fixed.py",
+    "class_name": "FixedRelayBPDecoder",
+    "arithmetic": "fixed-point",
+    "configuration": {
+      "b": 18,
+      "g": 4,
+      "M": 16,
+      "clip": null,
+      "separate_scale": true,
+      "S": 1,
+      "R": 32,
+      "first_limit": 80,
+      "later_limit": 60
+    }
+  },
+  "workload": [
+    {
+      "case_id": "easy_e0",
+      "category": "easy",
+      "sample_seed": 20260809,
+      "shot": 31,
+      "trajectory": "E0",
+      "gamma_seed": 15718977782930520314,
+      "syndrome_hash": "0f0ebfebcc671911a79983506df325ff262d75a1d235940f1d87b309875974d8",
+      "logical_outcome_hash": "80b63944b8ddfb6e5a434a9eb879e1120c258bcc476715114b553fcda1566bce"
+    },
+    {
+      "case_id": "typical_e0",
+      "category": "typical",
+      "sample_seed": 20260809,
+      "shot": 2,
+      "trajectory": "E0",
+      "gamma_seed": 2266240012809103972,
+      "syndrome_hash": "82b23d5bf20f75d64b81ce16a7d1b92ec6fb74c8800fd8908ce535cb20deaf60",
+      "logical_outcome_hash": "16418623d44a0ed847bcc99bdd47e4482448a2e52ca6298f18d63d2dec7a5634"
+    },
+    {
+      "case_id": "known_n1_failure",
+      "category": "known N=1 difficult/failure",
+      "sample_seed": 20260809,
+      "shot": 18,
+      "trajectory": "E0",
+      "gamma_seed": 15462074353113131334,
+      "syndrome_hash": "9cc09e0332d748cb9d47f78665b951e384df14e15728e7bda46e2fd0215bdf3f",
+      "logical_outcome_hash": "1c92f033fb8eabff5381b8eb26e5106d3b15acb67b35df470434501863d5c4b0"
+    },
+    {
+      "case_id": "known_n2_rescue",
+      "category": "known N=2 rescue",
+      "sample_seed": 20260809,
+      "shot": 18,
+      "trajectory": "E1",
+      "gamma_seed": 6948219666594607190,
+      "syndrome_hash": "9cc09e0332d748cb9d47f78665b951e384df14e15728e7bda46e2fd0215bdf3f",
+      "logical_outcome_hash": "1c92f033fb8eabff5381b8eb26e5106d3b15acb67b35df470434501863d5c4b0"
+    }
+  ],
+  "classification_counts": {
+    "EXACT MATCH": 4,
+    "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "total_pairs": 4,
+  "all_exact": true,
+  "trace_rows_compared": 2630,
+  "relay_bp_parameters_changed": false,
+  "rtl_modified": false
+}

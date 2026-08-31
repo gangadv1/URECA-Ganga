@@ -1,0 +1,18 @@
+object_or_group,classification,reason,current_physical_status,tail_behavior
+check_row_pointer,B_CAN_SHARE_READ_ONLY,"same graph and read-only offsets",duplicated_in_two_complete_engines,TAIL_BEHAVIOR_PRESERVED_IF_TWO_READ_PORTS
+edge_to_fault,C_CAN_SHARE_WITH_ARBITRATION,"each engine may request one address per bank simultaneously",duplicated,BANDWIDTH_DEPENDS_ON_TWO_READ_PORTS
+fault_row_pointer,B_CAN_SHARE_READ_ONLY,"same graph; two scalar reads may be simultaneous",duplicated,TAIL_BEHAVIOR_PRESERVED_IF_DUAL_PORT
+fault_to_edge,C_CAN_SHARE_WITH_ARBITRATION,"each engine can request one value from each bank per cycle",duplicated,BANDWIDTH_DEPENDS_ON_TWO_READ_PORTS
+quantized_prior,C_CAN_SHARE_WITH_ARBITRATION,"identical priors; relay gather may use all four banks per engine",duplicated,TAIL_BEHAVIOR_PRESERVED_IF_TWO_READ_PORTS_PER_BANK
+syndrome,B_CAN_SHARE_READ_ONLY,"same shot; one read per active convergence/check controller",duplicated,TAIL_BEHAVIOR_PRESERVED_IF_DUAL_PORT
+MU,A_MUST_DUPLICATE,"trajectory-specific messages diverge with gamma and decisions",duplicated,TAIL_BEHAVIOR_PRESERVED
+NU,A_MUST_DUPLICATE,"trajectory-specific previous/current edge messages",duplicated,TAIL_BEHAVIOR_PRESERVED
+marginal_belief,A_MUST_DUPLICATE,"gamma-dependent dynamic state and relay handoff",duplicated,TAIL_BEHAVIOR_PRESERVED
+decision,A_MUST_DUPLICATE,"trajectory corrections can differ",duplicated,TAIL_BEHAVIOR_PRESERVED
+active_gamma,A_MUST_DUPLICATE,"independent E0/E1 gamma vectors",duplicated,TAIL_BEHAVIOR_PRESERVED
+RNG_state,A_MUST_DUPLICATE,"independent random streams are the diversity source",duplicated,TAIL_BEHAVIOR_PRESERVED
+residual_and_convergence,A_MUST_DUPLICATE,"engines converge at different times",duplicated,TAIL_BEHAVIOR_PRESERVED
+candidate_and_relay_control,A_MUST_DUPLICATE,"first-success arbitration requires independent progress",duplicated,TAIL_BEHAVIOR_PRESERVED
+BA2_permutation_tables,D_CAN_REGENERATE_OR_COMPILE,"only initialization image construction and mapping-back validation need them",not_instantiated_online,TAIL_BEHAVIOR_PRESERVED
+logical_observable_metadata,E_UNKNOWN_ARCHITECTURAL_DECISION,"not needed to solve syndrome; needed only for on-device logical scoring",offline,TAIL_BEHAVIOR_PRESERVED_IF_OFFLINE
+CSR_offset_tables,D_CAN_REGENERATE_OR_COMPACT,"strict sequential controller traversal permits prefix position plus stored degree",stored_as_full_offsets,TAIL_BEHAVIOR_PRESERVED_WITH_VALIDATED_CONTROLLER_CHANGE

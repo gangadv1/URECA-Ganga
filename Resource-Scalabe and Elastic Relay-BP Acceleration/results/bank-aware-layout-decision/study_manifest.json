@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "candidate_sources": {
+    "BA2": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/bank-aware-folding-layout/permutations.npz",
+    "F1": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/bank-aware-folding-layout-refinement/permutations.npz",
+    "F3": "deterministically reconstructed alpha=2 beta=1 gamma=0.25 from frozen BA2-edge exact groups"
+  },
+  "edge_mapping_identical_all_candidates": true,
+  "hashes": {
+    "BA2": {
+      "fault_old_to_new": "3369b815332c6f0a48c833908cd9145a2cc48bb60974251a62508c0a5ba708c0",
+      "fault_new_to_old": "c3a082cf067db75a9a2d0e5ee2e95e11fef4a926c56e92e1b9a10701b8e3b5e1",
+      "edge_old_to_new": "d49500b1d3f88967544da328b63feb2e2b2c9825ad37e724195fe8c67f829f1a",
+      "edge_new_to_old": "76cd33be69393d34c45bc5188dff157df0a8935f1dd0ecbc5a67949d1aaf355e"
+    },
+    "F1": {
+      "fault_old_to_new": "92f9ffad9b4c1306d0c0119185c5ebba778fe684cd939327417a2a8e4478b3d5",
+      "fault_new_to_old": "0b20f65c8871d2cf1a2c76d9351b3153236980bef5d2be0665e66b30aad9fb30",
+      "edge_old_to_new": "d49500b1d3f88967544da328b63feb2e2b2c9825ad37e724195fe8c67f829f1a",
+      "edge_new_to_old": "76cd33be69393d34c45bc5188dff157df0a8935f1dd0ecbc5a67949d1aaf355e"
+    },
+    "F3": {
+      "fault_old_to_new": "8ae80334432221e6c22f90db24853afe38575a1dc7870b50df9515d3c5fec5c0",
+      "fault_new_to_old": "b6a481bbe1ac74c0c549ecf72a3ab4c47039019b5b98a900016564f1da0723ca",
+      "edge_old_to_new": "d49500b1d3f88967544da328b63feb2e2b2c9825ad37e724195fe8c67f829f1a",
+      "edge_new_to_old": "76cd33be69393d34c45bc5188dff157df0a8935f1dd0ecbc5a67949d1aaf355e"
+    }
+  },
+  "execution_frequency": {
+    "shots": 128,
+    "total_iterations": 24433,
+    "total_relay_legs": 419,
+    "iterations_per_relay_init": 58.31264916467781
+  },
+  "decision": {
+    "predeclared_rule": [
+      "invariants pass",
+      "MU and NU retries zero",
+      "lowest trajectory mean",
+      "lowest p95",
+      "lowest p99",
+      "lowest structural cycles"
+    ],
+    "technical_winner": "F3",
+    "technical_winner_gain_percent_vs_BA2": 0.0242539899994898,
+    "practical_threshold_percent": 0.1,
+    "selected_layout": "BA2",
+    "decision": "KEEP BA2",
+    "reason": "F3 is consistently lower across all shots and difficulty groups, but its mean advantage is below 0.1% and does not justify another 256-trajectory equivalence study or a second maintained layout.",
+    "equivalence_required": false
+  }
+}

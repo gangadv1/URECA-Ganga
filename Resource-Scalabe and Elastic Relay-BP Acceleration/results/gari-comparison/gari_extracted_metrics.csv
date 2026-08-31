@@ -1,0 +1,51 @@
+category,metric,value,unit,scope,primary_source_location,qualification
+source,arXiv identifier,2605.01035v1,,paper,front matter,"1 May 2026"
+algorithm,message update,normalized min-sum,,core,Section III-B.2,"normalization factor not reported"
+benchmark,code,"[[144,12,12]] Gross bivariate-bicycle",,case study,Abstract and Section IV,
+benchmark,syndrome rounds,12,rounds,latency workload,Section IV-H,"window d=12"
+benchmark,physical error rate,0.001,,iteration/latency assumption,Section IV-H,"full noise channel not specified"
+graph,D_X dimensions,792 x 7920,,transformed matrix,Table II,
+graph,D_Z dimensions,936 x 8784,,transformed matrix,Table II,
+graph,U dimensions,7920 x 51048,,transformed matrix,Table II,
+graph,V dimensions,8784 x 51048,,transformed matrix,Table II,
+architecture,D_X/D_Z tiles,45,tiles,single core,Section IV before Figure 7,
+architecture,U/V tiles,18,tiles,single core,Section IV before Figure 7,
+architecture,D_Z checks,936,checks,iteration,Section IV-H,
+architecture,D_X checks,792,checks,iteration,Section IV-H,
+architecture,cycles per iteration,1728,cycles,single core,Equation 6,
+architecture,pipeline fill,10,cycles,decode,Equation 6,
+architecture,input LLR precision,6,bits,single core,Section IV-H,
+architecture,check message precision,8,bits,single core,Section IV-H,
+architecture,variable message precision,10,bits,single core,Section IV-H,
+hardware,single-core FPGA,AMD VU29P,,single core,Section IV-H and Table III,
+hardware,three-core FPGA,AMD VCU19P,,three cores,Table IV,
+hardware,clock period,3.647,ns,single core,Section IV-H,
+hardware,clock frequency,approximately 274,MHz,single core,Section IV-H,"derived/reported approximation from period"
+latency,single-decoder average iterations,2.28,iterations,p=0.001 12 rounds,Section IV-H,"value attributed to [20]"
+latency,single-decoder average latency,14.4,us,p=0.001 12 rounds,Section IV-H,
+latency,24-decoder average iterations,1.13,iterations,p=0.001 12 rounds,Section IV-H,"value attributed to [20]"
+latency,24-decoder average latency,7.16,us,p=0.001 12 rounds,Section IV-H,"Section V rounds to 7.15 us"
+latency,24-decoder average per round,596,ns/round,p=0.001 ensemble,Abstract and Section V,"7.15 us / 12; complete ensemble requires eight FPGAs"
+resources,single-core LUT,122393,LUT,VU29P,Table III,
+resources,single-core registers,111697,REG,VU29P,Table III,
+resources,single-core BRAM,704,BRAM,VU29P,Table III,
+resources,single-core LUT share,7.5,percent,VU29P,Section IV-I,
+resources,single-core register share,3.5,percent,VU29P,Section IV-I,
+resources,single-core BRAM share,26,percent,VU29P,Section IV-I,
+resources,single-core alternative RAM share,21,percent,VU29P,Section IV-I,"paper says RAM"
+resources,single-core alternative URAM share,5,percent,VU29P,Section IV-I,
+resources,three-core LUT,381698,LUT,VCU19P,Table IV,
+resources,three-core registers,365765,REG,VCU19P,Table IV,
+resources,three-core BRAM,2121,BRAM,VCU19P,Table IV,
+resources,three-core LUT share,9,percent,VCU19P,Section V,"rounded"
+resources,three-core register share,4,percent,VCU19P,Section V,"rounded"
+resources,three-core BRAM share,90,percent,VCU19P,Section V,"rounded"
+ensemble,cores per VCU19P,3,cores,implemented,Table IV and Section V,
+ensemble,complete ensemble size,24,cores,projected deployment,Section IV-H/I,"from [20]"
+ensemble,FPGAs for 24 cores,8,VCU19P,projected deployment,Section IV-I and V,
+comparison,prior parallel-architecture devices,48,devices,24-core ensemble,Section IV-I,
+comparison,device-count reduction,6,x,24-core ensemble,Abstract and Section V,"eight versus 48 devices; not per-resource reduction"
+unreported,worst/tail latency,not reported,,paper,,
+unreported,throughput,not reported,,paper,,
+unreported,DSP count,not reported,,paper,,
+unreported,ensemble diversity and winner selection,not reported,,paper,,"full ensemble integration is future work"

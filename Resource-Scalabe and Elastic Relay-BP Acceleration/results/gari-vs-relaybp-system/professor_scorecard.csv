@@ -1,0 +1,11 @@
+category,GARI,Our_Relay_BP_research,current_winner_or_status
+Average latency,"Measured FPGA average: 596 ns/round for 24-decoder/eight-FPGA context","Modeled relative reductions only; combined N2+BA2 mean 400249878 modeled cycles",GARI stronger hardware evidence; absolute comparison invalid
+Tail latency,"No p90/p95/p99/max reported","Explicit 128-shot paired p90/p95/p99/max; N2 particularly improves the hard tail",Relay-BP stronger tail evidence; absolute latency unknown
+Hard-case rescue,"Per-shot rescue behavior not reported","Three N1 failures rescued; E1 wins 33 shots",Relay-BP stronger evidence on its own cohort
+Error correction,"Correlated X/Y/Z GARI inference; architecture paper says quantization approaches float","N1 125/128 and N2 128/128 logical success on p=0.003 archive",Not directly comparable
+Logical-error evidence,"No LER table in audited architecture paper","No LER curve; only 128-shot screening counts",Unknown; matched large-shot experiment required
+Memory_BRAM,"Measured 704 BRAM/core and 2121 BRAM/three cores","N2 lower-bound estimate 1755 ideal or 1800 banked capacity-equivalent",GARI stronger evidence; usage ranking invalid
+Resource scalability,"Three cores/VCU19P; 24 cores on eight devices","N2 trajectories plus P folding; P=4 selected as balance point",Partial; different scaling axes
+Hardware maturity,"Placed/implemented FPGA architecture","No synthesis or timing result for complete BA2 N2 system",GARI stronger
+Graph flexibility,"GARI requires transform into D_X/D_Z/U/V and code-specific mappings","Relay-BP accepts canonical sparse detector-fault graph; BA2 is reversible",Relay-BP appears more representation-preserving; implementation flexibility unproven
+Bank-conflict optimization,"No modulo-bank co-access objective reported","BA2 directly optimizes P=4 co-access residues and retries",Relay-BP distinct/stronger evidence for this specific bottleneck

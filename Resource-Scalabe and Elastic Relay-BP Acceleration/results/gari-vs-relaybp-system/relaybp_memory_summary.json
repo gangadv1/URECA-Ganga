@@ -1,0 +1,13 @@
+{
+  "status": "analytical_capacity_model_not_synthesis",
+  "graph": {"checks": 1728, "faults": 67752, "detector_fault_edges": 391320, "observables": 12, "observable_fault_edges": 110971},
+  "widths": {"stored_message": 18, "guard_accumulator_register": 22, "gamma": 5, "decision": 1, "syndrome": 1, "fault_address": 17, "edge_address": 19, "edge_pointer": 19, "observable_id": 4, "observable_pointer": 17, "rng_state": 64},
+  "one_engine": {"static_graph_bits": 15407678, "engine_input_and_dynamic_bits": 16934998, "total_bits": 32342676, "bytes": 4042834.5, "MiB": 3.8555474281311035, "ideal_capacity_BRAM36": 878, "per_array_four_bank_capacity_BRAM36": 900},
+  "two_engine_current_wrapper": {"description": "two complete relay_bp_single_engine_memory_p4 instances; static and dynamic fabrics physically duplicated", "total_bits": 64685352, "bytes": 8085669, "MiB": 7.711094856262207, "ideal_capacity_BRAM36": 1755, "per_array_four_bank_capacity_BRAM36": 1800},
+  "hypothetical_shared_static_N2": {"description": "logical lower bound only; port conflicts and bandwidth may force replication", "total_bits": 49277674, "MiB": 5.874356508255005, "ideal_capacity_BRAM36": 1337},
+  "optional_not_in_decoder_fabric": {"observable_scoring_bits": 1595685, "BA2_forward_inverse_metadata_bits": 17173728, "combined_with_current_N2_bits": 83454765, "combined_MiB": 9.948583245277405, "combined_ideal_capacity_BRAM36": 2264, "note": "BA2 maps are not needed on chip when memory images are emitted directly in BA2 order; observable A is currently used for host/offline scoring"},
+  "BRAM36_capacity_bits": 36864,
+  "dominant_arrays": ["MU edge messages", "NU edge messages", "fault-to-edge permutation", "edge-to-fault metadata"],
+  "not_counted": ["BRAM width/depth packing loss beyond per-array bank separation", "port replication", "routing and arbitration", "FIFOs", "implementation-specific metadata", "complete control-register/FF count", "LUT memories", "output interfaces"],
+  "sources": ["fpga/rtl/relay_bp_memory_fabric_p4.sv", "fpga/rtl/relay_bp_parallel_n2_p4.sv", "reference/relay_bp_fixed.py", "results/n1-vs-n2-hardware-latency/manifest.json", "results/bank-aware-folding-layout/permutations.npz"]
+}

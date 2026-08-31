@@ -1,0 +1,39 @@
+{
+  "transitions": [
+    {
+      "from_P": 2,
+      "to_P": 4,
+      "extra_lanes": 2,
+      "structural_cycle_reduction_percent": 36.31195143901338,
+      "trajectory_mean_reduction_percent": 34.938627631357036,
+      "utilization_point_change": -18.792896261688785,
+      "structural_cycles_saved_per_added_lane": 1221151.5,
+      "trajectory_mean_saved_per_added_lane": 165699290.49609375
+    },
+    {
+      "from_P": 4,
+      "to_P": 8,
+      "extra_lanes": 4,
+      "structural_cycle_reduction_percent": 33.63221036560455,
+      "trajectory_mean_reduction_percent": 30.306843663165463,
+      "utilization_point_change": -17.475214003806045,
+      "structural_cycles_saved_per_added_lane": 360166.5,
+      "trajectory_mean_saved_per_added_lane": 46757226.2109375
+    }
+  ],
+  "BA2_within_P": {
+    "2": {
+      "retry_reduction_percent": 64.55127137001367,
+      "structural_cycle_reduction_percent": 6.6502291102970235
+    },
+    "4": {
+      "retry_reduction_percent": 57.606358778557855,
+      "structural_cycle_reduction_percent": 9.983972503397464
+    },
+    "8": {
+      "retry_reduction_percent": 56.60203211958634,
+      "structural_cycle_reduction_percent": 11.113793019354134
+    }
+  },
+  "interpretation": "P scaling is sub-linear; utilization declines as P grows and P4-to-P8 yields less cycle reduction per added lane than P2-to-P4."
+}

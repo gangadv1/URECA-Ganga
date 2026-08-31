@@ -1,0 +1,11 @@
+QUESTION 1: Which has better latency and tail latency?
+
+GARI has stronger absolute-latency evidence: an implemented design reports about 596 ns per round for its 24-decoder/eight-FPGA context. Relay-BP has stronger explicit tail evidence on its own 128-shot cohort: N=2 reduces modeled mean by 35.15%, p95 by 35.53%, and p99 by 70.09%, and BA2 separately lowers layout-model cost by about 15%. We cannot say which is absolutely faster because the workload, decoder, ensemble size, and implementation level differ. A matched clocked implementation and shared workload would settle it.
+
+QUESTION 2: Which corrects errors better?
+
+Relay-BP N=2 corrected all 128 archived p=0.003 shots and rescued the three N=1 non-convergences. GARI is designed for correlated-error inference, but the audited architecture paper does not provide a matched logical-error table. No winner can be declared. Run both decoders on identical Gross-code circuit samples, noise, p values, work budgets, and logical scoring with enough shots for meaningful confidence intervals.
+
+QUESTION 3: Which uses less memory / BRAM?
+
+GARI has measured usage: 704 BRAM for one core and 2,121 for three cores. The current Relay-BP bit model estimates 878 ideal/900 banked capacity-equivalents for one P=4 engine and 1,755 ideal/1,800 banked equivalents for N=2. These Relay-BP values omit packing, port replication, FIFOs, and implementation overhead, so they cannot prove lower BRAM. Synthesis of the frozen N=1 and N=2 BA2 memory images on a declared FPGA is required.

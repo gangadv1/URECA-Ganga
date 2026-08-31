@@ -1,0 +1,3 @@
+# BA2/F1/F3 layout decision
+
+This software-only decision study separates a one-pass structural objective from archived E0 trajectory weighting. All candidates preserve the BA2 edge mapping, zero MU/NU retries, and exact graph invariants. Across 128 shots, convergence/check/variable execute 24433 times while relay initialization executes 419 times (58.31 iterations per init). The predeclared trajectory-first rule gives technical winner `F3`; the practical decision is **KEEP BA2** because its advantage over validated BA2 is negligible relative to revalidation cost. No decoder was rerun and no FPGA-speedup claim is made.

@@ -1,0 +1,21 @@
+{
+  "H_inverse_exact": true,
+  "A_inverse_exact": true,
+  "probabilities_inverse_exact": true,
+  "detector_fault_incidences_exact": true,
+  "observable_fault_incidences_exact": true,
+  "fault_permutation_reversible": true,
+  "edge_permutation_reversible": true,
+  "fault_residue_exact": true,
+  "edge_residue_exact": true,
+  "no_missing_or_duplicated_faults": true,
+  "no_missing_or_duplicated_edges": true,
+  "neighborhood_membership_unchanged": true,
+  "neighborhood_iteration_order_changed": true,
+  "decoder_rerun_required": true,
+  "logical_action_matrix": "NOT_AVAILABLE_IN_TIER1_PACKAGE",
+  "observable_incidences": "NOT_AVAILABLE_IN_TIER1_PACKAGE",
+  "H_roundtrip_nonzero_exact": true,
+  "probabilities_exact": true,
+  "connectivity_preserved": true
+}

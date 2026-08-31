@@ -1,0 +1,6 @@
+variant,total_bits,ideal_BRAM36,banked_capacity_BRAM36,measured,qualification
+M0,64685352,1755,1800,NO,"current analytical duplicated-N2 baseline"
+M1,49277674,1337,1376,NO,"requires dual-read shared topology banks"
+M2,48056410,1304,1336,NO,"requires dual-read shared topology/prior/syndrome banks"
+M3,47021084,1276,1309,NO,"M2 plus sequential degree-table address generation"
+M4,32933564,894,925,NO,"single phase-aliased 18-bit edge-message array per trajectory; requires implementation equivalence validation"

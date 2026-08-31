@@ -1,0 +1,16 @@
+{
+  "H_roundtrip_exact": true,
+  "A_roundtrip_exact": true,
+  "probabilities_roundtrip_exact": true,
+  "check_permutations_inverse": true,
+  "fault_permutations_inverse": true,
+  "detector_fault_edge_count_preserved": true,
+  "observable_fault_edge_count_preserved": true,
+  "no_partition_edge_removed": true,
+  "no_fault_split": true,
+  "all_original_runs_reproduce_archive": true,
+  "all_partitioned_converged_corrections_valid": true,
+  "logical_actions_evaluated_in_original_convention": true,
+  "same_fault_probabilities_attached": true,
+  "same_syndrome_problem": true
+}

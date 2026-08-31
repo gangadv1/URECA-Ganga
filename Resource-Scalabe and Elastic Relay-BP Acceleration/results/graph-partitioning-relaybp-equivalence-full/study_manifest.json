@@ -1,0 +1,45 @@
+{
+  "samples": "results/circuit-level-multiseed/paired_samples.npz",
+  "archive": "results/n1-vs-n2-hardware-latency/per_shot_results.csv",
+  "syndrome_storage": "paired_samples.npz boolean array [5,128,1728]",
+  "logical_storage": "paired_samples.npz boolean array [5,128,12]",
+  "gamma_metadata": "per_shot_results.csv s0/e0_* fields; xorshift64 reference generator",
+  "dataset_hashes": {
+    "samples": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "archive": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9",
+    "permutations": "dd010b23ed2773d2c6abe8fa8e52ca22901d4f86843ef669e409b186e375348a",
+    "decoder": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "gamma_reference": "8024fa22ff0e70ad24acf097ef186edb13ddc5bf2982977a16b7abd6c9f505a8"
+  },
+  "permutation_array_hashes": {
+    "check_old_to_new": "b9c8135c371854d6fd272227e29f48df841f0d5363c35d3838fc34ab60b691f0",
+    "check_new_to_old": "9cccb0bab151ff9b03dd75481b0814430be80f929b2ecd14d838be1f12062057",
+    "fault_old_to_new": "b3949a8c2e7f5076923625e4e0ef42604377510a4b73987e597e01607f24188d",
+    "fault_new_to_old": "f0fadb836cf4cfccf5a5a510ef45323907278507e9e6b4f054ad78179386d421"
+  },
+  "gamma_mapping": "Generate accepted hardware gamma in original fault order, then partition with fault_new_to_old; trace hashes map back with fault_old_to_new.",
+  "decoder_configuration": {
+    "decoder": "reference/relay_bp_fixed.py::FixedRelayBPDecoder",
+    "b": 18,
+    "g": 4,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  },
+  "e1": {
+    "summary": "e1_summary.json",
+    "trajectories": 128,
+    "rng_field": "s1",
+    "archive_fields": "e1_*",
+    "classification_counts": {
+      "EXACT MATCH": 128,
+      "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+      "OUTCOME MISMATCH": 0,
+      "INVALID": 0
+    },
+    "e1_wins": 33,
+    "parallel_rescues": 3
+  }
+}

@@ -1,0 +1,4 @@
+variant,edge_rule,edge_ids_changed,fault_ids_changed
+original,Original check-CSR edge IDs and original node IDs.,False,False
+metis_node_only,Checks/faults use METIS IDs; original edge/message IDs are retained exactly.,False,True
+metis_partition_edge_reorder,"Sort incidences by (new check ID, new fault ID, old edge ID), then assign consecutive edge IDs.",True,True

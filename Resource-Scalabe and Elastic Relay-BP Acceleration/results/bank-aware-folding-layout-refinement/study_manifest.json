@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "selected": "F1",
+  "edge_mapping_frozen_to_BA2": true,
+  "diagnosis": {
+    "BA2_exact_convergence_retries": 47128,
+    "BA2_exact_relay_init_retries": 95438,
+    "reason": "BA2 fault co-occurrence was constructed before the final BA2 edge permutation. Relay init groups consecutive final edge addresses, so its actual fault groups changed while the fault residue optimizer still represented original edge-order groups.",
+    "not_supported": [
+      "convergence weighting dominating relay init",
+      "METIS locality influence (BA2 locality weight was zero)"
+    ],
+    "variant_objectives": {
+      "BA2": {
+        "source": "validated BA2 fault residues"
+      },
+      "F1": {
+        "alpha": 1.0,
+        "beta": 1.0,
+        "gamma": 0.25,
+        "counts": [
+          16938,
+          16938,
+          16938,
+          16938
+        ],
+        "workloads": [
+          195660.0,
+          195664.0,
+          195666.0,
+          195650.0
+        ],
+        "workload_imbalance": 5.110906674843374e-05,
+        "weighted_same_residue_cost": 138807.0
+      },
+      "F2": {
+        "alpha": 1.0,
+        "beta": 2.0,
+        "gamma": 0.25,
+        "counts": [
+          16938,
+          16938,
+          16938,
+          16938
+        ],
+        "workloads": [
+          195666.0,
+          195660.0,
+          195656.0,
+          195658.0
+        ],
+        "workload_imbalance": 3.066544004903804e-05,
+        "weighted_same_residue_cost": 211861.0
+      },
+      "F3": {
+        "alpha": 2.0,
+        "beta": 1.0,
+        "gamma": 0.25,
+        "counts": [
+          16938,
+          16938,
+          16938,
+          16938
+        ],
+        "workloads": [
+          195654.0,
+          195664.0,
+          195666.0,
+          195656.0
+        ],
+        "workload_imbalance": 3.066544004903804e-05,
+        "weighted_same_residue_cost": 191885.0
+      },
+      "F4": {
+        "alpha": 1,
+        "beta": 2,
+        "gamma": "capacity-preserving local search",
+        "start_cost": 211861.0,
+        "end_cost": 211038.0,
+        "accepted_swaps": 169,
+        "passes": 4,
+        "stop_reason": "pass budget"
+      }
+    },
+    "selection_rule": [
+      "MU and NU retries must be zero",
+      "invariants pass",
+      "minimum structural cycles",
+      "minimum retries",
+      "minimum relay-init retries"
+    ]
+  },
+  "selected_fault_counts": [
+    16938,
+    16938,
+    16938,
+    16938
+  ],
+  "selected_fault_access_workloads": [
+    195660.0,
+    195664.0,
+    195666.0,
+    195650.0
+  ],
+  "selected_fault_workload_imbalance": 5.110906674843374e-05,
+  "runtime_seconds": 16.527071952819824,
+  "decoder_equivalence_required": true
+}

@@ -1,0 +1,6 @@
+variant,description,total_bits,MiB,shared_bits,duplicated_bits,static_bits,dynamic_bits,ideal_BRAM36,banked_capacity_BRAM36,reduction_vs_M0_percent,tail_classification
+M0,"current two complete P4 engines; BA2 already compiled into images",64685352,7.711095,0,64685352,33254428,31430924,1755,1800,0.0,TAIL_BEHAVIOR_PRESERVED
+M1,"share immutable graph topology; duplicate prior syndrome and all trajectory state",49277674,5.874357,15407678,33869996,17846750,31430924,1337,1376,23.819424,TAIL_BEHAVIOR_PRESERVED_IF_SHARED_BANKS_HAVE_TWO_READ_PORTS
+M2,"M1 plus shared read-only prior and syndrome; BA2 maps remain offline",48056410,5.728770,16628942,31427468,16628942,31427468,1304,1336,25.707431,TAIL_BEHAVIOR_PRESERVED_IF_SHARED_BANKS_HAVE_TWO_READ_PORTS
+M3,"M2 plus replace sequential CSR offset arrays with 8-bit check degrees and 4-bit fault degrees",47021084,5.605350,15593616,31427468,15593616,31427468,1276,1309,27.307988,TAIL_BEHAVIOR_PRESERVED_AFTER_ADDRESS_GENERATOR_EQUIVALENCE_TEST
+M4,"M3 plus one phase-aliased edge-message RAM: NU old is overwritten by MU then MU by NU new",32933564,3.925986,15593616,17339948,15593616,17339948,894,925,49.086521,TAIL_BEHAVIOR_PRESERVED_AFTER_MESSAGE_LIFETIME_EQUIVALENCE_TEST

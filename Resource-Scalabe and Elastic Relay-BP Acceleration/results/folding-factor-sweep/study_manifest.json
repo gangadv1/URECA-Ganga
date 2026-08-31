@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "scope": "software folding/access cost only",
+  "P_values": [
+    2,
+    4,
+    8
+  ],
+  "P_definition": "number of reusable lanes and logical banks; not independent decoders",
+  "bank_rule": "logical_address % P",
+  "group_rule": "up to P requests; first pending request per bank wins; retries until empty",
+  "frozen_BA2": {
+    "variable_message_weight": 5,
+    "convergence_weight": 3,
+    "relay_init_weight": 3,
+    "balance_lambda": 0.25,
+    "locality_lambda": 0,
+    "ordering": "descending weighted degree with deterministic ID ties"
+  },
+  "P4_reproduced_exactly": true,
+  "trajectory_archive": "canonical 128 E0/N1 iteration and relay-leg counts; trajectories held fixed",
+  "second_graph": "Gross Tier-1 code capacity structural only",
+  "RTL_modified": false,
+  "synthesis": false,
+  "hardware_area_claim": false
+}

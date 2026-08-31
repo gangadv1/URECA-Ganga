@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "scope": "software-only structural P=4 access model; no RTL or decoder execution",
+  "graph": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "selected_partition_seed": 2,
+  "P": 4,
+  "bank_mapping": "logical address modulo 4",
+  "retry_rule": "stable first pending lane per bank",
+  "grouping": "up to four consecutive incidences per current RTL node/edge traversal",
+  "node_only_edge_identity_preserved": true,
+  "edge_reorder_rule": "Sort incidences by (new check ID, new fault ID, old edge ID), then assign consecutive edge IDs.",
+  "invariance": {
+    "edge_permutation_inverse": true,
+    "detector_fault_connectivity_exact": true,
+    "nodes_unchanged": true,
+    "edges_unchanged": true,
+    "decoder_not_run": true
+  },
+  "model_validation": {
+    "reference": "fpga/verification/tier2_p0p003/verification_summary.json gamma_source_boundary phase cycles",
+    "expected_cycles": {
+      "check": 508753,
+      "variable": 2489173,
+      "convergence": 790855,
+      "relay_init": 969916
+    },
+    "exact": {
+      "check": true,
+      "variable": true,
+      "convergence": true,
+      "relay_init": true
+    }
+  },
+  "hashes": {
+    "check_old_to_new": "b9c8135c371854d6fd272227e29f48df841f0d5363c35d3838fc34ab60b691f0",
+    "fault_old_to_new": "b3949a8c2e7f5076923625e4e0ef42604377510a4b73987e597e01607f24188d",
+    "edge_new_to_old": "290e825f42606372a2aea7b5c2106c9ff72d0873bb4bba8a2ff44bce6412662a"
+  },
+  "trajectory_scaling": {
+    "archive": "results/n1-vs-n2-hardware-latency/per_shot_results.csv",
+    "trajectory": "N=1/E0 archived iterations and relay legs; schedules themselves are state-independent",
+    "summaries": {
+      "original": {
+        "iteration_cycles": 3788781,
+        "relay_init_cycles": 969916,
+        "shots": 128,
+        "mean": 726388132.6328125,
+        "p50": 287022881.5,
+        "p90": 1448120519.3999996,
+        "p95": 2257054017.6499977,
+        "p99": 7381272452.0,
+        "minimum": 65379193,
+        "maximum": 7381272452
+      },
+      "metis_node_only": {
+        "iteration_cycles": 3800715,
+        "relay_init_cycles": 980404,
+        "shots": 128,
+        "mean": 728700459.9296875,
+        "p50": 287934386.5,
+        "p90": 1452728674.1999996,
+        "p95": 2264235072.349998,
+        "p99": 7404760028.0,
+        "minimum": 65592559,
+        "maximum": 7404760028
+      },
+      "metis_partition_edge_reorder": {
+        "iteration_cycles": 3770603,
+        "relay_init_cycles": 978754,
+        "shots": 128,
+        "mean": 722947195.5078125,
+        "p50": 285659280.5,
+        "p90": 1441257651.9999998,
+        "p95": 2246355205.849998,
+        "p99": 7346289948.0,
+        "minimum": 65079005,
+        "maximum": 7346289948
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "complete_primary_source_audit",
+  "scope": "architecture and mechanism comparison; no RTL changes or synthesis",
+  "primary_source": {
+    "title": "A Scalable FPGA Architecture for Real-Time Decoding of Quantum LDPC Codes Using GARI",
+    "authors": ["Daniel Báscones", "Arshpreet Singh Maan", "Valentin Savin", "Francisco Garcia-Herrero"],
+    "identifier": "arXiv:2605.01035v1 [quant-ph]",
+    "date": "2026-05-01",
+    "local_pdf": "reference/gari/arxiv_2605.01035.pdf",
+    "sha256": "159d3ecffff7c4792c497dd301c8d0b1ebacbb596175c0c2d06a7d4c5726e8ef",
+    "pages": 11
+  },
+  "GARI": {
+    "expansion": "Graph Augmentation and Rewiring for Inference",
+    "decoder": "normalized min-sum message passing",
+    "graph_action": "change of variables and augmented/rewired D_X,D_Z,U,V factorization",
+    "schedule": "serial D_X,D_Z unit alternating with parallel U,V unit and dependency-compatible overlap",
+    "benchmark": "Gross [[144,12,12]], 12 syndrome rounds, p=0.001",
+    "benchmark_limits": "complete circuit noise channel and exact Stim/DEM construction not reported in this architecture paper",
+    "single_core": {"device": "AMD VU29P", "period_ns": 3.647, "frequency_mhz_approx": 274, "cycles": "10 + 1728*i", "average_iterations": 2.28, "average_latency_us": 14.4, "LUT": 122393, "REG": 111697, "BRAM": 704},
+    "three_core": {"device": "AMD VCU19P", "cores": 3, "LUT": 381698, "REG": 365765, "BRAM": 2121},
+    "complete_ensemble": {"cores": 24, "devices": 8, "average_iterations": 1.13, "average_latency_us_12_rounds": 7.16, "average_latency_ns_per_round_approx": 596, "prior_parallel_devices": 48},
+    "not_reported": ["ensemble diversity mechanism", "winner-selection hardware", "tail/worst-case latency", "throughput", "DSP count", "complete noise-channel specification", "logical-error-rate table in this architecture paper"]
+  },
+  "BA2": {
+    "decoder": "fixed-point Relay-BP",
+    "graph": "circuit-level memory-Z p=0.003 Stim/DEM; 1728 checks, 67752 faults, 391320 incidences",
+    "graph_action": "reversible fault/message storage permutation; connectivity unchanged",
+    "layout": "P=4 address-modulo-four co-access-aware bank residues",
+    "structural_cycles_original": 4758697,
+    "structural_cycles_BA2": 4283590,
+    "structural_reduction_percent": 9.983972503397464,
+    "retry_subsets_original": 336291,
+    "retry_subsets_BA2": 142566,
+    "retry_reduction_percent": 57.606358778557855,
+    "trajectory_mean_original": 726388132.6328125,
+    "trajectory_mean_BA2": 617117727.34375,
+    "trajectory_mean_reduction_percent": 15.042977766309196,
+    "equivalence": "256/256 trajectories and 47736/47736 mapped iterations exact",
+    "implementation_stage": "software folding/access model only"
+  },
+  "comparison": {
+    "overall": "partially comparable",
+    "same_code_family": true,
+    "same_verified_graph": false,
+    "same_physical_error_rate": false,
+    "same_decoder": false,
+    "direct_latency_ranking_allowed": false,
+    "direct_resource_ranking_allowed": false,
+    "mechanism_distinction": "GARI changes inference factorization; BA2 changes storage placement under a fixed graph",
+    "strongest_BA2_statement": "bank-aware folded memory/layout optimization for Relay-BP"
+  },
+  "RTL_modified": false,
+  "synthesis_run": false
+}

@@ -1,0 +1,7 @@
+{
+  "H_exact": true,
+  "A_exact": true,
+  "probabilities_exact": true,
+  "check_permutation_inverse": true,
+  "fault_permutation_inverse": true
+}

@@ -1,0 +1,114 @@
+{
+  "purpose": "out-of-sample frozen-BA2 structural generalization",
+  "retuned": false,
+  "RTL_modified": false,
+  "synthesis": false,
+  "new_samples": false,
+  "results": {
+    "original": {
+      "variant": "original",
+      "total_requested_accesses": 12384,
+      "issued_groups": 6644,
+      "retry_subsets": 812,
+      "variable_mu_retries": 228,
+      "variable_nu_retries": 228,
+      "convergence_retries": 138,
+      "relay_init_retries": 218,
+      "mean_active_lanes": 1.863937387116195,
+      "lane_utilization": 0.46598434677904876,
+      "full_four_lane_fraction": 0.1535219747140277,
+      "estimated_structural_cycles": 15892,
+      "fault_bank_workload": "",
+      "edge_bank_workload": "",
+      "maximum_bank_workload_imbalance": ""
+    },
+    "BA2": {
+      "variant": "BA2_frozen",
+      "total_requested_accesses": 12384,
+      "issued_groups": 6045,
+      "retry_subsets": 213,
+      "variable_mu_retries": 1,
+      "variable_nu_retries": 1,
+      "convergence_retries": 53,
+      "relay_init_retries": 158,
+      "mean_active_lanes": 2.04863523573201,
+      "lane_utilization": 0.5121588089330025,
+      "full_four_lane_fraction": 0.1923904052936311,
+      "estimated_structural_cycles": 14322,
+      "fault_bank_workload": "[432.0, 432.0, 432.0, 432.0]",
+      "edge_bank_workload": "[432.0, 432.0, 432.0, 432.0]",
+      "maximum_bank_workload_imbalance": 0.0
+    }
+  },
+  "manifest": {
+    "status": "complete_structural_only",
+    "selected_graph": "Gross [[144,12,12]] Tier-1 code capacity",
+    "frozen_parameters": {
+      "P": 4,
+      "bank_rule": "new_address % 4",
+      "variable_edge_pair_weight": 5.0,
+      "convergence_fault_pair_weight": 3.0,
+      "relay_init_fault_pair_weight": 3.0,
+      "workload_balance_lambda": 0.25,
+      "METIS_locality_lambda": 0.0,
+      "greedy_order": "descending weighted co-occurrence degree; deterministic item-ID ties",
+      "scheduler": "groups of up to four; stable first-request priority; retry until empty"
+    },
+    "candidate_identity": {
+      "H_hash": "f3dea166fc8fe186c21fa303a2993ade29142f9c62daeed640c007a52f4df21f",
+      "fault_assignment_hash": "586d004044f423a3baf5694d84aa223d6f0e913949923e067db11e7edfa990a2",
+      "edge_assignment_hash": "6234fb24a72e817f343f3fbb2ca844a5d33bb2e812ff464c329161c956a7c651",
+      "fault_old_to_new_hash": "f5b2c4bba2060e947304734e096f5f92b98368d62c47d70a9801d28d1ed45722",
+      "edge_old_to_new_hash": "e75301e0738d66469b005352bf0c1899392b2c2e5ff5868809ccf3c5cda25775"
+    },
+    "capacities": {
+      "fault": [
+        72,
+        72,
+        72,
+        72
+      ],
+      "edge": [
+        216,
+        216,
+        216,
+        216
+      ]
+    },
+    "greedy_fault": {
+      "counts": [
+        72,
+        72,
+        72,
+        72
+      ],
+      "workloads": [
+        432.0,
+        432.0,
+        432.0,
+        432.0
+      ],
+      "workload_imbalance": 0.0,
+      "weighted_same_residue_cost": 555.0
+    },
+    "greedy_edge": {
+      "counts": [
+        216,
+        216,
+        216,
+        216
+      ],
+      "workloads": [
+        432.0,
+        432.0,
+        432.0,
+        432.0
+      ],
+      "workload_imbalance": 0.0,
+      "weighted_same_residue_cost": 5.0
+    },
+    "trajectory_evaluation": "not run: only an old canonical-float, no-logical-mask panel exists",
+    "decoder_equivalence": "not run: no suitable fixed-point archived panel; ordering changed",
+    "headline_ready": false
+  }
+}

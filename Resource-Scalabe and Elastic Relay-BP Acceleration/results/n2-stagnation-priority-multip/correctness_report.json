@@ -1,0 +1,21 @@
+{
+  "status": "blocked_for_requested_out_of_sample_rates",
+  "policy_frozen": true,
+  "threshold": 120,
+  "ratio": "non-stagnant:stagnant=2:1",
+  "p003_reused": {
+    "shots": 128,
+    "successes_preserved": 128,
+    "lost_successes": 0,
+    "logical_regressions": 0,
+    "starvation": 0
+  },
+  "p002": {
+    "status": "not run",
+    "reason": "No archived E1 RNG seed or metadata exists for this syndrome cohort; choosing a new seed would fabricate a new paired workload."
+  },
+  "p004": {
+    "status": "not run",
+    "reason": "No archived E1 RNG seed or metadata exists for this syndrome cohort; choosing a new seed would fabricate a new paired workload."
+  }
+}

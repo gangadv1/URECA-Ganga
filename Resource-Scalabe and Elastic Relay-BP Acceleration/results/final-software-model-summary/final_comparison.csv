@@ -1,0 +1,4 @@
+layout,graph_locality_edge_cut_ratio,structural_retry_change_vs_original_percent,structural_cycle_change_vs_original_percent,trajectory_mean_change_vs_original_percent,decoder_equivalence_status
+Original,N/A,0.0,0.0,0.0,Reference
+METIS node-only,0.1044720433404886,2.222479935532018,0.4711794005796133,0.3183321963829311,"256/256 exact after mapped reordering"
+BA2,N/A,-57.606358778557855,-9.983972503397464,-15.042977766309196,"256/256 exact; 47,736/47,736 mapped iterations"

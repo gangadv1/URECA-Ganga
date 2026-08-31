@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "scope": "software-only factorial on canonical 128 E0 archive; no decoder or RTL mutation",
+  "conditions": [
+    "original+standard",
+    "original+stagnation flag",
+    "BA2+standard",
+    "BA2+stagnation flag"
+  ],
+  "stagnation_policy": "flag-only at iteration 40 of relay leg >=3 when global strict-improvement counter >=120",
+  "threshold": 120,
+  "checkpoint": 40,
+  "minimum_leg": 3,
+  "trajectory_source": "archived exact E0 traces; BA2 256-trajectory equivalence already passed",
+  "hashes": {
+    "archive": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9",
+    "iterations": "a5c54783f63d32c7aa9c8d6d4dac7f7191f8bb2404016f85cf4624a2a99d4957",
+    "legs": "24716373ce0e3442174fc276b717e453ba07ba13b691207485b0b6510252a245",
+    "BA2_permutations": "c743f798176c3b7e45547a2323f16543a333f39e39ae9545e948fb361a23cfbd"
+  },
+  "optional_E1_run": false,
+  "optional_E1_reason": "E0 factorial is conclusive: no safe work-removing policy is supported, so extending a zero-action flag policy to E1 adds no decision value."
+}

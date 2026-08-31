@@ -1,0 +1,4 @@
+p,availability,shots,success_preserved,improved,unchanged,worsened,mean_effect_percent,p95_effect_percent,p99_effect_percent,late_recoveries,changed_winners,lost_successes,logical_regressions,starvation_events
+0.002,NOT_RUN_MISSING_PAIRED_E1,,,,,,,,,,,,,
+0.003,VALIDATED_EXISTING,128,128,7,117,4,-0.39228487362792386,-3.4737328428922076,-0.4567723020017067,48,1,0,0,0
+0.004,NOT_RUN_MISSING_PAIRED_E1,,,,,,,,,,,,,

@@ -1,0 +1,25 @@
+{
+  "selected_variant": "BA2",
+  "checks": {
+    "H_inverse_exact": true,
+    "A_inverse_exact": true,
+    "probabilities_inverse_exact": true,
+    "detector_fault_incidences_exact": true,
+    "observable_fault_incidences_exact": true,
+    "fault_permutation_reversible": true,
+    "edge_permutation_reversible": true,
+    "fault_residue_exact": true,
+    "edge_residue_exact": true,
+    "no_missing_or_duplicated_faults": true,
+    "no_missing_or_duplicated_edges": true,
+    "neighborhood_membership_unchanged": true,
+    "neighborhood_iteration_order_changed": true,
+    "decoder_rerun_required": true
+  },
+  "hashes": {
+    "fault_old_to_new": "3369b815332c6f0a48c833908cd9145a2cc48bb60974251a62508c0a5ba708c0",
+    "fault_new_to_old": "c3a082cf067db75a9a2d0e5ee2e95e11fef4a926c56e92e1b9a10701b8e3b5e1",
+    "edge_old_to_new": "d49500b1d3f88967544da328b63feb2e2b2c9825ad37e724195fe8c67f829f1a",
+    "edge_new_to_old": "76cd33be69393d34c45bc5188dff157df0a8935f1dd0ecbc5a67949d1aaf355e"
+  }
+}

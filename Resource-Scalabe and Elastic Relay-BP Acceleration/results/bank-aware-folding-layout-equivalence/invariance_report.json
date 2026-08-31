@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "fault_forward_inverse_exact": true,
+    "edge_forward_inverse_exact": true,
+    "H_roundtrip_exact": true,
+    "A_roundtrip_exact": true,
+    "probabilities_roundtrip_exact": true,
+    "detector_fault_incidence_set_exact": true,
+    "observable_fault_incidence_set_exact": true,
+    "no_lost_or_duplicated_faults": true,
+    "no_lost_or_duplicated_edges": true,
+    "no_lost_or_duplicated_detector_incidences": true,
+    "no_lost_or_duplicated_observable_incidences": true,
+    "new_fault_address_mod4_matches_assignment": true,
+    "new_edge_address_mod4_matches_assignment": true,
+    "gamma_inverse_mapping_exact": true,
+    "all_256_archive_reproductions": true,
+    "all_converged_BA2_corrections_valid": true,
+    "all_gamma_trace_hashes_exact": true
+  },
+  "gamma_mapping": [
+    {
+      "trajectory": "E0",
+      "leg": 1,
+      "inverse_exact": true
+    },
+    {
+      "trajectory": "E0",
+      "leg": 2,
+      "inverse_exact": true
+    },
+    {
+      "trajectory": "E0",
+      "leg": 32,
+      "inverse_exact": true
+    },
+    {
+      "trajectory": "E1",
+      "leg": 1,
+      "inverse_exact": true
+    },
+    {
+      "trajectory": "E1",
+      "leg": 2,
+      "inverse_exact": true
+    },
+    {
+      "trajectory": "E1",
+      "leg": 32,
+      "inverse_exact": true
+    }
+  ]
+}

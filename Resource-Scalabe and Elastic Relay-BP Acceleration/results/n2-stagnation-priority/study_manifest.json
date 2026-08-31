@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "existing_n2_model": "two fully independent simultaneous P=4 engines; historical n2_cycles=min independent completion cycles, not shared compute",
+  "new_model": "one shared BA2 P=4 iteration/phase-bundle resource; paused trajectory retains state",
+  "quantum": "one complete Relay-BP iteration, with relay-init cost charged before the first iteration of each leg",
+  "threshold": 120,
+  "minimum_leg": 3,
+  "policies": {
+    "P0_round_robin": 1,
+    "P1_stagnation_1to2": 2,
+    "P2_stagnation_1to3": 3
+  },
+  "physical_error_rates": {
+    "available": [
+      "0.003"
+    ],
+    "unavailable": {
+      "0.002": "archived E0 only; no independent paired E1 trace",
+      "0.004": "archived E0 only; no independent paired E1 trace"
+    }
+  },
+  "configuration": {
+    "b": 18,
+    "g": 4,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  },
+  "hashes": {
+    "archive": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9",
+    "BA2_phase_metrics": "a7a847bdf9df7a2868d1a923b35b70fcc87f27adf879fc84e2edfe6adf82cfad",
+    "E0_trace": "a5c54783f63d32c7aa9c8d6d4dac7f7191f8bb2404016f85cf4624a2a99d4957",
+    "BA2_permutations": "c743f798176c3b7e45547a2323f16543a333f39e39ae9545e948fb361a23cfbd"
+  }
+}

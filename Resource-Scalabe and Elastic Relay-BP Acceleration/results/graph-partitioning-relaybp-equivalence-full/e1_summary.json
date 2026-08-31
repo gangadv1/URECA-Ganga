@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "trajectories": 128,
+  "classification_counts": {
+    "EXACT MATCH": 128,
+    "OUTCOME MATCH BUT TRAJECTORY DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "all_exact": true,
+  "total_trace_iterations": 23303,
+  "archived_original_reproductions": 128,
+  "e1_converged": 126,
+  "e1_failures": 2,
+  "e1_wins": 33,
+  "parallel_rescues": 3,
+  "all_wins_exact": true,
+  "all_rescues_exact": true,
+  "candidate_weight": {
+    "successful_candidates": 126,
+    "maximum_absolute_delta": 1.1368683772161603e-13,
+    "median_absolute_delta": 0.0,
+    "selection_affected": 0,
+    "S=1_reporting_only": true
+  },
+  "gamma_mapping": "Generate E1 s1 hardware gamma in original fault order and permute with fault_new_to_old; inverse-map traces with fault_old_to_new.",
+  "configuration": {
+    "decoder": "reference/relay_bp_fixed.py::FixedRelayBPDecoder",
+    "b": 18,
+    "g": 4,
+    "M": 16,
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  }
+}

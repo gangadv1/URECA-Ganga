@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "shots": 128,
+  "policy": "flag-only at iteration 40 of relay leg >=3 when global strict-improvement counter >=120",
+  "exact_outcomes_preserved": 128,
+  "same_logical_outcomes": 128,
+  "outcome_mismatches": 0,
+  "invalid": 0,
+  "successful_decodes_preserved": 125,
+  "failed_decodes_unchanged": 3,
+  "rationale": "No iterations or legs are removed. Existing evidence contains consequential late recoveries, so early handoff is rejected rather than treated as safe.",
+  "leg_work": {
+    "total_legs": 419,
+    "productive_legs": 223,
+    "unproductive_legs": 196,
+    "productive_iterations": 12673,
+    "unproductive_iterations": 11760
+  },
+  "candidate_early_handoff": {
+    "flags": 161,
+    "unique_shots": 25,
+    "endangered_events": 10,
+    "endangered_unique_shots": 10,
+    "late_improvement_events": 10,
+    "late_convergence_events": 8,
+    "flagged_productive_legs": 10,
+    "flagged_unproductive_legs": 151,
+    "retrospective_tail_iterations": 3145,
+    "credited_shortened_legs": 0,
+    "credited_iterations_avoided": 0,
+    "credited_modeled_cycles_avoided": 0
+  }
+}

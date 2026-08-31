@@ -1,0 +1,24 @@
+{
+  "status": "complete_analytical",
+  "scope": "memory architecture only; no RTL modification, synthesis, precision change, graph change, or BA2 change",
+  "graph": {"checks": 1728, "faults": 67752, "edges": 391320, "observables": 12, "observable_edges": 110971},
+  "configuration": {"P": 4, "trajectories": 2, "message_bits": 18, "guard_accumulator_bits": 22, "gamma_bits": 5, "fault_id_bits": 17, "edge_id_bits": 19, "BRAM36_capacity_bits": 36864},
+  "actual_degree_bounds": {"check_min": 51, "check_max": 242, "check_degree_bits": 8, "fault_min": 1, "fault_max": 9, "fault_degree_bits": 4},
+  "variants": {
+    "M0": {"bits": 64685352, "MiB": 7.711094856262207, "ideal_BRAM36": 1755, "banked_capacity_BRAM36": 1800, "reduction_percent": 0.0},
+    "M1": {"bits": 49277674, "MiB": 5.874356508255005, "ideal_BRAM36": 1337, "banked_capacity_BRAM36": 1376, "reduction_percent": 23.819423599951964},
+    "M2": {"bits": 48056410, "MiB": 5.72877049446106, "ideal_BRAM36": 1304, "banked_capacity_BRAM36": 1336, "reduction_percent": 25.70743064055677},
+    "M3": {"bits": 47021084, "MiB": 5.605350017547607, "ideal_BRAM36": 1276, "banked_capacity_BRAM36": 1309, "reduction_percent": 27.307987749684038},
+    "M4": {"bits": 32933564, "MiB": 3.9259867668151855, "ideal_BRAM36": 894, "banked_capacity_BRAM36": 925, "reduction_percent": 49.08651961884663}
+  },
+  "selected_variant": "M4",
+  "selected_requirements": ["true dual-read shared static banks", "degree-table address-trace equivalence", "phase-aliased NU/MU lifetime equivalence", "full trajectory equivalence before hardware use"],
+  "BA2_online_metadata_bits": 0,
+  "BA2_offline_forward_inverse_bits": 17173728,
+  "QC_audit": {"exact_unique_fault_signatures": 67752, "round_translation_templates": 12096, "faults_in_repeated_templates": 61704, "maximum_repetition": 12, "credited_saving_bits": 0},
+  "GARI": {"single_core_measured_BRAM": 704, "three_core_measured_BRAM": 2121},
+  "comparability": "Relay-BP numbers are capacity-only; GARI numbers are measured implementation resources",
+  "tail_behavior": "preserved analytically because dynamic E0/E1 state remains independent; latency impact of shared ports must be modeled",
+  "RTL_modified": false,
+  "synthesis_run": false
+}

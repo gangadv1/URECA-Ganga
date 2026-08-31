@@ -1,0 +1,24 @@
+Gross [[144,12,12]] memory-Z experiment at p=0.003
+  -> STIM circuit and Detector Error Model
+  -> connected bipartite decoding graph
+       1,728 detector/check nodes
+       67,752 fault-variable nodes
+       391,320 detector-fault incidences
+       12 logical observables
+  -> fixed-point Relay-BP mathematical decoder
+  -> original P=4 folded layout
+       logical address modulo 4 selects the memory bank
+  -> METIS k=4 graph partition/reordering study
+       improves graph locality; preserves H, A, probabilities, and incidences
+       does not directly optimize address-modulo-4 conflicts
+  -> BA2 bank-aware reversible fault/edge layout
+       co-access groups directly determine modulo-4 residue assignment
+       Relay-BP equations, gamma streams, graph connectivity, and outcomes remain unchanged
+  -> optional N=2 stagnation-priority study
+       changes only shared-resource service order; never terminates a trajectory
+
+Graph partitioning assigns mathematical vertices to locality-oriented partitions.
+Node/edge reordering changes reversible storage identities but not connectivity.
+Bank-aware layout assigns address residues to reduce same-bank co-access.
+Relay-BP trajectory and gamma values remain attached to the same mathematical faults.
+Folding/access scheduling models how up to four requests issue and retry; it is not decoder mathematics.

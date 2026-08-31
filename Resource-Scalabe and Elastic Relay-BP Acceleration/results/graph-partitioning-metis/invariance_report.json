@@ -1,0 +1,26 @@
+{
+  "all_checks_present_once": true,
+  "all_faults_present_once": true,
+  "H_inverse_exact": true,
+  "A_inverse_exact": true,
+  "probabilities_inverse_exact": true,
+  "detector_fault_incidence_set_exact": true,
+  "observable_fault_incidence_set_exact": true,
+  "detector_fault_edge_count_original": 391320,
+  "detector_fault_edge_count_partitioned": 391320,
+  "observable_fault_edge_count_original": 110971,
+  "observable_fault_edge_count_partitioned": 110971,
+  "no_missing_or_duplicate_detector_fault_edges": true,
+  "no_missing_or_duplicate_observable_fault_edges": true,
+  "no_fault_split": true,
+  "hashes": {
+    "H_original_indptr": "6d73a0cee48d64e55d357f73d1ec30b93944e1d6fd331819b4c996858e6c01fe",
+    "H_roundtrip_indptr": "6d73a0cee48d64e55d357f73d1ec30b93944e1d6fd331819b4c996858e6c01fe",
+    "H_original_indices": "c8f2b4a124983db837919c3798395f52bf7a6db4a3a64d80ab5734c0efb4dcb1",
+    "H_roundtrip_indices": "c8f2b4a124983db837919c3798395f52bf7a6db4a3a64d80ab5734c0efb4dcb1",
+    "A_original_indices": "774343132edc3d84731701d1239ab26c36c06904bf991b9df39a20dc61cb9c6c",
+    "A_roundtrip_indices": "774343132edc3d84731701d1239ab26c36c06904bf991b9df39a20dc61cb9c6c",
+    "probabilities_original": "e9735a62c424a748775fe33d650a74400e157eb1e9df4f05521006f1bc556e09",
+    "probabilities_roundtrip": "e9735a62c424a748775fe33d650a74400e157eb1e9df4f05521006f1bc556e09"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "dataset": {
+    "samples_file": "results/circuit-level-multiseed/paired_samples.npz",
+    "samples_sha256": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "archive_file": "results/n1-vs-n2-hardware-latency/per_shot_results.csv",
+    "archive_sha256": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9",
+    "stored_sample_shape": [
+      5,
+      128,
+      1728
+    ],
+    "used_panel": "four circuit seeds x shots 0..31",
+    "syndrome_format": "uint8/bool dense array [seed,shot,detector]",
+    "logical_format": "uint8/bool dense array [seed,shot,observable]",
+    "gamma_metadata": "per_shot_results.csv columns s0/e0_final_rng_state/e0_gamma_coefficients/e0_rng_words"
+  },
+  "permutations": {
+    "file": "results/graph-partitioning-metis/permutations.npz",
+    "sha256": "dd010b23ed2773d2c6abe8fa8e52ca22901d4f86843ef669e409b186e375348a"
+  },
+  "decoder": {
+    "file": "reference/relay_bp_fixed.py",
+    "sha256": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "class_name": "FixedRelayBPDecoder",
+    "fixed": {
+      "b": 18,
+      "g": 4,
+      "M": 16,
+      "clip": null,
+      "separate_scale": true
+    },
+    "S": 1,
+    "R": 32,
+    "first_limit": 80,
+    "later_limit": 60
+  },
+  "gamma_mapping": "Generate archived S0 vectors in original fault order, then apply fault_new_to_old to each vector.",
+  "invariants": {
+    "H_roundtrip_exact": true,
+    "A_roundtrip_exact": true,
+    "probabilities_roundtrip_exact": true,
+    "check_permutation_inverse": true,
+    "fault_permutation_inverse": true
+  }
+}

@@ -1,0 +1,26 @@
+Small graph PyMetis k=2 demonstration
+
+Node assignments:
+C0 -> P0
+C1 -> P1
+C2 -> P0
+V0 -> P0
+V1 -> P0
+V2 -> P1
+V3 -> P1
+
+Internal edges:
+C0 -- V0
+C0 -- V1
+C1 -- V2
+C1 -- V3
+C2 -- V0
+
+Cross-partition edges:
+C0 -- V2
+C1 -- V1
+C2 -- V2
+C2 -- V3
+
+Cut count: 4
+Balance: {"total_nodes": [4, 3], "checks": [2, 1], "faults": [2, 2]}

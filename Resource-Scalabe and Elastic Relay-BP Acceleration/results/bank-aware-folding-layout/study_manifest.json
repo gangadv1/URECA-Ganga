@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "scope": "static graph/access structure only; no shot labels or outcomes used",
+  "graph": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "P": 4,
+  "objective_cycle_weights": {
+    "variable_mu_plus_nu": 5,
+    "convergence": 3,
+    "relay_init": 3
+  },
+  "cooccurrence": {
+    "fault": {
+      "convergence_groups": 98640,
+      "relay_groups": 97830,
+      "convergence_unique_pairs": 365484,
+      "relay_unique_pairs": 374154,
+      "weighted_unique_pairs": 464687
+    },
+    "edge": {
+      "variable_groups": 126288,
+      "unique_pairs": 491328
+    },
+    "cycle_sensitivity": {
+      "variable_mu_plus_nu": 5,
+      "convergence": 3,
+      "relay_init": 3
+    }
+  },
+  "variants": {
+    "BA1": {
+      "balance_lambda": 0.0,
+      "locality_lambda": 0.0,
+      "description": "weighted same-residue conflict cost only, with mandatory exact residue capacities"
+    },
+    "BA2": {
+      "balance_lambda": 0.25,
+      "locality_lambda": 0.0,
+      "description": "conflict cost plus access-workload balance penalty"
+    },
+    "BA3": {
+      "balance_lambda": 0.25,
+      "locality_lambda": 0.1,
+      "description": "BA2 plus weak preference for residue equal to METIS partition ID"
+    }
+  },
+  "selected_variant": "BA2",
+  "selection_rule": "minimum modeled structural cycles, then retries, then name",
+  "address_construction": "old item assigned to address slots residue + 4*k; original ID order within each residue",
+  "invariance": {
+    "H_inverse_exact": true,
+    "A_inverse_exact": true,
+    "probabilities_inverse_exact": true,
+    "detector_fault_incidences_exact": true,
+    "observable_fault_incidences_exact": true,
+    "fault_permutation_reversible": true,
+    "edge_permutation_reversible": true,
+    "fault_residue_exact": true,
+    "edge_residue_exact": true,
+    "no_missing_or_duplicated_faults": true,
+    "no_missing_or_duplicated_edges": true,
+    "neighborhood_membership_unchanged": true,
+    "neighborhood_iteration_order_changed": true,
+    "decoder_rerun_required": true
+  },
+  "neighborhood_order_changed": true,
+  "decoder_rerun_required": true,
+  "runtime_seconds": 19.890497167012654,
+  "cycle_scaling_archive": "results/n1-vs-n2-hardware-latency/per_shot_results.csv"
+}

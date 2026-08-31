@@ -1,0 +1,8 @@
+design,cores_or_trajectories,BRAM_value,value_type,numerical_relation_to_GARI_3core,comparison_limit
+GARI_single,1,704,MEASURED,not_applicable,"VU29P implementation"
+GARI_three_core,3,2121,MEASURED,reference,"VCU19P implementation"
+RelayBP_M0,2,1800,ANALYTICAL_BANKED_CAPACITY,below_by_321,"packing ports FIFOs and routing omitted"
+RelayBP_M1,2,1376,ANALYTICAL_BANKED_CAPACITY,below_by_745,"requires shared dual-read graph banks"
+RelayBP_M2,2,1336,ANALYTICAL_BANKED_CAPACITY,below_by_785,"requires shared dual-read prior and syndrome too"
+RelayBP_M3,2,1309,ANALYTICAL_BANKED_CAPACITY,below_by_812,"also requires validated degree-based address generation"
+RelayBP_M4,2,925,ANALYTICAL_BANKED_CAPACITY,below_by_1196,"phase-aliased message RAM requires RTL-equivalence and implementation validation"

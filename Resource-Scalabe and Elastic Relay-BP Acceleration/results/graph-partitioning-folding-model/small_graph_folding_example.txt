@@ -1,0 +1,42 @@
+Small 3-check / 4-variable P=4 access example
+
+Original edges:
+e0: C0--V0 (fault bank V0%4=0)
+e1: C0--V1 (fault bank V1%4=1)
+e2: C0--V2 (fault bank V2%4=2)
+e3: C1--V1 (fault bank V1%4=1)
+e4: C1--V2 (fault bank V2%4=2)
+e5: C1--V3 (fault bank V3%4=3)
+e6: C2--V0 (fault bank V0%4=0)
+e7: C2--V2 (fault bank V2%4=2)
+e8: C2--V3 (fault bank V3%4=3)
+
+Original global edge groups:
+[0, 1, 2, 3]
+[4, 5, 6, 7]
+[8]
+
+Partition assignment:
+P0: C0, V0, V1
+P1: C1, C2, V2, V3
+
+Partition-aware edge order (old -> new):
+e0 -> e0: C0--V0
+e1 -> e1: C0--V1
+e2 -> e2: C0--V2
+e3 -> e3: C1--V1
+e6 -> e4: C2--V0
+e4 -> e5: C1--V2
+e5 -> e6: C1--V3
+e7 -> e7: C2--V2
+e8 -> e8: C2--V3
+
+Reordered global edge groups:
+['e0:C0--V0', 'e1:C0--V1', 'e2:C0--V2', 'e3:C1--V1']
+['e4:C2--V0', 'e5:C1--V2', 'e6:C1--V3', 'e7:C2--V2']
+['e8:C2--V3']
+
+Observation:
+Consecutive edge-ID groups never conflict in edge-message RAM because their IDs occupy distinct modulo-4 banks.
+Fault/decision gathers can still conflict whenever a group contains repeated fault-ID modulo-4 banks.
+With only four variables, V0..V3 already occupy distinct banks; this fixture therefore explains where conflicts remain, but does not manufacture a disappearing conflict.

@@ -1,0 +1,75 @@
+{
+  "graph": {
+    "experiment": "Gross [[144,12,12]] memory-Z",
+    "physical_error_probability": 0.003,
+    "checks": 1728,
+    "fault_variables": 67752,
+    "detector_fault_incidences": 391320,
+    "logical_observables": 12,
+    "connected_components": 1
+  },
+  "metis_seed_2": {
+    "k": 4,
+    "experiment_label": "LIMITED METIS BASELINE",
+    "edge_cut_count": 40882,
+    "edge_cut_ratio": 0.1044720433404886,
+    "random_edge_cut_ratio": 0.7495323520392517,
+    "greedy_edge_cut_ratio": 0.5436982520699172,
+    "boundary_check_fraction": 0.7847222222222222,
+    "boundary_fault_fraction": 0.3458495690164128,
+    "graph_invariance": "exact",
+    "decoder_equivalence_trajectories": 256,
+    "node_only_retry_change_percent": 2.222479935532018,
+    "node_only_structural_cycle_change_percent": 0.4711794005796133,
+    "node_only_trajectory_mean_change_percent": 0.3183321963829311
+  },
+  "original": {
+    "bank_rule": "logical_address % 4",
+    "retry_subsets": 336291,
+    "mean_active_lanes": 2.410877145821472,
+    "lane_utilization": 0.602719286455368,
+    "structural_modeled_cycles": 4758697,
+    "trajectory_mean": 726388132.6328125,
+    "trajectory_p95": 2257054017.6499977,
+    "trajectory_p99": 7381272452.0
+  },
+  "BA2": {
+    "retry_subsets": 142566,
+    "retry_change_percent": -57.606358778557855,
+    "variable_MU_retries": 0,
+    "variable_NU_retries": 0,
+    "mean_active_lanes": 2.671396824546842,
+    "lane_utilization": 0.6678492061367105,
+    "structural_modeled_cycles": 4283590,
+    "structural_cycle_change_percent": -9.983972503397464,
+    "trajectory_mean": 617117727.34375,
+    "trajectory_p95": 1917397629.499998,
+    "trajectory_p99": 6270598460.0,
+    "trajectory_mean_change_percent": -15.042977766309196,
+    "trajectory_p95_change_percent": -15.048660133692483,
+    "trajectory_p99_change_percent": -15.047188668656396,
+    "exact_trajectories": 256,
+    "exact_mapped_iterations": 47736,
+    "E1_wins_exact": 33,
+    "E1_rescues_exact": 3,
+    "logical_regressions": 0
+  },
+  "refinement_decision": {
+    "selected_layout": "BA2",
+    "F1_trajectory_mean_change_vs_BA2_percent": 0.6278918739181849,
+    "F3_trajectory_mean_change_vs_BA2_percent": -0.0242539899994898
+  },
+  "optional_stagnation_priority": {
+    "selected_for_main_architecture": false,
+    "policy": "frozen non-destructive 2:1 service priority",
+    "validation_scope": "p=0.003, 128 paired E0/E1 shots",
+    "mean_change_percent": -0.39228487362792386,
+    "p95_change_percent": -3.4737328428922076,
+    "successes_preserved": 128,
+    "late_recoveries_preserved": 48,
+    "lost_successes": 0,
+    "logical_regressions": 0,
+    "starvation_events": 0,
+    "cross_p_status": "incomplete: p=0.002 and p=0.004 have no paired E1 archive"
+  }
+}

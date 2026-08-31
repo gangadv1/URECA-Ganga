@@ -1,0 +1,3 @@
+graph,nodes,incidences,original_retries,BA2_retries,retry_reduction_percent,structural_cycle_reduction_percent,trajectory_weighted_reduction_percent,equivalence_status
+canonical Gross circuit p=.003,69480,391320,336291,142566,57.606358778557855,9.983972503397464,15.042977766309196,256/256 exact
+Gross code capacity,432,864,812,213,73.76847290640394,9.879184495343573,N/A,not tested; no fixed-point archive

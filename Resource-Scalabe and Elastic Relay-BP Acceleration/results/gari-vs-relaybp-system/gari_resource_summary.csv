@@ -1,0 +1,5 @@
+scope,device,cores,frequency_MHz,average_iterations,latency_us_12_rounds,latency_ns_per_round,LUT,REG,BRAM,URAM,DSP,source
+single_core,AMD_VU29P,1,approximately_274,2.28,14.4,,122393,111697,704,"alternative mapping: 5% URAM",not_reported,"Section IV-H; Table III; Section IV-I"
+three_cores,AMD_VCU19P,3,approximately_274,,,,381698,365765,2121,,not_reported,"Table IV; Section V"
+complete_ensemble,8x_AMD_VCU19P,24,approximately_274,1.13,7.16,approximately_596,,,,,not_reported,"Section IV-H/I and Section V; iteration value from GARI [20]"
+prior_parallel_GARI,not_specified_here,24,,,,,,,,,,"Section IV-I: 48 devices versus eight for proposed architecture"

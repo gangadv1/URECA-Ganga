@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "scope": "software and analytical whole-system comparison",
+  "relaybp_system": {
+    "main_components": ["fixed-point Relay-BP", "N=2 independent E0/E1 trajectories", "first-success arbitration", "P=4 folded lanes/banks", "BA2 bank-aware layout"],
+    "supporting_component": "P=2/P=4/P=8 resource-scaling sweep",
+    "optional_excluded_component": "stagnation-priority scheduling",
+    "graph": "Gross [[144,12,12]] circuit-level memory-Z p=0.003",
+    "dimensions": {"checks": 1728, "faults": 67752, "incidences": 391320, "observables": 12},
+    "configuration": {"b": 18, "guard_bits": 4, "accumulator_bits": 22, "M": 16, "S": 1, "R": 32, "P": 4, "first_limit": 80, "later_limit": 60},
+    "dataset": {"shots": 128, "circuit_seeds": [20260809, 20260810, 20260811, 20260812]}
+  },
+  "archived_N1_N2_detailed_model": {
+    "N1_mean": 726676462.7421875, "N2_mean": 471284891.6796875,
+    "N1_p95": 2257959401.099998, "N2_p95": 1455705983.1999981,
+    "N1_p99": 7384342292.9, "N2_p99": 2208714916.370001,
+    "N1_max": 7384343541, "N2_max": 4724250260,
+    "N1_converged": 125, "N2_converged": 128, "E1_wins": 33, "rescues": 3
+  },
+  "derived_layout_factorial": {
+    "method": "archived per-trajectory iterations*layout_iteration_cycles + legs*layout_relay_init_cycles; first successful trajectory selected",
+    "original_costs": {"iteration": 3788781, "relay_init": 969916},
+    "BA2_costs": {"iteration": 3214635, "relay_init": 1068955},
+    "N1_original": {"mean": 726388132.6328125, "p95": 2257054017.6499977, "p99": 7381272452},
+    "N2_original": {"mean": 471101739.40625, "p95": 1455090356.749998, "p99": 2207801682.310001},
+    "N1_BA2": {"mean": 617117727.34375, "p95": 1917397629.499998, "p99": 6270598460},
+    "N2_BA2": {"mean": 400249877.65625, "p95": 1236224242.9999983, "p99": 1875628598.2000008},
+    "combined_change_vs_N1_original_percent": {"mean": -44.89862104361011, "p95": -45.22841574314068, "p99": -74.5893596206195}
+  },
+  "memory_model": {
+    "BRAM36_bits": 36864,
+    "one_engine_bits": 32342676, "one_engine_ideal_BRAM36": 878, "one_engine_per_array_banked_BRAM36": 900,
+    "N2_current_wrapper_bits": 64685352, "N2_ideal_BRAM36": 1755, "N2_per_array_banked_BRAM36": 1800,
+    "classification": "capacity-only analytical estimate; not synthesized"
+  },
+  "GARI_source": "reference/gari/arxiv_2605.01035.pdf",
+  "GARI": {"single_core_BRAM": 704, "three_core_BRAM": 2121, "single_average_us": 14.4, "ensemble_average_us_12_rounds": 7.16, "ensemble_ns_per_round_approx": 596},
+  "comparability": {"absolute_latency": "invalid", "tail_distribution": "Relay-BP-only explicit evidence", "error_correction": "invalid without matched experiment", "BRAM": "actual GARI versus analytical Relay-BP; no ranking"},
+  "RTL_modified": false,
+  "synthesis_run": false,
+  "decoder_rerun": false
+}

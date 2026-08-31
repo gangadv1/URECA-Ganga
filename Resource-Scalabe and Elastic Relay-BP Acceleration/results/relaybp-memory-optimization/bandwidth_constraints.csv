@@ -1,0 +1,10 @@
+shared_structure,simultaneous_access_pattern,dual_port_sufficient,classification,latency_risk,requirement
+check_row_pointer,"up to one scalar offset read per engine; engines may be at different nodes",yes,CAPACITY_SAFE,none_if_true_dual_port,"two independent read ports or replicated tiny pointer RAM"
+fault_row_pointer,"up to one scalar offset read per engine",yes,CAPACITY_SAFE,none_if_true_dual_port,"two independent read ports"
+edge_to_fault,"after each engine's bank conflict filtering: at most one read per bank per engine",yes,BANDWIDTH_CONSTRAINED,none_if_each_bank_supports_two_reads,"true dual-read per bank; configuration writes excluded during decode"
+fault_to_edge,"after filtering: at most one read per bank per engine",yes,BANDWIDTH_CONSTRAINED,none_if_each_bank_supports_two_reads,"true dual-read per bank"
+quantized_prior,"variable phase uses scalar reads; relay init can use one read per bank per engine",yes,BANDWIDTH_CONSTRAINED,none_if_each_bank_supports_two_reads,"two read ports on every prior bank"
+syndrome,"one read per engine during check/convergence processing",yes,CAPACITY_SAFE,none_if_true_dual_port,"dual-read memory or small replicated syndrome"
+BA2_runtime_maps,"no runtime access when initialization images are preordered",not_applicable,CAPACITY_SAFE,none,"compile mappings offline"
+observable_metadata,"winner only needs post-decode logical scoring",yes,CAPACITY_SAFE,none_on_decode_critical_path,"keep offline or read only after first-success"
+single_port_shared_static,"two engines can request concurrently",no,UNREALISTIC_WITHOUT_REPLICATION,"would serialize engines and weaken N2 tail benefit","do not use single-port sharing"

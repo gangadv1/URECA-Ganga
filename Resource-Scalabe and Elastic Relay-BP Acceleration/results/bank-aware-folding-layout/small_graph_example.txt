@@ -1,0 +1,19 @@
+Small graph bank-aware residue example
+
+Variable groups:
+V0: e0,e6
+V1: e1,e3
+V2: e2,e4,e7
+V3: e5,e8
+
+Illustrative bad original residues:
+faults V0,V1,V2,V3 -> 0,0,1,1
+edges e2,e4,e7 -> 2,2,3
+Conflicts: C0 decision group contains V0/V1 on bank 0; V2 variable group contains e2/e4 on bank 2.
+
+Bank-aware reassignment:
+faults V0,V1,V2,V3 -> 0,1,2,3
+edges e2,e4,e7 -> 0,1,2
+Removed: the listed C0 decision and V2 message conflicts.
+Remaining: conflicts can still occur in another group when global capacity forces co-accessed items to share a residue.
+The full heuristic minimizes this static co-occurrence cost while enforcing exact residue capacities.

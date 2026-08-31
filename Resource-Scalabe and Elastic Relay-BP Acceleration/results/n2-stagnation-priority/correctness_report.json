@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "shots": 128,
+  "baseline_successes": 128,
+  "policies": {
+    "P0_round_robin": {
+      "successes": 128,
+      "logical_successes": 128,
+      "lost_successes": 0,
+      "logical_regressions": 0,
+      "invalid": 0
+    },
+    "P1_stagnation_1to2": {
+      "successes": 128,
+      "logical_successes": 128,
+      "lost_successes": 0,
+      "logical_regressions": 0,
+      "invalid": 0
+    },
+    "P2_stagnation_1to3": {
+      "successes": 128,
+      "logical_successes": 128,
+      "lost_successes": 0,
+      "logical_regressions": 0,
+      "invalid": 0
+    }
+  },
+  "no_trajectory_terminated": true,
+  "all_trajectories_run_to_natural_completion": true,
+  "corrections_from_validated_equivalence_archive": true
+}
