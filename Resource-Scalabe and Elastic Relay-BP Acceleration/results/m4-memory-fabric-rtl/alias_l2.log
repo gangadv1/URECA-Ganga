@@ -1,0 +1,2 @@
+PASS M4_ALIAS latency=2 responses=12 hazards=0
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/m4_memory_fabric/tb_m4_message_alias.sv:25: $finish called at 350000 (1ps)

@@ -1,0 +1,15 @@
+memory,logical_width,logical_depth,banks,analytical_BRAM36,vivado_BRAM36_equivalent,difference,difference_percent,classification,reason
+edge_to_fault,17,391320,4,192,,,,UNVERIFIED,Vivado and exact target unavailable
+fault_to_edge,19,391320,4,228,,,,UNVERIFIED,Vivado and exact target unavailable
+check_degree,8,1728,4,4,,,,UNVERIFIED,Vivado and exact target unavailable
+fault_degree,4,67752,4,12,,,,UNVERIFIED,Vivado and exact target unavailable
+prior,18,67752,4,36,,,,UNVERIFIED,Vivado and exact target unavailable
+syndrome,1,1728,4,4,,,,UNVERIFIED,Vivado and exact target unavailable
+E0_message,18,391320,4,192,,,,UNVERIFIED,Vivado and exact target unavailable
+E1_message,18,391320,4,192,,,,UNVERIFIED,Vivado and exact target unavailable
+E0_marginal,18,67752,4,36,,,,UNVERIFIED,Vivado and exact target unavailable
+E1_marginal,18,67752,4,36,,,,UNVERIFIED,Vivado and exact target unavailable
+E0_gamma,5,67752,4,20,,,,UNVERIFIED,Vivado and exact target unavailable
+E1_gamma,5,67752,4,20,,,,UNVERIFIED,Vivado and exact target unavailable
+E0_decision,1,67752,4,4,,,,UNVERIFIED,Vivado and exact target unavailable
+E1_decision,1,67752,4,4,,,,UNVERIFIED,Vivado and exact target unavailable

@@ -1,0 +1,14 @@
+{
+  "source": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/relaybp-memory-m4-cycle-model/cycle_request_trace.csv",
+  "templates": 16,
+  "phases": [
+    "check",
+    "convergence",
+    "relay_init",
+    "variable"
+  ],
+  "total_group_occurrences": 41206386498,
+  "format": "lossless run-length templates; representative bank/address instances driven in RTL",
+  "representative_RTL_cycles": 16,
+  "representative_vectors": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/m4_memory_fabric/template_vectors.txt"
+}

@@ -1,0 +1,16 @@
+Vivado executable: NOT FOUND
+Vivado version: NOT AVAILABLE
+Target FPGA part: NOT SPECIFIED IN REPOSITORY
+Target family: UNKNOWN
+Package/speed grade: UNKNOWN
+Board: NOT SPECIFIED
+Clock period: NOT SPECIFIED
+Synthesis mode intended: out_of_context
+Memory family: UNKNOWN UNTIL TARGET PART IS PROVIDED
+Synthesis launched: NO
+
+Repository evidence:
+- results/vivado-n1-baseline/summary.json: blocked_before_synthesis
+- no .xpr or .xdc exists
+- docs/research_proposal/relay_bp_fpga_research_proposal.md leaves target insertion as future work
+- the VU29P in GARI documents is a literature-comparison device, not a Relay-BP project target

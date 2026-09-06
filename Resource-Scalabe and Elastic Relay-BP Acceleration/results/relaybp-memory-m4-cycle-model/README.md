@@ -1,0 +1,3 @@
+# Relay-BP M4 cycle-accurate software controller model
+
+This is a deterministic analytical cycle/event model, not RTL or synthesis. The complete 128-shot archive is represented by reusable exact phase request templates plus per-shot iteration/leg occurrence counts; `cycle_request_trace.csv` is therefore a lossless run-length description rather than hundreds of millions of duplicate request rows. The one-cycle baseline uses the previously RTL-calibrated BA2 phase constants. The two-cycle mode adds only dependency-fence bubbles and never changes decoder state. See `final_cycle_model_report.md` and `study_manifest.json`.

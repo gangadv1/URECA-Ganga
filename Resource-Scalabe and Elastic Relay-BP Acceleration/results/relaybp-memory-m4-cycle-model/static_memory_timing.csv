@@ -1,0 +1,11 @@
+read_latency,structure,max_issue_reads_per_bank,max_physical_port_occupancy,cycles_over_two,arbitration_cycles,added_stalls,cause
+1,edge_to_fault,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+1,fault_to_edge,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+1,degree_tables,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+1,prior,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+1,syndrome,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+2,edge_to_fault,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+2,fault_to_edge,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+2,degree_tables,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+2,prior,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy
+2,syndrome,2,2,0,0,0,none; latency increases in-flight requests but not per-cycle port occupancy

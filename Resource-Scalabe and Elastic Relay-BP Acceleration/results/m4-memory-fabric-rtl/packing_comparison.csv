@@ -1,0 +1,15 @@
+memory,logical_width,logical_depth,banks,analytical_width_config,analytical_depth_config,analytical_BRAM36,RTL_parameterizable,ram_style_block_attribute,TDP_primitive_count_effect,inference_status,packing_match
+edge_to_fault,17,391320,4,9,4096,192,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+fault_to_edge,19,391320,4,1,32768,228,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+check_degree,8,1728,4,9,4096,4,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+fault_degree,4,67752,4,4,8192,12,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+prior,18,67752,4,18,2048,36,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+syndrome,1,1728,4,1,32768,4,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E0_message,18,391320,4,9,4096,192,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E1_message,18,391320,4,9,4096,192,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E0_marginal,18,67752,4,18,2048,36,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E1_marginal,18,67752,4,18,2048,36,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E0_gamma,5,67752,4,1,32768,20,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E1_gamma,5,67752,4,1,32768,20,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E0_decision,1,67752,4,1,32768,4,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED
+E1_decision,1,67752,4,1,32768,4,True,True,no replication predicted,NOT EXECUTED,UNCONFIRMED

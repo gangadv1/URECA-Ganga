@@ -1,0 +1,27 @@
+{
+  "status": "BLOCKED BEFORE SYNTHESIS",
+  "required_action": "TARGET FPGA AND VIVADO REQUIRED",
+  "vivado_available": false,
+  "vivado_version": null,
+  "target_part": null,
+  "target_family": null,
+  "speed_grade": null,
+  "clock_period_ns": null,
+  "synthesis_mode": "out_of_context intended",
+  "synthesis_launched": false,
+  "reports_generated": 0,
+  "analytical_reference_BRAM36": 980,
+  "inferred_BRAM36": null,
+  "packing_difference": null,
+  "M0_analytical_BRAM36": 1800,
+  "GARI_one_core_measured_BRAM": 704,
+  "GARI_three_core_measured_BRAM": 2121,
+  "decision": "UNCLASSIFIED \u2014 A/B/C/D require inference evidence",
+  "blockers": [
+    "Exact complete FPGA part is absent",
+    "No board, XDC, or Vivado project exists",
+    "No approved clock period exists",
+    "Vivado executable is unavailable"
+  ],
+  "full_decoder_integrated": false
+}

@@ -1,0 +1,2 @@
+configuration,status,measured_or_extrapolated,RAMB36,RAMB18,BRAM36_equivalent,LUT,FF,LUTRAM,DSP,warnings,analytical_reference_BRAM36
+M4 full isolated memory fabric,NOT EXECUTED,neither,,,,,,,,cannot sum unmeasured inference results,980

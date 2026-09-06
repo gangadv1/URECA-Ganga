@@ -1,0 +1,3 @@
+# BRAM semantics
+
+The model uses synchronous registered reads with selectable latency 1 or 2. Shared banks use TDP ports A and B for two reads. Private dynamic banks use at most one read and one write. Different-address read/write is legal. Same-address dual-read returns the same old value on both ports. Same-address read/write and same-bank dual-write are never issued: the controller waits for all old-semantic message returns before overwrite and BA2 serializes unsupported lane collisions. Consequently read-first is the declared baseline, while write-first or no-change yields the same decoder-visible behavior because undefined collision cases are structurally excluded.

@@ -1,0 +1,17 @@
+{
+  "trajectories": 256,
+  "classification_counts": {
+    "EXACT MATCH": 256,
+    "OUTCOME MATCH BUT TRACE DIFFERENCE": 0,
+    "OUTCOME MISMATCH": 0,
+    "INVALID": 0
+  },
+  "compared_iterations": 47736,
+  "E0": 128,
+  "E1": 128,
+  "all_exact": true,
+  "archive_iterations_and_legs_exact": true,
+  "expected_compared_iterations": 47736,
+  "iteration_total_exact": true,
+  "first_divergence": null
+}

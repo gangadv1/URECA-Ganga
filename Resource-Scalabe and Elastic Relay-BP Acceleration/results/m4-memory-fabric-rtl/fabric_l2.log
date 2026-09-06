@@ -1,0 +1,2 @@
+PASS M4_FABRIC latency=2 requests=8207 responses=8207
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/m4_memory_fabric/tb_m4_memory_fabric.sv:52: $finish called at 50150000 (1ps)

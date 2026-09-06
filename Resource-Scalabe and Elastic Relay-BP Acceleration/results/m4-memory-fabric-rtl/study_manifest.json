@@ -1,0 +1,49 @@
+{
+  "status": "SIMULATION PASS; SYNTHESIS NOT EXECUTED",
+  "scope": "standalone representative M4 memory fabric only",
+  "read_latencies": [
+    1,
+    2
+  ],
+  "directed_tests": 10,
+  "stress_cycles_per_mode": 5000,
+  "stress_trace_requests_per_mode": 8207,
+  "template_trace_requests_per_mode": 46,
+  "trace_matches": 16506,
+  "trace_mismatches": 0,
+  "message_assertion_failures": 0,
+  "shared_arbitration_stalls": 0,
+  "dropped_requests": 0,
+  "duplicated_responses": 0,
+  "same_address_dual_reads_tested": 706,
+  "compressed_templates": {
+    "source": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/relaybp-memory-m4-cycle-model/cycle_request_trace.csv",
+    "templates": 16,
+    "phases": [
+      "check",
+      "convergence",
+      "relay_init",
+      "variable"
+    ],
+    "total_group_occurrences": 41206386498,
+    "format": "lossless run-length templates; representative bank/address instances driven in RTL",
+    "representative_RTL_cycles": 16,
+    "representative_vectors": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/m4_memory_fabric/template_vectors.txt"
+  },
+  "tools": {
+    "iverilog": "/opt/homebrew/bin/iverilog",
+    "vvp": "/opt/homebrew/bin/vvp",
+    "yosys": null,
+    "vivado": null
+  },
+  "rtl_hashes": {
+    "fpga/rtl/m4_memory_fabric/m4_memory_fabric_top.sv": "08306fb01d8474b40394f39bcab3ba76677d04d567a04ebc52df71bf01e2a258",
+    "fpga/rtl/m4_memory_fabric/m4_message_phase_controller.sv": "7302b01cf955d67d11b56ed4d112c69ae561d18413e0f47894708565859a44c9",
+    "fpga/rtl/m4_memory_fabric/m4_message_ram.sv": "70268529d6c116ff14cf7cb26d0b8ebc3f9c902c48c70356cc9cf93db9fc20d9",
+    "fpga/rtl/m4_memory_fabric/m4_private_bank.sv": "072e0e282872a3d55c35708a74219942bd6620a33eb6439297fc917d1cce7229",
+    "fpga/rtl/m4_memory_fabric/m4_shared_tdp_bank.sv": "82890a44beb28f7a7dd4216e0cc3c0f82b10fbcd721961d6325055320c864a83"
+  },
+  "full_decoder_integrated": false,
+  "full_decoder_synthesized": false,
+  "classification": "READY FOR FULL RELAY-BP RTL INTEGRATION, SUBJECT TO BRAM INFERENCE CHECK"
+}

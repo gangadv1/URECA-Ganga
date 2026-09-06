@@ -1,0 +1,11 @@
+test,read_latency,requests,responses,mismatches,assertion_failures,result
+shared directed sequence,1,14,14,0,0,PASS
+frozen 16-template phase replay,1,32,32,0,0,PASS
+message alias NU->MU->NU,1,12,12,0,0,PASS
+same-address dual read,1,2,2,0,0,PASS
+phase-transition fence,1,12,12,0,0,PASS
+shared directed sequence,2,14,14,0,0,PASS
+frozen 16-template phase replay,2,32,32,0,0,PASS
+message alias NU->MU->NU,2,12,12,0,0,PASS
+same-address dual read,2,2,2,0,0,PASS
+phase-transition fence,2,12,12,0,0,PASS

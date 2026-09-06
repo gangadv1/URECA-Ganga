@@ -1,0 +1,5 @@
+read_latency,phase,old_semantic,new_semantic,neighborhoods_per_iteration,return_fence,RAW,WAR,WAW,phase_boundary_hazard,extra_bubbles_per_iteration,result
+1,check,NU_old,MU,1728,write begins only after final old value returns,0,0,0,0,0,SAFE
+1,variable,MU,NU_new,67752,write begins only after final old value returns,0,0,0,0,0,SAFE
+2,check,NU_old,MU,1728,write begins only after final old value returns,0,0,0,0,1728,SAFE
+2,variable,MU,NU_new,67752,write begins only after final old value returns,0,0,0,0,67752,SAFE

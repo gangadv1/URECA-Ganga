@@ -1,0 +1,5 @@
+phase,canonical_retry_subsets,M4_retry_subsets,canonical_estimated_cycles,M4_estimated_cycles,exact
+check,0,0,508753,508753,True
+variable,0,0,1958833,1958833,True
+convergence,47128,47128,747049,747049,True
+relay_init,95438,95438,1068955,1068955,True

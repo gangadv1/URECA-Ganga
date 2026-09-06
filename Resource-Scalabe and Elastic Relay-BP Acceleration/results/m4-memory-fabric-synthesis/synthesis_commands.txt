@@ -1,0 +1,4 @@
+# Do not run until the project owner supplies exact values.
+export TARGET_PART='<exact complete Vivado part string>'
+export CLOCK_PERIOD_NS='<approved out-of-context clock period>'
+vivado -mode batch -source fpga/testbench/m4_memory_fabric/synth_m4_matrix.tcl -log results/m4-memory-fabric-synthesis/reports/vivado.log -journal results/m4-memory-fabric-synthesis/reports/vivado.jou

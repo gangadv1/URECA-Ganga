@@ -1,0 +1,4 @@
+design,BRAM,basis,difference_vs_M4_inferred,comparison
+GARI one core,704,measured published,,M4 inferred unavailable
+GARI three cores,2121,measured published,,M4 inferred unavailable
+Relay-BP M4,,Vivado inferred NOT AVAILABLE,,analytical reference remains 980; not substituted here

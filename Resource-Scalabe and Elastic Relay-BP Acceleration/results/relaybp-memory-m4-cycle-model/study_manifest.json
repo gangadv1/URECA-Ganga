@@ -1,0 +1,27 @@
+{
+  "shots": 128,
+  "trajectories": 256,
+  "iterations": 47736,
+  "relay_legs": 823,
+  "L1_changed_winners": 0,
+  "L2_changed_winners": 0,
+  "rescues": 3,
+  "L2_added_cycles": {
+    "mean": 9028218.375,
+    "median": 5474034.0,
+    "p90": 20804792.4,
+    "p95": 27876948.299999963,
+    "p99": 42268903.74000002,
+    "maximum": 90423558,
+    "mean_percent": 2.260967323891574,
+    "p99_percent": 2.321941753889177
+  },
+  "message_hazards": 0,
+  "static_arbitrations": 0,
+  "L1_memory_wait_cycles": 0,
+  "L2_structural_wait_cycles": 169038,
+  "packed_BRAM36": 980,
+  "port_aware_BRAM36": 980,
+  "decision": "READY WITH MINOR CONTROLLER CHANGES",
+  "reason": "return-valid dependency fences and parameterized 1/2-cycle pipeline timing must be explicit in RTL; no memory redesign is indicated"
+}

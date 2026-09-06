@@ -1,0 +1,5 @@
+case_id,category,trajectory,sample_seed,shot,classification,iterations,legs,trace_exact,correction_exact,first_difference
+easy_e0,easy,E0,20260809,31,EXACT MATCH,22,1,True,True,null
+typical_e0,typical,E0,20260809,2,EXACT MATCH,74,1,True,True,null
+known_n1_failure,known N=1 difficult/failure,E0,20260809,18,EXACT MATCH,1940,32,True,True,null
+known_n2_rescue,known N=2 rescue,E1,20260809,18,EXACT MATCH,594,10,True,True,null

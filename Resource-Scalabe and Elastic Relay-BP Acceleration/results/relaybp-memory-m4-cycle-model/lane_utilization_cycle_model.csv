@@ -1,0 +1,3 @@
+read_latency,logical_accesses_per_iteration_plus_relay,issued_access_groups,algorithm_BA2_retry_cycles,new_memory_wait_cycles,total_structural_cycles,mean_active_lanes_per_controller_cycle,lane_utilization,full_4_lane_issue_fraction,full_4_lane_controller_cycle_fraction
+1,4789152,1792752,142566,0,4283590,1.1180229667171695,0.2795057416792924,0.4779908208162646,0.20004692325829504
+2,4789152,1792752,142566,169038,4452628,1.075578736871798,0.2688946842179495,0.4779908208162646,0.1924524123730974

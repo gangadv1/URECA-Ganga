@@ -1,0 +1,6 @@
+structure,issue_groups,bank_cycle_observations,demand_0_fraction,demand_1_fraction,demand_2_fraction,demand_gt2_fraction,mean_reads_per_bank,maximum_reads_per_bank,dual_read_stalls,scope
+edge_to_fault,196470,785880,0.004122766834631242,0.0,0.9958772331653688,0.0,1.9917544663307376,2,0,conditional address-level static issue stream; arithmetic/idle controller cycles excluded
+fault_to_edge,126288,505152,0.22534207525655645,0.0,0.7746579247434435,0.0,1.549315849486887,2,0,conditional address-level static issue stream; arithmetic/idle controller cycles excluded
+degree_tables,71208,284832,0.75,0.0,0.25,0.0,0.5,2,0,conditional address-level static issue stream; arithmetic/idle controller cycles excluded
+prior,214890,859560,0.46592209967890547,0.0,0.5340779003210945,0.0,1.068155800642189,2,0,conditional address-level static issue stream; arithmetic/idle controller cycles excluded
+syndrome,3456,13824,0.75,0.0,0.25,0.0,0.5,2,0,conditional address-level static issue stream; arithmetic/idle controller cycles excluded

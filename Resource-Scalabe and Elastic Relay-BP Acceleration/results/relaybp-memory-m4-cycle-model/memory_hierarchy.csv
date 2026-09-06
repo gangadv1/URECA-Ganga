@@ -1,0 +1,5 @@
+architecture,bits,MiB,BRAM36,estimate,stored_bit_reduction_vs_M0_percent,BRAM_reduction_vs_M0_percent
+M0 original N2,64685352,7.711094856262207,1800,banked capacity,0,0
+M4 capacity only,32933564,3.9259867668151855,925,banked capacity,49.08651961884663,48.611111111111114
+M4 width/depth packed,32933564,3.9259867668151855,980,analytical RAMB36 configuration packing,49.08651961884663,45.55555555555556
+M4 port-aware packed,32933564,3.9259867668151855,980,analytical TDP packing,49.08651961884663,45.55555555555556

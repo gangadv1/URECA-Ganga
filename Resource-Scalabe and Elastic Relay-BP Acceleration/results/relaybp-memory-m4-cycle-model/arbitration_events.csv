@@ -1,0 +1,11 @@
+case,memory,condition,legal,policy,events,stalls,decoder_visible_reorder
+same-bank dual-read,edge_to_fault,E0 and E1 read same/different address in same logical bank,True,serve both on TDP ports A/B,196470,0,False
+same-bank dual-read,fault_to_edge,E0 and E1 read same/different address in same logical bank,True,serve both on TDP ports A/B,126288,0,False
+same-bank dual-read,degree_tables,E0 and E1 read same/different address in same logical bank,True,serve both on TDP ports A/B,71208,0,False
+same-bank dual-read,prior,E0 and E1 read same/different address in same logical bank,True,serve both on TDP ports A/B,214890,0,False
+same-bank dual-read,syndrome,E0 and E1 read same/different address in same logical bank,True,serve both on TDP ports A/B,3456,0,False
+no-conflict dual-read,shared static,different banks,True,serve independently,all applicable,0,False
+read/write overlap,trajectory-private message,"one read and one write, different address",True,TDP A=read B=write,phase-local,0,False
+same-address read/write,trajectory-private message,possible only without return fence,False,assert/fence; never issued,0,0,False
+two writes,trajectory-private dynamic,same bank same cycle,False,BA2 stable subsets serialize before RAM,0,0,False
+phase transition,trajectory-private message,last old-semantic read still in pipeline,True,wait for final return before semantic flip/write,one fence per neighborhood,0 at L1; one dependency bubble at L2,False

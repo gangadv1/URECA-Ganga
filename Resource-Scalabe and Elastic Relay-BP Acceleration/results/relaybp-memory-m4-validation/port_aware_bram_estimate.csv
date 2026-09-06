@@ -1,0 +1,5 @@
+model,bits,MiB,BRAM36,assumption
+capacity_only,32933564,3.9259867668151855,894,total bits only
+banked_capacity,32933564,3.9259867668151855,925,per-array and four-bank rounding
+bandwidth_aware_true_dual_read,32933564,3.9259867668151855,925,shared read-only banks use true dual-port 2R; no replication
+bandwidth_aware_replication_fallback,48527180,5.784890651702881,1346,replicate all shared static arrays if 2R mapping unavailable; conservative capacity sum

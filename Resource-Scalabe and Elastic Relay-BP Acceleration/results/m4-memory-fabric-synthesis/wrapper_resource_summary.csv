@@ -1,0 +1,5 @@
+wrapper,status,target_part,vivado_version,parameters,RAMB36,RAMB18,LUTRAM,LUT,FF,DSP,inferred_port_mode,read_latency,warnings
+m4_shared_tdp_bank,NOT EXECUTED,,,representative/full-depth matrix prepared,,,,,,,,,target FPGA and Vivado unavailable
+m4_private_bank,NOT EXECUTED,,,representative/full-depth matrix prepared,,,,,,,,,target FPGA and Vivado unavailable
+m4_message_ram,NOT EXECUTED,,,representative/full-depth matrix prepared,,,,,,,,,target FPGA and Vivado unavailable
+m4_memory_fabric_top,NOT EXECUTED,,,representative/full-depth matrix prepared,,,,,,,,,target FPGA and Vivado unavailable

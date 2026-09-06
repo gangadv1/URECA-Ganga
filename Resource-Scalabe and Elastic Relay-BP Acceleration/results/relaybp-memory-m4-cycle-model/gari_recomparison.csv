@@ -1,0 +1,4 @@
+design,BRAM36,type,below_2121,below_704
+GARI one core,704,measured,True,False
+GARI three cores,2121,measured,False,False
+M4 port-aware packed,980,analytical,True,False

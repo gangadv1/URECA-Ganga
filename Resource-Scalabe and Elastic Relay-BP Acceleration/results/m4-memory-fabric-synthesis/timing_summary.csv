@@ -1,0 +1,2 @@
+configuration,status,target_clock_ns,WNS_ns,TNS_ns,estimated_Fmax_MHz,critical_path,reason
+M4 isolated memory fabric,NOT EXECUTED,,,,,,"no approved clock, target part, or Vivado"

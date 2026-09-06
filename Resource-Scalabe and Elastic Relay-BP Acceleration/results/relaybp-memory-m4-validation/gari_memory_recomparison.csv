@@ -1,0 +1,6 @@
+design,BRAM,type,below_2121,below_704
+GARI_one_core,704,measured,True,False
+GARI_three_core,2121,measured,False,False
+M4_capacity_only,894,analytical,True,False
+M4_dual_read_banked,925,analytical,True,False
+M4_full_static_replication_fallback,1346,analytical,True,False

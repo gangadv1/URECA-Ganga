@@ -1,0 +1,9 @@
+component,bits,copies,total_bits
+shared_graph_degree_and_adjacency,14372352,1,14372352
+shared_prior,1219536,1,1219536
+shared_syndrome,1728,1,1728
+aliased_edge_message_store,7043760,2,14087520
+marginal,1219536,2,2439072
+gamma,338760,2,677520
+decision,67752,2,135504
+trajectory_control,166,2,332

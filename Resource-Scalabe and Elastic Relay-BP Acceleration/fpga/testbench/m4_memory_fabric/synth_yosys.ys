@@ -1,0 +1,6 @@
+# Prepared isolated inference check; run only when yosys is installed.
+read_verilog -sv fpga/rtl/m4_memory_fabric/m4_shared_tdp_bank.sv
+read_verilog -sv fpga/rtl/m4_memory_fabric/m4_private_bank.sv
+hierarchy -check -top m4_shared_tdp_bank
+proc; memory -nomap; memory_bram -rules +/xilinx/brams.txt
+stat

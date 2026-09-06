@@ -1,0 +1,4 @@
+wrapper,status,tool,inferred_primitive,BRAM_count,LUTRAM_count,registers,warnings
+m4_shared_tdp_bank,NOT EXECUTED,none available,unknown,not measured,not measured,not measured,Yosys and Vivado unavailable; scripts prepared
+m4_private_bank,NOT EXECUTED,none available,unknown,not measured,not measured,not measured,Yosys and Vivado unavailable; scripts prepared
+m4_message_ram,NOT EXECUTED,none available,unknown,not measured,not measured,not measured,Yosys and Vivado unavailable; scripts prepared

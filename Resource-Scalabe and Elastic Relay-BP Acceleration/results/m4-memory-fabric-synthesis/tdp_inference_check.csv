@@ -1,0 +1,7 @@
+memory,analytical_BRAM36_without_replication,vivado_BRAM36_equivalent,inferred_TDP,replication_factor,port_cost_difference,status
+edge_to_fault,192,,,,,NOT EXECUTED
+fault_to_edge,228,,,,,NOT EXECUTED
+check_degree,4,,,,,NOT EXECUTED
+fault_degree,12,,,,,NOT EXECUTED
+prior,36,,,,,NOT EXECUTED
+syndrome,4,,,,,NOT EXECUTED

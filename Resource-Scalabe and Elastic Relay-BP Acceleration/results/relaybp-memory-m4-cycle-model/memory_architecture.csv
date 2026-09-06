@@ -1,0 +1,17 @@
+memory,logical_width,logical_depth,banks,bank_rule,read_ports_per_bank,write_ports_per_bank,read_latency_tested,write_behavior,read_during_write,shared_or_private,access
+edge_to_fault,17,391320,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+fault_to_edge,19,391320,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+check_degree,8,1728,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+fault_degree,4,67752,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+prior,18,67752,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+syndrome,1,1728,4,logical_address % 4,2,0,1 and 2 cycles,none,read-first baseline; write-first/no-change also checked with dependency fence,shared,read_only
+E0_message,18,391320,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E0,read_write
+E1_message,18,391320,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E1,read_write
+E0_marginal,18,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E0,read_write
+E1_marginal,18,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E1,read_write
+E0_gamma,5,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E0,read_write
+E1_gamma,5,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E1,read_write
+E0_decision,1,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E0,read_write
+E1_decision,1,67752,4,logical_address % 4,1,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E1,read_write
+E0_control,166,1,1,register,2,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E0,register
+E1_control,166,1,1,register,2,1,1 and 2 cycles,registered write at cycle edge,read-first baseline; write-first/no-change also checked with dependency fence,E1,register

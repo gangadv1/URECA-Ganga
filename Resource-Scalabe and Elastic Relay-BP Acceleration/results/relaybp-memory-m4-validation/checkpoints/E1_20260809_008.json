@@ -1,0 +1,15 @@
+{
+  "trajectory": "E1",
+  "sample_seed": 20260809,
+  "shot": 8,
+  "classification": "EXACT MATCH",
+  "iterations": 54,
+  "legs": 1,
+  "trace_iterations": 54,
+  "trace_exact": true,
+  "converged": true,
+  "correction_hash": "210f31cb149581278244c0a0d96b414477f92bc954c1aa5264a24946ada95e2a",
+  "logical_correct": true,
+  "first_difference": null,
+  "final_rng_state": 12631610141971852844
+}

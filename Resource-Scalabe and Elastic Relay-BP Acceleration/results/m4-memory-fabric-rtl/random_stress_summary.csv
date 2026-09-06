@@ -1,0 +1,3 @@
+read_latency,cycles,random_seed,total_requests,dual_read_cycles,same_bank_dual_cycles,same_address_dual_cycles,single_trajectory_cycles,response_mismatches,ordering_mismatches,dropped_requests,duplicated_responses,result
+1,5000,20260901,8193,3369,2356,704,1455,0,0,0,0,PASS
+2,5000,20260901,8193,3369,2356,704,1455,0,0,0,0,PASS

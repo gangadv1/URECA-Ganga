@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "model": "separate M4 oracle",
+  "pilot_exact": true,
+  "full": {
+    "trajectories": 256,
+    "classification_counts": {
+      "EXACT MATCH": 256,
+      "OUTCOME MATCH BUT TRACE DIFFERENCE": 0,
+      "OUTCOME MISMATCH": 0,
+      "INVALID": 0
+    },
+    "compared_iterations": 47736,
+    "E0": 128,
+    "E1": 128,
+    "all_exact": true,
+    "archive_iterations_and_legs_exact": true,
+    "expected_compared_iterations": 47736,
+    "iteration_total_exact": true,
+    "first_divergence": null
+  },
+  "degree_traversal_exact": true,
+  "message_hazards": 0,
+  "BA2_access_exact": true,
+  "dual_read_max_demand": 2,
+  "dual_read_stalls": 0,
+  "first_success_changed_winners": 0,
+  "first_success_changed_cycles": 0,
+  "lost_successes": 0,
+  "logical_regressions": 0,
+  "port_model": {
+    "static_issue_groups_per_iteration": 367344,
+    "static_issue_groups_per_relay_init": 244968,
+    "structure_groups_per_iteration": {
+      "edge_to_fault": 98640,
+      "fault_to_edge": 126288,
+      "degree_tables": 71208,
+      "prior": 67752,
+      "syndrome": 3456
+    },
+    "structure_groups_per_relay_init": {
+      "edge_to_fault": 97830,
+      "fault_to_edge": 0,
+      "degree_tables": 0,
+      "prior": 147138,
+      "syndrome": 0
+    },
+    "single_port_model": "E0-priority phase-lock serialization negative control",
+    "single_port_mean_added_cycles": 21281649.1953125,
+    "single_port_p95_added_cycles": 107240318.39999999,
+    "single_port_p99_added_cycles": 215527547.76000008,
+    "single_port_max_added_cycles": 461018232,
+    "single_port_changed_winners": 6,
+    "dual_read_changed_winners": 0,
+    "dual_read_changed_cycles": 0
+  },
+  "memory_bits": 32933564,
+  "capacity_BRAM36": 894,
+  "banked_BRAM36": 925,
+  "bandwidth_aware_dual_read_BRAM36": 925,
+  "replication_fallback_BRAM36": 1346,
+  "RTL_modified": false,
+  "synthesis": false
+}

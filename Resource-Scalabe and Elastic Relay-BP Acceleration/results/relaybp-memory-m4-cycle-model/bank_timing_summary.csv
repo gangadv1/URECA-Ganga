@@ -1,0 +1,13 @@
+read_latency,memory,maximum_queue_depth,maximum_inflight_per_bank,mean_queue_depth,read_port_utilization,write_port_utilization,both_read_ports_active_fraction,idle_fraction,stalled_fraction,arbitration_events
+1,edge_to_fault,0,2,0,0.9958772331653688,0,0.9958772331653688,0.004122766834631242,0,0
+1,fault_to_edge,0,2,0,0.7746579247434435,0,0.7746579247434435,0.22534207525655645,0,0
+1,degree_tables,0,2,0,0.25,0,0.25,0.75,0,0
+1,prior,0,2,0,0.5340779003210945,0,0.5340779003210945,0.46592209967890547,0,0
+1,syndrome,0,2,0,0.25,0,0.25,0.75,0,0
+2,edge_to_fault,0,4,0,0.9958772331653688,0,0.9958772331653688,0.004122766834631242,0,0
+2,fault_to_edge,0,4,0,0.7746579247434435,0,0.7746579247434435,0.22534207525655645,0,0
+2,degree_tables,0,4,0,0.25,0,0.25,0.75,0,0
+2,prior,0,4,0,0.5340779003210945,0,0.5340779003210945,0.46592209967890547,0,0
+2,syndrome,0,4,0,0.25,0,0.25,0.75,0,0
+1,private_message_each_engine,0,1,0,phase dependent,phase dependent,0,phase dependent,0,0
+2,private_message_each_engine,0,2,0,phase dependent,phase dependent,0,phase dependent,0,0
