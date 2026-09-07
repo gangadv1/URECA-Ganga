@@ -1,0 +1,4 @@
+method,edge_cut,cut_percent,boundary_checks_percent,boundary_faults_percent,communication_volume,distinct_cross_partition_endpoint_references,total_vertices,total_edges,balance_ratio,source_file
+random_balanced,293306.86224,74.9532,100.0,99.5543,NOT MEASURED,SOFTWARE-SIMULATED,REUSED,69480,391320,see source partition_metrics.json,Resource-Scalabe and Elastic Relay-BP Acceleration/results/graph-partitioning-metis/README.md
+greedy_balanced,212759.90136000002,54.3698,100.0,97.2724,NOT MEASURED,SOFTWARE-SIMULATED,REUSED,69480,391320,see source partition_metrics.json,Resource-Scalabe and Elastic Relay-BP Acceleration/results/graph-partitioning-metis/README.md
+metis_limited_selected,40882,10.4472,78.4722,34.585,24905,24905,69480,391320,see source partition_metrics.json,Resource-Scalabe and Elastic Relay-BP Acceleration/results/graph-partitioning-metis/README.md

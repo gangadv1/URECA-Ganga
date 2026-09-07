@@ -1,0 +1,2 @@
+status,classification,directed_tests,stress_cycles_per_mode,stress_trace_requests_per_mode,template_trace_requests_per_mode,trace_matches,trace_mismatches,message_assertion_failures,shared_arbitration_stalls,dropped_requests,duplicated_responses,same_address_dual_reads_tested,full_decoder_integrated,full_decoder_synthesized
+SIMULATION PASS; SYNTHESIS NOT EXECUTED,"READY FOR FULL RELAY-BP RTL INTEGRATION, SUBJECT TO BRAM INFERENCE CHECK",10,5000,8207,46,16506,0,0,0,0,0,706,False,False

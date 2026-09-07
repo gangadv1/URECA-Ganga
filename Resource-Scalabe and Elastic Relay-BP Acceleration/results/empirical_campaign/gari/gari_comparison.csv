@@ -1,0 +1,3 @@
+system,source_type,status,cycles_or_latency,bram,lut,ff,fmax_mhz,notes
+GARI,LITERATURE,NOT_MATCHED,paper-reported; not a matched software run,704,122393,111697,274,Literature values from results/gari-comparison/final_gari_comparison.md; not our measurement.
+URECA Relay-BP M4,ANALYTICAL/RTL-SIMULATED,NOT_MATCHED,model-dependent,analytical estimate,NOT MEASURED,NOT MEASURED,NOT MEASURED,No apples-to-apples GARI software artifact verified.

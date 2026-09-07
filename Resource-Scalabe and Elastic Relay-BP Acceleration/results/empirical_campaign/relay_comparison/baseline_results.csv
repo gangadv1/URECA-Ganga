@@ -1,0 +1,4 @@
+decoder,shots,converged,convergence_rate,non_converged,mean_iterations,mean_relay_legs,logical_scoring,status,source_type,source_file
+standard_bp,64,59,0.921875,5,27.859375,1.0,NOT_AVAILABLE,COMPLETE,SOFTWARE-SIMULATED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/baseline-simulations/summary.json
+uniform_mem_bp,64,64,1.0,0,5.140625,1.0,NOT_AVAILABLE,COMPLETE,SOFTWARE-SIMULATED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/baseline-simulations/summary.json
+relay_bp,64,64,1.0,0,22.109375,3.03125,NOT_AVAILABLE,COMPLETE,SOFTWARE-SIMULATED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/baseline-simulations/summary.json

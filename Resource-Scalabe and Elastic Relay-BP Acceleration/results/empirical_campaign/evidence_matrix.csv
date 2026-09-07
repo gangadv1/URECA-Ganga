@@ -1,0 +1,10 @@
+claim,metric,value,unit,source_type,experiment_id,source_file,git_commit,confidence/status
+P=4 original modeled structural cycles,estimated_structural_cycles,4758697,cycles,SOFTWARE-SIMULATED,p_sweep,results/folding-factor-sweep/p_sweep_structural.csv,ecf279a9f443a0b900a6411191bcb650e3dff3d2,archived exact row
+BA2 reduces P=4 retry subsets,retry_subsets,336291 -> 142566,subsets,SOFTWARE-SIMULATED,ba2_heuristics,results/bank-aware-folding-layout/variant_comparison.csv,ecf279a9f443a0b900a6411191bcb650e3dff3d2,archived exact row
+METIS selected edge cut,cut_percent,10.4472,%,SOFTWARE-SIMULATED,metis,results/graph-partitioning-metis/README.md,ecf279a9f443a0b900a6411191bcb650e3dff3d2,limited METIS baseline
+M4 RTL trace equivalence,trace_mismatches,0,mismatches,RTL-SIMULATED,m4_rtl,results/m4-memory-fabric-rtl/study_manifest.json,ecf279a9f443a0b900a6411191bcb650e3dff3d2,standalone fabric only
+LER p=0.005 bounded point estimate,logical_error_rate,0.07421875,LER,SOFTWARE-SIMULATED,ler,results/paper-ler-reproduction-expanded/per_p_summary.csv,ecf279a9f443a0b900a6411191bcb650e3dff3d2,19/256 logical failures; bounded archived run
+GARI hardware resources,BRAM/LUT/FF/Fmax,704 / 122393 / 111697 / 274,reported literature units,LITERATURE,gari,results/gari-comparison/final_gari_comparison.md,ecf279a9f443a0b900a6411191bcb650e3dff3d2,not matched and not our measurement
+Small baseline Relay-BP convergence,convergence_rate,1.0,rate,SOFTWARE-SIMULATED,baseline_small,results/empirical_campaign/relay_comparison/baseline_results.csv,ecf279a9f443a0b900a6411191bcb650e3dff3d2,Relay-BP 64/64; Tier-1 logical scoring unavailable
+N=4 trajectory reduction,average_reduction_vs_N1,0.3019354657,rate,SOFTWARE-SIMULATED,n_sweep_n4,results/parallel-trajectory-model/summary.json,ecf279a9f443a0b900a6411191bcb650e3dff3d2,640 paired cases; P=4 timing model
+METIS selected communication volume,distinct_cross_partition_endpoint_references,24905,endpoint references,SOFTWARE-SIMULATED,metis_communication,results/empirical_campaign/metis/metis_partition_results.csv,ecf279a9f443a0b900a6411191bcb650e3dff3d2,selected seed 2; controls not measured with this metric

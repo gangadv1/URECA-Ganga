@@ -1,0 +1,10 @@
+N,P,check_nodes,variable_nodes,incidences,check_message_updates_per_iteration,variable_message_updates_per_iteration,edge_message_accesses_per_iteration,syndrome_checks_per_iteration,operations_per_iteration,total_operations_per_decode,source_type,status,notes
+1,2,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+1,4,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+1,8,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+2,2,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+2,4,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+2,8,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+4,2,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+4,4,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.
+4,8,1728,67752,391320,391320,391320,782640,1728,1567008,NOT MEASURED,ANALYTICAL,DERIVED_FROM_GRAPH_INCIDENCE,Structural operation proxy only; no instruction-level profiler was run.

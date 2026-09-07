@@ -1,0 +1,5 @@
+architecture,source_type,status,source_file,details
+N=1 canonical fixed Relay-BP,SOFTWARE-SIMULATED,REUSED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/n1-vs-n2-hardware-latency/aggregate_summary.json,"{""mean"":726676462.7421875,""p50"":287091237.5,""p90"":1448701889.5999997,""p95"":2257959401.099998,""p99"":7384342292.9,""max"":7384343541.0,""std"":1261211420.2273915}"
+N=2 first-success Relay-BP,SOFTWARE-SIMULATED,REUSED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/n1-vs-n2-hardware-latency/aggregate_summary.json,"{""mean"":471284891.6796875,""p50"":287091237.5,""p90"":1086244419.7,""p95"":1455705983.1999981,""p99"":2208714916.370001,""max"":4724250260.0,""std"":557641214.0177841}"
+Relay-BP + P=4 + BA2,SOFTWARE-SIMULATED,REUSED,Resource-Scalabe and Elastic Relay-BP Acceleration/results/final-software-model-summary/final_report.md,15.043% lower trajectory-weighted modeled mean than original P=4; exact archived equivalence.
+Full FPGA implementation,BLOCKED,BLOCKED,,Vivado and target FPGA part/constraints unavailable.

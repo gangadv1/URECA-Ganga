@@ -1,0 +1,3 @@
+transition,cycles_before,cycles_after,cycle_reduction_percent,utilization_before_percent,utilization_after_percent,utilization_change_percentage_points,lane_or_bank_multiplier,source_type,notes
+P2_to_P4,7205045,4758697,33.9564,80.0373,60.2719,-19.7654,2.0,SOFTWARE-SIMULATED,Archived original-layout structural model; lanes/banks double
+P4_to_P8,4758697,3198386,32.7825,60.2719,44.0774,-16.1945,2.0,SOFTWARE-SIMULATED,Archived original-layout structural model; lanes/banks double
