@@ -1,0 +1,4 @@
+name,num_trials,num_successes,num_failures,logical_error_rate,mean_iterations,median_iterations,std_iterations,p95_iterations,p99_iterations,max_iterations,min_iterations,mean_latency_ms,total_latency_ms,success_rate
+Relay-BP N=1,500,28,472,0.944,58.166,60.0,8.419883847179841,60.0,60.0,60,7,127.37865491467528,63689.32745733764,0.056
+Relay-BP N=2,500,46,454,0.908,56.778,60.0,11.090027772733484,60.0,60.0,60,7,5.025111748254858,2512.555874127429,0.092
+Relay-BP N=4,500,88,412,0.824,53.594,60.0,15.112020513485284,60.0,60.0,60,7,9.074200831586495,4537.1004157932475,0.176

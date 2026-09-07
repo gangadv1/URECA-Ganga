@@ -1,0 +1,90 @@
+==========================================================================================
+RELAY-BP vs GARI-NMS SOFTWARE-ONLY COMPARISON
+==========================================================================================
+
+Experiment Configuration:
+  Code: [[144,12,12]] Bivariate Bicycle (Gross)
+  Noise model: Depolarizing (Gross circuit-level memory-Z)
+  Physical error rate: 0.001
+  Number of shots: 500
+  Max iterations: 60
+  Relay-BP trajectories: (1, 2, 4)
+  Output dir: comparison_experiments/raw_results
+
+Loaded code: Hx shape (72, 144), Hz shape (72, 144)
+Warning: GARI decoder not available: dlopen(/tmp/gari-nms/my_decoders/hbplib_v2.so, 0x0006): Library not loaded: /Users/maana1/Homebrew/opt/libomp/lib/libomp.dylib
+  Referenced from: <628D79AB-07AD-393E-A05E-EAF5B983AA0C> /private/tmp/gari-nms/my_decoders/hbplib_v2.so
+  Reason: tried: '/Users/maana1/Homebrew/opt/libomp/lib/libomp.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/maana1/Homebrew/opt/libomp/lib/libomp.dylib' (no such file), '/Users/maana1/Homebrew/opt/libomp/lib/libomp.dylib' (no such file)
+
+======================================================================
+Running Relay-BP with N=1 trajectories
+Shots: 500, Max iterations: 60
+======================================================================
+  Progress: 50/500
+  Progress: 100/500
+  Progress: 150/500
+  Progress: 200/500
+  Progress: 250/500
+  Progress: 300/500
+  Progress: 350/500
+  Progress: 400/500
+  Progress: 450/500
+  Progress: 500/500
+
+======================================================================
+Running Relay-BP with N=2 trajectories
+Shots: 500, Max iterations: 60
+======================================================================
+  Progress: 50/500
+  Progress: 100/500
+  Progress: 150/500
+  Progress: 200/500
+  Progress: 250/500
+  Progress: 300/500
+  Progress: 350/500
+  Progress: 400/500
+  Progress: 450/500
+  Progress: 500/500
+
+======================================================================
+Running Relay-BP with N=4 trajectories
+Shots: 500, Max iterations: 60
+======================================================================
+  Progress: 50/500
+  Progress: 100/500
+  Progress: 150/500
+  Progress: 200/500
+  Progress: 250/500
+  Progress: 300/500
+  Progress: 350/500
+  Progress: 400/500
+  Progress: 450/500
+  Progress: 500/500
+
+==========================================================================================
+COMPARISON SUMMARY
+==========================================================================================
+
+Decoder: Relay-BP N=1
+  Trials: 500 (successes: 28, failures: 472)
+  LER: 0.944000
+  Iterations: mean=58.17, median=60, P95=60, P99=60, max=60
+  Latency: mean=127.379ms, total=63689.3ms
+
+Decoder: Relay-BP N=2
+  Trials: 500 (successes: 46, failures: 454)
+  LER: 0.908000
+  Iterations: mean=56.78, median=60, P95=60, P99=60, max=60
+  Latency: mean=5.025ms, total=2512.6ms
+
+Decoder: Relay-BP N=4
+  Trials: 500 (successes: 88, failures: 412)
+  LER: 0.824000
+  Iterations: mean=53.59, median=60, P95=60, P99=60, max=60
+  Latency: mean=9.074ms, total=4537.1ms
+
+
+Saved summary to comparison_experiments/raw_results/comparison_summary.csv
+Saved detailed results to comparison_experiments/raw_results/detailed_results.json
+
+Experiment complete!
