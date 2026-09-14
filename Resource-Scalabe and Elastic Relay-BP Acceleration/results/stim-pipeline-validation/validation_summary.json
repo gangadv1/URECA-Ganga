@@ -1,0 +1,1556 @@
+{
+  "provenance": {
+    "git_head": "fe0ebfd35dcca1b79e511905fc7bad0d4e801003",
+    "git_status_at_start": "?? \"Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/\"\n",
+    "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "stim_version": "1.15.0",
+    "numpy_version": "2.2.6",
+    "circuit_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/circuit.stim",
+    "circuit_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20",
+    "package_sha256": "70591bf58acf485c026e9a8f161c7d0b9e0d6f37f0e0ad9334b98989ee67d0bc",
+    "validation_script_sha256": "b49cb6be318da52ef16e2f6f2a641f1a89ee71ae42e97522868964865bb25ab7",
+    "scoring_implementation_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/circuit-level-baseline/run_circuit_level_baseline.py",
+    "scoring_sha256": "96f8d7416b843fef6e1952b07e8870cea4740a06de6570fe32407ba9c211f7a3",
+    "scoring_assignment_lines": [
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "dem_text_roundtrip": {
+      "serialized_equal": true,
+      "in_memory_equal": false,
+      "maximum_error_probability_delta": 4.336808689942018e-19,
+      "note": "Builder writes str(dem). NPZ probabilities and both incidence matrices were separately checked exactly."
+    },
+    "package_rederived_exactly": true
+  },
+  "circuit_metadata": {
+    "num_qubits": 288,
+    "num_measurements": 1872,
+    "num_detectors": 1728,
+    "num_observables": 12,
+    "physical_p": 0.003,
+    "qec_rounds": 12,
+    "data_qubits": 144,
+    "basis": "memory-Z",
+    "noise_channels": {
+      "X_ERROR": [
+        0.003
+      ],
+      "Z_ERROR": [
+        0.003
+      ],
+      "DEPOLARIZE2": [
+        0.003
+      ],
+      "DEPOLARIZE1": [
+        0.003
+      ],
+      "M": [
+        0.003
+      ],
+      "MX": [
+        0.003
+      ]
+    },
+    "round_derivation": "count of paired noisy 72-target M/MX ancilla-readout groups",
+    "code_distance_independently_verified": false,
+    "dem_fault_count": 67752,
+    "detector_edges": 391320,
+    "noiseless_sha256": "9edad451766dee2f3b8c4e54441ddcf0362c73e39058f62b6e25a6bb6f8ef911"
+  },
+  "decoder_metadata": {
+    "implementation_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_float.py",
+    "implementation_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+    "profiles": {
+      "bounded": [
+        [
+          80,
+          0.125,
+          null
+        ],
+        [
+          60,
+          null,
+          [
+            -0.24,
+            0.66
+          ]
+        ]
+      ],
+      "tiny": [
+        [
+          1,
+          0.125,
+          null
+        ]
+      ],
+      "seed_probe": [
+        [
+          1,
+          0.125,
+          null
+        ],
+        [
+          1,
+          null,
+          [
+            -0.24,
+            0.66
+          ]
+        ]
+      ]
+    },
+    "normal_S": 1,
+    "seed_probe_S": 2,
+    "decoder_seed": 91,
+    "stim_seed": 20260808,
+    "rng_lifetime": "one persistent decoder RNG per panel, identical shot order on replay"
+  },
+  "case_results": [
+    {
+      "case_name": "information_boundary",
+      "status": "PASS",
+      "shots": 40,
+      "expected_behavior": "Automatically establish legitimate-only actual invocation",
+      "observed_behavior": "Every actual decode call traced; isolated allowlisted payload has static H/probabilities and syndrome only; labels/A/candidate truth excluded",
+      "notes": ""
+    },
+    {
+      "case_name": "noiseless_circuit",
+      "status": "PASS",
+      "shots": 16,
+      "expected_behavior": "Actual noiseless circuit has zero events and every correction succeeds",
+      "observed_behavior": "16/16 successful; zero detector and logical flips",
+      "notes": ""
+    },
+    {
+      "case_name": "logical_label_isolation",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "Only scoring may change when labels change",
+      "observed_behavior": "Corrections, convergence, iterations and residuals identical; scoring-side label changes detected",
+      "notes": ""
+    },
+    {
+      "case_name": "shuffled_syndrome_negative_control",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "Unpermuted graph must not silently accept syndrome permutation as equivalent",
+      "observed_behavior": "Corrupted-input behavior differs; per-shot comparison retained; diagnostic labels are not a physical LER",
+      "notes": ""
+    },
+    {
+      "case_name": "invalid_correction_scoring",
+      "status": "PASS",
+      "shots": 1,
+      "expected_behavior": "Invalid corrections never score success; no decoder involved",
+      "observed_behavior": "Zero, one-bit-flipped, and deterministic random candidates are syndrome-invalid and unsuccessful; valid reference succeeds",
+      "notes": ""
+    },
+    {
+      "case_name": "syndrome_valid_logically_wrong",
+      "status": "PASS",
+      "shots": 1,
+      "expected_behavior": "Syndrome-valid wrong logical action must fail",
+      "observed_behavior": "Actual [H;A] GF(2) solution: syndrome_valid=true, logical_match=false, success=false",
+      "notes": ""
+    },
+    {
+      "case_name": "nonconvergence_accounting",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "One-iteration failures stay in denominator",
+      "observed_behavior": "4 non-converged shots counted as failures; denominator remains 4",
+      "notes": ""
+    },
+    {
+      "case_name": "same_seed_reproducibility",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "Samples and decoder outputs bit-exact",
+      "observed_behavior": "All sample bits, corrections, convergence, iterations and residuals match",
+      "notes": ""
+    },
+    {
+      "case_name": "changed_stim_seed",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "Changed seed does not replay the identical sample panel",
+      "observed_behavior": "Changed STIM seed changes sample panel",
+      "notes": ""
+    },
+    {
+      "case_name": "changed_decoder_seed",
+      "status": "PASS",
+      "shots": 2,
+      "expected_behavior": "Seed propagates into actual RNG state; output changes not mandatory",
+      "observed_behavior": "Seed reaches instance/result/RNG state and randomized relay leg; corrections identical=False (not required to differ)",
+      "notes": ""
+    },
+    {
+      "case_name": "high_noise_destructive_control",
+      "status": "PASS",
+      "shots": 4,
+      "expected_behavior": "Elevated noise produces events and at least one failure under fixed bounded settings",
+      "observed_behavior": "{\"detector_weights\": [662, 683, 681, 705], \"convergence_rate\": 0.0, \"logical_failure_count\": 4, \"nonconvergence_count\": 4, \"noiseless_detector_weights\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}",
+      "notes": ""
+    },
+    {
+      "case_name": "no_postselection_or_dropped_shots",
+      "status": "PASS",
+      "shots": 40,
+      "expected_behavior": "All scheduled/sample/decode/score/save counts equal",
+      "observed_behavior": "40 invocation records read back; all five stage counts and shot IDs agree; failures retained",
+      "notes": ""
+    }
+  ],
+  "shot_accounting": {
+    "noiseless": {
+      "scheduled_shots": 16,
+      "sampled_shots": 16,
+      "decoded_shots": 16,
+      "scored_shots": 16,
+      "saved_shots": 16,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "original": {
+      "scheduled_shots": 4,
+      "sampled_shots": 4,
+      "decoded_shots": 4,
+      "scored_shots": 4,
+      "saved_shots": 4,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "repeat": {
+      "scheduled_shots": 4,
+      "sampled_shots": 4,
+      "decoded_shots": 4,
+      "scored_shots": 4,
+      "saved_shots": 4,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "shuffled": {
+      "scheduled_shots": 4,
+      "sampled_shots": 4,
+      "decoded_shots": 4,
+      "scored_shots": 4,
+      "saved_shots": 4,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "tiny_budget": {
+      "scheduled_shots": 4,
+      "sampled_shots": 4,
+      "decoded_shots": 4,
+      "scored_shots": 4,
+      "saved_shots": 4,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "seed_probe_91": {
+      "scheduled_shots": 2,
+      "sampled_shots": 2,
+      "decoded_shots": 2,
+      "scored_shots": 2,
+      "saved_shots": 2,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "seed_probe_92": {
+      "scheduled_shots": 2,
+      "sampled_shots": 2,
+      "decoded_shots": 2,
+      "scored_shots": 2,
+      "saved_shots": 2,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    },
+    "high_noise": {
+      "scheduled_shots": 4,
+      "sampled_shots": 4,
+      "decoded_shots": 4,
+      "scored_shots": 4,
+      "saved_shots": 4,
+      "exception_shots": 0,
+      "timeout_shots": 0
+    }
+  },
+  "warnings": [
+    "Small fixed panels and truncated budgets: no LER, performance, N=4, or N\u00d7P claim.",
+    "Current decoder is tested; historical decoder/hash reconciliation remains outstanding.",
+    "Process/input isolation and runtime tracing are not an adversarial OS security sandbox.",
+    "Initial attempt rejected STIM's own lossy DEM text roundtrip; preserved in attempt_001_dem_roundtrip. Exact serialized DEM and NPZ incidence/probability checks replace inappropriate in-memory roundtrip equality.",
+    "Noiseless samples use the original static DEM priors; high-noise samples use a newly derived matching DEM.",
+    "Shuffled syndromes have no physical label pairing; their scores are diagnostic only."
+  ],
+  "overall_status": "PASS_WITH_WARNINGS",
+  "canonical_invocation_audit": {
+    "lambdas": {
+      "line": 115,
+      "expression": "np.log((1.0 - probabilities) / probabilities)"
+    },
+    "results": {
+      "line": 128,
+      "expression": "[decoder.decode(lambdas, syndrome) for syndrome in syndromes]"
+    },
+    "scope": "Canonical baseline static-prior and unfiltered decode-comprehension AST checked; this suite dynamically counts its own worker/scorer/save stages. Historical interrupted jobs are not certified."
+  },
+  "label_isolation_comparisons": [
+    {
+      "shot": 0,
+      "original": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "altered": {
+        "syndrome_valid": true,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 0,
+        "logical_residual_weight": 1
+      }
+    },
+    {
+      "shot": 1,
+      "original": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "altered": {
+        "syndrome_valid": true,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 0,
+        "logical_residual_weight": 1
+      }
+    },
+    {
+      "shot": 2,
+      "original": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "altered": {
+        "syndrome_valid": true,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 0,
+        "logical_residual_weight": 1
+      }
+    },
+    {
+      "shot": 3,
+      "original": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 20,
+        "logical_residual_weight": 4
+      },
+      "altered": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 20,
+        "logical_residual_weight": 5
+      }
+    }
+  ],
+  "shuffled_comparisons": [
+    {
+      "shot": 0,
+      "same_correction": false,
+      "same_convergence": false,
+      "same_residual": false,
+      "same_score": false,
+      "original_score": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "shuffled_diagnostic_score": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 97,
+        "logical_residual_weight": 3
+      },
+      "against_original_sample": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 333,
+        "logical_residual_weight": 3
+      }
+    },
+    {
+      "shot": 1,
+      "same_correction": false,
+      "same_convergence": false,
+      "same_residual": false,
+      "same_score": false,
+      "original_score": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "shuffled_diagnostic_score": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 88,
+        "logical_residual_weight": 4
+      },
+      "against_original_sample": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 386,
+        "logical_residual_weight": 4
+      }
+    },
+    {
+      "shot": 2,
+      "same_correction": false,
+      "same_convergence": false,
+      "same_residual": false,
+      "same_score": false,
+      "original_score": {
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      "shuffled_diagnostic_score": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 113,
+        "logical_residual_weight": 6
+      },
+      "against_original_sample": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 289,
+        "logical_residual_weight": 6
+      }
+    },
+    {
+      "shot": 3,
+      "same_correction": false,
+      "same_convergence": true,
+      "same_residual": false,
+      "same_score": false,
+      "original_score": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 20,
+        "logical_residual_weight": 4
+      },
+      "shuffled_diagnostic_score": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 101,
+        "logical_residual_weight": 4
+      },
+      "against_original_sample": {
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 355,
+        "logical_residual_weight": 4
+      }
+    }
+  ],
+  "invalid_correction_evidence": {
+    "constructive_solve": {
+      "columns_examined": 62666,
+      "rank": 1665
+    },
+    "scores": [
+      {
+        "candidate": "known_valid",
+        "correction_hash": "dd87b7d347e701ab480882f73c7a8894c71385820b9046b8650fe337c84be113",
+        "syndrome_valid": true,
+        "logical_match": true,
+        "success": true,
+        "residual_weight": 0,
+        "logical_residual_weight": 0
+      },
+      {
+        "candidate": "zero",
+        "correction_hash": "b77a9325ebfc3981e933aaf03ee2cc4553abd251feac257670d4711dfead470e",
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 167,
+        "logical_residual_weight": 7
+      },
+      {
+        "candidate": "one_bit_flip",
+        "correction_hash": "1da35c1d6f9131bc5b78005bcbcd91ccca136a862998168806e264e1ebb7f586",
+        "syndrome_valid": false,
+        "logical_match": true,
+        "success": false,
+        "residual_weight": 3,
+        "logical_residual_weight": 0
+      },
+      {
+        "candidate": "random",
+        "correction_hash": "5aa6738483460cdddf34dbf71bb6986680d306b501e8cd7142ed28babc58a585",
+        "syndrome_valid": false,
+        "logical_match": false,
+        "success": false,
+        "residual_weight": 853,
+        "logical_residual_weight": 7
+      }
+    ],
+    "shot": 0
+  },
+  "wrong_logical_evidence": {
+    "constructive_solve": {
+      "columns_examined": 62666,
+      "rank": 1665
+    },
+    "score": {
+      "candidate": "syndrome_valid_logically_wrong",
+      "correction_hash": "f1d87216ebf923754b4a785881f0f654fb202ea99ef0d3dcc37b5c0b80de65e9",
+      "syndrome_valid": true,
+      "logical_match": false,
+      "success": false,
+      "residual_weight": 0,
+      "logical_residual_weight": 1
+    },
+    "flipped_logical_index": 0,
+    "shot": 0
+  },
+  "high_noise_metadata": {
+    "num_qubits": 288,
+    "num_measurements": 1872,
+    "num_detectors": 1728,
+    "num_observables": 12,
+    "physical_p": 0.02,
+    "qec_rounds": 12,
+    "data_qubits": 144,
+    "basis": "memory-Z",
+    "noise_channels": {
+      "X_ERROR": [
+        0.02
+      ],
+      "Z_ERROR": [
+        0.02
+      ],
+      "DEPOLARIZE2": [
+        0.02
+      ],
+      "DEPOLARIZE1": [
+        0.02
+      ],
+      "M": [
+        0.02
+      ],
+      "MX": [
+        0.02
+      ]
+    },
+    "round_derivation": "count of paired noisy 72-target M/MX ancilla-readout groups",
+    "code_distance_independently_verified": false,
+    "circuit_sha256": "04f7244ed836142be50d183cd9b84e4041e4a404183c7a854c844c643d9426ae",
+    "dem_fault_count": 67752,
+    "probability_hash": "f269f52ea0e6e8046b55a083f8b9b49deda0ecb58ce2e531e1d0619441496237"
+  },
+  "high_noise_observations": {
+    "detector_weights": [
+      662,
+      683,
+      681,
+      705
+    ],
+    "convergence_rate": 0.0,
+    "logical_failure_count": 4,
+    "nonconvergence_count": 4,
+    "noiseless_detector_weights": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "boundary_audits": [
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "bounded",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 4,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 5,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 6,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 7,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 8,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 9,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 10,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 11,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 12,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 13,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 14,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 15,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "1c9b15d3f5c5c01c5c32484fb75ed9251ef396605db456ed681e611abf726538",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "noiseless"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "bounded",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "f71bc268c322d59ffbee02acd52f3acae15e5da2d3ecca4740c0d61edbafecc8",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ee7236deb4ef1d263b4890f5d78be3c17393b67844f5cb3a78ab3e340fd8f51",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "745eb22ce1c984254ea8e890f154a4ed68840b828bc36d0dc7b6b3d16306805b",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "861df9f4b5c52973fc855e2e7e8eb68ff9254a3b89c81d45a314add06133bc39",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998852213153193,
+              "maximum": 0.6599953741827188,
+              "negative_count": 18190
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "original"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "bounded",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "f71bc268c322d59ffbee02acd52f3acae15e5da2d3ecca4740c0d61edbafecc8",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ee7236deb4ef1d263b4890f5d78be3c17393b67844f5cb3a78ab3e340fd8f51",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "745eb22ce1c984254ea8e890f154a4ed68840b828bc36d0dc7b6b3d16306805b",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "861df9f4b5c52973fc855e2e7e8eb68ff9254a3b89c81d45a314add06133bc39",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998852213153193,
+              "maximum": 0.6599953741827188,
+              "negative_count": 18190
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "repeat"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "bounded",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "54f7cb9d14b1c11268d33f04491e50d0e7aa9d88cc8f222fac5d5142b6931c41",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998852213153193,
+              "maximum": 0.6599953741827188,
+              "negative_count": 18190
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "2199818e29a56763302e1230e5ec94e68018beb7292c7a07e69a796d64adb981",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 309518979032492515346801340940161808918}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998520881630675,
+              "maximum": 0.6599911380501965,
+              "negative_count": 18076
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ce115a7086843b092d287856fe02121ff1949ead803a3908b6b6ca510cebb2e",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 309518979032492515346801340940161808918}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 169512628932995017175817377735514667422}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23997994167111633,
+              "maximum": 0.659970225018801,
+              "negative_count": 17930
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "5c604c1c8d8284df079cc9ec5c2de9e8b99698320a7b0e5a34a4a6af70fcb9c6",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 169512628932995017175817377735514667422}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 215280998184759842317019705856793015334}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.2399972682181193,
+              "maximum": 0.6599963539557838,
+              "negative_count": 18026
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "shuffled"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "tiny",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "f71bc268c322d59ffbee02acd52f3acae15e5da2d3ecca4740c0d61edbafecc8",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ee7236deb4ef1d263b4890f5d78be3c17393b67844f5cb3a78ab3e340fd8f51",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "745eb22ce1c984254ea8e890f154a4ed68840b828bc36d0dc7b6b3d16306805b",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "861df9f4b5c52973fc855e2e7e8eb68ff9254a3b89c81d45a314add06133bc39",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "tiny_budget"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "seed_probe",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "f71bc268c322d59ffbee02acd52f3acae15e5da2d3ecca4740c0d61edbafecc8",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998852213153193,
+              "maximum": 0.6599953741827188,
+              "negative_count": 18190
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ee7236deb4ef1d263b4890f5d78be3c17393b67844f5cb3a78ab3e340fd8f51",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 309518979032492515346801340940161808918}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998520881630675,
+              "maximum": 0.6599911380501965,
+              "negative_count": 18076
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "seed_probe_91"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "281978581686b8839b4875aac8383207ac4fd3715ad5d721c5adf89d58c253a2",
+      "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 92,
+      "profile": "seed_probe",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "f71bc268c322d59ffbee02acd52f3acae15e5da2d3ecca4740c0d61edbafecc8",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 137507187339342062873242244162062939731, \"state\": 65957734448604215338632799397380544346}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 137507187339342062873242244162062939731, \"state\": 207366149338116310992312044997606086178}, \"uinteger\": 0}",
+          "result_seed": 92,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.2399904156370552,
+              "maximum": 0.6599744502448691,
+              "negative_count": 18087
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "9313c1c2abc54985d2c7eb2209d691125f83d4421a1d593b618df44ce553996b",
+          "syndrome_hash": "4ee7236deb4ef1d263b4890f5d78be3c17393b67844f5cb3a78ab3e340fd8f51",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 137507187339342062873242244162062939731, \"state\": 207366149338116310992312044997606086178}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 137507187339342062873242244162062939731, \"state\": 119154547286462079123092221813718960106}, \"uinteger\": 0}",
+          "result_seed": 92,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23999873689369944,
+              "maximum": 0.6599981558116623,
+              "negative_count": 18173
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "seed_probe_92"
+    },
+    {
+      "payload_fields": [
+        "h_data",
+        "h_indices",
+        "h_indptr",
+        "h_shape",
+        "probabilities",
+        "syndromes"
+      ],
+      "constructor_arguments": [
+        "R",
+        "S",
+        "h_matrix",
+        "leg_configs",
+        "seed"
+      ],
+      "call_arguments": [
+        "prior",
+        "syndrome"
+      ],
+      "h_hash": "aa3afb4b7895023a4f587f98b23c7f0551feab5b837dc222ef654984dc053ef4:e382c550546dfb6e498a8544c405d1e60033a053ab2ea8e26bd63fb0e9f276b6:ca27814cff9d8a31d3b74e5fc922dd879d705f6d24dbcdf93d95e9c067229bea",
+      "probability_hash": "f269f52ea0e6e8046b55a083f8b9b49deda0ecb58ce2e531e1d0619441496237",
+      "prior_hash": "201a911435e30dd6fdb2326cc904507005c1f36d3074096793ea6d68d9374a67",
+      "decoder_sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+      "seed": 91,
+      "profile": "bounded",
+      "invocations": [
+        {
+          "shot": 0,
+          "prior_hash": "201a911435e30dd6fdb2326cc904507005c1f36d3074096793ea6d68d9374a67",
+          "syndrome_hash": "567243a00c3fd735b8df9a50f1a721cf3c9c2cb78d7972c34dc307ffecb57a95",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 35293237679382962460625916412976557062}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998852213153193,
+              "maximum": 0.6599953741827188,
+              "negative_count": 18190
+            }
+          ]
+        },
+        {
+          "shot": 1,
+          "prior_hash": "201a911435e30dd6fdb2326cc904507005c1f36d3074096793ea6d68d9374a67",
+          "syndrome_hash": "3ac1f62cd119f9403fc78d605226c6bc04cd775fcfd82e9d3194430cc3d2b28d",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 208008364251531386077329018274141967758}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 309518979032492515346801340940161808918}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23998520881630675,
+              "maximum": 0.6599911380501965,
+              "negative_count": 18076
+            }
+          ]
+        },
+        {
+          "shot": 2,
+          "prior_hash": "201a911435e30dd6fdb2326cc904507005c1f36d3074096793ea6d68d9374a67",
+          "syndrome_hash": "68163813fa04efb0acdc48346c97ab666da5d1e1df7ee810470865138fa13c8c",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 309518979032492515346801340940161808918}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 169512628932995017175817377735514667422}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.23997994167111633,
+              "maximum": 0.659970225018801,
+              "negative_count": 17930
+            }
+          ]
+        },
+        {
+          "shot": 3,
+          "prior_hash": "201a911435e30dd6fdb2326cc904507005c1f36d3074096793ea6d68d9374a67",
+          "syndrome_hash": "32be12fe87186090748f195b205894b545275066fdb8803f1b4dcf535cf90424",
+          "rng_before": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 169512628932995017175817377735514667422}, \"uinteger\": 0}",
+          "rng_after": "{\"bit_generator\": \"PCG64\", \"has_uint32\": 0, \"state\": {\"inc\": 301325031617297768984019258933901347115, \"state\": 215280998184759842317019705856793015334}, \"uinteger\": 0}",
+          "result_seed": 91,
+          "gamma_summaries": [
+            {
+              "minimum": 0.125,
+              "maximum": 0.125,
+              "negative_count": 0
+            },
+            {
+              "minimum": -0.2399972682181193,
+              "maximum": 0.6599963539557838,
+              "negative_count": 18026
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "panel": "high_noise"
+    }
+  ],
+  "predeclared_decoder_schedule": {
+    "noiseless": 16,
+    "original": 4,
+    "repeat": 4,
+    "shuffled": 4,
+    "tiny_budget": 4,
+    "seed_probe_91": 2,
+    "seed_probe_92": 2,
+    "high_noise": 4
+  },
+  "auxiliary_sampling": {
+    "changed_stim_seed": {
+      "scheduled": 4,
+      "purpose": "sampling-only reproducibility; not a decoder/LER panel"
+    }
+  },
+  "safe_for_performance_campaign": false,
+  "performance_gate_reason": "Small controls do not reconcile historical source hashes, interrupted LER batches, fixed-point/N-lane equivalence, or benchmark protocol.",
+  "artifacts": {
+    "per_shot_results.csv": "2fdf42aeb0a5ef6e2d1ca3b6d7664b8d98c5c6ccfe42146ef0907b14c58ce4e7",
+    "validation_evidence.npz": "ac8d2f97bc23b1fa2b3e54e746d7cfc43e142c88ecb92d53ab8e3d42f5241cca"
+  }
+}

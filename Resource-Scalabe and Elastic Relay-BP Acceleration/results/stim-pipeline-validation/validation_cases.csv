@@ -1,0 +1,13 @@
+case_name,status,shots,expected_behavior,observed_behavior,notes
+information_boundary,PASS,40,Automatically establish legitimate-only actual invocation,Every actual decode call traced; isolated allowlisted payload has static H/probabilities and syndrome only; labels/A/candidate truth excluded,
+noiseless_circuit,PASS,16,Actual noiseless circuit has zero events and every correction succeeds,16/16 successful; zero detector and logical flips,
+logical_label_isolation,PASS,4,Only scoring may change when labels change,"Corrections, convergence, iterations and residuals identical; scoring-side label changes detected",
+shuffled_syndrome_negative_control,PASS,4,Unpermuted graph must not silently accept syndrome permutation as equivalent,Corrupted-input behavior differs; per-shot comparison retained; diagnostic labels are not a physical LER,
+invalid_correction_scoring,PASS,1,Invalid corrections never score success; no decoder involved,"Zero, one-bit-flipped, and deterministic random candidates are syndrome-invalid and unsuccessful; valid reference succeeds",
+syndrome_valid_logically_wrong,PASS,1,Syndrome-valid wrong logical action must fail,"Actual [H;A] GF(2) solution: syndrome_valid=true, logical_match=false, success=false",
+nonconvergence_accounting,PASS,4,One-iteration failures stay in denominator,4 non-converged shots counted as failures; denominator remains 4,
+same_seed_reproducibility,PASS,4,Samples and decoder outputs bit-exact,"All sample bits, corrections, convergence, iterations and residuals match",
+changed_stim_seed,PASS,4,Changed seed does not replay the identical sample panel,Changed STIM seed changes sample panel,
+changed_decoder_seed,PASS,2,Seed propagates into actual RNG state; output changes not mandatory,Seed reaches instance/result/RNG state and randomized relay leg; corrections identical=False (not required to differ),
+high_noise_destructive_control,PASS,4,Elevated noise produces events and at least one failure under fixed bounded settings,"{""detector_weights"": [662, 683, 681, 705], ""convergence_rate"": 0.0, ""logical_failure_count"": 4, ""nonconvergence_count"": 4, ""noiseless_detector_weights"": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}",
+no_postselection_or_dropped_shots,PASS,40,All scheduled/sample/decode/score/save counts equal,40 invocation records read back; all five stage counts and shot IDs agree; failures retained,

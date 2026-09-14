@@ -1,0 +1,99 @@
+case_name,status,shots,expected_behavior,observed_behavior,notes
+information_boundary,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+noiseless_circuit,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+logical_label_isolation,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+shuffled_syndrome_negative_control,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+invalid_correction_scoring,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+syndrome_valid_logically_wrong,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+nonconvergence_accounting,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+same_seed_reproducibility,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+changed_stim_seed,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+changed_decoder_seed,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+high_noise_destructive_control,FAIL,0,Required validation executes,NOT RUN: prerequisite failed,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 382, in main
+    require(dem == stim.DetectorErrorModel.from_file(str(PACKAGE / ""detector_error_model.dem"")), ""Saved DEM differs from circuit-derived DEM"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: Saved DEM differs from circuit-derived DEM
+"
+no_postselection_or_dropped_shots,FAIL,0,All scheduled/sample/decode/score/save counts equal,Assertion or execution failure,"Traceback (most recent call last):
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 214, in case
+    observed = action()
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 549, in accounting
+    require(bool(campaign.accounting), ""No campaign panels executed"")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/stim-pipeline-validation/run_stim_pipeline_validation.py"", line 57, in require
+    raise AssertionError(explanation)
+AssertionError: No campaign panels executed
+"
