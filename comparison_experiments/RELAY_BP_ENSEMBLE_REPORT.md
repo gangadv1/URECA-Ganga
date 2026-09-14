@@ -70,7 +70,8 @@ The scaling demonstrates the architectural principle: running multiple independe
 | **Convergence** |  |  |  |  |
 | Successful decodes | 28 | 46 | 88 | shots |
 | Success rate | 5.6% | 9.2% | 17.6% | % |
-| Logical error rate (LER) | 0.944 | 0.908 | 0.824 | (higher is worse) |
+| Non-convergence/timeout rate | 0.944 | 0.908 | 0.824 | fraction |
+| Logical error rate (LER) | unavailable | unavailable | unavailable | no logical-observable check |
 | **Iteration Statistics** |  |  |  |  |
 | Mean iterations | 58.2 | 56.8 | 53.6 | iters |
 | Median iterations | 60.0 | 60.0 | 60.0 | iters |
@@ -131,14 +132,16 @@ The N-trajectory ensemble (N ∈ {1, 2, 4}) is orthogonal to P folding factor:
 
 ## EXPERIMENTAL LIMITATIONS AND CAVEATS
 
-### High Logical Error Rate
+### Non-convergence, Not Logical Error Rate
 
-The LER values in this comparison (0.82–0.94) are substantially higher than published decoder performance on [[144,12,12]] at similar error rates. This is likely due to:
+The values 0.824–0.944 are non-convergence/timeout rates, not logical error rates. The simulator checks only whether the decoded estimate satisfies the measured syndrome. It does not evaluate logical observables or determine whether two syndrome-valid corrections differ by a logical operator. Therefore no logical failure rate can be computed from this experiment yet.
+
+The high non-convergence rate is likely due to:
 
 1. **Simplified Decoder:** Custom min-sum implementation focuses on algorithmic structure rather than numerical robustness
 2. **Short Iteration Budget:** 60 iterations may be insufficient for p=0.001
 3. **Parameter Tuning:** Gamma schedule and noise perturbation amplitudes are not optimized
-4. **No Syndrome Syndrome Decoding:** Decoder operates on channel LLR only, not syndrome feedback
+4. **No logical-observable check:** Syndrome validity alone cannot distinguish a correct correction from a logical failure
 
 ### Noise Model Discrepancy
 
@@ -228,7 +231,7 @@ GARI (arxiv:2605.01035) is a **fundamentally different decoder architecture:**
 3. Run GARI single-decoder performance
 4. Run GARI ensemble (if available)
 5. Run Relay-BP N=1, N=2, N=4 on SAME syndromes
-6. Record: LER, mean iterations, P95 iterations, P99 iterations
+6. Record: convergence rate, non-convergence rate, mean iterations, P95 iterations, and P99 iterations; add LER only after logical-observable scoring exists
 7. Direct comparison table
 8. Analysis: Which method reduces which metrics?
 ```
@@ -249,7 +252,7 @@ GARI (arxiv:2605.01035) is a **fundamentally different decoder architecture:**
 
 ### What This Work Does NOT Demonstrate
 
-1. **Absolute decoding superiority:** High LER (0.82–0.94) suggests decoder implementation needs tuning
+1. **Absolute decoding superiority:** High non-convergence (0.824–0.944) suggests decoder implementation needs tuning
 2. **GARI comparison:** Framework exists, but GARI unavailable in current environment
 3. **FPGA resource/timing:** This is a software-only study; no LUT/FF/BRAM/latency ns measurements
 4. **Optimal parameter tuning:** Gamma schedule, noise level, and iteration count are exploratory, not optimized
@@ -258,12 +261,12 @@ GARI (arxiv:2605.01035) is a **fundamentally different decoder architecture:**
 
 **Tier 1 (Essential for thesis):**
 - [ ] Run identical experiment on Linux with GARI compiled
-- [ ] Compare LER, mean/P95/P99 iterations at p=0.001
+- [ ] Compare convergence/non-convergence, mean/P95/P99 iterations at p=0.001
 - [ ] Generate head-to-head comparison table
 - [ ] Analyze: Does GARI + ensemble combination outperform either alone?
 
 **Tier 2 (Validation):**
-- [ ] Tune Relay-BP gamma schedule to reduce LER at p=0.001
+- [ ] Tune Relay-BP gamma schedule to reduce non-convergence at p=0.001
 - [ ] Increase iteration budget and re-measure tail behavior
 - [ ] Test on additional codes (surface codes, other LDPC examples)
 
@@ -364,7 +367,7 @@ Use this structure for advisor/committee presentation:
 3. **Software Baseline:** Present table above (N=1, 2, 4 results)
 4. **Architectural Integration:** Show how BA2 + ensemble + P scaling compose
 5. **FPGA Path:** RTL structure (coming next)
-6. **Limitations:** High LER due to simplified decoder; next step is GARI comparison
+6. **Limitations:** High non-convergence due to simplified decoder; logical failure rate is not yet measured; next step is GARI comparison
 
 ---
 

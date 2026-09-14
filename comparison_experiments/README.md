@@ -225,23 +225,25 @@ comparison_experiments/
 ### Reading CSV Results
 
 ```
-name,num_trials,num_successes,num_failures,logical_error_rate,...
-Relay-BP N=1,500,28,472,0.944,...
+ name,num_trials,num_converged,num_nonconverged,convergence_rate,nonconvergence_rate,...
+ Relay-BP N=1,500,28,472,0.056,0.944,...
 ```
 
 | Field | Meaning |
 |-------|---------|
 | `name` | Decoder configuration |
 | `num_trials` | Total shots run |
-| `num_successes` | Shots that converged |
-| `num_failures` | Shots that timed out |
-| `logical_error_rate` | 1 - (successes/trials) |
+| `num_converged` | Shots with zero residual syndrome |
+| `num_nonconverged` | Shots that timed out at the iteration limit |
+| `convergence_rate` | `num_converged / num_trials` |
+| `nonconvergence_rate` | `num_nonconverged / num_trials` |
+| logical correctness | Unavailable; no logical-observable check is implemented |
 | `mean_iterations` | Average iterations before convergence/timeout |
 | `median_iterations` | 50th percentile |
 | `p95_iterations` | 95th percentile (tail behavior) |
 | `p99_iterations` | 99th percentile (extreme tail) |
 | `max_iterations` | Highest iteration count observed |
-| `success_rate` | Percentage of successful decodes |
+| logical correctness | Not measured; no logical-observable check is implemented |
 
 ### Statistical Confidence
 

@@ -95,8 +95,10 @@ COMPARISON SUMMARY
 ======================================================================
 
 Decoder: Relay-BP N=1
-  Trials: 500 (successes: 28, failures: 472)
-  LER: 0.944
+  Trials: 500
+  Converged: 28 (0.056)
+  Non-converged/timeout: 472 (0.944)
+  Logical correctness: unavailable (no logical-observable check)
   Iterations: mean=58.2, median=60.0, P95=60.0, P99=60.0, max=60
   ...
 
@@ -108,20 +110,23 @@ Experiment complete!
 
 ### CSV Output Format
 ```
-name,num_trials,num_successes,num_failures,logical_error_rate,mean_iterations,...
-Relay-BP N=1,500,28,472,0.944,58.166,60.0,8.419883847179841,60.0,60.0,60,7,...
-Relay-BP N=2,500,46,454,0.908,56.778,60.0,11.090027772733484,60.0,60.0,60,7,...
-Relay-BP N=4,500,88,412,0.824,53.594,60.0,15.112020513485284,60.0,60.0,60,7,...
+name,num_trials,num_converged,num_nonconverged,convergence_rate,nonconvergence_rate,mean_iterations,...
+Relay-BP N=1,500,28,472,0.056,0.944,58.166,60.0,8.419883847179841,60.0,60.0,60,7,...
+Relay-BP N=2,500,46,454,0.092,0.908,56.778,60.0,11.090027772733484,60.0,60.0,60,7,...
+Relay-BP N=4,500,88,412,0.176,0.824,53.594,60.0,15.112020513485284,60.0,60.0,60,7,...
 ```
 
 ## Interpreting Results
 
 ### Key Metrics
 
-**Logical Error Rate (LER)**
-- Fraction of shots that fail to converge
-- Lower is better
-- For N=1, N=2, N=4: should see decreasing trend
+**Convergence rate**
+- Fraction of shots reaching zero residual syndrome
+- This is not logical correctness
+
+**Non-convergence/timeout rate**
+- Fraction of shots that do not reach zero residual syndrome within the iteration limit
+- This must not be called LER
 
 **Mean Iterations**
 - Average number of BP iterations before convergence or timeout
@@ -133,9 +138,9 @@ Relay-BP N=4,500,88,412,0.824,53.594,60.0,15.112020513485284,60.0,60.0,60,7,...
 - Shows tail behavior
 - If both = max_iterations, problem is hard for that configuration
 
-**Success Rate**
+**Convergence rate**
 - Fraction of shots that converged successfully
-- = 1 - LER
+- Equals `1 - nonconvergence_rate`
 - More trajectories should give higher rate
 
 ### Example Interpretation (500-shot results)
@@ -162,10 +167,11 @@ Trend (N=1 → N=2 → N=4):
 
 Machine-readable summary:
 ```
-Fields: name, num_trials, num_successes, num_failures, logical_error_rate,
-        mean_iterations, median_iterations, std_iterations, p95_iterations,
-        p99_iterations, max_iterations, min_iterations, mean_latency_ms,
-        total_latency_ms, success_rate
+Fields: name, num_trials, num_converged, num_nonconverged,
+        num_logically_correct, num_logical_failures, convergence_rate,
+        nonconvergence_rate, mean_iterations, median_iterations,
+        std_iterations, p95_iterations, p99_iterations, max_iterations,
+        min_iterations, mean_latency_ms, total_latency_ms
 ```
 
 Parse with:
@@ -226,9 +232,9 @@ python3 comparison_experiments/relay_gari_comparison.py \
 
 **Expected results:**
 ```
-Relay-BP N=1: LER=0.944, success=5.6%, mean_iters=58.2
-Relay-BP N=2: LER=0.908, success=9.2%, mean_iters=56.8
-Relay-BP N=4: LER=0.824, success=17.6%, mean_iters=53.6
+Relay-BP N=1: convergence=5.6%, nonconvergence=94.4%, mean_iters=58.2
+Relay-BP N=2: convergence=9.2%, nonconvergence=90.8%, mean_iters=56.8
+Relay-BP N=4: convergence=17.6%, nonconvergence=82.4%, mean_iters=53.6
 ```
 
 **Reproducibility:**

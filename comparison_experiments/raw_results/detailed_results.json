@@ -34,9 +34,12 @@
     {
       "name": "Relay-BP N=1",
       "num_trials": 500,
-      "num_successes": 28,
-      "num_failures": 472,
-      "logical_error_rate": 0.944,
+      "num_converged": 28,
+      "num_nonconverged": 472,
+      "num_logically_correct": null,
+      "num_logical_failures": null,
+      "convergence_rate": 0.056,
+      "nonconvergence_rate": 0.944,
       "mean_iterations": 58.166,
       "median_iterations": 60.0,
       "std_iterations": 8.419883847179841,
@@ -44,16 +47,18 @@
       "p99_iterations": 60.0,
       "max_iterations": "60",
       "min_iterations": "7",
-      "mean_latency_ms": 127.37865491467528,
-      "total_latency_ms": 63689.32745733764,
-      "success_rate": 0.056
+      "mean_latency_ms": 65.50927139306441,
+      "total_latency_ms": 32754.635696532205
     },
     {
       "name": "Relay-BP N=2",
       "num_trials": 500,
-      "num_successes": 46,
-      "num_failures": 454,
-      "logical_error_rate": 0.908,
+      "num_converged": 46,
+      "num_nonconverged": 454,
+      "num_logically_correct": null,
+      "num_logical_failures": null,
+      "convergence_rate": 0.092,
+      "nonconvergence_rate": 0.908,
       "mean_iterations": 56.778,
       "median_iterations": 60.0,
       "std_iterations": 11.090027772733484,
@@ -61,16 +66,18 @@
       "p99_iterations": 60.0,
       "max_iterations": "60",
       "min_iterations": "7",
-      "mean_latency_ms": 5.025111748254858,
-      "total_latency_ms": 2512.555874127429,
-      "success_rate": 0.092
+      "mean_latency_ms": 2.545550665119663,
+      "total_latency_ms": 1272.7753325598314
     },
     {
       "name": "Relay-BP N=4",
       "num_trials": 500,
-      "num_successes": 88,
-      "num_failures": 412,
-      "logical_error_rate": 0.824,
+      "num_converged": 88,
+      "num_nonconverged": 412,
+      "num_logically_correct": null,
+      "num_logical_failures": null,
+      "convergence_rate": 0.176,
+      "nonconvergence_rate": 0.824,
       "mean_iterations": 53.594,
       "median_iterations": 60.0,
       "std_iterations": 15.112020513485284,
@@ -78,9 +85,8 @@
       "p99_iterations": 60.0,
       "max_iterations": "60",
       "min_iterations": "7",
-      "mean_latency_ms": 9.074200831586495,
-      "total_latency_ms": 4537.1004157932475,
-      "success_rate": 0.176
+      "mean_latency_ms": 4.7451486645732075,
+      "total_latency_ms": 2372.5743322866037
     }
   ]
 }

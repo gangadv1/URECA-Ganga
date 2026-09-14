@@ -4,8 +4,9 @@ Controlled software-only comparison between Relay-BP and GARI-NMS decoders.
 
 This script runs a fair, apples-to-apples comparison on the [[144,12,12]]
 bivariate bicycle code with matched noise models, shot counts, and iteration
-limits. It measures decoding iterations, logical error rates, and convergence
-behavior for both decoders.
+limits. It measures decoding iterations and syndrome convergence. Logical
+correctness is not reported because this simulator does not evaluate logical
+observables or stabilizer-equivalence of the decoded correction.
 
 USAGE:
     python3 relay_gari_comparison.py \
@@ -84,9 +85,12 @@ class TrialSummary:
     
     name: str
     num_trials: int
-    num_successes: int
-    num_failures: int
-    logical_error_rate: float
+    num_converged: int
+    num_nonconverged: int
+    num_logically_correct: Optional[int]
+    num_logical_failures: Optional[int]
+    convergence_rate: float
+    nonconvergence_rate: float
     
     # Iteration statistics
     mean_iterations: float
@@ -100,9 +104,6 @@ class TrialSummary:
     # Latency statistics
     mean_latency_ms: float
     total_latency_ms: float
-    
-    # Convergence
-    success_rate: float
 
 
 # ============================================================================
@@ -447,6 +448,7 @@ class ComparisonExperiment:
         
         # Results storage
         self.results: Dict[str, List[DecodingMetrics]] = {}
+        self._trial_cache: Dict[int, Tuple[np.ndarray, np.ndarray, np.ndarray]] = {}
     
     def _load_code_matrices(self) -> None:
         """Load [[144,12,12]] Gross code matrices."""
@@ -467,6 +469,9 @@ class ComparisonExperiment:
         Returns:
             (syndrome, prior_llr, true_error)
         """
+        if shot_idx in self._trial_cache:
+            return self._trial_cache[shot_idx]
+
         rng = np.random.default_rng(self.config.seed_base + shot_idx)
         
         # Generate random error
@@ -481,7 +486,9 @@ class ComparisonExperiment:
         noise = rng.normal(0, 1.3, size=self.config.code_n)
         prior_llr = clean_prior + noise
         
-        return syndrome.astype(np.uint8), prior_llr, true_error
+        trial = (syndrome.astype(np.uint8), prior_llr, true_error)
+        self._trial_cache[shot_idx] = trial
+        return trial
     
     def run_relay_bp_trials(self, n_trajectories: int) -> None:
         """Run Relay-BP trials with N trajectories."""
@@ -539,8 +546,8 @@ class ComparisonExperiment:
         """Compute summary statistics for a set of trials."""
         trials = self.results[result_key]
         
-        successes = sum(1 for r in trials if r.converged)
-        failures = len(trials) - successes
+        converged = sum(1 for r in trials if r.converged)
+        nonconverged = len(trials) - converged
         
         iterations = [r.iterations for r in trials]
         latencies = [r.latency_seconds * 1000 for r in trials]  # Convert to ms
@@ -548,9 +555,14 @@ class ComparisonExperiment:
         return TrialSummary(
             name=name,
             num_trials=len(trials),
-            num_successes=successes,
-            num_failures=failures,
-            logical_error_rate=failures / len(trials) if trials else 1.0,
+            num_converged=converged,
+            num_nonconverged=nonconverged,
+            # This simulator checks only Hx * decoded_error == syndrome. It
+            # does not evaluate logical observables or stabilizer equivalence.
+            num_logically_correct=None,
+            num_logical_failures=None,
+            convergence_rate=converged / len(trials) if trials else 0.0,
+            nonconvergence_rate=nonconverged / len(trials) if trials else 1.0,
             mean_iterations=np.mean(iterations),
             median_iterations=np.median(iterations),
             std_iterations=np.std(iterations),
@@ -560,7 +572,6 @@ class ComparisonExperiment:
             min_iterations=np.min(iterations),
             mean_latency_ms=np.mean(latencies),
             total_latency_ms=np.sum(latencies),
-            success_rate=successes / len(trials) if trials else 0.0,
         )
     
     def save_results(self) -> None:
@@ -617,8 +628,10 @@ class ComparisonExperiment:
             summary = self.compute_trial_summary(result_key, name)
             
             print(f"Decoder: {summary.name}")
-            print(f"  Trials: {summary.num_trials} (successes: {summary.num_successes}, failures: {summary.num_failures})")
-            print(f"  LER: {summary.logical_error_rate:.6f}")
+            print(f"  Trials: {summary.num_trials}")
+            print(f"  Converged: {summary.num_converged} ({summary.convergence_rate:.6f})")
+            print(f"  Non-converged/timeout: {summary.num_nonconverged} ({summary.nonconvergence_rate:.6f})")
+            print("  Logical correctness: unavailable (no logical-observable check)")
             print(f"  Iterations: mean={summary.mean_iterations:.2f}, median={summary.median_iterations:.0f}, "
                   f"P95={summary.p95_iterations:.0f}, P99={summary.p99_iterations:.0f}, max={summary.max_iterations:.0f}")
             print(f"  Latency: mean={summary.mean_latency_ms:.3f}ms, total={summary.total_latency_ms:.1f}ms")
