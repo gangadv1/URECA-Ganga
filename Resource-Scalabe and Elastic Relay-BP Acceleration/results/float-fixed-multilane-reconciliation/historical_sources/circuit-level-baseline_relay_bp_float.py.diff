@@ -1,0 +1,101 @@
+--- git-blob:36e8a5b2d5fd3074170de2ead63d3caca9a17191
++++ /Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_float.py
+@@ -11,7 +11,7 @@
+ import json
+ from dataclasses import asdict, dataclass, field
+ from pathlib import Path
+-from typing import Sequence
++from typing import Callable, Sequence
+ 
+ import numpy as np
+ 
+@@ -106,10 +106,12 @@
+         gamma: float | None = None,
+         leg_configs: Sequence[RelayLegConfig] | None = None,
+         trace_messages: bool = False,
++        iteration_callback: Callable[[dict[str, object]], None] | None = None,
+         *,
+         S: int = 1,
+         R: int = 301,
+         seed: int = 0,
++        relay_handoff: bool = True,
+     ):
+         if isinstance(h_matrix, (Path, str)):
+             from graph_loader import load_graph_package
+@@ -132,10 +134,16 @@
+         self.S = int(S)
+         self.R = int(R)
+         self.seed = int(seed)
++        self.relay_handoff = bool(relay_handoff)
+         # Match the official decoder's RNG lifetime: gamma sampling advances
+         # one persistent stream across sequential decode calls.
+         self._rng = np.random.default_rng(self.seed)
+         self.trace_messages = bool(trace_messages)
++        # Optional analysis-only observation hook.  The callback is disabled by
++        # default and is deliberately outside the decoder's state transitions:
++        # it observes the completed iteration before the normal convergence
++        # break and must not mutate the supplied arrays.
++        self.iteration_callback = iteration_callback
+ 
+         if leg_configs is not None:
+             if not leg_configs:
+@@ -269,11 +277,19 @@
+         solution_weights: list[float] = []
+         total_iterations = 0
+         legs_executed = 0
++        leg_gamma_summaries: list[dict[str, float | int]] = []
+         trace: list[FloatRelayTraceRecord] = []
+ 
+         for leg_index, leg_config in enumerate(self.leg_configs[: self.R]):
+             legs_executed = leg_index + 1
+             gamma_values = self._gamma_vector(leg_config, self._rng)
++            leg_gamma_summaries.append(
++                {
++                    "minimum": float(np.min(gamma_values)),
++                    "maximum": float(np.max(gamma_values)),
++                    "negative_count": int(np.count_nonzero(gamma_values < 0.0)),
++                }
++            )
+ 
+             # Algorithm 1 restarts edge messages from the physical LLRs for
+             # every leg and carries only M(0) between legs.
+@@ -318,6 +334,21 @@
+                         )
+                     )
+ 
++                if self.iteration_callback is not None:
++                    self.iteration_callback(
++                        {
++                            "leg_index": leg_index,
++                            "iteration": iteration,
++                            "global_iteration": total_iterations,
++                            "gamma": gamma_values,
++                            "lambda_bias": lambda_bias,
++                            "beliefs": final_marginals,
++                            "decoded_error": last_decision,
++                            "residual": last_residual,
++                            "converged": converged,
++                        }
++                    )
++
+                 nu_previous = nu_current
+                 marginals_previous = final_marginals
+                 if converged:
+@@ -331,7 +362,7 @@
+ 
+             # Relay exactly the final marginal, including after a successful
+             # leg when Relay-BP-S still seeks more solutions.
+-            initial_marginals = final_marginals.copy()
++            initial_marginals = final_marginals.copy() if self.relay_handoff else lambdas.copy()
+             if len(solution_weights) >= self.S:
+                 break
+ 
+@@ -353,6 +384,8 @@
+                 "S": self.S,
+                 "R": self.R,
+                 "seed": self.seed,
++                "relay_handoff": self.relay_handoff,
++                "leg_gamma_summaries": leg_gamma_summaries,
+                 "best_weight": None if best_solution is None else best_weight,
+                 "leg_max_iterations": [leg.max_iterations for leg in self.leg_configs[: self.R]],
+             },

@@ -1,0 +1,8 @@
+{
+  "shots": 128,
+  "engine0_exact": true,
+  "engine1_exact": true,
+  "n2_exact": true,
+  "mismatch_count": 0,
+  "mismatches": []
+}

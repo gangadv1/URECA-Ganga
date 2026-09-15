@@ -1,0 +1,68 @@
+[
+  {
+    "case": 0,
+    "prior": 8,
+    "mu": [
+      2,
+      3
+    ],
+    "rtl_bias": 8,
+    "rtl_sum": 5,
+    "rtl_marginal": 13,
+    "rtl_nu": [
+      11,
+      10
+    ],
+    "fixed_equation_nu": [
+      11,
+      10
+    ],
+    "rtl_equation_verified": true,
+    "software_rtl_equal": true,
+    "classification": "EXACT_MATCH"
+  },
+  {
+    "case": 1,
+    "prior": 131000,
+    "mu": [
+      100,
+      100
+    ],
+    "rtl_bias": 131000,
+    "rtl_sum": 200,
+    "rtl_marginal": 131071,
+    "rtl_nu": [
+      130971,
+      130971
+    ],
+    "fixed_equation_nu": [
+      131071,
+      131071
+    ],
+    "rtl_equation_verified": true,
+    "software_rtl_equal": false,
+    "classification": "IMPLEMENTATION_MISMATCH"
+  },
+  {
+    "case": 2,
+    "prior": -131000,
+    "mu": [
+      -100,
+      -100
+    ],
+    "rtl_bias": -131000,
+    "rtl_sum": -200,
+    "rtl_marginal": -131072,
+    "rtl_nu": [
+      -130972,
+      -130972
+    ],
+    "fixed_equation_nu": [
+      -131072,
+      -131072
+    ],
+    "rtl_equation_verified": true,
+    "software_rtl_equal": false,
+    "classification": "IMPLEMENTATION_MISMATCH"
+  }
+]

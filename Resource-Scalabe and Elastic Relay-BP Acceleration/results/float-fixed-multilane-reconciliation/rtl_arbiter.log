@@ -1,0 +1,2 @@
+FIRST_SUCCESS_ARBITER_RESULT cases=7 same_cycle=1 asymmetric_success=4 both_fail=2 failures=0
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/tb_relay_bp_first_success_arbiter_n2.sv:15: $finish called at 371000 (1ps)

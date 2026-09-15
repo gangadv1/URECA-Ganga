@@ -1,0 +1,4 @@
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv:28: warning: System task ($fatal) cannot be synthesized in an always_ff process.
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv:29: warning: System task ($fatal) cannot be synthesized in an always_ff process.
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv:30: warning: System task ($fatal) cannot be synthesized in an always_ff process.
+/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv:32: warning: System task ($fatal) cannot be synthesized in an always_ff process.

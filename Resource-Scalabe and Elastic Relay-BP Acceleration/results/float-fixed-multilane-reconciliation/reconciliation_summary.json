@@ -1,0 +1,1053 @@
+{
+  "overall_status": "FAIL",
+  "state": "STOPPED",
+  "warnings": [],
+  "planned_shots": 32,
+  "exact_command": ".venv/bin/python -B 'Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/run_reconciliation.py'",
+  "provenance": {
+    "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+    "git_status_at_start": "?? \"Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/\"\n",
+    "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy_version": "2.2.6",
+    "runner_sha256": "c2bff15aeb44b7f25f918fe5ff9c0d1d14a2eaeac31240bc67326ed1e0a96edb"
+  },
+  "implementations": {
+    "selection_status": "UNAMBIGUOUS_FOR_ARCHIVED_N2_SOFTWARE_PATH",
+    "selection_evidence": "run_study.py imports canonical FixedRelayBPDecoder and hardware gamma_rng_reference; its raw CSV identifies all three requested rescues. RTL top and controller are recorded and separately checked, not substituted for software.",
+    "frozen_sources": [
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_float.py",
+        "sha256": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_fixed.py",
+        "sha256": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/n1-vs-n2-hardware-latency/run_study.py",
+        "sha256": "2fbbc95c403058e3d2c82a282ef864111553247249f5268a5260241a20372deb",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/verification/parallel_n2/gamma_rng_reference.py",
+        "sha256": "8024fa22ff0e70ad24acf097ef186edb13ddc5bf2982977a16b7abd6c9f505a8",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/fixedpoint.py",
+        "sha256": "833b85034a4adad5b4703d5753be5f4282478a35c74ad1c57efd459eba6238db",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_reference.py",
+        "sha256": "41bd0abb9a6234ea3c16e8c47a47056a396bf91b357c8d711fb1caed2f3f04fb",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/parallel-trajectory-model/run_parallel_model.py",
+        "sha256": "5632d29cf948420918c5eaf5b3e27dfe40ce4e2738d707a7c28b1968e3fc6049",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/parallel_relay/parallel_relay_decoder.py",
+        "sha256": "869990331223d65721bcf86d4b41992a8ec6963e474f4fe997334b6d27126a72",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/relay_models/parallel_lanes/parallel_lane_models.py",
+        "sha256": "22cc44d76b71ea3c5da8c91f3a66ce0b730b0c428725d8e1cf8824271b8c0fb0",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/model/parallel_relay_fpga_model.py",
+        "sha256": "0dc308ecac6ebc545c932488088c5aafc830bfa89db71e444aa3e84f798d10c2",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/model/relay_engine.py",
+        "sha256": "f6be368fe6be5cf8612cb6f0c8826522cc1206c31419ffb64f44111bb1061db8",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/check_node_tile.sv",
+        "sha256": "97c64e73118a346e47b23c15f94bb9c92a3afe6e3753552eadf7b161174e9988",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/fixedpoint_relay_pkg.sv",
+        "sha256": "4bf51471feee0a134c1ef60694a0dfe6df69c4fb238a21ae49e75fb62b877e9f",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/m4_memory_fabric/m4_memory_fabric_top.sv",
+        "sha256": "08306fb01d8474b40394f39bcab3ba76677d04d567a04ebc52df71bf01e2a258",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/m4_memory_fabric/m4_message_phase_controller.sv",
+        "sha256": "7302b01cf955d67d11b56ed4d112c69ae561d18413e0f47894708565859a44c9",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/m4_memory_fabric/m4_message_ram.sv",
+        "sha256": "70268529d6c116ff14cf7cb26d0b8ebc3f9c902c48c70356cc9cf93db9fc20d9",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/m4_memory_fabric/m4_private_bank.sv",
+        "sha256": "072e0e282872a3d55c35708a74219942bd6620a33eb6439297fc917d1cce7229",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/m4_memory_fabric/m4_shared_tdp_bank.sv",
+        "sha256": "82890a44beb28f7a7dd4216e0cc3c0f82b10fbcd721961d6325055320c864a83",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_bias18.sv",
+        "sha256": "36bbd56ebc02d30a9fbd2797d4651a9d0d36d8135b354f021b1d13596c7c6f05",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_check_controller_p4.sv",
+        "sha256": "3d01371c5e46116b0b54e109003fcbb7a047e21be79225c1aa796effc5f8b503",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_check_min2_18.sv",
+        "sha256": "742c9095b3dd057fef1ada01ec810fbeb9487b2c2196dbc0ce71d1e916af9cd2",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_coefficient_table.sv",
+        "sha256": "3187363879a79d4e13e2385bd65d1e1d39ce5b777236478d343b1c958dbd39e3",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_controller.sv",
+        "sha256": "18bd868086c45c6a136b69527a367949bee256dc1e1ec29a6f9cffb205c65a90",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_convergence_controller_p4.sv",
+        "sha256": "9dbc4ca884b7cea39468089e6c8fd018e8f054740d492c927bc78b4cfd894da1",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_convergence_decision.sv",
+        "sha256": "20903bd51a20eeafb5809ad252e1247a07838cff5cde5c4130c57828647a8e23",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_correction_readout.sv",
+        "sha256": "b4d11cd7724d800bbdfd9dbaec787f3466d88609e77c2d7c1c27b57d4c975b42",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_edge_message_memory.sv",
+        "sha256": "6cc4789227b42bb9d9b416290ec11b6f8e50e48174fef0c9a188925e1dc939cd",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv",
+        "sha256": "f48a3912208b16a759ca56e16d89056c1bb6b3eca16dd466337a99bec5775684",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_folded.sv",
+        "sha256": "ba8316c8600e132c2cd18b40225f535957bec4cc27a887bc54709803a201fc08",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_four_bank_ram.sv",
+        "sha256": "c46b1349bb36e070b20a7fc15b9cac7a4071a3e11211a2f40970cd0c4f7ed8a9",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_gamma_rng.sv",
+        "sha256": "841832bd82d0bcf1bf8fdaed37f2546d7830b2afe3866f288d224f116bc8d13f",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_golden_engine.sv",
+        "sha256": "53ebcca78e3ee582d8f1cdf30c2714d4b7144f0fcf8cc6ad3c2ac306d4c4e175",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_golden_tier1_top.sv",
+        "sha256": "b5347da5d3b30d944d0d1574bba9dad2e5a7ec77f5a7fd0f391d8a95d57db3eb",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_graph_engine.sv",
+        "sha256": "9b828e4bfa063cb6601a61844074220374c01c0f1af195adddee3162bdbe7f8e",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_gross_tier1_top.sv",
+        "sha256": "0c4295a246d65198e52738649b3903af743b4013d4e4b1c28ffe566414f89c26",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_memory_fabric_p4.sv",
+        "sha256": "1d4230c941c85c84d54f474189eb7c057e01e2f8a1beb6e6ac8d6f682ab8cdbe",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_node_state_memory.sv",
+        "sha256": "778b725feb9fd6cd8af4a9861a3acd21c00b4fc102e2dea72b0105b0b40d718f",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_p4_datapath_shell.sv",
+        "sha256": "dc20c0537f8682ecb92d72539ca7aee4df201c13c304f8c84d523fb4a0ee009d",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_packed_sync_ram.sv",
+        "sha256": "1dcbb8ac28a0c793170e5e31da709423a67cac1a53f31efded7a0c6fd3179bd4",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_parallel_n2_p4.sv",
+        "sha256": "d188640c1cecdccf510750a7f9a000ba554895f1483e4579be425d011614c2e3",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_relay_init_controller_p4.sv",
+        "sha256": "27bf0e158600ebe88a145060aa6df195e8910edfeebae9443cf5e80415ee6e11",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_response_memory.sv",
+        "sha256": "a04b443bf94872938d1e8d3013fc53bab8f67bc89ca596f45bde642cf06aaa09",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_round_div16.sv",
+        "sha256": "7fb0b0867e799f1eacacfb4bcd6105ef546ef1166ea377d7a056237c7daa12c5",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_sat18.sv",
+        "sha256": "1cfd65d2bd6a3ff296b75ba755535c3f60f2b3d2acc0f2982c8c5d2254913628",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_schedule_rom.sv",
+        "sha256": "6d3b99eeba3ac0d710722476c3ad5ec866d95f882c81fc5a4866de76df5080e6",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_single_engine_memory_p4.sv",
+        "sha256": "d636177586f8bca936043afd13db3ab926b2d63045b69c27dbea1b82351cd89d",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_single_engine_p4.sv",
+        "sha256": "a47f0973e42039aa848d6e0e210bd727aa70d25ba170ddd9cea1f89b5cefd3d6",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_sync_banked_gather.sv",
+        "sha256": "2ca3fc933af7ada69013b1fcc996d8cdb534e2a390c0710e1798bf6be6fd1870",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_sync_p4_memory.sv",
+        "sha256": "7162a78f6b03645a1b16780cf69e306705d84b656afa9351449c0627c3905dd2",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_variable_controller_p4.sv",
+        "sha256": "a83061e24a77c34b18c67c3680ef3782e1897c468a2ff02217b22678355afe83",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_variable_node_18.sv",
+        "sha256": "d5e372dc8d892a1781348f88c9dd0104a45af20b223fbf983a210dc3ba564b14",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_memory_mix.sv",
+        "sha256": "ef58d7cd40fee0367c3e5b9d19a05c844599b126374b409e1dec3ec383f836dd",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      },
+      {
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/variable_node_tile.sv",
+        "sha256": "fdfc8897df836f538958965d262bffaa0355cea1b28fa58b032801ee90d90059",
+        "git_head": "29239b8d8b9c4ddce8de7a7e37866f606723baf8",
+        "matches_committed_bytes": true
+      }
+    ],
+    "selected": [
+      {
+        "role": "float",
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_float.py",
+        "entry_point": "FloatRelayBPDecoder.decode(prior, syndrome)",
+        "constructor_signature": "(h_matrix: 'np.ndarray | Path | str', max_iterations: 'int | None' = None, gamma: 'float | None' = None, leg_configs: 'Sequence[RelayLegConfig] | None' = None, trace_messages: 'bool' = False, iteration_callback: 'Callable[[dict[str, object]], None] | None' = None, *, S: 'int' = 1, R: 'int' = 301, seed: 'int' = 0, relay_handoff: 'bool' = True)",
+        "defaults": {
+          "S": 1,
+          "R": 301,
+          "first_limit": 80,
+          "later_limit": 60,
+          "gamma_first": 0.125,
+          "gamma_later": [
+            -0.24,
+            0.66
+          ],
+          "seed": 0,
+          "rng": "persistent numpy default_rng per instance"
+        },
+        "stopping": "syndrome-valid solution; collect S candidates or exhaust R",
+        "selection": "minimum original-prior dot correction among valid candidates; S=1 here"
+      },
+      {
+        "role": "fixed",
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_fixed.py",
+        "entry_point": "FixedRelayBPDecoder.decode(prior, syndrome)",
+        "defaults": {
+          "b": 4,
+          "g": 2,
+          "M": 8,
+          "S": 1,
+          "R": "None -> length of leg_configs",
+          "leg_configs": "one leg, 10 iterations, gamma=0",
+          "seed": 0
+        },
+        "study_configuration": {
+          "b": 18,
+          "g": 4,
+          "M": 16,
+          "S": 1,
+          "R": 32,
+          "first_limit": 80,
+          "later_limit": 60
+        },
+        "alternatives": [
+          "BlockFloatingRelayBPDecoder",
+          "SeparatedExponentRelayBPDecoder",
+          "reference/relay_reference.py:FixedPointRelayBPDecoder (legacy)"
+        ],
+        "stopping": "H correction == syndrome; collect S or exhaust configured legs",
+        "selection": "minimum unquantized input-prior dot correction among valid candidates"
+      },
+      {
+        "role": "multilane",
+        "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/n1-vs-n2-hardware-latency/run_study.py",
+        "entry_point": "task((seed_index, shot, sample_seed, syndrome, logical))",
+        "lane_entry": "decode_one -> FixedRelayBPDecoder.decode",
+        "defaults": {
+          "N": 2,
+          "P": 4,
+          "R": 32,
+          "S": 1,
+          "first_limit": 80,
+          "later_limit": 60,
+          "b": 18,
+          "g": 4,
+          "M": 16
+        },
+        "gamma": "first encoded 2/16; later hardware xorshift64 rejection mapping, encoded -4..11 divided by 16",
+        "seed": "seeds(sample_seed, shot) uses splitmix and independent s0/s1; internal NumPy seed=0 unused with explicit gamma arrays",
+        "stopping": "each lane syndrome-valid or budget exhausted; earliest valid modeled result cycle wins; ties lane0",
+        "logical_labels": "present in scoring wrapper only; actual decode invocation profiled separately"
+      }
+    ],
+    "alternatives": [
+      {
+        "path": "fpga/rtl/relay_bp_parallel_n2_p4.sv",
+        "role": "actual N2 RTL top",
+        "defaults": "C=12,V=20,E=76,L=2,P=4,USE_INTERNAL_RNG=0; limits and gamma are input ports",
+        "scope": "Not a 32-shot full RTL run; standalone arbiter and numerical RTL fixture executed"
+      },
+      {
+        "path": "results/parallel-trajectory-model/run_parallel_model.py",
+        "role": "earlier canonical fixed software ensemble",
+        "settings": "R32, gamma later [-.12,.54], NumPy seeds 9100+shot+engine*1000003, iteration-based selection; main also includes N4, not run"
+      },
+      {
+        "path": "fpga/model/parallel_relay_fpga_model.py",
+        "role": "behavioral demo",
+        "reason": "RelayEngine initializes heuristic residual from syndrome weight and lane bias; not canonical H-based decoder"
+      },
+      {
+        "path": "simulations/parallel_relay/parallel_relay_decoder.py",
+        "role": "legacy threaded ensemble",
+        "reason": "Legacy decoder/observation-model family; not current canonical hardware-seeded study"
+      },
+      {
+        "path": "relay_models/parallel_lanes/parallel_lane_models.py",
+        "role": "re-export of legacy threaded and behavioral models"
+      },
+      {
+        "path": "reference/relay_bp_fixed.py",
+        "role": "block-floating and separated-exponent alternatives",
+        "reason": "Not instantiated by selected N2 run_study.py"
+      }
+    ]
+  },
+  "configuration_alignment": {
+    "rows": [
+      {
+        "parameter": "H",
+        "float": "saved package detector/fault CSR",
+        "fixed": "identical",
+        "multilane": "identical",
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "A",
+        "float": "saved package logical-incidence CSR; scoring only",
+        "fixed": "identical",
+        "multilane": "identical",
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "prior source",
+        "float": "static DEM log((1-p)/p)",
+        "fixed": "same input, rounded to integer",
+        "multilane": "same fixed input",
+        "status": "ALIGNED_SOURCE_NUMERIC_DIFFERENCE"
+      },
+      {
+        "parameter": "R",
+        "float": 32,
+        "fixed": 32,
+        "multilane": 32,
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "S",
+        "float": 1,
+        "fixed": 1,
+        "multilane": 1,
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "first iteration limit",
+        "float": 80,
+        "fixed": 80,
+        "multilane": 80,
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "later iteration limit",
+        "float": 60,
+        "fixed": 60,
+        "multilane": 60,
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "gamma",
+        "float": "exact hardware-realized encoded vector /16",
+        "fixed": "same vector; exactly representable",
+        "multilane": "same vector for corresponding lane",
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "trajectory seed",
+        "float": "lane0 hardware s0; NumPy seed0 inactive",
+        "fixed": "lane0 s0 / lane1 s1; NumPy seed0 inactive",
+        "multilane": "s0/s1 from recorded sample ID",
+        "status": "ALIGNED_PER_LANE"
+      },
+      {
+        "parameter": "relay handoff",
+        "float": "previous leg final marginal",
+        "fixed": "same with quantization",
+        "multilane": "same fixed decoder",
+        "status": "ALIGNED_SEMANTICS"
+      },
+      {
+        "parameter": "stopping",
+        "float": "first syndrome-valid candidate or R exhaustion",
+        "fixed": "same",
+        "multilane": "each lane same; first valid modeled completion wins",
+        "status": "ALIGNED_PER_LANE"
+      },
+      {
+        "parameter": "candidate validity",
+        "float": "H e_hat = syndrome",
+        "fixed": "same",
+        "multilane": "same",
+        "status": "ALIGNED"
+      },
+      {
+        "parameter": "candidate selection",
+        "float": "S1 first valid; original-prior weight metadata",
+        "fixed": "same",
+        "multilane": "first valid result cycle; ties lane0",
+        "status": "ENSEMBLE_RULE_DIFFERENT_BY_DESIGN"
+      },
+      {
+        "parameter": "numeric representation",
+        "float": "float64",
+        "fixed": "signed18 integer, signed22 guard, gamma /16",
+        "multilane": "same software fixed format",
+        "status": "EXPECTED_NUMERICAL_DIFFERENCE"
+      }
+    ],
+    "comparison_scope": "Float vs fixed lane0 under exactly realized hardware gamma, not either constructor's unrelated defaults; fixed standalone lane0/lane1 vs actual N2 task separately.",
+    "direct_algorithm_configuration_equivalence": true,
+    "bit_identical_numeric_representation": false,
+    "warning": "Does not compare ensemble outcome to single-lane outcome as an implementation error. Does not claim the full RTL datapath matches software."
+  },
+  "historical_versions": {
+    "studies": [
+      {
+        "study": "circuit-level-baseline",
+        "historical_commit": "9ef085ba321e317b28d440c5acb549d7c74bf86a",
+        "historical_decoder_hash": "3bd1bf4a8fa13818a3466ba058007d1aa2391fb2ea2af6ab31b975690962220d",
+        "current_decoder_hash": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+        "manifest_sha256": "f1c9646c637bde84e3a924a22caebce486a20d880c371f0a8e6d7c228a3bd9b1",
+        "recorded_commit_source_recoverable": true,
+        "recorded_commit_source_matches_hash": false,
+        "exact_source_recoverable": true,
+        "recovered_blob": "36e8a5b2d5fd3074170de2ead63d3caca9a17191",
+        "reachable_from_committed_file_history": false,
+        "recovered_source_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/circuit-level-baseline_relay_bp_float.py.txt",
+        "source_diff_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/circuit-level-baseline_relay_bp_float.py.diff",
+        "normalized_default_path_ast_equal": true,
+        "classification": "PARAMETER_ONLY_CHANGE",
+        "meaningful_differences": "Adds disabled-by-default observation callbacks and metadata; baseline additionally adds relay_handoff switch with unchanged True default. Arithmetic AST unchanged after only documented observer/default-branch normalization."
+      },
+      {
+        "study": "n1-vs-n2-hardware-latency",
+        "historical_commit": "7ae09214cf33a8dd4358ee14b45094991188aa74",
+        "historical_decoder_hash": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+        "current_decoder_hash": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+        "manifest_sha256": "2b2dff808f470a0a27a703d304760b3d92a96475f83876f2132987e6c0e3f875",
+        "recorded_commit_source_recoverable": true,
+        "recorded_commit_source_matches_hash": true,
+        "exact_source_recoverable": true,
+        "recovered_blob": "4fd3b8cca37170ba7e2bb793d900a986586eb632",
+        "reachable_from_committed_file_history": true,
+        "recovered_source_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/n1-vs-n2-hardware-latency_relay_bp_fixed.py.txt",
+        "source_diff_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/n1-vs-n2-hardware-latency_relay_bp_fixed.py.diff",
+        "normalized_default_path_ast_equal": true,
+        "classification": "NO_MEANINGFUL_CHANGE",
+        "meaningful_differences": "Adds disabled-by-default observation callbacks and metadata; baseline additionally adds relay_handoff switch with unchanged True default. Arithmetic AST unchanged after only documented observer/default-branch normalization."
+      },
+      {
+        "study": "paper-ler-reproduction-expanded",
+        "historical_commit": "b06cff96dcf7e818f69e20ff8298205aceb9f68b",
+        "historical_decoder_hash": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+        "current_decoder_hash": "e7b03e3ad2a6421cbc9f311bf32d4e1c6f191d6fd0bf70fbd96b68973227c3c7",
+        "manifest_sha256": "52081ccecf941c732f6a3638ddac410e7d4012020285357cb10b1c3110302d65",
+        "recorded_commit_source_recoverable": true,
+        "recorded_commit_source_matches_hash": true,
+        "exact_source_recoverable": true,
+        "recovered_blob": "7e27ee824e30288c97d22f4369b06238076492a8",
+        "reachable_from_committed_file_history": true,
+        "recovered_source_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/paper-ler-reproduction-expanded_relay_bp_float.py.txt",
+        "source_diff_path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/historical_sources/paper-ler-reproduction-expanded_relay_bp_float.py.diff",
+        "normalized_default_path_ast_equal": true,
+        "classification": "NO_MEANINGFUL_CHANGE",
+        "meaningful_differences": "Adds disabled-by-default observation callbacks and metadata; baseline additionally adds relay_handoff switch with unchanged True default. Arithmetic AST unchanged after only documented observer/default-branch normalization."
+      }
+    ],
+    "reachable_decoder_blobs_searched": 13,
+    "unreachable_blobs_searched": 146,
+    "warning": "Baseline exact source recovered from unreachable Git object, not the recorded commit. Copy preserved to prevent Git garbage collection loss.",
+    "normalization": "Remove callback parameter/assignment/guarded call, Callable import, gamma-summary metadata, added trace saturation metadata; specialize relay_handoff=True. No arithmetic expressions removed."
+  },
+  "numerical_audit": {
+    "priors_and_messages": {
+      "total_width": 18,
+      "fractional_bits": 0,
+      "range": [
+        -131072,
+        131071
+      ],
+      "rounding": "nearest, ties away from zero",
+      "saturation": "signed clamp; no modular wrap"
+    },
+    "gamma": {
+      "rtl_width": 5,
+      "fractional_bits": 4,
+      "scale": 16,
+      "hardware_encoded_range": [
+        -4,
+        11
+      ],
+      "python_storage": "int64, no standalone 5-bit clamp; selected schedule remains representable"
+    },
+    "intermediate_sums": {
+      "guard_width": 22,
+      "fractional_bits": 0,
+      "range": [
+        -2097152,
+        2097151
+      ],
+      "python_temporary": "int64; bincount floating accumulation exact for these bounded integers"
+    },
+    "normalization": "none; no block-floating/normalization in selected class",
+    "representative_max_absolute_quantization_error": 1.0,
+    "representative_mean_absolute_quantization_error": 0.4653333333333334,
+    "representative_saturation_events": 2,
+    "representative_overflow_events": 0,
+    "representative_gamma_max_error": 0.03125,
+    "actual_prior_max_error": 0.48440893264600504,
+    "actual_prior_mean_error": 0.36453919059340745,
+    "actual_prior_saturation_events": 0,
+    "rounding_inputs": [
+      -25,
+      -24,
+      -23,
+      -9,
+      -8,
+      -7,
+      0,
+      7,
+      8,
+      9,
+      23,
+      24,
+      25
+    ],
+    "rounding_outputs": [
+      -2,
+      -2,
+      -1,
+      -1,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "overflow_definition": "Out-of-range guard inputs are saturation events; int64 wrap checked against bounded integer magnitudes, not inferred from absence of warnings."
+  },
+  "arbiter_controls": {
+    "status": "PASS",
+    "cases": 48,
+    "actual_source": "successes = [(e['result_cycles'], i) for i, e in enumerate((e0, e1)) if e['syndrome_converged']]\nwinner = min(successes)[1] if successes else -1\nn2cycles = min((x[0] for x in successes)) if successes else max(e0['result_cycles'], e1['result_cycles'])\nselected = (e0, e1)[winner] if winner >= 0 else None",
+    "source_lines": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "logical_label_dependency": false,
+    "coverage": "both fail; each single success; both succeed at unequal times and ties; every combination of logical labels"
+  },
+  "rtl_controls": {
+    "status": "FAIL",
+    "arbiter_status": "PASS",
+    "numerical_cases": [
+      {
+        "case": 0,
+        "prior": 8,
+        "mu": [
+          2,
+          3
+        ],
+        "rtl_bias": 8,
+        "rtl_sum": 5,
+        "rtl_marginal": 13,
+        "rtl_nu": [
+          11,
+          10
+        ],
+        "fixed_equation_nu": [
+          11,
+          10
+        ],
+        "rtl_equation_verified": true,
+        "software_rtl_equal": true,
+        "classification": "EXACT_MATCH"
+      },
+      {
+        "case": 1,
+        "prior": 131000,
+        "mu": [
+          100,
+          100
+        ],
+        "rtl_bias": 131000,
+        "rtl_sum": 200,
+        "rtl_marginal": 131071,
+        "rtl_nu": [
+          130971,
+          130971
+        ],
+        "fixed_equation_nu": [
+          131071,
+          131071
+        ],
+        "rtl_equation_verified": true,
+        "software_rtl_equal": false,
+        "classification": "IMPLEMENTATION_MISMATCH"
+      },
+      {
+        "case": 2,
+        "prior": -131000,
+        "mu": [
+          -100,
+          -100
+        ],
+        "rtl_bias": -131000,
+        "rtl_sum": -200,
+        "rtl_marginal": -131072,
+        "rtl_nu": [
+          -130972,
+          -130972
+        ],
+        "fixed_equation_nu": [
+          -131072,
+          -131072
+        ],
+        "rtl_equation_verified": true,
+        "software_rtl_equal": false,
+        "classification": "IMPLEMENTATION_MISMATCH"
+      }
+    ],
+    "commands": [
+      [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-DRELAY_BP_SIM_ASSERT",
+        "-s",
+        "tb_relay_bp_first_success_arbiter_n2",
+        "-o",
+        "/var/folders/xd/65fr4l6x4cs8z90l383967m40000gn/T/reconcile-rtl-hdso895z/arbiter",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_first_success_arbiter_n2.sv",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/testbench/tb_relay_bp_first_success_arbiter_n2.sv"
+      ],
+      [
+        "/opt/homebrew/bin/vvp",
+        "/var/folders/xd/65fr4l6x4cs8z90l383967m40000gn/T/reconcile-rtl-hdso895z/arbiter"
+      ],
+      [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-DRELAY_BP_SIM_ASSERT",
+        "-s",
+        "tb_variable_saturation_reconciliation",
+        "-o",
+        "/var/folders/xd/65fr4l6x4cs8z90l383967m40000gn/T/reconcile-rtl-hdso895z/variable",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_variable_node_18.sv",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_bias18.sv",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_round_div16.sv",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_sat18.sv",
+        "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/tb_variable_saturation_reconciliation.sv"
+      ],
+      [
+        "/opt/homebrew/bin/vvp",
+        "/var/folders/xd/65fr4l6x4cs8z90l383967m40000gn/T/reconcile-rtl-hdso895z/variable"
+      ]
+    ],
+    "scope": "RTL arbiter and variable-node primitive only; not full Gross RTL decoding",
+    "source_evidence": {
+      "python": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/reference/relay_bp_fixed.py:256-260",
+      "rtl_primitive": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_variable_node_18.sv:38",
+      "rtl_integrated_controller": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/fpga/rtl/relay_bp_variable_controller_p4.sv:100-103"
+    },
+    "finding": "Software forms nu from unclipped bias+sum; RTL subtracts mu from already saturated marginal. These operations differ at saturation and are not a scheduling difference. Candidate-weight arithmetic also uses rounded RTL priors vs original float input priors in software; S=1 avoids multi-candidate ranking here."
+  },
+  "saved_panel": {
+    "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/circuit-level-multiseed/paired_samples.npz",
+    "sha256": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "available_shots": 640,
+    "detector_shape": [
+      5,
+      128,
+      1728
+    ],
+    "logical_label_shape": [
+      5,
+      128,
+      12
+    ],
+    "seeds": [
+      20260809,
+      20260810,
+      20260811,
+      20260812,
+      20260813
+    ],
+    "subset": [
+      {
+        "sample_seed": 20260809,
+        "shot": 0
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 1
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 2
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 3
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 4
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 5
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 6
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 7
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 8
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 9
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 10
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 11
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 12
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 13
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 14
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 15
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 16
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 17
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 18
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 19
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 20
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 21
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 22
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 23
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 24
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 25
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 26
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 27
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 28
+      },
+      {
+        "sample_seed": 20260809,
+        "shot": 29
+      },
+      {
+        "sample_seed": 20260810,
+        "shot": 26
+      },
+      {
+        "sample_seed": 20260811,
+        "shot": 26
+      }
+    ],
+    "selection_rule": "First 30 shots of first saved seed, plus the two additional predeclared historical rescue IDs; 32 total. No new sampling.",
+    "fallback_reason": "Previous validation archive contains only 4 ordinary real syndromes, fewer than desired panel.",
+    "selection_bias": "Rescue-enriched diagnostic panel; no statistical performance inference"
+  },
+  "archive": {
+    "path": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/n1-vs-n2-hardware-latency/per_shot_results.csv",
+    "sha256": "4de985f1df5dda81abdd19a7198998ef1fc718d05abd207a2d418ed2f22f08f9"
+  },
+  "completed_shots": 32,
+  "fatal_error": "Traceback (most recent call last):\n  File \"/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/float-fixed-multilane-reconciliation/run_reconciliation.py\", line 804, in main\n    print(f\"Completed {len(rows)}/32: {row['shot_id']} {row['classification']}\",flush=True)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nBrokenPipeError: [Errno 32] Broken pipe\n",
+  "safe_to_proceed_canonical_N4": false,
+  "artifact_hashes": {
+    "arbiter_controls.csv": "1cecb556a1128f5d4faa24656b02615fe6a60e90af9e25021d690c61fa0eed6e",
+    "per_shot_comparison.csv": "e73ae6367c468faaf08eb731f222f939b9cfde7d1ac88b7c8932c1b2235fed4e",
+    "rtl_variable_compile.log": "70e9014d679a83d663c3985fbdb86ccc0cf93109472512c6d772d78b0d30e4af",
+    "configuration_alignment.csv": "64bbf21ed83fa553b053f4b75dd5f711b5e08dabc5e669c359449bfe8465652b",
+    "README.md": "83c95701b1a8e46e080ef493ebf914dbbd94495d8c2afd38fe878db624c039f4",
+    "numerical_values.csv": "90aaf6da6f1b1784fd32f81270d4cb6e23cec5112cc3d540eb37da727f45eec5",
+    "rtl_arbiter_compile.log": "8e7299cff4bd89fcbec55b69e892787cfa014ac2933754b80dfe264e08a98aff",
+    "rtl_numerical_comparison.json": "345525c2b2fb4d13c611af5989134d4524533d832e8c48479c567891ff5aff1d",
+    "tb_variable_saturation_reconciliation.sv": "ac7536fd82ad4df1270eeccbf758917557564b16a2b6ad782c453f483b5ef18a",
+    "run_reconciliation.py": "c2bff15aeb44b7f25f918fe5ff9c0d1d14a2eaeac31240bc67326ed1e0a96edb",
+    "rtl_arbiter.log": "d7283977afbbe27ed9a4444c583ae98dcf53fb38a060c4f1c36e3633130aaae1",
+    "rtl_variable.log": "2ad2e5b14a7890271e0e55bcfb3f6b1b5c69d1ebf528f3c995c71db5444fdd59",
+    "historical_sources/paper-ler-reproduction-expanded_relay_bp_float.py.txt": "0d28c7f2271d2d27cf8fb5d0ee81479faf6dc67d7a658bd4b4420dea1f48dd42",
+    "historical_sources/n1-vs-n2-hardware-latency_relay_bp_fixed.py.diff": "fe934698272ff703734910ec3fe4c83e5133ee8a04a09ad6e37fa4b7ee7695ed",
+    "historical_sources/circuit-level-baseline_relay_bp_float.py.diff": "44fdfca48d6e62c7737271b7060a61150018c8b1653117544befd955405275ad",
+    "historical_sources/n1-vs-n2-hardware-latency_relay_bp_fixed.py.txt": "3b16c4be6c7e7339b93f769afc574e191b8b40bd6147953ec38686f5ef81a93c",
+    "historical_sources/circuit-level-baseline_relay_bp_float.py.txt": "3bd1bf4a8fa13818a3466ba058007d1aa2391fb2ea2af6ab31b975690962220d",
+    "historical_sources/paper-ler-reproduction-expanded_relay_bp_float.py.diff": "d60714a8fd67749f97d553f6ee53777a25b283a798b7886001b639c1023741ef",
+    "checkpoints/20260809_029.json": "fd54feac49e407fdf4b943b2ea18da20bf30b7d81d45093d9aaa827b60cb4599",
+    "checkpoints/20260810_026.json": "c247fd0709ca226285972cf86bb41ddb6be0fb79d6e2a743c526414e618df77b",
+    "checkpoints/20260811_026.json": "1ebf4b2a013861dd54e6c01cf590e933368f557d0db460f03491e3adf6cbf23d",
+    "checkpoints/20260809_013.json": "4d9aceac5aa72200d81bbe943430171383abd86687548101299ef03ffc483624",
+    "checkpoints/20260809_005.json": "f00ac67a5cbcf59fee0af5379d3f3f3703006539584ad2ae29d2d4afddbcb037",
+    "checkpoints/20260809_025.json": "e1d78965b0d54bd51aba750eb65b24ec800108267b79498923b859a043171ff6",
+    "checkpoints/20260809_009.json": "cb48933b29429a6cd1ca8422304d063f09c56ac84f902303611ebb98402d5593",
+    "checkpoints/20260809_008.json": "6a2c2d9df10f7f5f53f087114de01aeb67851fc311a7aca0a0d8394282cc1d90",
+    "checkpoints/20260809_024.json": "2ded2a21e59985679c111257d32184cd5fed9b9db1de6a2a2cf80227257770ae",
+    "checkpoints/20260809_004.json": "d5489b4287aec1d58923c0243e7b69684134647ca4b303a72c76cccf6abf0bc9",
+    "checkpoints/20260809_012.json": "bb3e507d727d1258b89be12de3fe4e7574231145e0ed9ddd1c040bdd1426c8e9",
+    "checkpoints/20260809_028.json": "332490a24553078c6a76485dde219fc210d609b2436a6e0b73c536ecf58c5aea",
+    "checkpoints/20260809_023.json": "2ac0885c4082999c596a2efda23743464acef6dab1a1522ac2a4e732b9f2a6ee",
+    "checkpoints/20260809_027.npz": "9ce48402f9dedb91aafbb3e3ae4cbfe5d0971ff7704e1c21f3bde8c7291d05b9",
+    "checkpoints/20260809_019.json": "aa87577e525917fd6c5744b2af5e35d4e6f7360c078b611a9fa2b094aec0113f",
+    "checkpoints/20260809_026.npz": "e0baee33aa7a20bf6782734f971bf7eee12f5922cc264832d2a873273ed03046",
+    "checkpoints/20260809_018.npz": "0fddc7b5c97ab399ef2c80305c3e51c655aea20f63a00e6c2f01fa7e5d784a2a",
+    "checkpoints/20260809_024.npz": "7b0329dd83a98fbdbb926afd22ab8ebc1c72a652352c134d92ec1ac71bd6c2eb",
+    "checkpoints/20260810_026.npz": "206b534199c747160316c86b520c025de4e68c239e20c150da31a96cf51a0271",
+    "checkpoints/20260809_015.json": "61cc616aaa81ddec3f18350b89342c472968acd1692c2948276bb179affdbffb",
+    "checkpoints/20260809_025.npz": "7a5ef73e730e533f3dee20954233dad2786eca97ba9550c3672c06647db55433",
+    "checkpoints/20260809_019.npz": "cb81d4dc751ca25486f225ea1e66b10a02cd66b778ce0ae3bd1e86842a0ddd47",
+    "checkpoints/20260809_003.json": "6063374fc9817eb13e68379405ab60a65cbc0e5160573cded36d1869e9490760",
+    "checkpoints/20260809_002.json": "6cd76050faec2513068f2206c61512c0c93cb8e26da2e9d72694bfa0db0b8a95",
+    "checkpoints/20260809_021.npz": "28c39929c796ba85a64d1d19fa4826984d33a27a0c874541157c11946605d3b0",
+    "checkpoints/20260809_009.npz": "639397e99b27023b82545f12c2de3b6e7bf56da7090d7c3c2c1810f4ea6118f6",
+    "checkpoints/20260809_014.json": "f5ce3cb16d2b326cf9fb60870ea3be12c0539e03a4f2c033da7aec7d0455f955",
+    "checkpoints/20260811_026.npz": "709461747e7486d6a33bc410726e6b623384b337fedc68e1d04e5c2181da2fcc",
+    "checkpoints/20260809_008.npz": "98b9ad97d102651e648e581fe277849a3e1102ff68dcee80943fafdfe259a9b4",
+    "checkpoints/20260809_020.npz": "aa19ba31fe1ed3f507bc569ffab45906d3fd36d8f2e866de99ad29a000d10ae1",
+    "checkpoints/20260809_022.npz": "43135a07fd50d8e49d6a5f7751f61cd1a917abe7d3d14492a4310428466386de",
+    "checkpoints/20260809_018.json": "6dd66f028faedb4b85d415217c73707008e90a5ed331fe40f73c8e969cdd61fc",
+    "checkpoints/20260809_023.npz": "ed51194f2320181570a596b03e4cb3dc24581c8c0a1557580be02f8705b77cfb",
+    "checkpoints/20260809_022.json": "af45e22a3f8f4fe0c1dabfd34089f3d00c29981d1a5e336e29bb845e36b4877e",
+    "checkpoints/20260809_006.npz": "50120d9662a2437102a3820dfdc86e913a733242cd3e416f58eab6faebb316fd",
+    "checkpoints/20260809_012.npz": "569ea6b86bfd8ab27e1839982109c7244b02be2a92ae2a7260e49ce147b8f710",
+    "checkpoints/20260809_013.npz": "dd025748dd4eb6cac14c90a03534778358b53aacb87ac26209d6b32208a29565",
+    "checkpoints/20260809_007.npz": "6e51a5815b3809832af8a6ce5ebb25ab7c4bb2154ab2df4658a33c4e99959e99",
+    "checkpoints/20260809_021.json": "88e8e5e3370b53f0f4fc59e66ec15afd83ce9c63807727b27d49dbdf467005f1",
+    "checkpoints/20260809_001.json": "0c3ba7097c8b1567cda4bb1efde92a8c534d8410e34ca5cbbb6246ff168210b8",
+    "checkpoints/20260809_011.npz": "08cd00fbf43fd04f5101e36f6c71557164d93cf5661d0b7124c9cfb156655e04",
+    "checkpoints/20260809_005.npz": "e4bc99587c2f327204c4bec48fe94fb2c57a16f88e160b9ac13003bd674d99fe",
+    "checkpoints/20260809_017.json": "8e04b48d35fbbfde0edca010de337ce222b5733a00ade7a788d00b6a31e1dac8",
+    "checkpoints/20260809_004.npz": "590c9105c1b565cc90db3bbf1d0362acc8dd3bf2a497c4d008b787d7dbd12103",
+    "checkpoints/20260809_010.npz": "3a31534a39cacf55e43907fcf2469cb1f3477960d2679cf679dc0cd75f98a967",
+    "checkpoints/20260809_014.npz": "bda203ddfc5f3cfde44277192c18d95a7e4d03fa9bb068b794ff80419f27232f",
+    "checkpoints/20260809_000.npz": "354d3907df825d41a06de4c892128f43c9d40e3479c1d5436475d03c93e2ea38",
+    "checkpoints/20260809_028.npz": "25a694493fd7a0c4ab447b70b9503a2816ac98e37c0ea637b112c08662c5239b",
+    "checkpoints/20260809_016.json": "185b3fe07b8f5dd94b21410966414b4b09d8dc2c4b902558e71464f1f9f045a4",
+    "checkpoints/20260809_029.npz": "ed5e328795b57c6afaed989e8e2880038d8528d840bbd91e7ac47b83359ecde1",
+    "checkpoints/20260809_001.npz": "1d033d73549ca4ddd856eed11df739f4e2435d2ce119513d4ced6a413e04aec1",
+    "checkpoints/20260809_015.npz": "ddb25bb9a42de0cd81bcdd3bf7e661d158e4121cb2046baf7c48179add4ac741",
+    "checkpoints/20260809_000.json": "ab67844991768d4332f6b179449df3a2ee6af102e680bc6ca96c998940233d2a",
+    "checkpoints/20260809_020.json": "090c204a6e35808090a80d3a608cddcef021097626ad1bdd696a0b0fb9ef4780",
+    "checkpoints/20260809_003.npz": "4637ce2357b1477da814ec9847f596e677c6b8090469fef0d72690208811ace9",
+    "checkpoints/20260809_017.npz": "3a4b40633f94a839fcbda95da1bda69b9a31f2c26c968c71c3c4f0ce16a5fbf1",
+    "checkpoints/20260809_016.npz": "e7afc2d2bf83e3b678d5f30a7134e59628e5380b26a5cecab9bc41aed073e20a",
+    "checkpoints/20260809_002.npz": "2291262e499bb0a1ab3ac90498367375ba0421dc512e29b54daea4d8ba9fca8f",
+    "checkpoints/20260809_007.json": "d37867ba043c2e819da3112d3f0d0abcdac7232badf6717d200bd4d4665c5409",
+    "checkpoints/20260809_011.json": "6d3ef4e2b6e42d85165afdf72f223ff95b45f2790e4902eadbd9be270b62333c",
+    "checkpoints/20260809_027.json": "dfd71691b895cfc942a76b8a6243c08f811ed7073a4912ab4f3574089fe90d6d",
+    "checkpoints/20260809_026.json": "7289dcd2dc26a5b483c9c456bb2c31cfebb652cfa37a96e922c17a1d0d81be32",
+    "checkpoints/20260809_010.json": "3d6cd5bc4bbe4088fdf0b67b31b9b5b3ac3d55a842f0dbf0fab6125eade90625",
+    "checkpoints/20260809_006.json": "8f4387c861b517b9ba044eeba1695ff5e58e05476b3c0ade9716ccf553638f45"
+  }
+}

@@ -1,0 +1,15 @@
+parameter,float,fixed,multilane,status
+H,saved package detector/fault CSR,identical,identical,ALIGNED
+A,saved package logical-incidence CSR; scoring only,identical,identical,ALIGNED
+prior source,static DEM log((1-p)/p),"same input, rounded to integer",same fixed input,ALIGNED_SOURCE_NUMERIC_DIFFERENCE
+R,32,32,32,ALIGNED
+S,1,1,1,ALIGNED
+first iteration limit,80,80,80,ALIGNED
+later iteration limit,60,60,60,ALIGNED
+gamma,exact hardware-realized encoded vector /16,same vector; exactly representable,same vector for corresponding lane,ALIGNED
+trajectory seed,lane0 hardware s0; NumPy seed0 inactive,lane0 s0 / lane1 s1; NumPy seed0 inactive,s0/s1 from recorded sample ID,ALIGNED_PER_LANE
+relay handoff,previous leg final marginal,same with quantization,same fixed decoder,ALIGNED_SEMANTICS
+stopping,first syndrome-valid candidate or R exhaustion,same,each lane same; first valid modeled completion wins,ALIGNED_PER_LANE
+candidate validity,H e_hat = syndrome,same,same,ALIGNED
+candidate selection,S1 first valid; original-prior weight metadata,same,first valid result cycle; ties lane0,ENSEMBLE_RULE_DIFFERENT_BY_DESIGN
+numeric representation,float64,"signed18 integer, signed22 guard, gamma /16",same software fixed format,EXPECTED_NUMERICAL_DIFFERENCE

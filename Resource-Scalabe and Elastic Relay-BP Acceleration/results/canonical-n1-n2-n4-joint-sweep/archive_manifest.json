@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "shots": 128,
+  "engines": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "N_values": [
+    1,
+    2,
+    4
+  ],
+  "decoder_source": "results/n1-vs-n2-hardware-latency/run_study.py",
+  "sample_hash": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+  "seed_extension": "engine 0 is canonical s0; each later engine applies splitmix(seed ^ 0xD1B54A32D192ED03), preserving canonical engine 1",
+  "validation": {
+    "shots": 128,
+    "engine0_exact": true,
+    "engine1_exact": true,
+    "n2_exact": true,
+    "mismatch_count": 0,
+    "mismatches": []
+  }
+}
