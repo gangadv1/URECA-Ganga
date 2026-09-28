@@ -1,0 +1,44 @@
+{
+  "circuit_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20",
+  "dem_sha256": "76eb991fc30617b4ac194978d5a6f9cdd382270c8c60b30fbb69535f865f9325",
+  "canonical_H_shape": [
+    1728,
+    67752
+  ],
+  "canonical_L_shape": [
+    12,
+    67752
+  ],
+  "expanded_shape": [
+    18432,
+    84456
+  ],
+  "A_checks": 792,
+  "B_checks": 936,
+  "A_variables": 7920,
+  "B_variables": 8784,
+  "Y_variables": 51048,
+  "column_mapping_identity": true,
+  "all_H_L_prior_columns_verified": true,
+  "detector_basis_resolved_from_measurements": true,
+  "native_basis_rule_matches": true,
+  "auxiliary_lift_H_identity": true,
+  "auxiliary_lift_L_identity": true,
+  "sampled_information_used": false,
+  "construction_seconds": 371.78728966700146,
+  "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "dependencies": {
+    "stim": "1.15.0",
+    "ldpc": "2.4.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sinter": "1.16.0"
+  },
+  "cache_hashes": {
+    "canonical_L.npz": "a80b92275575bb141a2ef917ffe170bdec9e0bc867f0d153f77a1b202da870e2",
+    "expanded_H.npz": "4a14f8d0dd6f91b5f6537135fce46b654debdecf329ca37c17ea31511f92453d",
+    "decoder_inputs.npz": "ed886e55956f8de83a61d59be3c4ecc2984a13d3b3281e185d019d844f6bc6fe",
+    "expanded_variable_to_canonical.npy": "f94990e160c43f14bfd5bf06c8afae0088f34d2aafb2520a5c0635af6bcbe21c",
+    "canonical_H.npz": "913e9eb727741b81e97f1f76654b560ce7d9e05508a1d095689428c02dd039d9"
+  }
+}

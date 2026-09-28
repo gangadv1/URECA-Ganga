@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "PASS",
   "scope": "Read-only verification of existing circuit, samples, canonical shot identities, and measurement lineage; no sampling or decoding",
-  "ureca_commit": "c4dc34e560c7af78b7e6397e506ba6d27f3e7eb7",
+  "ureca_commit": "e56c346455c30c68e27a358e107a6605d67be848",
   "circuit": {
     "path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/circuit.stim",
     "sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20",
