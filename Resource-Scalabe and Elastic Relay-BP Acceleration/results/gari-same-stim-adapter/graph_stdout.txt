@@ -1,0 +1,3 @@
+All 67,752 H/L/prior columns bijectively matched to frozen canonical graph
+All 1,728 detector basis tags independently resolved and match native rule
+Starting unchanged official det_and_err_encoding

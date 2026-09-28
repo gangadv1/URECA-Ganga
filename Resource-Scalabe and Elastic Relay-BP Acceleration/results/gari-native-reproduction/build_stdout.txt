@@ -1,0 +1,1 @@
+clang -O3 -fPIC -Wall -Wextra -Xpreprocessor -fopenmp -I/opt/homebrew/Cellar/libomp/22.1.5/include -shared /opt/homebrew/Cellar/libomp/22.1.5/lib/libomp.dylib -o hbplib_v2.so hbp_decoder_v2.c

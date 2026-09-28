@@ -1,0 +1,16 @@
+[
+  {
+    "file": "data/final/BB_final_data_combined.csv",
+    "line": 172,
+    "row": {
+      "shots": "1048576",
+      "errors": "100",
+      "discards": "0",
+      "seconds": "567.0",
+      "decoder": "HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1",
+      "strong_id": "4d196448a5fd2eaf89ccb495e6905746d66fafe6c15d5a1f1f815c66c2099cce",
+      "json_metadata": "{\"d\":12,\"p\":0.002,\"rounds\":12}",
+      "custom_counts": "{\"avg_itr\":48,\"base\":16}"
+    }
+  }
+]

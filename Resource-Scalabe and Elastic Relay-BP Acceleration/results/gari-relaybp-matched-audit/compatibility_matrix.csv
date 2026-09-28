@@ -1,0 +1,20 @@
+parameter,Relay-BP,GARI,exact_match,can_be_matched,required_action,classification
+code,"Gross [[144,12,12]]","Gross [[144,12,12]]",yes,yes,freeze code polynomial ordering and hash,GREEN
+basis,Z,Z for driver and checked-in BB families,yes,yes,keep Z only, GREEN
+rounds,12,12 for d=12,yes,yes,freeze r=12, GREEN
+p/noise model,p=0.003 uniform_circuit,p=.002 default CL or other final-data families,no,yes,select one exact circuit and p then regenerate GARI DEM, YELLOW
+STIM circuit,URECA circuit.stim p=.003,GARI default BB_n144...CL_both_0.002 or alternate families,no,yes,use one byte-frozen circuit for both, YELLOW
+detector count,1728,"1728 for [[144,12,12]]",yes,yes,assert shape before decode,GREEN
+observable count,12,12,yes,yes,assert shape and preserve all labels, GREEN
+syndrome representation,raw detector bits from STIM sampler,bits converted to bipolar expanded X/Z ordering,no,yes,document adapter and validate parity/order, YELLOW
+sample panel,5 seeds x 128 = 640 frozen shots,default GARI uses repeated chunks and unspecified Stim seed,no,yes,feed identical stored arrays and labels, YELLOW
+shot count,640 canonical panel,16384/chunk until 100 errors,no,yes,use fixed pilot panel before scaling, YELLOW
+decoder information boundary,detectors plus DEM-derived per-fault priors,detectors plus DEM-derived matrix priors; no err_data passed,yes after matrix adapter,yes,prove no hidden error input, GREEN
+failure definition,nonconvergence or syndrome-valid logical mismatch,nonzero logical residual after GARI selection,no,yes,report both common predicates and map nonconvergence explicitly, YELLOW
+logical scoring,A e_hat equals observed logical label,A correction logical XOR observed label,no,yes,use common logical-label comparison, YELLOW
+iteration budget,80/60 per relay leg,400 global normalized-BP iterations,no,yes,report native iteration metrics and common work metric, YELLOW
+ensemble semantics,"N engine trajectories; first successful modeled-cycle winner","GARI ensemble schedules and iteration/weight winner",no,yes,"do not equate N with ensemble_size; define separate panels",YELLOW
+seeds,Stim seeds and 9100+shot decoder seed,Stim sampler seed unspecified in original driver and rs=1 schedule seed,no,yes,explicitly freeze both seed domains, YELLOW
+latency metric,modeled BA2/P cycles; no FPGA ns,software wall seconds around GARI decoder,no,yes,measure wall-clock software runtime separately; never compare to FPGA ns, RED
+GARI graph transform,native DEM check matrices plus expanded dx/dz/Y big matrix,Relay graph incidence H plus observable A,no,yes,implement and validate controlled adapter, YELLOW
+normalization,gamma relay schedule,alpha=.96875 min-sum normalization,no,yes,keep decoder-native parameters and add work metric, YELLOW

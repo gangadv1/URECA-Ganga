@@ -1,0 +1,12 @@
+{
+  "shots": 901120,
+  "logical_errors": 100,
+  "discards": 0,
+  "csv_decoder_seconds": 1210.0,
+  "python": "3.13.6",
+  "stim": "1.15.0",
+  "status": "Supplementary prior run; does not meet official Python 3.11 requirement",
+  "native_completion_footer": "real 1633.83\nuser 5077.76\nsys 48.83\n",
+  "convergence": "Not emitted",
+  "per_shot": "Not captured"
+}

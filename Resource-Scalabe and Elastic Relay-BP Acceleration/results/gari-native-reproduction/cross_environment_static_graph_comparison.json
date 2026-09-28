@@ -1,0 +1,117 @@
+{
+  "BB_n144_k12_d12_CL_both_matrices.pkl": {
+    "det_encoding": {
+      "equal": true,
+      "shape": [
+        1728
+      ]
+    },
+    "err_encoding": {
+      "equal": true,
+      "shape": [
+        67752
+      ]
+    },
+    "i_hx": {
+      "equal": true,
+      "shape": [
+        58968
+      ]
+    },
+    "i_hz": {
+      "equal": true,
+      "shape": [
+        59832
+      ]
+    },
+    "i_hx_only": {
+      "equal": true,
+      "shape": [
+        7920
+      ]
+    },
+    "i_hy_only": {
+      "equal": true,
+      "shape": [
+        51048
+      ]
+    },
+    "i_hz_only": {
+      "equal": true,
+      "shape": [
+        8784
+      ]
+    },
+    "hx_red": {
+      "equal": true,
+      "shape": null
+    },
+    "hz_red": {
+      "equal": true,
+      "shape": null
+    },
+    "hx_red_ker": {
+      "equal": true,
+      "shape": null
+    },
+    "hz_red_ker": {
+      "equal": true,
+      "shape": null
+    },
+    "det_index": {
+      "equal": true,
+      "shape": [
+        1728
+      ]
+    },
+    "dx": {
+      "equal": true,
+      "shape": [
+        792,
+        7920
+      ]
+    },
+    "dz": {
+      "equal": true,
+      "shape": [
+        936,
+        8784
+      ]
+    },
+    "i_dx_in_hx": {
+      "equal": true,
+      "shape": [
+        67752
+      ]
+    },
+    "i_dz_in_hz": {
+      "equal": true,
+      "shape": [
+        67752
+      ]
+    },
+    "big_matrix": {
+      "equal": true,
+      "shape": [
+        18432,
+        84456
+      ]
+    }
+  },
+  "BB_n144_k12_d12_CL_both_hcols_hrows.pkl": {
+    "Hcols": {
+      "equal": true,
+      "shape": [
+        84456,
+        7
+      ]
+    },
+    "Hrows": {
+      "equal": true,
+      "shape": [
+        18432,
+        35
+      ]
+    }
+  }
+}

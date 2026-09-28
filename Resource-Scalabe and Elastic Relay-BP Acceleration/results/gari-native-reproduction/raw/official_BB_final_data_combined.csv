@@ -1,0 +1,209 @@
+     shots,    errors,  discards, seconds,decoder,strong_id,json_metadata,custom_counts
+    156816,       100,         0, 67485.7,BPOSD_corr_pl,685dad0cb8a0fcc22663b9dc4d23636b6878aa8ccae22ff49ab2e958c1dcfa78,"{""d"":6,""p"":0.001,""rounds"":6}",
+   1286577,       101,         0,816921.0,BPOSD_corr_sr,47df48c9e4322d8d7c6a5af9ea541d80ac40ad54197b2c51d4aa5b2ec6bc07fc,"{""d"":6,""p"":0.001,""rounds"":6}",
+   2479316,       574,         0,  1006.4,BPOSD_single_pl,289d87bba2a448afe40a3a5b358d5a91a744ceecbb81c370f9438b1a366910b2,"{""d"":6,""p"":0.001,""rounds"":6}",
+   2797279,       545,         0,  5387.9,BPOSD_single_sr,550707032c4eb21919ce4ac4506e375076b852a865e5d38c8d3c5a1a123f08dc,"{""d"":6,""p"":0.001,""rounds"":6}",
+   4439193,       560,         0,  6458.2,BPOSD_single_sr_625,c04be349ae5c98a13f39ce60c8c04cf93a0e225f85508066bedd3d6720374fbd,"{""d"":6,""p"":0.001,""rounds"":6}",
+   2488240,       116,         0,1809333.2,BPOSD_corr_sr_625,55243ae1b9e5cc31a4d197c30815b5aac28008c82f68b8975f9ddd4520e613ae,"{""d"":6,""p"":0.001,""rounds"":6}",
+    390210,       275,         0,   221.0,BPOSD_single_pl_625,abaadfaea5a30f2c2962559824403f67b15f5f459d57ad1c3dbf748b06330cf5,"{""d"":6,""p"":0.001,""rounds"":6}",
+     34160,       122,         0, 15958.4,BPOSD_corr_pl_625,09739ddf77fabe8215ad90988a8898e539c0d57f8c7de01252f562bce90ff454,"{""d"":6,""p"":0.001,""rounds"":6}",
+    499763,       120,         0,422278.5,BPOSD_corr_sr_625,c0e78f2eb997c06b2746a976424ab6ad287397b6333533fb1a086370f48a2e66,"{""d"":6,""p"":0.0015,""rounds"":6}",
+    501655,       527,         0,   261.2,BPOSD_single_pl,5c74033294973ca4487061ba1324d5feef6e311cc88bfc412d9d2fa351ed148b,"{""d"":6,""p"":0.0015,""rounds"":6}",
+    744616,       622,         0,  2029.7,BPOSD_single_sr,018bfd949db32828de195302647103235422df1b488e02fa6f4b7387aa14ab79,"{""d"":6,""p"":0.0015,""rounds"":6}",
+   1048119,       594,         0,  2046.1,BPOSD_single_sr_625,518c5f81297953ed52e941e8ba593f401078963c6b6b5ce0b9e2c004ae06c917,"{""d"":6,""p"":0.0015,""rounds"":6}",
+    317023,       102,         0,257509.7,BPOSD_corr_sr,35bd075507a224d676b33e4bceb1d6efe35061f42f42687f1509c6ccdaf1fcc1,"{""d"":6,""p"":0.0015,""rounds"":6}",
+     35635,       100,         0, 16692.0,BPOSD_corr_pl,b6fc0d5565f41be1ee0ee960a18bfa68689f3b59de0c1bb50158cddcbffa0f2b,"{""d"":6,""p"":0.0015,""rounds"":6}",
+     79368,       239,         0,    59.7,BPOSD_single_pl_625,eeec7d44f481ab505d3bad45d8c7dd25ada81ecc3f76741768352b6227d07bcf,"{""d"":6,""p"":0.0015,""rounds"":6}",
+     16759,       220,         0,  7939.7,BPOSD_corr_pl_625,3c013d3448bfc5213813ce74f714bffc4bcbca03390f070367cb28147dee47d9,"{""d"":6,""p"":0.0015,""rounds"":6}",
+      9555,       101,         0,  3883.7,BPOSD_corr_pl,6e1f44723bc2963e1290139c31e5e9fd4e327718c43429af14d441d7a1142260,"{""d"":6,""p"":0.002,""rounds"":6}",
+     97382,       102,         0, 68799.4,BPOSD_corr_sr,9a6ae1407bdf870b5ae0899efaf3a7ed873907f3c01598594db99fae8256c0ba,"{""d"":6,""p"":0.002,""rounds"":6}",
+    172774,       561,         0,   119.3,BPOSD_single_pl,b7b32382834bc8259855504f06865cf1ab63ab70605c3f24464babe445518d57,"{""d"":6,""p"":0.002,""rounds"":6}",
+    253657,       560,         0,   772.3,BPOSD_single_sr,c2beb72d2c0cca3d99dddf6ffc7ff48c6c39ff5c5c634cc1c0cb48040c785b9c,"{""d"":6,""p"":0.002,""rounds"":6}",
+    167730,       120,         0,164133.7,BPOSD_corr_sr_625,9dde9747f6f53ee441eeb220d9880a358e8709ee4b9f4f763c8cc2bdb6524991,"{""d"":6,""p"":0.002,""rounds"":6}",
+    308870,       559,         0,   812.9,BPOSD_single_sr_625,9ac873ced2748058ae06a5fc5814b540df406b7e2c327b979f6098250c5abbe6,"{""d"":6,""p"":0.002,""rounds"":6}",
+     47464,       330,         0,    45.8,BPOSD_single_pl_625,3c30cf4ab74c795cab9ee590430e6b2613d8d20e58a7cb7da92ccc6abcb3a704,"{""d"":6,""p"":0.002,""rounds"":6}",
+      6161,       209,         0,  2963.5,BPOSD_corr_pl_625,de607e512ee91f281e2b858e4393a7d399e8287be288c744ed5a7d98d339f81c,"{""d"":6,""p"":0.002,""rounds"":6}",
+      1426,       101,         0,   612.0,BPOSD_corr_pl,7336a177ca60cdf4acb0f58e2e080ff7d6ee9f2dc43662b865e6e4437e91aab8,"{""d"":6,""p"":0.003,""rounds"":6}",
+     16667,       110,         0, 12963.2,BPOSD_corr_sr,1025d83e67e7d986c99c20fce988896ef076ac8ed4027cbba2fdbbffcd244356,"{""d"":6,""p"":0.003,""rounds"":6}",
+     31588,       564,         0,    32.3,BPOSD_single_pl,56f7c1b77105167fdff6523e7ed1d084b033c4edc8fe295dbfe0ed2a71ce6252,"{""d"":6,""p"":0.003,""rounds"":6}",
+     47399,       601,         0,   204.2,BPOSD_single_sr,b5c4835cc8af778dbefaf557a305a63035279adb0a2db0be5bd98a28cba8f49c,"{""d"":6,""p"":0.003,""rounds"":6}",
+     32955,       154,         0, 40373.7,BPOSD_corr_sr_625,f5fbe4cee0c66d36771cb6d02aff9171e28a64602acecf14e9abfb205c948b57,"{""d"":6,""p"":0.003,""rounds"":6}",
+     48623,       518,         0,   229.8,BPOSD_single_sr_625,28644ae8df79653feb9ba549e51255d6ddfaca6f610852fed90f938488433f2a,"{""d"":6,""p"":0.003,""rounds"":6}",
+     12281,       359,         0,    17.5,BPOSD_single_pl_625,ec0332a1a2c7f0bbd1bb13e7c71b36dd97f5a254c0317192756e2c2fa2505ccd,"{""d"":6,""p"":0.003,""rounds"":6}",
+      1927,       255,         0,   976.6,BPOSD_corr_pl_625,f4e56948bba5cefb7288af710620372478452592260a38f11230c976eb8b3b9b,"{""d"":6,""p"":0.003,""rounds"":6}",
+       443,       107,         0,   211.3,BPOSD_corr_pl,14e2da6b2475cd6571af3bcde1dcec60c62bea432b5c909da156d61dfc236bfd,"{""d"":6,""p"":0.004,""rounds"":6}",
+      4773,       100,         0,  4401.7,BPOSD_corr_sr,a1ca49af5443cac4e58437db8e146c4c00ed4d9492db3365a0fc2d34a3132967,"{""d"":6,""p"":0.004,""rounds"":6}",
+     10260,       571,         0,    16.6,BPOSD_single_pl,42e9f96bf20620495a6f84130938847820461fbc25e0c2ec19a151ee75553016,"{""d"":6,""p"":0.004,""rounds"":6}",
+     13328,       536,         0,    83.6,BPOSD_single_sr,34b7ab335c26cd058c6347e08ee040e6294c51f56b65b2f2e4390d0e348d90cc,"{""d"":6,""p"":0.004,""rounds"":6}",
+     12232,       212,         0, 17714.4,BPOSD_corr_sr_625,53f36a5e6e60f5a5117e363a4a5a9560fd873879eb83dca1b08334efc10c2a5b,"{""d"":6,""p"":0.004,""rounds"":6}",
+     16523,       535,         0,   128.1,BPOSD_single_sr_625,c4df14628e1a79f146ff462642dec56852045e66ccd743b3c0efd4d7f9e64f1c,"{""d"":6,""p"":0.004,""rounds"":6}",
+      6510,       511,         0,    13.0,BPOSD_single_pl_625,931ecc0893941f3527487ab73620a1cd7694b20588b8a4a65682de4542d4d2be,"{""d"":6,""p"":0.004,""rounds"":6}",
+       904,       244,         0,   490.5,BPOSD_corr_pl_625,d187163ff943e610a02afad255d082fe499282f0bdf08615bdd0d0838bb190bb,"{""d"":6,""p"":0.004,""rounds"":6}",
+       239,       109,         0,   135.9,BPOSD_corr_pl,ef62f60e652faa28a30593d23cd9ed774a5fdc7b642c8d7cd89fbcfb01f87265,"{""d"":6,""p"":0.005,""rounds"":6}",
+      1793,       109,         0,  1927.5,BPOSD_corr_sr,e3288728f98515a2f031665cced86ad1c4b1742674ddc5ef0ca908f1573bc644,"{""d"":6,""p"":0.005,""rounds"":6}",
+      4868,       667,         0,    11.7,BPOSD_single_pl,98ea810b07b8594bdc92efe59aaeacdbfb74efe596c90e5ad6b21107d4ce43c9,"{""d"":6,""p"":0.005,""rounds"":6}",
+      5155,       540,         0,    46.4,BPOSD_single_sr,81c698194c68ed1eaf28dd6259171b36de8bd6425c6e4d6fc5fa8a0878ec4413,"{""d"":6,""p"":0.005,""rounds"":6}",
+      4071,       211,         0,  6727.8,BPOSD_corr_sr_625,a6e022078635404c7eba42b2e6cb05fb4cb0e55b2b383cd39369ad39922dc762,"{""d"":6,""p"":0.005,""rounds"":6}",
+      7014,       577,         0,    81.8,BPOSD_single_sr_625,2d33ab57cb40d119f9a0d9d3d5cdd9bdbc7cbe38e2520f64e34d93b6773ad8ab,"{""d"":6,""p"":0.005,""rounds"":6}",
+      3310,       548,         0,    9.91,BPOSD_single_pl_625,1fdd3e747612d310e816f67e0c24a5e1028c50bed246addd975640f0aff858b5,"{""d"":6,""p"":0.005,""rounds"":6}",
+       453,       223,         0,   269.9,BPOSD_corr_pl_625,7e48c4591b7c273b28bcc49a109a8d260d192a41139657060a03948a9033a11f,"{""d"":6,""p"":0.005,""rounds"":6}",
+       161,       110,         0,   105.0,BPOSD_corr_pl,41a975182435ef7b6d453ee55706f4c6ab2c984a7ec2c332649164bfba925f28,"{""d"":6,""p"":0.006,""rounds"":6}",
+       830,       101,         0,   985.2,BPOSD_corr_sr,040f6114a225a9f817fdf7f6298de9609b55588555e2d4bced09d0f30db8bc4e,"{""d"":6,""p"":0.006,""rounds"":6}",
+      2492,       654,         0,    8.91,BPOSD_single_pl,ba1e20bb13edf9826eb410028fbaf72101bbd5bc3493d21828ab29e5fc93fbfb,"{""d"":6,""p"":0.006,""rounds"":6}",
+      2692,       550,         0,    34.8,BPOSD_single_sr,5a0464dfce5233ef7c5fdc25ad17334668607ac9273123643bf29ec9d2a5e73b,"{""d"":6,""p"":0.006,""rounds"":6}",
+      1863,       211,         0,  3381.6,BPOSD_corr_sr_625,b5dbfd2d412796611d201a02b1ba1df304cb6990baf2e0fea558c21b46880cc1,"{""d"":6,""p"":0.006,""rounds"":6}",
+      3170,       548,         0,    51.7,BPOSD_single_sr_625,c9805556bf11d1d9f75cb1631b77dd54bf4672b1d00114b77c8960f3545170cd,"{""d"":6,""p"":0.006,""rounds"":6}",
+      2322,       670,         0,    9.20,BPOSD_single_pl_625,334b33b70959c691fa78ea8b3c8efa4e33a0f67645365688051016f8d503c8cd,"{""d"":6,""p"":0.006,""rounds"":6}",
+       354,       235,         0,   235.1,BPOSD_corr_pl_625,a4fe5c6982eee663319905809d779f402360338da0b78c34155094f5466e96a6,"{""d"":6,""p"":0.006,""rounds"":6}",
+
+   2949120,       102,         0,   175.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,098d4615a5016d71b37c1dbd7797768380147b5ea766205c1eee9c56e725aaea,"{""d"":6,""p"":0.001,""rounds"":6}","{""base"":45}"
+    655360,       104,         0,    41.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,9fb37df042f7c24ead07f1150295cf32b7e04bee0a6c25129b951e3e959b2554,"{""d"":6,""p"":0.0015,""rounds"":6}","{""avg_itr"":10,""base"":10}"
+    262144,       109,         0,    22.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,4fed23857936994c40b37f39bc88605c908504f452a6216dcbaa2256fed5f631,"{""d"":6,""p"":0.002,""rounds"":6}","{""avg_itr"":4,""base"":4}"
+     65536,       159,         0,    20.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,ac2c44c0a3fe34c645ddda8e0555f344efd24967a7c601a6b4ad1d7f312e941b,"{""d"":6,""p"":0.003,""rounds"":6}","{""avg_itr"":3,""base"":1}"
+     65536,       506,         0,    18.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,7802c5ec73e1c4874534a8ebe438e18377c41246a98fd0f0eb745a6fec05f05e,"{""d"":6,""p"":0.004,""rounds"":6}","{""avg_itr"":6,""base"":1}"
+     65536,      1653,         0,    36.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,09716e44f7b8179a5bbf862d519346f280a1c894391bcc53381c279215cf097d,"{""d"":6,""p"":0.005,""rounds"":6}","{""avg_itr"":13,""base"":1}"
+     65536,      4097,         0,    72.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,6f5d71305f7fdb1524d781d832e899893ec2bd3d833c252b32b59c5da15b113f,"{""d"":6,""p"":0.006,""rounds"":6}","{""avg_itr"":28,""base"":1}"
+
+   1664824,       117,         0,  2278.2,BPOSD_single_pl,3e8b3ca61702d2026c61811570046b48948d086f36a318af844bca5292805635,"{""d"":10,""p"":0.001,""rounds"":10}",
+   8080140,       112,         0, 37195.7,BPOSD_single_sr_625,84b28893617151d8a39053298dafc039dc259b652826445a1f13c9f6a64f51cc,"{""d"":10,""p"":0.001,""rounds"":10}",
+   1119340,       109,         0,  7712.6,BPOSD_single_sr,7a94800770933e39c42aff4d85e58830faf0625eda63a3587c6a375e1e363ecc,"{""d"":10,""p"":0.001,""rounds"":10}",
+   3327563,        50,         0,5908701.7,BPOSD_corr_sr_625,552d7cd51a6b82b6bcbd03792b770f849d61fe089e287ad358468e8583848ce2,"{""d"":10,""p"":0.001,""rounds"":10}",
+    855272,       100,         0,1535571.3,BPOSD_corr_sr,3ea4a1b6b39a5be1f9c4b738df048b08a062fbcb33b4ebf888872ea346d0250b,"{""d"":10,""p"":0.001,""rounds"":10}",
+    616005,       100,         0,551014.1,BPOSD_corr_pl,dbe2a2b6fc052f297b7a41a0ad6e838e78ce16a69690827f3797e1fdb1956f93,"{""d"":10,""p"":0.001,""rounds"":10}",
+    302056,       101,         0,   542.4,BPOSD_single_pl,c180a0c1cb0db0f1fb7a31d20960e3aac737972609abdc77e4a8265c6f54a287,"{""d"":10,""p"":0.0015,""rounds"":10}",
+   1019644,       105,         0,  7200.3,BPOSD_single_sr_625,1383b4cacd64c89ea8ca458365d5e48b1150af3c098d6c8db80b0c9689cce5b3,"{""d"":10,""p"":0.0015,""rounds"":10}",
+    274943,       128,         0,  2350.4,BPOSD_single_sr,3381e7c9bb4e754d6b22167a88de328d9b137b48afbbde844e0eedceb34d23c0,"{""d"":10,""p"":0.0015,""rounds"":10}",
+    288916,       100,         0,598915.9,BPOSD_corr_sr,7fa4ab6e1eb975a3c7b2f8d4cd2b4110b1ca55824a01f40a8118bc7f3a6ec55b,"{""d"":10,""p"":0.0015,""rounds"":10}",
+   1241476,       100,         0,2668555.6,BPOSD_corr_sr_625,f5bdca482b2a2a59b8187b5ef3b6c5480cd25c1b32d5958a5fca15391527a844,"{""d"":10,""p"":0.0015,""rounds"":10}",
+     88195,       102,         0, 79807.1,BPOSD_corr_pl,26ad805ac663b924ef27fbda82378544429bc291f41a00aec1ccf17264eb1f2d,"{""d"":10,""p"":0.0015,""rounds"":10}",
+     70090,       121,         0,   161.1,BPOSD_single_pl,f46fdf0616a5bcb21e8db4795663ca40da1503c12ca76c30d7d1aad9031029ae,"{""d"":10,""p"":0.002,""rounds"":10}",
+    239501,       119,         0,  2360.8,BPOSD_single_sr_625,9c9041cd8225a6bbd3789f658e1dfbad607841ef2a166a684fcc82d88898ccf2,"{""d"":10,""p"":0.002,""rounds"":10}",
+     99418,       116,         0,  1076.4,BPOSD_single_sr,7b945d601ffdcbdabdee27b43f1835229e6a2a27ea9c2c130fbc6b3ed823d309,"{""d"":10,""p"":0.002,""rounds"":10}",
+    105072,       100,         0,250982.9,BPOSD_corr_sr,33b49749b60195a60a915d6c9307c8d3f2f6adcfe15e16ba696bca2ad352a8c1,"{""d"":10,""p"":0.002,""rounds"":10}",
+    421151,       100,         0,1078307.9,BPOSD_corr_sr_625,605213ddbb2e7bf752a1b848b2bcce81019f73d57702def5b82853f43e7c2bee,"{""d"":10,""p"":0.002,""rounds"":10}",
+     15481,       100,         0, 14161.1,BPOSD_corr_pl,55ce152239c76c12786ffffe1c239c4cb0cb6e41f3ec5542fb5b4faa3acf0315,"{""d"":10,""p"":0.002,""rounds"":10}",
+     10804,       126,         0,    38.6,BPOSD_single_pl,1f9ad99e3387883e11df14669a9a3e8443bd416289b71f4aa331118d0e06ba90,"{""d"":10,""p"":0.003,""rounds"":10}",
+     30173,       125,         0,   541.9,BPOSD_single_sr_625,c376d560403eff3e83fd37dfd3cf387bda0426c70f7b617328821f6fe111be26,"{""d"":10,""p"":0.003,""rounds"":10}",
+     12032,       113,         0,   189.5,BPOSD_single_sr,d031d657d5f0a656d549d79c2f1945c58b1c7a79de7836313fb90f2a91f9b40b,"{""d"":10,""p"":0.003,""rounds"":10}",
+     19860,       100,         0, 61826.2,BPOSD_corr_sr,355d8678d777e6df58bf91fe91689776c3d1c13144f6839ff19aabc4726f646b,"{""d"":10,""p"":0.003,""rounds"":10}",
+     43405,       100,         0,148405.6,BPOSD_corr_sr_625,abe4c48b320e2496ce754470b9d290f7395b3fdccd7c30931344b6163080604d,"{""d"":10,""p"":0.003,""rounds"":10}",
+      1633,       124,         0,  1631.4,BPOSD_corr_pl,1755c1c7cb92600e3c66f6e765ef362e62096f9dc3e2e5d6328f9194860681e4,"{""d"":10,""p"":0.003,""rounds"":10}",
+      2321,       140,         0,    14.0,BPOSD_single_pl,bf372f6615e7a0e5717a8ad2d4cca11d79a83756f1172ab131a81556a9107860,"{""d"":10,""p"":0.004,""rounds"":10}",
+      4728,       120,         0,   145.9,BPOSD_single_sr_625,57ef4d315f7aaa319dfe50587028a6dbf96a5076806ced6f0844bdb91b818557,"{""d"":10,""p"":0.004,""rounds"":10}",
+      3468,       128,         0,    86.5,BPOSD_single_sr,6a12b674c03fb5809bd2f32311fd3e019b730d12aea047fc8de2cfd0c830439b,"{""d"":10,""p"":0.004,""rounds"":10}",
+      5105,       100,         0, 19671.1,BPOSD_corr_sr,8abb4d7ea96e5a53e524785a00e83952cb02427a278daed75d4877dd4aa6ddde,"{""d"":10,""p"":0.004,""rounds"":10}",
+      8042,       100,         0, 33464.5,BPOSD_corr_sr_625,edb101d52e92f319fe86052530af6c29f50eca11c7b4e893ea52e33009ce51b5,"{""d"":10,""p"":0.004,""rounds"":10}",
+       367,       123,         0,   508.3,BPOSD_corr_pl,7aa2d5c8517754837f8df2909b8b3d142dc62b90eff87c36cf55bda63d6d61f0,"{""d"":10,""p"":0.004,""rounds"":10}",
+      1060,       135,         0,    40.0,BPOSD_single_sr,4c8c0471c723c6bfb7fed4c9be3ad869114156c85b51f332060692a1311df0eb,"{""d"":10,""p"":0.005,""rounds"":10}",
+      1172,       177,         0,    10.5,BPOSD_single_pl,e719b73af8ff9fd3a331f4721d507c8535298636c23a927b52059edf8cf2239d,"{""d"":10,""p"":0.005,""rounds"":10}",
+      1400,       120,         0,    63.9,BPOSD_single_sr_625,82bbe356af8580e1771073f0efba32d210d5e10dc0bec31ee849ec0ffdebdf8b,"{""d"":10,""p"":0.005,""rounds"":10}",
+      2444,       109,         0, 11338.1,BPOSD_corr_sr_625,fa8fd85e0cef71496d2d4194efa8a358bba126826c1cdb9b818a37284ef55160,"{""d"":10,""p"":0.005,""rounds"":10}",
+      1642,       107,         0,  7387.7,BPOSD_corr_sr,412e72f46010f5dfcfc2cad13a467054117e575478000b9c0cad111226242ab8,"{""d"":10,""p"":0.005,""rounds"":10}",
+       190,       120,         0,   359.6,BPOSD_corr_pl,c802a0d8743f4faab66a67e2a9662876235a3ed60a0246f63127a9d3dcad274d,"{""d"":10,""p"":0.005,""rounds"":10}",
+       580,       181,         0,    8.09,BPOSD_single_pl,040ae85a14efe3c5a41b5f9ecf1049a87fb0fed235285a7d2bdbe5067cd6eac7,"{""d"":10,""p"":0.006,""rounds"":10}",
+       628,       122,         0,    37.0,BPOSD_single_sr_625,f8c729d6af75eef6e59d83f2526393aa3aeca9390726a805120150bfc85816c9,"{""d"":10,""p"":0.006,""rounds"":10}",
+       470,       130,         0,    25.5,BPOSD_single_sr,920fec09fc0c5cfdaff0adc919e435ac141c1a61945f6a94933f5e56b91765ed,"{""d"":10,""p"":0.006,""rounds"":10}",
+       943,       112,         0,  4772.9,BPOSD_corr_sr_625,a2a3c028ca74913294964f7a5e25f9cc585cb21c8bce05a827d2f586444c8aab,"{""d"":10,""p"":0.006,""rounds"":10}",
+       640,       111,         0,  3289.0,BPOSD_corr_sr,dafbe6e2daad9dacca9d3a147598f0599642a4d0f315c2991a243916a3e6e8d5,"{""d"":10,""p"":0.006,""rounds"":10}",
+       128,       108,         0,   359.3,BPOSD_corr_pl,cb18d788d9e5dd47939edb26be6219fd22b3928a75313e995cefaf20f9fa6890,"{""d"":10,""p"":0.006,""rounds"":10}",
+
+   4849664,       100,         0,   539.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,dc9d5db41e78ca29cddd26da39f050d1864858b9febd9b0093884c812c00ce16,"{""d"":10,""p"":0.001,""rounds"":10}","{""avg_itr"":74,""base"":74}"
+   1245184,       106,         0,   388.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,9a07d2ccba894a89238dd855842482c771bd11fbce14b6e973ddc49b8a5d6e68,"{""d"":10,""p"":0.0015,""rounds"":10}","{""avg_itr"":19,""base"":19}"
+    327680,       102,         0,    60.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,08afe0fd49bb0717ed736e80252558f3ca36006902b5187d28bdf19a27842e23,"{""d"":10,""p"":0.002,""rounds"":10}","{""avg_itr"":10,""base"":5}"
+     65536,       122,         0,    19.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,c598ea287fc2c87419b528f9f6f468a5f9472c2cadf0ad476e14bcdcf60d5480,"{""d"":10,""p"":0.003,""rounds"":10}","{""avg_itr"":5,""base"":1}"
+     65536,       500,         0,    46.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,925f2e824e9893bdb0dc26499804a2cff7aaaa9098eddadcf2c8376add592876,"{""d"":10,""p"":0.004,""rounds"":10}","{""avg_itr"":11,""base"":1}"
+     65536,      1774,         0,    78.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,61a5a7cbaba763659b4641234f67c3da4a895e704d9f99c995927e2b1f6314cf,"{""d"":10,""p"":0.005,""rounds"":10}","{""avg_itr"":24,""base"":1}"
+     65536,      5152,         0,   161.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,da96f280c48642b338f3dbbead90739cd8cb67be6cb7e3ebcf6d3b27f9d035fe,"{""d"":10,""p"":0.006,""rounds"":10}","{""avg_itr"":54,""base"":1}"
+
+  40173568,       100,         0, 80781.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,4ac22de154a1be2218f9e8ae061fecd417c2c6d59ded8fb7249c4714fe98cf63,"{""d"":10,""p"":0.001,""rounds"":10}","{""base"":613}"
+   8519680,       101,         0, 25540.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,158835c6edfda63a1d4b3dc32f151d29d44a62dc3023eb0450f3e12bf7f914fd,"{""d"":10,""p"":0.0015,""rounds"":10}","{""base"":130}"
+   3866624,       101,         0, 15480.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,677396fccce1c821753626080207d4bf99d229736e225e2620fd19a2e223a1e6,"{""d"":10,""p"":0.002,""rounds"":10}","{""avg_itr"":59,""base"":59}"
+    524288,       112,         0,  3788.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,386ae25a0a4bd84ea6f7d2245f5185dada05f8681cb8cfb340f16f555a0d5075,"{""d"":10,""p"":0.003,""rounds"":10}","{""avg_itr"":16,""base"":8}"
+    131072,       170,         0,  1940.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,e8981f0dd5722ced76b68e7047a874bdf4fd4f64fd0858e8f854e7205039d54e,"{""d"":10,""p"":0.004,""rounds"":10}","{""avg_itr"":8,""base"":2}"
+     65536,       368,         0,  1864.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,b72df9025775e90f42c2cdf5c3fab14ea05a87dd26d5a2887a5d948f85d3650d,"{""d"":10,""p"":0.005,""rounds"":10}","{""avg_itr"":8,""base"":1}"
+     65536,      1838,         0,  4341.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,1af2c4e1d5b39da99b537fb9b04f7bcf0380b61e2054bb5da8b82b59a9bffc84,"{""d"":10,""p"":0.006,""rounds"":10}","{""avg_itr"":21,""base"":1}"
+
+   1315843,        20,         0,3455556.4,BPOSD_corr_pl,b26061f8f11c0a143f96f40740df3a09de2b321c50dea5f8e49e8100e507b434,"{""d"":12,""p"":0.001,""rounds"":12}",
+   1276735,        10,         0,7285564.9,BPOSD_corr_sr,6efe9b90e406d7975e86a25e54ec0095b37f520830bc85cdf1130fee11571f4a,"{""d"":12,""p"":0.001,""rounds"":12}",
+  11596508,       101,         0,154541.6,BPOSD_single_sr,51d64c029023c9d7836ad68a4d36a4e6f49ab2fa72cccf6fdc78bce4f694908d,"{""d"":12,""p"":0.001,""rounds"":12}",
+  23661476,       100,         0,132659.0,BPOSD_single_pl,a8b38684a51a73c816439b0b3a81ece2dcb5dd865ef80afa7af673498972a6ef,"{""d"":12,""p"":0.001,""rounds"":12}",
+   1781550,         5,         0,10082004.9,BPOSD_corr_sr_625,fdd5334dfb257ed1def9197e1233291be79157040cac9a2854cdf0ade9302f79,"{""d"":12,""p"":0.001,""rounds"":12}",
+  64202377,       100,         0,1098233.1,BPOSD_single_sr_625,dbb56900b78c2dd183a787759eccc7ddc73c112a937d99e38977858616e3ac98,"{""d"":12,""p"":0.001,""rounds"":12}",
+   7928214,       100,         0, 60557.5,BPOSD_single_pl_625,db7028967aaff468ffa4df818874712810f2ad529f9643365ae2a741dc4aa72a,"{""d"":12,""p"":0.001,""rounds"":12}",
+    580510,        73,         0,1469293.3,BPOSD_corr_pl,2eadb804a385c91ab95dc07ee0dd0616816fd4b370175bbd8288837f293a5fd9,"{""d"":12,""p"":0.0015,""rounds"":12}",
+    660968,        54,         0,2918073.7,BPOSD_corr_sr,b2cb0db2365f355ec22928ebc87784be0bb0da0e774941af0f0794b2361abd07,"{""d"":12,""p"":0.0015,""rounds"":12}",
+   2739244,       121,         0, 18520.1,BPOSD_single_pl,e3bec45b2a697af01df653529af4920f5d0e2e12e13e4609b4356cd7b9ee5d00,"{""d"":12,""p"":0.0015,""rounds"":12}",
+   2014260,        22,         0,16922100.0,BPOSD_corr_sr_625,4cc590883b358fce72fd41583d5a47e6bb44f4e96fa2da76b974d1e1cf5a0ad6,"{""d"":12,""p"":0.0015,""rounds"":12}",
+   7161975,       101,         0,177119.9,BPOSD_single_sr_625,05bdb3debe0f0e79512fdf063c683c85f2e89aa79f7d037e4800207a500db67c,"{""d"":12,""p"":0.0015,""rounds"":12}",
+   1490146,       101,         0, 43770.3,BPOSD_single_sr,e43d7101f318488bf8536f46f151a2d457a3d00a544c8431a4b36250bd114d58,"{""d"":12,""p"":0.0015,""rounds"":12}",
+   1288192,       126,         0, 12715.9,BPOSD_single_pl_625,690436bfe50e4b7ae0c232c5d32d65847ff8c06a464e045aef091f3ff48e0f23,"{""d"":12,""p"":0.0015,""rounds"":12}",
+     87284,       100,         0,222996.1,BPOSD_corr_pl,20067ee7415b37ce30eaf29e9db5e1d1713d4483555a85164d4e5ddfee7ae6ec,"{""d"":12,""p"":0.002,""rounds"":12}",
+    250793,        55,         0,1331942.3,BPOSD_corr_sr,951da6e474fe3903a7936c363e308362db9afc4645f91055a636eba91e20a708,"{""d"":12,""p"":0.002,""rounds"":12}",
+    405804,       121,         0,  3329.7,BPOSD_single_pl,61e2d221d33ed4170e7ec4bd69daad09565b07ae83e6063829d6711a2729a90d,"{""d"":12,""p"":0.002,""rounds"":12}",
+    454398,       119,         0,  8530.7,BPOSD_single_sr,4da53412ba4e40217f0e14d31f550203dfc91f68c54d2317073b18655b096ec5,"{""d"":12,""p"":0.002,""rounds"":12}",
+    804886,        51,         0,8964052.2,BPOSD_corr_sr_625,ce70a7fad6a96e9b93ff9a602ee61d1bed489a8734a7f6d6de0385764ae78559,"{""d"":12,""p"":0.002,""rounds"":12}",
+   1081255,       102,         0, 40001.9,BPOSD_single_sr_625,da2c8114c9634b3f5c9eefe5cdd8e1a1f3d41432e8045bd4c121697eed6f46e6,"{""d"":12,""p"":0.002,""rounds"":12}",
+    235952,       115,         0,  3123.0,BPOSD_single_pl_625,fd8b6c320336d038535b70209e2b6cce36ace3666d31b312dfdc855a879b7243,"{""d"":12,""p"":0.002,""rounds"":12}",
+      3188,       112,         0,  8829.6,BPOSD_corr_pl,aa665b8d63ceffdfaf9237921f999707589b68d5a2e4a40cf3fa706cfc12d30a,"{""d"":12,""p"":0.003,""rounds"":12}",
+     54387,       100,         0,304679.6,BPOSD_corr_sr,5e6ff3b4ba1461549fba4a51cad150744fbba14268727a8c23ef6921be565c16,"{""d"":12,""p"":0.003,""rounds"":12}",
+     30588,       113,         0,   403.9,BPOSD_single_pl,c68d3262eef8559bdfc8b5f1e70bf90a806fdb6143f03993f80cb29d76592218,"{""d"":12,""p"":0.003,""rounds"":12}",
+     41552,       119,         0,  1266.4,BPOSD_single_sr,dc9386bd113c46ffc11e4f4e554ec9cf3ae5b9f32eb8bf982fbc612ab468277c,"{""d"":12,""p"":0.003,""rounds"":12}",
+    101180,        80,         0,1324108.0,BPOSD_corr_sr_625,60577382ed608edbe1cc0d63b3919d0d74cf2f01a6606b25776631a938562b3e,"{""d"":12,""p"":0.003,""rounds"":12}",
+     62693,       117,         0,  4276.9,BPOSD_single_sr_625,24c10ef86207c6e73ea1836507c528920e133e1c3afd718f6da90f3088e35587,"{""d"":12,""p"":0.003,""rounds"":12}",
+     16802,       121,         0,   280.3,BPOSD_single_pl_625,9b610a0223e65768baffe1eabfe9a984b28243a7c554ebdcd66a62402b257f32,"{""d"":12,""p"":0.003,""rounds"":12}",
+       409,       110,         0,  1831.4,BPOSD_corr_pl,2a7ca243a5ae9bdc13947510d10f95de736520a0a3229aef1302f6574ea117e9,"{""d"":12,""p"":0.004,""rounds"":12}",
+     10660,       101,         0, 69611.2,BPOSD_corr_sr,a64bb426ab3274f9c5326b347590fb5316225b2e072d24bdb098fcdb9d730d61,"{""d"":12,""p"":0.004,""rounds"":12}",
+      4221,       120,         0,    82.7,BPOSD_single_pl,4156dfc1607bc292a227e3f92c41737526aea28bb78929a17749c43ee660015a,"{""d"":12,""p"":0.004,""rounds"":12}",
+      6830,       114,         0,   330.8,BPOSD_single_sr,34cd4d290d7a8230c1e6a1dde9b1ec2bee89561bf789eeaea8b50ed98da2c4ea,"{""d"":12,""p"":0.004,""rounds"":12}",
+     17126,       101,         0,276137.6,BPOSD_corr_sr_625,81fa9f93c3716a68ad41a3fd1644d10fbc383174376c28a84f924e95e6264f25,"{""d"":12,""p"":0.004,""rounds"":12}",
+      8372,       121,         0,   877.4,BPOSD_single_sr_625,b68f058ef75395dc72acd9a5182df29d2b154c59d058d7e43f476db3e2f95c58,"{""d"":12,""p"":0.004,""rounds"":12}",
+      2284,       111,         0,    62.4,BPOSD_single_pl_625,ecf3057cf24463e5077b78d34cac0432c651f3920d0b4b79e030d2bee9ad8f73,"{""d"":12,""p"":0.004,""rounds"":12}",
+       154,       107,         0,  1279.5,BPOSD_corr_pl,683ca1e7bca1b88772e955225dc6c65890e10e440b7b29cfacd239434404c5b2,"{""d"":12,""p"":0.005,""rounds"":12}",
+      2336,       112,         0, 16905.8,BPOSD_corr_sr,a48f75a73059c85c8abd770baa7c30f95fd2647f6de9991eb1e2b93bc54bece0,"{""d"":12,""p"":0.005,""rounds"":12}",
+      1270,       115,         0,    95.2,BPOSD_single_sr,0dc6047f940d7ec42f1ebf80460bce9ff671943cbe36f6e030993a848300b681,"{""d"":12,""p"":0.005,""rounds"":12}",
+       840,       123,         0,    30.5,BPOSD_single_pl,d6d1f1fc42ceffae5c3a8f71af1aee5947231c1e7c045dee0262161059ef1734,"{""d"":12,""p"":0.005,""rounds"":12}",
+      3406,       107,         0, 63480.3,BPOSD_corr_sr_625,00ea5d653444b8ff2c05ee6783a08bb1e2698d9abf4738d77c85a1a20cf1d06f,"{""d"":12,""p"":0.005,""rounds"":12}",
+      1803,       114,         0,   269.7,BPOSD_single_sr_625,1cfb1fac309e2944635028bf80d1d11fa5ed5f01daf9d091c0fb9b383615ba2b,"{""d"":12,""p"":0.005,""rounds"":12}",
+       692,       122,         0,    34.2,BPOSD_single_pl_625,b7f5e306e9e321a92e5c58b027cb7388344a2595296a237558da298e7f7409de,"{""d"":12,""p"":0.005,""rounds"":12}",
+       703,       105,         0,  5723.9,BPOSD_corr_sr,6344e9493e3939e637671d8ad2585db8b617a1500828b57b9b6c3f12ad76e941,"{""d"":12,""p"":0.006,""rounds"":12}",
+       119,       113,         0,  2024.2,BPOSD_corr_pl,338beeca0eaec910e2c278c16907a779fea915fd932305436e2882d8bf4d4e81,"{""d"":12,""p"":0.006,""rounds"":12}",
+       330,       131,         0,    23.7,BPOSD_single_pl,8bafc054cda5ef016f143246051047a4c4afd99827818fc09885b3753ee1ea02,"{""d"":12,""p"":0.006,""rounds"":12}",
+       403,       111,         0,    46.5,BPOSD_single_sr,b838e373cd2464595aa73801a72a2032f54eccf3a21d11d7f2952735aa939150,"{""d"":12,""p"":0.006,""rounds"":12}",
+       898,       108,         0, 17353.6,BPOSD_corr_sr_625,e2abbf7ff60ca4365c5152b22f6978806973723beb62360413fef9653690d619,"{""d"":12,""p"":0.006,""rounds"":12}",
+       528,       119,         0,   110.8,BPOSD_single_sr_625,c1f99133268ce97c4baa1df6a0adc7af90c4319ded53a12cf44cd08bea82fced,"{""d"":12,""p"":0.006,""rounds"":12}",
+       338,       134,         0,    32.0,BPOSD_single_pl_625,71da0f4af08424778a9b8f71f592037cbc2eeda616faa8a899aefb981c98b27c,"{""d"":12,""p"":0.006,""rounds"":12}",
+
+  27525120,       100,         0,  7804.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,3692a062717bedf1d51281200e791ff3e15f2fcad7df778007bfb51558498dc7,"{""d"":12,""p"":0.001,""rounds"":12}","{""avg_itr"":420,""base"":420}"
+   3604480,       101,         0,  1467.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,705d20c175d4ddcf88392a6c7e870d98c49d00bc669e88263fff679a18b279aa,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":110,""base"":55}"
+   1048576,       100,         0,   567.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,4d196448a5fd2eaf89ccb495e6905746d66fafe6c15d5a1f1f815c66c2099cce,"{""d"":12,""p"":0.002,""rounds"":12}","{""avg_itr"":48,""base"":16}"
+
+     65536,       309,         0,    91.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,53937cc241d9604124d0295d7db73fbf5dd51ac67561401996be6790ca42bc75,"{""d"":12,""p"":0.004,""rounds"":12}","{""avg_itr"":11,""base"":1}"
+     65536,      1269,         0,   184.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,73a3281ed3e1bbce59e9f66698485f1cb2d947b39558f2b3884f2a71c762ccc2,"{""d"":12,""p"":0.005,""rounds"":12}","{""avg_itr"":24,""base"":1}"
+     65536,      4371,         0,   396.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1,3de1e8b79226a136b2e72d0b16a9dfbe7b05143ba82b7feb6a47ef90541818ae,"{""d"":12,""p"":0.006,""rounds"":12}","{""avg_itr"":56,""base"":1}"
+
+
+     65536,       989,         0,  8678.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,6c7544384bc8106c7e84376fe263935e85ea11d36d00e44fc979cce857f08ccd,"{""d"":12,""p"":0.006,""rounds"":12}","{""avg_itr"":20,""base"":1}"
+     65536,       172,         0,  4076.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,58db923270afcde86e3277764d67d8d089256edf462d649052691493ab294bce,"{""d"":12,""p"":0.005,""rounds"":12}","{""avg_itr"":8,""base"":1}"
+    262144,       111,         0,  8122.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,dae897a3ed5281fb80b37055875ac87dec0d98510712663d962891ed7040723e,"{""d"":12,""p"":0.004,""rounds"":12}","{""avg_itr"":16,""base"":4}"
+   1900544,       101,         0, 35693.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,e89a5b168ddbf027e668801d12c6d820061da95fc5718e1b5583b8dd3f6b80aa,"{""d"":12,""p"":0.003,""rounds"":12}","{""avg_itr"":87,""base"":29}"
+
+  23068672,        92,         0,256265.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,98229926bfda645c36168730c08bbc7ff57966c7c4bbd76cc5e0b2907522bd6e,"{""d"":12,""p"":0.002,""rounds"":12}","{""avg_itr"":352,""base"":352}"
+   7667712,        29,         0, 85399.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,98229926bfda645c36168730c08bbc7ff57966c7c4bbd76cc5e0b2907522bd6e,"{""d"":12,""p"":0.002,""rounds"":12}","{""avg_itr"":117,""base"":117}"
+
+  28770304,        17,         0,255724.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":439,""base"":439}"
+  28639232,        22,         0,255767.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":437,""base"":437}"
+  28573696,        19,         0,255730.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":436,""base"":436}"
+  26869760,        21,         0,255709.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":410,""base"":410}"
+  28901376,        16,         0,255556.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":441,""base"":441}"
+  30277632,        15,         0,255507.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":462,""base"":462}"
+  25690112,        22,         0,255983.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,c14d88a808976fd4ecaa179437b711f233baf8b44c176734171c0730bc15a7a2,"{""d"":12,""p"":0.0015,""rounds"":12}","{""avg_itr"":392,""base"":392}"
+
+1243742208,       100,         0,8707135.0,HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1_en24_i,1c920ebcc9cad1e0588cc287d6c479fc7656dd94fcf336a44c21da29ff749521,"{""d"":12,""p"":0.001,""rounds"":12}","{""base"":18978}"
+
+
+ 258400000,        34,         0,3825508.0,relay_bp_xyz_300,162c52a7119111304238d16560e93818c870cd841e36786e72d23fd95132e727,"{""d"":12,""p"":0.001,""rounds"":12}",
+
+  56300000,        94,         0, 56786.0,relay_bp_xyz_300,a8a77802608f3d8f82ee83cf0cd2b6ce46b834a6c4657d11599840364cde470b,"{""d"":10,""p"":0.001,""rounds"":10}",
+   8300000,        13,         0, 56307.0,relay_bp_xyz_300,a8a77802608f3d8f82ee83cf0cd2b6ce46b834a6c4657d11599840364cde470b,"{""d"":10,""p"":0.001,""rounds"":10}",
+
+   4000000,       102,         0,  1182.0,relay_bp_xyz_300,908384c0412717341dc1d8b29212a01a15300a4e84bac6840542ecbc5e6e29c3,"{""d"":6,""p"":0.001,""rounds"":6}",

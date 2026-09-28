@@ -1,0 +1,130 @@
+Using 4 thread(s) for parallel processing
+distance 12 rounds 12, num_shots = 16384, CL noise at 0.002
+max iter = 400, bp method = ms, msf = 0.96875, schedule = serial, random_schedule_seed = 1
+decompose_error: False,z_basis: True, use_both_basis: True, use_hperp_in_circuit: False, HZH:False
+prior type,0 or 1 = direct or 2 = sum: 0
+use horizontal bp: True, custom_random_schedule_HBP: 2, early_stopping: 1
+num shots = 16384, num_threads = 4
+['HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1']
+circuit done
+dem and matrices done
+trying to read all_matrices_xz ...
+could not read. So calculating all_matrices_xz...
+all_matrices_xz calculated ...
+Hcols, Hrows calculated ...
+freeing up big_matrix ...
+created new file ...
+i, 	p, 	error_cound_so_far, 	num_shots, 	n_fail, 	rf_dz_tot, 	rf_dz_tot_per_r, 	converge_itr, 	Time 
+0, 	0.002, 	2, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.34, 	17.87, 
+1, 	0.002, 	3, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.29, 	17.81, 
+2, 	0.002, 	5, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.38, 	19.97, 
+3, 	0.002, 	9, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.42, 	19.71, 
+4, 	0.002, 	11, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.33, 	18.27, 
+5, 	0.002, 	12, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.33, 	22.76, 
+6, 	0.002, 	12, 	16384, 	0, 	0.0, 	0.0, 	3.27, 	18.94, 
+7, 	0.002, 	12, 	16384, 	0, 	0.0, 	0.0, 	3.29, 	18.48, 
+8, 	0.002, 	12, 	16384, 	0, 	0.0, 	0.0, 	3.3, 	18.12, 
+9, 	0.002, 	12, 	16384, 	0, 	0.0, 	0.0, 	3.29, 	19.6, 
+10, 	0.002, 	12, 	16384, 	0, 	0.0, 	0.0, 	3.28, 	19.59, 
+11, 	0.002, 	13, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.31, 	19.07, 
+12, 	0.002, 	16, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.36, 	19.59, 
+13, 	0.002, 	18, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.39, 	19.52, 
+14, 	0.002, 	19, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.39, 	19.31, 
+15, 	0.002, 	21, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.34, 	19.19, 
+16, 	0.002, 	21, 	16384, 	0, 	0.0, 	0.0, 	3.3, 	18.96, 
+17, 	0.002, 	23, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.36, 	18.78, 
+18, 	0.002, 	27, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.41, 	19.38, 
+19, 	0.002, 	29, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.34, 	18.84, 
+20, 	0.002, 	30, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.28, 	18.4, 
+21, 	0.002, 	30, 	16384, 	0, 	0.0, 	0.0, 	3.29, 	18.26, 
+22, 	0.002, 	32, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.32, 	18.8, 
+23, 	0.002, 	34, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.37, 	19.74, 
+24, 	0.002, 	38, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.46, 	20.52, 
+25, 	0.002, 	39, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.36, 	20.1, 
+26, 	0.002, 	43, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.4, 	22.93, 
+27, 	0.002, 	47, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.39, 	22.56, 
+28, 	0.002, 	48, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.27, 	23.19, 
+29, 	0.002, 	49, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.39, 	23.49, 
+30, 	0.002, 	52, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.38, 	21.83, 
+31, 	0.002, 	52, 	16384, 	0, 	0.0, 	0.0, 	3.31, 	23.65, 
+32, 	0.002, 	53, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.34, 	22.76, 
+33, 	0.002, 	55, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.33, 	23.7, 
+34, 	0.002, 	56, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.33, 	22.8, 
+35, 	0.002, 	59, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.38, 	23.9, 
+36, 	0.002, 	61, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.29, 	23.48, 
+37, 	0.002, 	63, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.38, 	24.92, 
+38, 	0.002, 	66, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.3, 	25.96, 
+39, 	0.002, 	70, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.36, 	25.84, 
+40, 	0.002, 	72, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.35, 	25.29, 
+41, 	0.002, 	74, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.34, 	25.14, 
+42, 	0.002, 	74, 	16384, 	0, 	0.0, 	0.0, 	3.27, 	24.49, 
+43, 	0.002, 	77, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.37, 	25.01, 
+44, 	0.002, 	79, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.36, 	24.85, 
+45, 	0.002, 	83, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.41, 	25.33, 
+46, 	0.002, 	85, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.36, 	25.17, 
+47, 	0.002, 	86, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.31, 	24.87, 
+48, 	0.002, 	86, 	16384, 	0, 	0.0, 	0.0, 	3.32, 	25.2, 
+49, 	0.002, 	87, 	16384, 	1, 	6.103515625e-05, 	5.086417169453128e-06, 	3.34, 	25.09, 
+50, 	0.002, 	89, 	16384, 	2, 	0.0001220703125, 	1.017314266116287e-05, 	3.36, 	25.36, 
+51, 	0.002, 	89, 	16384, 	0, 	0.0, 	0.0, 	3.3, 	24.96, 
+52, 	0.002, 	92, 	16384, 	3, 	0.00018310546875, 	1.5260176514542145e-05, 	3.37, 	26.46, 
+53, 	0.002, 	96, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.4, 	27.02, 
+54, 	0.002, 	100, 	16384, 	4, 	0.000244140625, 	2.034751876511809e-05, 	3.37, 	25.39, 
+ERROR: data/BB_etB_corr_400_0.96875_1_0_2_et1_d12_None.csv has 100 errors now, printing stats...
+sinter.TaskStats(strong_id='4d196448a5fd2eaf89ccb495e6905746d66fafe6c15d5a1f1f815c66c2099cce', decoder='HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1', json_metadata={'d': 12, 'p': 0.002, 'rounds': 12}, shots=901120, errors=100, seconds=1210.0, custom_counts=Counter({'avg_itr': 165, 'base': 55}))
+logical error rate per round = 9.248260545713372e-06
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB
+DEBUG: Memory validation - per_thread=0 MB, total=1319 MB

@@ -1,0 +1,8 @@
+{
+  "original_circuit_reextraction_matches_canonical_probabilities": true,
+  "reextraction_maxabs": 0.0,
+  "serialized_dem_maxabs": 4.336808689942018e-19,
+  "serialized_dem_mismatch_count": 36288,
+  "serialized_DEM_text_equal": true,
+  "no_circuit_or_sample_regeneration": true
+}

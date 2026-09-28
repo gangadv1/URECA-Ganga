@@ -1,0 +1,112 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "ready_for_same_stim_adapter": true,
+  "gari_commit": "6380d52e76d8c9cb0b4eedf3e8d2429b24cef78d",
+  "ureca_commit": "c4dc34e560c7af78b7e6397e506ba6d27f3e7eb7",
+  "circuit": {
+    "path": "data/circuits/BB_n144_k12_d12_CL_both_0.002.stim",
+    "sha256": "7111886835770e6489b6a59be0c5bfbfaade69a0c87c10b68301cc868decffcb",
+    "qubits": 288,
+    "detectors": 1728,
+    "observables": 12,
+    "rounds": 12,
+    "p": 0.002,
+    "noise_model": "CL: p1=p2=p3=p4=0.002; use_both=True; memory Z",
+    "repeat_blocks": [
+      11
+    ],
+    "flattened_noise_instruction_counts": {
+      "('X_ERROR', (0.002,))": 1872,
+      "('DEPOLARIZE2', (0.002,))": 10368,
+      "('DEPOLARIZE1', (0.002,))": 1656,
+      "('Z_ERROR', (0.002,))": 1656
+    }
+  },
+  "command": "python3 stim_batched_data_v2.py 12 0.002 400 0.96875 1 0 2 16 100 0 i 4",
+  "completion": {
+    "exit_code": 0,
+    "wall_seconds": 2265.152859917027,
+    "started_utc": "2026-09-15T07:40:07.163556+00:00",
+    "ended_utc": "2026-09-15T08:17:52.348333+00:00"
+  },
+  "shots_processed": 917504,
+  "completed_batches": 56,
+  "discarded_shots": 0,
+  "incomplete_shots": 0,
+  "logical_errors": 102,
+  "shot_logical_failure_rate": 0.00011117117745535714,
+  "shot_rate_wilson95": [
+    9.158961528095355e-05,
+    0.000134938649033638
+  ],
+  "sinter_per_round_any_observable_rate": 9.264776210327064e-06,
+  "native_converged": 917402,
+  "native_nonconverged": 102,
+  "nonconverged_logical_errors": 102,
+  "nonconverged_without_logical_error": 0,
+  "logical_or_nonconvergence": 102,
+  "iterations": {
+    "meaning": "zero-based sweep index for accepted native convergence; 400 sentinel for rejected outcome",
+    "mean": 3.3519254411969865,
+    "median": 3.0,
+    "p95": 6.0,
+    "p99": 10.0,
+    "min": 0,
+    "max": 400,
+    "accepted_convergence_mean": 3.3078247049821123,
+    "csv_rounded_batch_mean": 3.0
+  },
+  "ensemble_size": 1,
+  "graph_dimensions": {
+    "dem_shape": [
+      1728,
+      67752
+    ],
+    "expanded_shape": [
+      18432,
+      84456
+    ],
+    "dx_shape": [
+      792,
+      7920
+    ],
+    "dz_shape": [
+      936,
+      8784
+    ]
+  },
+  "decoder_seconds": 1521.0665397644043,
+  "csv_rounded_decoder_seconds": 1522.0,
+  "official_reference": {
+    "file": "data/final/BB_final_data_combined.csv",
+    "line": 172,
+    "row": {
+      "shots": "1048576",
+      "errors": "100",
+      "discards": "0",
+      "seconds": "567.0",
+      "decoder": "HBP_etB_corr_big_sr_400_0.96875_1_0_2_et1",
+      "strong_id": "4d196448a5fd2eaf89ccb495e6905746d66fafe6c15d5a1f1f815c66c2099cce",
+      "json_metadata": "{\"d\":12,\"p\":0.002,\"rounds\":12}",
+      "custom_counts": "{\"avg_itr\":48,\"base\":16}"
+    }
+  },
+  "rate_ratio": 1.1657142857142857,
+  "approximate_rate_ratio_ci95": [
+    0.8847149843800625,
+    1.5359633553291387
+  ],
+  "statistical_compatibility": true,
+  "information_boundary": "PASS: no hidden-information path found in executed configuration",
+  "unexpected_errors": [],
+  "stderr": "",
+  "limitations": [
+    "Official dependency versions, hardware, Stim seed and circuit hash absent from reference row",
+    "Native convergence is B/dz-block convergence only",
+    "400 is native rejection sentinel; zero correction may nevertheless score as logically correct",
+    "Iteration index is zero-based; CSV averages are rounded per batch",
+    "Passive trace dispatch adds Python overhead; post-call NPZ writes excluded from native timer; concurrent prior attempt overlaps setup; official runtime is not a hardware-matched target",
+    "General multi-member iteration selection caveat documented; ensemble=1 only validated",
+    "Rate-ratio interval is approximate rare-event compatibility check; outcome-based stopping is not an exact fixed-n equivalence test"
+  ]
+}

@@ -1,0 +1,4 @@
+  DEPRECATION: sinter is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip available: 22.3.1 -> 26.2.1
+[notice] To update, run: /private/tmp/gari-adapter-py311/bin/python3 -m pip install --upgrade pip

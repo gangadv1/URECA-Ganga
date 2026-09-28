@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "purpose": "Scorer-only negative fixture; never a decoder input or repair",
+  "algorithm": "Ascending original DEM columns; GF(2) elimination at highest set detector bit; stop at first zero-detector dependency with nonzero logical action",
+  "inputs": {
+    "faults.npz": {
+      "path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/faults.npz",
+      "sha256": "6d741bfb9db734aad5f1cf36d9829b5f25bab2a0570b7599041ccf2896d7f390"
+    },
+    "edge_lists.npz": {
+      "path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/edge_lists.npz",
+      "sha256": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad"
+    },
+    "package.json": {
+      "path": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/package.json",
+      "sha256": "70591bf58acf485c026e9a8f161c7d0b9e0d6f37f0e0ad9334b98989ee67d0bc"
+    }
+  },
+  "sample_artifacts_read": [],
+  "decoder_invocations": 0,
+  "fault_count": 67752,
+  "detector_count": 1728,
+  "observable_count": 12,
+  "columns_examined": 344,
+  "detector_rank_at_stop": 106,
+  "dependencies_examined": 238,
+  "support_indices": [
+    2,
+    4,
+    5,
+    10,
+    16,
+    18,
+    21,
+    23,
+    24,
+    39,
+    54,
+    55,
+    57,
+    59,
+    65,
+    66,
+    67,
+    72,
+    101,
+    103,
+    108,
+    110,
+    114,
+    131,
+    150,
+    151,
+    153,
+    163,
+    180,
+    198,
+    202,
+    208,
+    212,
+    214,
+    217,
+    235,
+    259,
+    260,
+    261,
+    266,
+    297,
+    298,
+    302,
+    338,
+    341,
+    343
+  ],
+  "support_weight": 46,
+  "logical_mask_integer": 2028,
+  "logical_support_indices": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "logical_vector": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "proof": {
+    "fault_incidence_detector_residual_weight": 0,
+    "edge_list_detector_residual_weight": 0,
+    "edge_list_logical_action_weight": 8,
+    "independent_artifacts_agree": true,
+    "zero_syndrome_zero_label_expected": {
+      "syndrome_valid": true,
+      "logical_action_match": false,
+      "logically_correct": false
+    }
+  }
+}

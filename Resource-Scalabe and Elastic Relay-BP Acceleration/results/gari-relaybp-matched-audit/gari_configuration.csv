@@ -1,0 +1,36 @@
+parameter,value,source,evidence,status
+repository_revision,6380d52e76d8c9cb0b4eedf3e8d2429b24cef78d,/tmp/gari-nms-audit git log -1,shallow checkout revision,VERIFIED
+code,"[[144,12,12]] Gross/bivariate-bicycle","dataset filenames; helper_functions.py:15-45; codes_q.py:235-246","code construction and filenames",VERIFIED
+official_driver_circuit,data/circuits/BB_n144_k12_d12_CL_both_0.002.stim for default d=12 p=0.002,stim_batched_data_v2.py:91-107,filename construction and load,VERIFIED
+other_144_circuits,"data/circuits/bb_google_si1000/*nkd=[[144,12,12]]* and data/circuits/bb_ibm/*144_12_12*","data/circuits directory","checked-in families use different noise models",VERIFIED
+memory_basis,Z,stim_batched_data_v2.py:35; helper_functions.py:15-45,z_basis=True and bivariate_bicycle_Z/CX filenames,VERIFIED
+qec_rounds,d=12,stim_batched_data_v2.py:29-32; helper_functions.py:36-44,r=d and num_repeat=r,VERIFIED
+noise_model,CL: p1=p2=p3=p4=p; use_both appends _both,stim_batched_data_v2.py:76-87,CL branch and both-basis circuit selection,VERIFIED
+physical_error_probability,default p=0.002; checked-in driver also supports p=0.001,stim_batched_data_v2.py:321-359; data/circuits,default and file families,VERIFIED
+noise_instruction_meaning,p1 after Clifford; p2 reset flip; p3 before measurement flip; p4 before-round data depolarization,stim_batched_data_v2.py:76-84; build_circuit.py:52-55,parameter assignments and gate use,VERIFIED
+circuit_qubits,288,official circuit metadata measured with Stim,BB_n144 files report 288,VERIFIED
+detector_count,1728,official circuit metadata measured with Stim,`num_detectors`,VERIFIED
+observable_count,12,official circuit metadata measured with Stim,`num_observables`,VERIFIED
+detector_sampling,"DEM compiled sampler sample(shots=num_shots,bit_packed=False)","stim_batched_data_v2.py:129-130; 244-246","detectors and observables sampled from DEM",VERIFIED
+logical_labels,"obs_data returned by the same DEM sampler and XORed with decoder logical output","stim_batched_data_v2.py:244-246; 290-304","logical label comparison",VERIFIED
+decoder_input,det_data reordered into X/Z detector blocks then bipolarized as 1-2*bit,stim_batched_data_v2.py:252-266,detector ordering and bipolar input,VERIFIED
+hidden_physical_error,"not passed; err_data=True path is commented and decoder receives LLRs plus detector bits","stim_batched_data_v2.py:239-246; 265-282","NO hidden error array in call",VERIFIED
+dem_to_matrix,ldpc detector_error_model_to_check_matrices then det_and_err_encoding,stim_batched_data_v2.py:129-143; helper_functions.py:391-462,full DEM and matrix transformation,VERIFIED
+detector_partition,Zurich BB partition tags first and repeated Z/X blocks with det_index 3/1,helper_functions.py:178-194,used by det_and_err_encoding variant default,VERIFIED
+expanded_graph,dx/dz exclusive columns plus identity and Y-column mappings into big_matrix,helper_functions.py:403-462,explicit construction,VERIFIED
+prior,prt=0 sets first nx+nz priors to 0.5; physical DEM priors fill remaining blocks; default priort=0,stim_batched_data_v2.py:206-230,default zero LLR for base variables,VERIFIED
+nms_normalization,alpha/msf=0.96875 in default CLI; C multiplies min1/min2 by alpha,hbp_decoder_v2.c:273-291; stim_batched_data_v2.py:321-359,called normalization factor,VERIFIED
+iteration_limit,400 default (`mitr`),stim_batched_data_v2.py:321-359; hbp_decoder_v2.c:178-179,400 requested loop limit,VERIFIED
+stopping,"early_stopping=1; stop when parity_t==0; C returns loop count","hbp_decoder_v2.c:309-355; 373; stim_batched_data_v2.py:274-282","syndrome parity convergence",VERIFIED
+ensemble_size,"0 CLI means ens=1; final data also contains ens24 rows","stim_batched_data_v2.py:59-66; 272-274; 330-355","driver semantics",VERIFIED
+ensemble_diversity,"unique schedule seed random_order*ensemble_size+Nloop*ens; xorshift32 Fisher-Yates permutations","hbp_decoder_v2.c:47-64; 180-234; 546-552","per-ensemble schedule diversity",VERIFIED
+ensemble_selection,"poi i: minimum iterations among converged, tie by lower ab LLR score; poi w: minimum ab score","hbp_decoder_v2.c:559-613","exact winner rule",VERIFIED
+failure_definition,"any logical bit in (logical_errors_out + obs_data) mod 2, hence nonzero residual","stim_batched_data_v2.py:288-292","logical error count",VERIFIED
+logical_error_definition,"decoder logical action differs from observed observable outcome","hbp_decoder_v2.c:614-628; stim_batched_data_v2.py:290","nonzero residual against obs_data",VERIFIED
+ler,"errors/shots via Sinter shot_error_rate_to_piece_error_rate with pieces=rounds and values=code.K","stim_batched_data_v2.py:292; 317","per-round conversion",VERIFIED
+per_round_ler,"piece error conversion uses r=12 and K=12","stim_batched_data_v2.py:292; 317","verified formula call; numeric result depends on samples",VERIFIED
+random_seed,"schedule seed rs=1 default; Stim DEM sampler seed is not explicitly set in driver","stim_batched_data_v2.py:23-73; 236-246; 321-359","decoder schedule seed known but sampling seed not fixed",VERIFIED
+shots,"default 16384 per chunk; loop target 1e9/shots and stops at max_errs=100","stim_batched_data_v2.py:232-236; 321-359","not a fixed total",VERIFIED
+measured_runtime,Python wall time around decoder call per chunk and CSV seconds field; reported final-data seconds are software runtime,stim_batched_data_v2.py:270-305,not FPGA latency,VERIFIED
+measured_iterations,mean iterations_out_ens per chunk,stim_batched_data_v2.py:290-305,CSV custom_counts avg_itr,VERIFIED
+final_data_scope,BB_final_google_si1000_data.csv and BB_final_ibm_data_d12.csv contain multiple p/noise/decoder families,data/final files,checked-in artifacts do not identify one canonical matched panel,VERIFIED

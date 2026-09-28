@@ -1,0 +1,7 @@
+Matplotlib is building the font cache; this may take a moment.
+Traceback (most recent call last):
+  File "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/gari-same-stim-adapter/prepare_graph.py", line 146, in <module>
+    main()
+  File "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/gari-same-stim-adapter/prepare_graph.py", line 65, in main
+    assert np.array_equal(p[column_map], matrices.priors), 'DEM prior mismatch'
+AssertionError: DEM prior mismatch

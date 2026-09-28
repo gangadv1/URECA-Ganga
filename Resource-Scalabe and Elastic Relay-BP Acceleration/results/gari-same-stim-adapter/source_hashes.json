@@ -1,0 +1,45 @@
+{
+  "gari_commit": "6380d52e76d8c9cb0b4eedf3e8d2429b24cef78d",
+  "files": {
+    "README.md": {
+      "before": "75160b106ee49a482493db51d22e84463ca4bda218f464d9cac1f05c726d997a",
+      "matches_reproduced_source": null
+    },
+    "LICENSE": {
+      "before": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "matches_reproduced_source": null
+    },
+    "helper_functions.py": {
+      "before": "47e004788f5773f0f0e0d69f294c6b468deca9a45af56fd0ee095ae8ff723902",
+      "matches_reproduced_source": true
+    },
+    "stim_batched_data_v2.py": {
+      "before": "0d6215cde886015bbd71de411c554606dee5dd5202480d62fd0f7e4e9a44690e",
+      "matches_reproduced_source": true
+    },
+    "build_circuit.py": {
+      "before": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe",
+      "matches_reproduced_source": true
+    },
+    "utils.py": {
+      "before": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7",
+      "matches_reproduced_source": true
+    },
+    "codes_q.py": {
+      "before": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+      "matches_reproduced_source": true
+    },
+    "my_decoders/hbp_decoder_v2.c": {
+      "before": "b40cea0ad3311e20758e00739b529ec47e09312e10f15b18105d9bbb97c1314b",
+      "matches_reproduced_source": true
+    },
+    "my_decoders/hbplib_wrapper_v2.py": {
+      "before": "b042b2f9010d6f490ec2a0be11eff3a43f8ad2cd696a6fb0b65319e1b7c4d1df",
+      "matches_reproduced_source": true
+    },
+    "my_decoders/Makefile": {
+      "before": "2df8faac1751c50e4b5c05dbe7c84a7bfdeb5248bbb1dad12c5a45d4b75deda7",
+      "matches_reproduced_source": true
+    }
+  }
+}

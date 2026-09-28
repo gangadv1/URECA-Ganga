@@ -1,0 +1,70 @@
+{
+  "audit_status": "NOT_READY",
+  "benchmark_launched": false,
+  "decoder_sources_modified": false,
+  "ureca_commit": "c4dc34e560c7af78b7e6397e506ba6d27f3e7eb7",
+  "gari_commit": "6380d52e76d8c9cb0b4eedf3e8d2429b24cef78d",
+  "gari": {
+    "default_144_configuration": {
+      "circuit": "data/circuits/BB_n144_k12_d12_CL_both_0.002.stim",
+      "basis": "Z",
+      "rounds": 12,
+      "p": 0.002,
+      "noise_model": "CL with p1=p2=p3=p4=p and use_both=True",
+      "qubits": 288,
+      "detectors": 1728,
+      "observables": 12,
+      "shots_per_chunk": 16384,
+      "iteration_limit": 400,
+      "normalization": 0.96875,
+      "schedule_seed": 1,
+      "ensemble": 1,
+      "selection": "minimum converged iterations, tie by ab LLR score",
+      "source_status": "VERIFIED"
+    },
+    "input_boundary": "detector bits plus DEM-derived priors; hidden physical errors are not passed",
+    "reproduction": "not run",
+    "important_ambiguity": "checked-in final data also contains Google SI1000 and IBM uniform-circuit families and multiple p/ensemble settings"
+  },
+  "relaybp": {
+    "canonical_configuration": {
+      "circuit": "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/circuit.stim",
+      "basis": "Z",
+      "rounds": 12,
+      "p": 0.003,
+      "noise_model": "uniform_circuit",
+      "qubits": 288,
+      "detectors": 1728,
+      "fault_variables": 67752,
+      "observables": 12,
+      "sample_seeds": [20260809, 20260810, 20260811, 20260812, 20260813],
+      "shots_per_seed": 128,
+      "total_shots": 640,
+      "decoder_seed": "9100 + shot_index",
+      "S": 1,
+      "R": 32,
+      "first_leg_iterations": 80,
+      "later_leg_iterations": 60,
+      "first_gamma": 0.125,
+      "later_gamma_range": [-0.12, 0.54],
+      "source_status": "VERIFIED"
+    },
+    "legacy_excluded": ["code-capacity baseline", "true_error-derived prior simulators"],
+    "metrics": {
+      "software_measured": ["Stim sample reproducibility", "decoder convergence and logical predicates", "native iteration and relay-leg counts"],
+      "modeled": ["BA2/P architectural cycles", "memory access/retry/utilization metrics", "N=1/N=2/N=4 modeled selection latency"],
+      "analytical": ["percentiles", "Wilson intervals", "bootstrap comparisons"],
+      "actual_fpga_measured": []
+    }
+  },
+  "compatibility": {
+    "strongest_exact_matches": ["code", "Z basis", "12 rounds", "288 qubits", "1728 detectors", "12 observables", "no hidden error array at decoder boundary"],
+    "controlled_yellow_items": ["p/noise family", "exact circuit", "sample panel", "matrix/order adapter", "failure/logical scoring wrapper", "iteration/cost reporting", "seeds", "ensemble semantics"],
+    "red_items": ["modeled Relay-BP cycles versus GARI FPGA nanoseconds or native software seconds"],
+    "same_stim_sample_valid": true,
+    "condition": "only after GARI matrix/order adapter and original reproduction pass"
+  },
+  "first_reproduction_command": "python3 stim_batched_data_v2.py 12 0.002 400 0.96875 1 0 2 16 100 0 i 4",
+  "required_before_benchmark": ["reproduce official default d=12 run", "freeze one common STIM circuit and p", "validate GARI matrix/order adapter", "freeze explicit Stim and decoder seed domains", "report native iterations separately from implementation-independent edge-update work"],
+  "final_ready": false
+}

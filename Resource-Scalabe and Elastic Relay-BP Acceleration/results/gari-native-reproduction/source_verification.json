@@ -1,0 +1,38 @@
+{
+  "stim_batched_data_v2.py": {
+    "sha256": "0d6215cde886015bbd71de411c554606dee5dd5202480d62fd0f7e4e9a44690e",
+    "matches_commit": true
+  },
+  "helper_functions.py": {
+    "sha256": "47e004788f5773f0f0e0d69f294c6b468deca9a45af56fd0ee095ae8ff723902",
+    "matches_commit": true
+  },
+  "build_circuit.py": {
+    "sha256": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe",
+    "matches_commit": true
+  },
+  "codes_q.py": {
+    "sha256": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+    "matches_commit": true
+  },
+  "utils.py": {
+    "sha256": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7",
+    "matches_commit": true
+  },
+  "my_decoders/hbp_decoder_v2.c": {
+    "sha256": "b40cea0ad3311e20758e00739b529ec47e09312e10f15b18105d9bbb97c1314b",
+    "matches_commit": true
+  },
+  "my_decoders/hbplib_wrapper_v2.py": {
+    "sha256": "b042b2f9010d6f490ec2a0be11eff3a43f8ad2cd696a6fb0b65319e1b7c4d1df",
+    "matches_commit": true
+  },
+  "my_decoders/Makefile": {
+    "sha256": "2df8faac1751c50e4b5c05dbe7c84a7bfdeb5248bbb1dad12c5a45d4b75deda7",
+    "matches_commit": true
+  },
+  "data/circuits/BB_n144_k12_d12_CL_both_0.002.stim": {
+    "sha256": "7111886835770e6489b6a59be0c5bfbfaade69a0c87c10b68301cc868decffcb",
+    "matches_commit": true
+  }
+}

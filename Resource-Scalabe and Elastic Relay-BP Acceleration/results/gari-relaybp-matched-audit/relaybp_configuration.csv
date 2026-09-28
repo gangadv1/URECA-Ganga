@@ -1,0 +1,32 @@
+parameter,value,source,evidence,status
+repository_revision,c4dc34e560c7af78b7e6397e506ba6d27f3e7eb7,git rev-parse HEAD,pinned current committed URECA state,VERIFIED
+legacy_quarantine,exclude code-capacity baseline and any true_error-derived priors,results/gari-relaybp-matched-audit/README.md; historical sources,canonical audit boundary,VERIFIED
+code,"[[144,12,12]] Gross/bivariate-bicycle",graphs/generated/gross_circuit_level/.../manifest.json:17-25,package metadata,VERIFIED
+circuit,graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/circuit.stim,results/circuit-level-multiseed/run_multiseed_validation.py:28; package manifest:44-59,frozen source circuit,VERIFIED
+basis,Z,package manifest:5-10; multiseed manifest:263,memory_Z,VERIFIED
+rounds,12,package manifest:11-15; multiseed manifest:263,noisy_qec_rounds,VERIFIED
+physical_error_probability,0.003,package manifest:8-14; multiseed manifest:263,uniform_circuit p=0.003,VERIFIED
+noise_model,uniform_circuit with final perfect measurement,package manifest:1-15,noise metadata,VERIFIED
+circuit_qubits,288,canonical circuit artifact measured with Stim,144 data plus ancilla/check qubits,VERIFIED
+detector_count,1728,package manifest:17-25; run_multiseed_validation.py:32,shape contract,VERIFIED
+observable_count,12,package manifest:17-25; run_multiseed_validation.py:32,logical observable contract,VERIFIED
+fault_variables,67752,package manifest:17-25; run_multiseed_validation.py:32,full circuit DEM variables,VERIFIED
+syndrome_input,"STIM detector sampler output, one frozen `syndromes` array per shot",results/circuit-level-multiseed/run_multiseed_validation.py:216-233,paired samples,VERIFIED
+logical_labels,STIM separate_observables output `observed_logicals`,run_multiseed_validation.py:216-233,labels stored beside syndromes,VERIFIED
+priors,"per-fault p_j from packaged DEM; lambda=log((1-p_j)/p_j)","run_multiseed_validation.py:49-66; 92-95; baseline:115","not true_error",VERIFIED
+gamma_generation,first gamma fixed per configuration; later legs draw uniform per-node gamma_range using decoder RNG,run_multiseed_validation.py:69-84; relay_bp_float.py,canonical configuration,VERIFIED
+decoder_seed_semantics,"9100 + shot index, held constant across circuit sample seeds","run_multiseed_validation.py:69-84; manifest:270-273","seed panel",VERIFIED
+relay_legs,"canonical high_success S=1 R=32; first max 80, later max 60","run_multiseed_validation.py:33-38; 69-84","validated multi-seed configuration",VERIFIED
+iteration_limit,80 first leg and 60 later legs,run_multiseed_validation.py:69-76; 32-leg sweep:82-84,per-leg limits,VERIFIED
+convergence,stop when H @ decoded_error mod 2 equals sampled detector syndrome,run_multiseed_validation.py:95-100; manifest:230,syndrome validity,VERIFIED
+logical_scoring,logical correct iff syndrome valid and A @ decoded_error mod 2 equals observed logical label,run_multiseed_validation.py:97-100,130-135,VERIFIED
+N1_N2_semantics,N=1 engine0; N=2 first-success winner by modeled result cycles,results/canonical-n1-n2-n4-joint-sweep/run_canonical_joint_sweep.py:106-108; n1-vs-n2 run_study.py:43-57,canonical selection,VERIFIED
+first_success_caveat,selection uses modeled result_cycles among syndrome-converged candidates; not a GARI iteration equivalence,run_canonical_joint_sweep.py:176-197,explicit model selection,VERIFIED
+BA2_P_metrics,modeled phase cycles/accesses/retries/utilization for P=2/4/8,run_canonical_joint_sweep.py:146-221,architecture model,VERIFIED
+software_runtime,not recorded in canonical multiseed outputs as a comparable metric,run_multiseed_validation.py:235-293,no wall-clock timing field,VERIFIED
+modeled_cycles,architectural cycle formula from validated phase model,run_canonical_joint_sweep.py:159-173; archive report,explicitly modeled not FPGA,VERIFIED
+analytical_metrics,"percentiles, Wilson intervals, bootstrap comparisons","run_study.py:59-68; canonical sweep:199-221","post-processing statistics",VERIFIED
+actual_fpga_measurement,not supplied by this canonical software panel,canonical joint report and manifests,do not label modeled cycles as FPGA latency,VERIFIED
+sample_panel,5 sample seeds 20260809..20260813 x 128 shots = 640 unique circuit shots,run_multiseed_validation.py:29-31,264-268,VERIFIED
+sample_reproducibility,each Stim seed sampled twice and arrays compared,run_multiseed_validation.py:219-224,verified fixed-seed sampling,VERIFIED
+current_committed_validation,canonical N=1/N=2/N=4 archive has 128 shots and zero mismatches,results/canonical-n1-n2-n4-joint-sweep/archive_manifest.json,committed validation report,VERIFIED

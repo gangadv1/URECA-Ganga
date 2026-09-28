@@ -1,0 +1,17 @@
+metric,official_checkin_value,reproduced_value,difference,interpretation
+ensemble_size,1,1,0,Decoder name without en suffix and CLI ens=0 map to one member
+requested_iteration_limit,400,400,0,Unchanged; zero-based inclusive C-loop semantics documented separately
+normalization_alpha,0.96875,0.96875,0,Exact decoder-name/configuration match
+shots,1048576,917504,-131072,Outcome-stopped experiment; total shots need not match
+logical_errors,100,102,2,Stop at >=100 errors after a complete 16384-shot batch; overshoot retained
+discards,0,0,0,"Every completed shot retained, including native nonconvergence"
+shot_logical_failure_rate,9.5367431640625e-05,0.00011117117745535714,1.580374581473214e-05,Compatible under approximate rare-event rate-ratio 95% interval
+sinter_per_round_any_observable_rate,7.947662318152915e-06,9.264776210327064e-06,1.3171138921741488e-06,"Same Sinter transformation: pieces=12, values=12; per-round failure of any observable under its independent-piece model"
+avg_itr_div_base_rounded_batch_means,3.0,3.0,0.0,Comparable coarse statistic; official raw avg_itr=48 and base=16; batch sizes not proven identical
+exact_iteration_index_mean,not available,3.3519254411969865,not identifiable,Preserved from native per-shot return arrays
+native_converged,not available,917402,not identifiable,Native selected B/dz block acceptance only
+native_nonconverged,not available,102,not identifiable,"400 sentinel, includes index-400 convergence rejected by batch wrapper"
+logical_or_nonconvergence,not available,102,not identifiable,Supplementary accounting; does not replace official logical scoring
+software_decoder_seconds_csv,567.0,1522.0,955.0,Hardware/environment not matched; different shot count and batch-level rounding; no performance equality requirement
+software_decoder_seconds_high_precision,not available,1521.0665397644043,not identifiable,Native driver timed interval; passive post-call capture excluded
+software_total_wall_seconds,not available,2265.152859917027,not identifiable,"Includes graph setup, sampling, passive capture and process startup; concurrent prior run overlaps"

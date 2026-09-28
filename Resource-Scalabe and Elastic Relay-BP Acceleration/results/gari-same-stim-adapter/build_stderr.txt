@@ -1,0 +1,19 @@
+hbp_decoder_v2.c:102:10: warning: unused parameter 'Hcols' [-Wunused-parameter]
+  102 |     int* Hcols, int Hcols_r, int Hcols_c,
+      |          ^
+hbp_decoder_v2.c:102:34: warning: unused parameter 'Hcols_c' [-Wunused-parameter]
+  102 |     int* Hcols, int Hcols_r, int Hcols_c,
+      |                                  ^
+hbp_decoder_v2.c:391:13: warning: unused parameter 'dz' [-Wunused-parameter]
+  391 |     int8_t* dz, int dz_rows, int dz_cols,
+      |             ^
+hbp_decoder_v2.c:391:21: warning: unused parameter 'dz_rows' [-Wunused-parameter]
+  391 |     int8_t* dz, int dz_rows, int dz_cols,
+      |                     ^
+hbp_decoder_v2.c:391:34: warning: unused parameter 'dz_cols' [-Wunused-parameter]
+  391 |     int8_t* dz, int dz_rows, int dz_cols,
+      |                                  ^
+hbp_decoder_v2.c:33:20: warning: unused function 'alloc_1d_int' [-Wunused-function]
+   33 | static inline int* alloc_1d_int(int size) {
+      |                    ^~~~~~~~~~~~
+6 warnings generated.
