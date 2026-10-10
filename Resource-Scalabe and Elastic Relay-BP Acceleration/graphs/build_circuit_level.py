@@ -1,4 +1,4 @@
-"""Build a reproducible Tier-2 circuit-level gross-code STIM package."""
+"""Build reproducible Tier-2 circuit-level bicycle-bivariate STIM packages."""
 
 from __future__ import annotations
 
@@ -30,29 +30,63 @@ DEFAULT_ROUNDS = 12
 DEFAULT_SHOTS = 16
 DEFAULT_SEED = 20250617
 
+BB_CODES = {
+    "18_4_3": {
+        "n": 18, "k": 4, "d": 3, "rounds": 3,
+        "source_prefix": "bb_18_4_3",
+        "A": "x+1+y", "B": "x+1+xy^2",
+    },
+    "72_12_6": {
+        "n": 72, "k": 12, "d": 6, "rounds": 6,
+        "source_prefix": "bb_72_12_6",
+        "A": "x^3+y+y^2", "B": "y^3+x+x^2",
+    },
+    "144_12_12": {
+        "n": 144, "k": 12, "d": 12, "rounds": 12,
+        "source_prefix": "gross_144_12_12",
+        "A": "x^3+y+y^2", "B": "y^3+x+x^2",
+    },
+    "288_12_18": {
+        "n": 288, "k": 12, "d": 18, "rounds": 18,
+        "source_prefix": "bb_288_12_18",
+        "A": "x^3+y^2+y^7", "B": "y^3+x+x^2",
+    },
+}
+DEFAULT_CODE = "144_12_12"
+
 
 def probability_label(probability: float) -> str:
     return format(probability, ".12g")
 
 
-def default_source(probability: float) -> Path:
+def default_source(code: str, probability: float) -> Path:
+    cfg = BB_CODES[code]
     label = probability_label(probability)
-    return CURRENT_DIR / "sources" / "relay_official" / "bicycle_bivariate" / f"gross_144_12_12_memory_Z_r12_p{label}.stim"
-
-
-def default_output(probability: float) -> Path:
-    label = probability_label(probability).replace(".", "p")
-    return CURRENT_DIR / "generated" / "gross_circuit_level" / f"memory_Z_r12_p{label}"
-
-
-def upstream_source_path(probability: float) -> str:
-    label = probability_label(probability)
-    return "tests/testdata/bicycle_bivariate/" + (
-        "circuit=bicycle_bivariate_144_12_12_memory_Z,distance=12,rounds=12,"
-        f"error_rate={label},noise_model=uniform_circuit,basis=CX,"
-        "A=x^3+y+y^2,B=y^3+x+x^2.stim"
+    return (
+        CURRENT_DIR / "sources" / "relay_official" / "bicycle_bivariate"
+        / f"{cfg['source_prefix']}_memory_Z_r{cfg['rounds']}_p{label}.stim"
     )
 
+
+def default_output(code: str, probability: float) -> Path:
+    cfg = BB_CODES[code]
+    label = probability_label(probability).replace(".", "p")
+    directory = "gross_circuit_level" if code == "144_12_12" else f"bb_{code}_circuit_level"
+    return (
+        CURRENT_DIR / "generated" / directory
+        / f"memory_Z_r{cfg['rounds']}_p{label}"
+    )
+
+
+def upstream_source_path(code: str, probability: float) -> str:
+    cfg = BB_CODES[code]
+    label = probability_label(probability)
+    return "tests/testdata/bicycle_bivariate/" + (
+        f"circuit=bicycle_bivariate_{code}_memory_Z,"
+        f"distance={cfg['d']},rounds={cfg['rounds']},"
+        f"error_rate={label},noise_model=uniform_circuit,basis=CX,"
+        f"A={cfg['A']},B={cfg['B']}.stim"
+    )
 
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
@@ -170,19 +204,38 @@ def write_incidence(
             )
 
 
-def validate_source(circuit: stim.Circuit, source_path: Path, probability: float, rounds: int) -> dict[str, Any]:
-    if rounds != DEFAULT_ROUNDS:
+def validate_source(
+    circuit: stim.Circuit,
+    source_path: Path,
+    code: str,
+    probability: float,
+    rounds: int,
+) -> dict[str, Any]:
+    cfg = BB_CODES[code]
+
+    if rounds != cfg["rounds"]:
         raise ValueError(
-            "The bundled official source is a 12-round circuit. Supply a separately generated and audited source for another round count."
+            f"Code [[{cfg['n']},{cfg['k']},{cfg['d']}]] requires "
+            f"{cfg['rounds']} rounds in the pinned official Relay source; got {rounds}."
         )
+
     filename_match = re.search(r"_r(\d+)_p([0-9.]+)\.stim$", source_path.name)
     if filename_match:
         source_rounds = int(filename_match.group(1))
         source_probability = float(filename_match.group(2))
-        if source_rounds != rounds or not np.isclose(source_probability, probability, rtol=0, atol=1e-15):
-            raise ValueError("Requested parameters do not match the source circuit filename")
-    if circuit.num_qubits != 288 or circuit.num_observables != 12:
-        raise ValueError("Source is not the expected [[144,12,12]] memory circuit")
+        if source_rounds != rounds or not np.isclose(
+            source_probability, probability, rtol=0, atol=1e-15
+        ):
+            raise ValueError(
+                "Requested parameters do not match the source circuit filename"
+            )
+
+    if circuit.num_observables != cfg["k"]:
+        raise ValueError(
+            f"Expected {cfg['k']} logical observables for [[{cfg['n']},{cfg['k']},{cfg['d']}]], "
+            f"got {circuit.num_observables}"
+        )
+
     flattened = list(circuit.flattened())
     noisy_gate_names = {
         "X_ERROR",
@@ -264,14 +317,17 @@ def sample_and_verify(
     )
 
 
-def write_package(source_path: Path, out_dir: Path, probability: float, rounds: int, shots: int, seed: int) -> Path:
+def write_package(source_path: Path, out_dir: Path, code: str, probability: float, rounds: int, shots: int, seed: int) -> Path:
+    source_path = source_path.resolve()
+    out_dir = out_dir.resolve()
+
     if not source_path.exists():
         raise FileNotFoundError(
             f"No audited source circuit for p={probability}: {source_path}. "
             "Provide --source-circuit; do not rescale compiled circuit probabilities."
         )
     circuit = stim.Circuit.from_file(str(source_path))
-    source_validation = validate_source(circuit, source_path, probability, rounds)
+    source_validation = validate_source(circuit, source_path, code, probability, rounds)
     dem = circuit.detector_error_model(decompose_errors=False, flatten_loops=True)
     probabilities, detector_targets, observable_targets, separator_counts = extract_faults(dem)
     if len(probabilities) != dem.num_errors:
@@ -329,10 +385,17 @@ def write_package(source_path: Path, out_dir: Path, probability: float, rounds: 
         circuit_samples_path,
         dem_samples_path,
     ]
+    cfg = BB_CODES[code]
+
     package = {
         "tier": "tier-2-circuit-level",
         "loader_contract_version": 1,
-        "code": "gross_144_12_12",
+        "code": "gross_144_12_12" if code == "144_12_12" else f"bb_{code}",
+        "code_parameters": {
+            "n": cfg["n"],
+            "k": cfg["k"],
+            "d": cfg["d"],
+        },
         "memory_basis": "Z",
         "rounds": rounds,
         "noisy_rounds": rounds,
@@ -356,7 +419,7 @@ def write_package(source_path: Path, out_dir: Path, probability: float, rounds: 
     manifest = {
         "schema_version": 1,
         "graph": {
-            "code": "gross [[144,12,12]]",
+            "code": f"BB [[{cfg['n']},{cfg['k']},{cfg['d']}]]",
             "tier": "tier-2-circuit-level",
             "detector_count": dem.num_detectors,
             "fault_count": dem.num_errors,
@@ -387,11 +450,16 @@ def write_package(source_path: Path, out_dir: Path, probability: float, rounds: 
             "project_git_commit": git_commit(),
             "upstream_repository": UPSTREAM_REPOSITORY,
             "upstream_commit": UPSTREAM_COMMIT,
-            "upstream_source_path": upstream_source_path(probability),
+            "upstream_source_path": upstream_source_path(code, probability),
             "upstream_source_blob_sha1": git_blob_sha1(source_path),
             "source_circuit_sha256": sha256_file(source_path),
             "artifact_hashes": {path.name: sha256_file(path) for path in artifact_paths},
-            "artifact_paths": [str(path.relative_to(PROJECT_ROOT)) for path in artifact_paths],
+            "artifact_paths": [
+                path.relative_to(PROJECT_ROOT).as_posix()
+                if path.is_relative_to(PROJECT_ROOT)
+                else path.relative_to(out_dir).as_posix()
+                for path in artifact_paths
+            ],
         },
         "notes": [
             "The exact full hypergraph DEM is retained; no graphlike decomposition was forced.",
@@ -399,14 +467,25 @@ def write_package(source_path: Path, out_dir: Path, probability: float, rounds: 
             "This package is separate from and does not replace the Tier-1 package.",
         ],
     }
+    if not out_dir.is_relative_to(PROJECT_ROOT):
+        # External packages remain relocatable: paths resolve beside manifest.json.
+        manifest["provenance"]["artifact_path_base"] = "manifest_directory"
     manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return manifest_path
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Build the Tier-2 gross-code circuit-level STIM/DEM package")
+    parser = argparse.ArgumentParser(
+        description="Build a Tier-2 bicycle-bivariate circuit-level STIM/DEM package"
+    )
+    parser.add_argument(
+        "--code",
+        choices=sorted(BB_CODES),
+        default=DEFAULT_CODE,
+        help="BB code as n_k_d",
+    )
     parser.add_argument("--probability", type=float, default=DEFAULT_P)
-    parser.add_argument("--rounds", type=int, default=DEFAULT_ROUNDS)
+    parser.add_argument("--rounds", type=int)
     parser.add_argument("--shots", type=int, default=DEFAULT_SHOTS)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument("--source-circuit", type=Path)
@@ -416,15 +495,36 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = build_parser().parse_args()
+
     if not 0 < args.probability < 1:
         raise SystemExit("--probability must be between 0 and 1")
     if args.shots <= 0:
         raise SystemExit("--shots must be positive")
-    source_path = args.source_circuit or default_source(args.probability)
-    out_dir = args.out_dir or default_output(args.probability)
-    manifest_path = write_package(source_path, out_dir, args.probability, args.rounds, args.shots, args.seed)
+
+    cfg = BB_CODES[args.code]
+    rounds = args.rounds if args.rounds is not None else cfg["rounds"]
+
+    source_path = args.source_circuit or default_source(
+        args.code, args.probability
+    )
+    out_dir = args.out_dir or default_output(
+        args.code, args.probability
+    )
+
+    manifest_path = write_package(
+        source_path,
+        out_dir,
+        args.code,
+        args.probability,
+        rounds,
+        args.shots,
+        args.seed,
+    )
+
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
     print(f"Wrote Tier-2 package: {manifest_path}")
+    print(f"Code: {manifest['graph']['code']}")
     print(f"Detectors: {manifest['graph']['detector_count']}")
     print(f"Faults: {manifest['graph']['fault_count']}")
     print(f"Observables: {manifest['graph']['observable_count']}")
