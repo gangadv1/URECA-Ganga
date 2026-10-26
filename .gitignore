@@ -1,0 +1,34 @@
+# macOS and Python temporary files
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Temporary outputs and logs
+*.log
+test_output.txt
+
+# Generated experiment outputs
+**/results/**/checkpoints/
+**/results/**/e1_checkpoints/
+**/results/**/e1_trace_checkpoints/
+**/results/**/*.png
+**/results/**/*.pdf
+
+# Generated per-shot and per-engine experiment results
+**/results/**/per_shot.csv
+**/results/**/per_engine.csv
+
+# Local verification workspace (kept separately)
+URECA-verification/
+
+# Generated experiment summaries
+**/results/**/summary.json
+**/results/**/validation.json
+**/results/**/per_seed_summary.json
+**/results/**/aggregate_summary.json
+
+# Local temporary files
+test_output.txt
