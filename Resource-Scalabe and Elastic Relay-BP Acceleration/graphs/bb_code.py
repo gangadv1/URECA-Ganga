@@ -45,14 +45,16 @@ def cell_index(x: int, y: int) -> int:
     return (x % ELL) * M_DIM + (y % M_DIM)
 
 
-def build_block(terms: tuple[tuple[int, int], ...]) -> np.ndarray:
-    """Build one 72 by 72 circulant block."""
-    block = np.zeros((CELL_COUNT, CELL_COUNT), dtype=np.uint8)
-    for x in range(ELL):
-        for y in range(M_DIM):
-            row = cell_index(x, y)
+def build_block(terms: tuple[tuple[int, int], ...], ell: int = ELL, m: int = M_DIM) -> np.ndarray:
+    """Build a torus block; defaults preserve the original Gross convention."""
+    if type(ell) is not int or type(m) is not int or ell < 1 or m < 1:
+        raise ValueError("ell and m must be positive integers")
+    block = np.zeros((ell * m, ell * m), dtype=np.uint8)
+    for x in range(ell):
+        for y in range(m):
+            row = x * m + y
             for dx, dy in terms:
-                col = cell_index(x + dx, y + dy)
+                col = ((x + dx) % ell) * m + (y + dy) % m
                 block[row, col] ^= 1
     return block
 

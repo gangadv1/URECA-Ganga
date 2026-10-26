@@ -317,7 +317,31 @@ def sample_and_verify(
     )
 
 
-def write_package(source_path: Path, out_dir: Path, code: str, probability: float, rounds: int, shots: int, seed: int) -> Path:
+def validate_parameterized_source(circuit, construction, probability, rounds):
+    """Validate the explicit existing GARI/Gong three-term memory-Z profile."""
+    if construction.get("noise_model") != "gari_uniform_p_memory_z":
+        raise ValueError("Unsupported parameterized circuit noise profile")
+    n, k = construction["n"], construction["k"]
+    if (circuit.num_qubits, circuit.num_observables, circuit.num_detectors) != (2*n, k, (n//2)*(rounds+1)):
+        raise ValueError("Parameterized circuit/code/round dimensions disagree")
+    instructions = list(circuit.flattened())
+    noisy = [i for i in instructions if i.name in {"X_ERROR", "Z_ERROR", "DEPOLARIZE1", "DEPOLARIZE2"}]
+    values = sorted({v for i in noisy for v in i.gate_args_copy()})
+    if values != [probability]:
+        raise ValueError("Generated circuit does not match physical p")
+    # Existing generator measures all data perfectly after its noisy rounds.
+    last_measurement = [i for i in instructions if i.name == "M"]
+    if not last_measurement or len(last_measurement[-1].targets_copy()) != n or last_measurement[-1].gate_args_copy():
+        raise ValueError("Expected final perfect data measurement")
+    circuit.detector_error_model(decompose_errors=False, flatten_loops=True)
+    return dict(has_final_noise_disabled_measurement=True,
+                final_noise_disabled_measurement_count=1, noisy_instruction_count=len(noisy),
+                noise_probability_values=values, tick_count=circuit.num_ticks,
+                final_measurement_convention="noiseless M on all data; no disable_noise annotation",
+                generator_profile="existing GARI/Gong memory-Z; not canonical Relay uniform_circuit")
+
+
+def write_package(source_path: Path, out_dir: Path, code: str, probability: float, rounds: int, shots: int, seed: int, *, construction: dict[str, Any] | None = None) -> Path:
     source_path = source_path.resolve()
     out_dir = out_dir.resolve()
 
@@ -327,7 +351,12 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
             "Provide --source-circuit; do not rescale compiled circuit probabilities."
         )
     circuit = stim.Circuit.from_file(str(source_path))
-    source_validation = validate_source(circuit, source_path, code, probability, rounds)
+    if construction is None:
+        source_validation = validate_source(circuit, source_path, code, probability, rounds)
+    else:
+        if out_dir.exists():
+            raise FileExistsError("Parameterized packages require a fresh output directory")
+        source_validation = validate_parameterized_source(circuit, construction, probability, rounds)
     dem = circuit.detector_error_model(decompose_errors=False, flatten_loops=True)
     probabilities, detector_targets, observable_targets, separator_counts = extract_faults(dem)
     if len(probabilities) != dem.num_errors:
@@ -385,7 +414,7 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
         circuit_samples_path,
         dem_samples_path,
     ]
-    cfg = BB_CODES[code]
+    cfg = BB_CODES[code] if construction is None else construction
 
     package = {
         "tier": "tier-2-circuit-level",
@@ -414,6 +443,9 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
         "logical_masks_available": dem.num_observables > 0 and len(observable_edges) > 0,
         "files": {path.stem: path.name for path in artifact_paths},
     }
+    if construction is not None:
+        package["construction"] = construction
+        package["noise_model"] = construction["noise_model"]
     package_path.write_text(json.dumps(package, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     artifact_paths.append(package_path)
     manifest = {
@@ -433,7 +465,7 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
             "noisy_qec_rounds": rounds,
             "final_perfect_measurement": source_validation["has_final_noise_disabled_measurement"],
             "physical_error_probability": probability,
-            "noise_model": "uniform_circuit",
+            "noise_model": "uniform_circuit" if construction is None else construction["noise_model"],
             "stim_version": stim.__version__,
             **source_validation,
         },
@@ -448,9 +480,9 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
         },
         "provenance": {
             "project_git_commit": git_commit(),
-            "upstream_repository": UPSTREAM_REPOSITORY,
-            "upstream_commit": UPSTREAM_COMMIT,
-            "upstream_source_path": upstream_source_path(code, probability),
+            "upstream_repository": UPSTREAM_REPOSITORY if construction is None else None,
+            "upstream_commit": UPSTREAM_COMMIT if construction is None else None,
+            "upstream_source_path": upstream_source_path(code, probability) if construction is None else None,
             "upstream_source_blob_sha1": git_blob_sha1(source_path),
             "source_circuit_sha256": sha256_file(source_path),
             "artifact_hashes": {path.name: sha256_file(path) for path in artifact_paths},
@@ -467,6 +499,11 @@ def write_package(source_path: Path, out_dir: Path, code: str, probability: floa
             "This package is separate from and does not replace the Tier-1 package.",
         ],
     }
+    if construction is not None:
+        manifest["construction"] = construction
+        manifest["graph"]["code"] = f"BB [[{cfg['n']},{cfg['k']}]] (distance unknown)"
+        manifest["provenance"]["generated_source_blob_sha1"] = manifest["provenance"].pop("upstream_source_blob_sha1")
+        manifest["provenance"]["generator_sources"] = construction["generator_sources"]
     if not out_dir.is_relative_to(PROJECT_ROOT):
         # External packages remain relocatable: paths resolve beside manifest.json.
         manifest["provenance"]["artifact_path_base"] = "manifest_directory"
