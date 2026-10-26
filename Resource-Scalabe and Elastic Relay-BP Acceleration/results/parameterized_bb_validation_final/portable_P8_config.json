@@ -1,0 +1,47 @@
+{
+  "l": 3,
+  "m": 6,
+  "A": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "B": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "noise_model": "gari_uniform_p_memory_z",
+  "physical_p": 0.003,
+  "rounds": 1,
+  "N": 1,
+  "P": 8,
+  "shots": 1,
+  "first_limit": 2,
+  "later_limit": 2,
+  "R": 2,
+  "S": 1,
+  "sample_seed": 20261011,
+  "trajectory_base_seed": 7640891576956012809,
+  "banking": "ba2",
+  "runtime_cap_seconds": 120,
+  "output": "/private/tmp/relay-parameterized-portable-uhvvb_1e/package_pipeline"
+}

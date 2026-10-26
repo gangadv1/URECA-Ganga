@@ -1,0 +1,87 @@
+{
+  "code": "bb_0516fd149b4b2c36",
+  "code_parameters": {
+    "d": null,
+    "k": 4,
+    "n": 36
+  },
+  "construction": {
+    "A": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "B": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "convention": "index=x*m+y; row(x,y) connects column(x+dx,y+dy); Hx=[A B], Hz=[B.T A.T]; GF(2)",
+    "d": null,
+    "distance_status": "not computed",
+    "generator_sources": {
+      "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+      "graphs/parameterized_bb.py": "7789d173f7299443f745828d749b8b1e3d181f89b0a15f64a5d7a9b7ad6ba1d7",
+      "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe",
+      "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+      "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7"
+    },
+    "k": 4,
+    "l": 3,
+    "logical_basis_sha256": "62817f71169699fff69a52fd8b68af89c2d10069096e1f85f0c306cfb7654cd1",
+    "m": 6,
+    "matrix_sha256": "0516fd149b4b2c367a6bb3d685cef6b34c82e77a05bbb66e1ecdab2c4064613c",
+    "memory_basis": "Z",
+    "n": 36,
+    "noise_model": "gari_uniform_p_memory_z",
+    "rank_hx": 16,
+    "rank_hz": 16
+  },
+  "detector_count": 72,
+  "detector_edge_count": 1998,
+  "fault_count": 576,
+  "files": {
+    "circuit": "circuit.stim",
+    "circuit_samples": "circuit_samples.npz",
+    "dem_samples": "dem_samples.npz",
+    "detector_coordinates": "detector_coordinates.npz",
+    "detector_error_model": "detector_error_model.dem",
+    "edge_lists": "edge_lists.npz",
+    "faults": "faults.npz",
+    "incidence": "incidence.csv"
+  },
+  "final_perfect_measurement": true,
+  "loader_contract_version": 1,
+  "logical_edge_count": 748,
+  "logical_masks_available": true,
+  "max_detector_fault_degree": 6,
+  "max_logical_fault_degree": 4,
+  "memory_basis": "Z",
+  "noise_model": "gari_uniform_p_memory_z",
+  "noisy_rounds": 3,
+  "observable_count": 4,
+  "physical_error_probability": 0.007,
+  "qubit_count": 72,
+  "rounds": 3,
+  "sample_seed": 555,
+  "sample_shots": 2,
+  "tier": "tier-2-circuit-level"
+}

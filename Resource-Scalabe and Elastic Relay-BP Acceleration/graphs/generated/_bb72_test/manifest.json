@@ -1,0 +1,81 @@
+{
+  "circuit": {
+    "final_noise_disabled_measurement_count": 1,
+    "final_perfect_measurement": true,
+    "has_final_noise_disabled_measurement": true,
+    "memory_basis": "Z",
+    "noise_model": "uniform_circuit",
+    "noise_probability_values": [
+      0.003
+    ],
+    "noisy_instruction_count": 3124,
+    "noisy_qec_rounds": 6,
+    "physical_error_probability": 0.003,
+    "stim_version": "1.15.0",
+    "tick_count": 66
+  },
+  "graph": {
+    "code": "BB [[72,12,6]]",
+    "detector_count": 432,
+    "detector_edge_count": 91116,
+    "detector_incidence_sha256": "5f5405c8929146de06eae7b43a2fc32e65dad8fdb3a82fef1839eb6a202ccb9f",
+    "fault_count": 16164,
+    "logical_edge_count": 26242,
+    "observable_count": 12,
+    "tier": "tier-2-circuit-level"
+  },
+  "notes": [
+    "The exact full hypergraph DEM is retained; no graphlike decomposition was forced.",
+    "Logical masks are the fault-to-observable incidence in faults.npz and edge_lists.npz.",
+    "This package is separate from and does not replace the Tier-1 package."
+  ],
+  "provenance": {
+    "artifact_hashes": {
+      "circuit.stim": "5c4f87414590f9f066474b9c312766fc8de257e5c70019cb05f257080c33ab01",
+      "circuit_samples.npz": "40bad78273b1a1f23ae538febe1417b1f6182add3c5d32f6f764b016e191b84d",
+      "dem_samples.npz": "ee7c2e1509ee20dc565623c5d24d498554aae3e8d4fb5e2cd0bbda5e19f3c52c",
+      "detector_coordinates.npz": "9533d011bd0d16d7a30da5c81df720a169982d830fe12bb652662f92a590098e",
+      "detector_error_model.dem": "1ada8d0ee50a88c08413eed05fe9543cc2ca00efeabe1e4762b215b0b28b58bb",
+      "edge_lists.npz": "5f5405c8929146de06eae7b43a2fc32e65dad8fdb3a82fef1839eb6a202ccb9f",
+      "faults.npz": "21cee6358364b4360ccd1034dd6655a860fe8d52a3c622fb3427b00746954243",
+      "incidence.csv": "507f5407a749e4f1bacbc50931697b9b9d61e6a9c2a96a95497ea7d843b3ca16",
+      "package.json": "9d22268bae9992120bebc59b5714a5dfbb38d5d05425c3fa5f8755ebe824345a"
+    },
+    "artifact_paths": [
+      "graphs/generated/_bb72_test/circuit.stim",
+      "graphs/generated/_bb72_test/detector_error_model.dem",
+      "graphs/generated/_bb72_test/faults.npz",
+      "graphs/generated/_bb72_test/edge_lists.npz",
+      "graphs/generated/_bb72_test/detector_coordinates.npz",
+      "graphs/generated/_bb72_test/incidence.csv",
+      "graphs/generated/_bb72_test/circuit_samples.npz",
+      "graphs/generated/_bb72_test/dem_samples.npz",
+      "graphs/generated/_bb72_test/package.json"
+    ],
+    "project_git_commit": "29b60ff1d6bf2b58528091ba04d9e9dda6037bb0",
+    "source_circuit_sha256": "5c4f87414590f9f066474b9c312766fc8de257e5c70019cb05f257080c33ab01",
+    "upstream_commit": "d185194ba0cb4101ced4340d82b2ee6d42f225f0",
+    "upstream_repository": "https://github.com/trmue/relay",
+    "upstream_source_blob_sha1": "483777fdb7dc169bf307496bc9dcdad12f62747c",
+    "upstream_source_path": "tests/testdata/bicycle_bivariate/circuit=bicycle_bivariate_72_12_6_memory_Z,distance=6,rounds=6,error_rate=0.003,noise_model=uniform_circuit,basis=CX,A=x^3+y+y^2,B=y^3+x+x^2.stim"
+  },
+  "sampling": {
+    "circuit_detector_shape": [
+      16,
+      432
+    ],
+    "circuit_observable_shape": [
+      16,
+      12
+    ],
+    "dem_fault_shape": [
+      16,
+      16164
+    ],
+    "extracted_incidence_verified_against_dem_samples": true,
+    "fixed_seed_reproducible": true,
+    "seed": 20250617,
+    "shots": 16
+  },
+  "schema_version": 1
+}

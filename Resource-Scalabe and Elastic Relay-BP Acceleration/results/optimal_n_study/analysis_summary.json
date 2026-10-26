@@ -1,0 +1,162 @@
+{
+  "selections": [
+    {
+      "deadline_cycles": 300000000,
+      "empirical_minimum_N": "none",
+      "pointwise_minimum_N": "no statistically certified optimum",
+      "fixed_deadline_minimum_N": "no statistically certified optimum",
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 500000000,
+      "empirical_minimum_N": 8,
+      "pointwise_minimum_N": "no statistically certified optimum",
+      "fixed_deadline_minimum_N": "no statistically certified optimum",
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 750000000,
+      "empirical_minimum_N": 8,
+      "pointwise_minimum_N": 8,
+      "fixed_deadline_minimum_N": 8,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 1000000000,
+      "empirical_minimum_N": 8,
+      "pointwise_minimum_N": 8,
+      "fixed_deadline_minimum_N": 8,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 1100000000,
+      "empirical_minimum_N": 4,
+      "pointwise_minimum_N": 8,
+      "fixed_deadline_minimum_N": 8,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 1500000000,
+      "empirical_minimum_N": 4,
+      "pointwise_minimum_N": 4,
+      "fixed_deadline_minimum_N": 8,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 2000000000,
+      "empirical_minimum_N": 2,
+      "pointwise_minimum_N": 4,
+      "fixed_deadline_minimum_N": 8,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 4000000000,
+      "empirical_minimum_N": 1,
+      "pointwise_minimum_N": 2,
+      "fixed_deadline_minimum_N": 4,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    },
+    {
+      "deadline_cycles": 8000000000,
+      "empirical_minimum_N": 1,
+      "pointwise_minimum_N": 2,
+      "fixed_deadline_minimum_N": 2,
+      "whole_grid_minimum_N": "no statistically certified optimum"
+    }
+  ],
+  "all_success_lower_grid": 0.9482437314478263,
+  "all_success_lower_fixed": 0.9646616199111993,
+  "significant_paired_tests": [
+    {
+      "deadline_cycles": 500000000,
+      "N_a": 2,
+      "N_b": 4,
+      "a_only_success": 0,
+      "b_only_success": 11,
+      "both_success": 97,
+      "both_fail": 20,
+      "difference_b_minus_a": 0.0859375,
+      "exact_p": 0.0009765625,
+      "Holm27_p": 0.021484375,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 500000000,
+      "N_a": 2,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 25,
+      "both_success": 97,
+      "both_fail": 6,
+      "difference_b_minus_a": 0.1953125,
+      "exact_p": 5.960464477539063e-08,
+      "Holm27_p": 1.6093254089355469e-06,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 500000000,
+      "N_a": 4,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 14,
+      "both_success": 108,
+      "both_fail": 6,
+      "difference_b_minus_a": 0.109375,
+      "exact_p": 0.0001220703125,
+      "Holm27_p": 0.0030517578125,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 750000000,
+      "N_a": 2,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 17,
+      "both_success": 111,
+      "both_fail": 0,
+      "difference_b_minus_a": 0.1328125,
+      "exact_p": 1.52587890625e-05,
+      "Holm27_p": 0.000396728515625,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 750000000,
+      "N_a": 4,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 10,
+      "both_success": 118,
+      "both_fail": 0,
+      "difference_b_minus_a": 0.078125,
+      "exact_p": 0.001953125,
+      "Holm27_p": 0.041015625,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 1000000000,
+      "N_a": 2,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 14,
+      "both_success": 114,
+      "both_fail": 0,
+      "difference_b_minus_a": 0.109375,
+      "exact_p": 0.0001220703125,
+      "Holm27_p": 0.0030517578125,
+      "significant_05_family": true
+    },
+    {
+      "deadline_cycles": 1100000000,
+      "N_a": 2,
+      "N_b": 8,
+      "a_only_success": 0,
+      "b_only_success": 12,
+      "both_success": 116,
+      "both_fail": 0,
+      "difference_b_minus_a": 0.09375,
+      "exact_p": 0.00048828125,
+      "Holm27_p": 0.01123046875,
+      "significant_05_family": true
+    }
+  ]
+}

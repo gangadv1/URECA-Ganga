@@ -1,0 +1,77 @@
+{
+  "command": [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/relay_aware_ba2_bounded_20261010/compare_relay.py"
+  ],
+  "base_git_commit": "5ec2e13e4cc9abd5b7d4d28b7f84c0bc8d513d85",
+  "implementation_hashes": {
+    "simulations/configurable_testbench/pilots/relay_aware_ba2_bounded_20261010/compare_relay.py": "8d482169ed619926d9f75b83e81dca03eb3dbdad7148769171aeb83c59c87c79",
+    "simulations/configurable_testbench/testbench.py": "a8ab8d8b269681ef71594f7e1fd51ea482fed0e604d7e369ca9c6ba31cad6978",
+    "reference/relay_bp_fixed.py": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "results/bank-aware-folding-layout/run_bank_aware_layout.py": "e02a0bf55e5242e87b85fe37a6049d4af43306deef8db34b0ce9fbcb754dbece",
+    "results/graph-partitioning-folding-model/run_folding_layout_comparison.py": "41ea4d6444844fa42ab3ae073b80fec04ca8c2048ef89c5b910a35ad0ec4e735"
+  },
+  "versions": {
+    "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.2.6",
+    "stim": "1.15.0"
+  },
+  "outputs": {
+    "compare_relay.py": "8d482169ed619926d9f75b83e81dca03eb3dbdad7148769171aeb83c59c87c79",
+    "test_relay_assignment.py": "df7e35a19127cc69565cffc79ae8fce7fecc5631b6bd07b8d363ad6125a28c39",
+    "REPORT.md": "936a0c5d3e6365941c7bb5209e983ea75af6433d31e521e25f8427a0abcc1a09",
+    "phase_retries.png": "063341128a2b33327b1b7fe22c1bc6fc6f5c0036f1f7167950740f8800bfbfdb",
+    "comparison.json": "a2e293706133fc8ac3188906e71ae2f55ec77d3c69e5cd6707c3ba919b5fd92f",
+    "protected_hashes.json": "159f8f7c2ea77ceae0a61f603b861812957796d5e1b7543a057d71c045ed9b8a",
+    "commands.json": "e1cb1e9ede8ec9bed902e96b53043bbcead6dd9810f354d64e6c14a0d6871d3e",
+    "validation.json": "de8119cb5f9322c5081ba5a002ca0e1e3e0e5cee296cca7bda265cdc1e299df8",
+    "comparison.csv": "f04e5ab4297f7da11ea34fc562109f216bca799f218d65df5254b8b0e6d475c5",
+    "structural_comparison.png": "c11e551fa854f3126d6a57c3e5151ffc01636dffcda27956de78d4235be855d6",
+    "144_12_12/provenance.json": "6acc25cb756f20fd62091c45509256ed5c3fb9835faf3ade0231d1d466999e76",
+    "144_12_12/decoder_equivalence.json": "93abe1ea070f3c829609e9e4c8233307ca7eef9b867e05a400f6853e23f84c52",
+    "144_12_12/per_shot_selection.json": "cebbdc2d66b2e102fba60668db7bf9d36ba7d8c66fbedab2d719768d35ba27f8",
+    "144_12_12/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "144_12_12/comparison.json": "766de7f4472fa78cd7f21679dbb6a5fabcbdd988f14d768997a57f1fd213617d",
+    "144_12_12/phase_profiles.json": "c7ab473239a700195c7b45fa61a2878629bed9c37b6deca91ccc9ffb1d23cfeb",
+    "144_12_12/storage_maps.npz": "a86b3b6f83e12f0e0d14bb948a715bbd873fa4a9e7f5de6f8590aedec6772a3c",
+    "144_12_12/bank_assignment_statistics.json": "db33ef00889740acb491b82017e4878407c017fa75707c4893966a84ff4bcee9",
+    "288_12_18/provenance.json": "b6c0fbc9ec974ab9c4fbdc74462bfee94f3ee41a32d455c53b5aeb29a91cbae3",
+    "288_12_18/decoder_equivalence.json": "36c8b485b33f196bce09a6e254e6c8552a88b1eef36c74422dee3752d0ab6433",
+    "288_12_18/per_shot_selection.json": "e9fa7a50f822a367c838cddef396a8dad339fbb7d41a6473bb394a28df235269",
+    "288_12_18/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "288_12_18/comparison.json": "09998b2ddb0a3402c21e6ddd8ec53fb906d1a7e56ef0a8c2061fc67a16ee4a6d",
+    "288_12_18/phase_profiles.json": "822af1aa91adba1f42acb82948ddc98b9178b099f194d52857759e5184642cae",
+    "288_12_18/storage_maps.npz": "fab29ee5186fbe17f436971de539fe375f7adcbc3c2d78d5a483b00d3869b087",
+    "288_12_18/bank_assignment_statistics.json": "91471036626723552df312bae52c7a2ccde7ac16fc1b0f9bbdb3162508776ce2",
+    "18_4_3/provenance.json": "87c1c5780300d23ed2617bcbcb135068466d3cfc34dd3762f9490d62a617442d",
+    "18_4_3/decoder_equivalence.json": "2dc62670976fceaa845b4d4514f0b90736c69bb7daff96b5a0d6dcb17f25d37f",
+    "18_4_3/per_shot_selection.json": "6a707f9c7014b423b04300c0c4ed3c71e61bcbee6f0f9bd3970f36207d1b5c8a",
+    "18_4_3/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "18_4_3/comparison.json": "ff6996aa892e1115da5f3a56dd3db56d3c7f174bf0a63a48b39e2d44cfc7b055",
+    "18_4_3/phase_profiles.json": "ea3115a179b58c02d76828c5e5426b6777e6a1e037b518a0c2140c61ba9ae660",
+    "18_4_3/storage_maps.npz": "aec13670d54844ccfb25d58ca85c5f9455c03cf5a8085426529cf0d5668e232b",
+    "18_4_3/bank_assignment_statistics.json": "7093f760c28bb6cbc97344d4959a6595f4ba88cf329ee71e71fbe2f4bca2fa86",
+    "72_12_6/provenance.json": "88b290f47c8ec49034a82eca85a1efb52f1f7866e8ccdf31f89b39f7bfc0a45a",
+    "72_12_6/decoder_equivalence.json": "b4b88ac1ccb6ed66760d4999aec12492edd8b2dfc7787f11fa0eb9afc5fa5ef3",
+    "72_12_6/per_shot_selection.json": "af37b865553657337466f9517d8b51ce240700d96afc425690c8a656de25d4e3",
+    "72_12_6/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "72_12_6/comparison.json": "200a72061b0dab9519137fe629d90ebae20363e83f3740cb9c86ad3718d8f09d",
+    "72_12_6/phase_profiles.json": "344c0ffe4c9dd0dd1855dc1aa628cc519ebc0c710020683f6796b3e7f8264e19",
+    "72_12_6/storage_maps.npz": "63af4f8dd8d1b7159f76aeeedcd6af7c660cf142d43e01a8cb9726caa6a7589a",
+    "72_12_6/bank_assignment_statistics.json": "a55a6032fa8d1b9017c93cffd1d147c637756bab7e22f622d266be64afdebf74"
+  },
+  "invocation_environment": {
+    "MPLCONFIGDIR": "/private/tmp/relay-ba2-matplotlib"
+  },
+  "bounded_refinement": {
+    "fault_limit": 512,
+    "passes": 2,
+    "partners_per_other_bank": 8
+  },
+  "prior_attempt": {
+    "directory": "../relay_aware_ba2_20261010",
+    "status": "largest-code full-sweep timed out after 180 seconds; no comparison result",
+    "stop_report_sha256": "562e097ca2aac9007d4ef810502ef48795accf75c1bcd267154c95abc865c97b"
+  }
+}

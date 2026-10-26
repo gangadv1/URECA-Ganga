@@ -1,0 +1,7 @@
+{
+  "benchmark_command": "MPLCONFIGDIR=/private/tmp/relay-external-matplotlib OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B results/external_decoder_benchmark/run_benchmark.py",
+  "runs": "Initial text-DEM preflight failure; binary-source equality fix; BP 90-second run then OSD API initialization errors; OSD-only resume using saved BP results. See attempts.json and DEM_roundtrip_diagnostic.json. No Relay decoding was run.",
+  "postprocessing": "Source/mapping checks, sparse H/A rescoring and plots only; README equations reproduce the summaries.",
+  "plot_command": "MPLCONFIGDIR=/private/tmp/relay-external-matplotlib ../.venv/bin/python -B results/external_decoder_benchmark/plot_results.py",
+  "read_only_validation_command": "MPLCONFIGDIR=/private/tmp/relay-external-matplotlib ../.venv/bin/python -B results/external_decoder_benchmark/validate_outputs.py"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "N": 1,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      }
+    ]
+  },
+  {
+    "N": 1,
+    "layout": "weighted",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 164112428,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2940350,
+        "critical_conflict_events": 2940350,
+        "critical_issue_group_occupancy": 0.6482612131803684
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "weighted",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 163480700,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 2729774,
+        "critical_conflict_events": 2729774,
+        "critical_issue_group_occupancy": 0.6501852627950514
+      }
+    ]
+  }
+]

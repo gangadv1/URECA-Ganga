@@ -1,0 +1,58 @@
+{
+  "configuration": {
+    "code": "72_12_6",
+    "package": null,
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 20261010,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": null,
+    "shots": 4,
+    "shot_offset": 0,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "input_package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb72_test",
+  "input_manifest_sha256": "da4403a63ee649bbc2719d74f20451ca298486e910675d0bebd8ecd62dabda81",
+  "paired_config_sha256": "385ce2c28d690d44f3f7f1e680ccb5c87e0aa4112adaab1f798937d42ce107e6",
+  "paired_engine_csv_sha256": "b8884b8d8af67f55b64af562a17e470ed6fa5a79065263f299983e99332367de",
+  "objective": {
+    "method": "relay-only greedy seed plus exact retry-reducing capacity-preserving swaps",
+    "candidate_limit_per_bank": 8,
+    "passes": 2,
+    "statistics": {
+      "initial_retries": 21836,
+      "greedy_retries": 13842,
+      "final_retries": 13787,
+      "accepted_swaps": 43,
+      "capacities": [
+        4041,
+        4041,
+        4041,
+        4041
+      ],
+      "passes": 2,
+      "refinement_fault_limit": 512
+    },
+    "P": 4
+  },
+  "mapping_semantics": "Explicit mathematical ID <-> physical address maps; gamma/priors generated in original order then indexed by fault_new_to_old; decisions/trace mapped back before comparison",
+  "timing_semantics": "Archived phase service formulas only; no top-level/RNG/cancellation overhead; no integrated hardware latency measurement",
+  "wall_seconds": 2.5996137090260163,
+  "trace_iterations": 32,
+  "output_hashes": {
+    "decoder_equivalence.json": "b4b88ac1ccb6ed66760d4999aec12492edd8b2dfc7787f11fa0eb9afc5fa5ef3",
+    "per_shot_selection.json": "af37b865553657337466f9517d8b51ce240700d96afc425690c8a656de25d4e3",
+    "invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "comparison.json": "200a72061b0dab9519137fe629d90ebae20363e83f3740cb9c86ad3718d8f09d",
+    "phase_profiles.json": "344c0ffe4c9dd0dd1855dc1aa628cc519ebc0c710020683f6796b3e7f8264e19",
+    "storage_maps.npz": "63af4f8dd8d1b7159f76aeeedcd6af7c660cf142d43e01a8cb9726caa6a7589a",
+    "bank_assignment_statistics.json": "a55a6032fa8d1b9017c93cffd1d147c637756bab7e22f622d266be64afdebf74"
+  }
+}

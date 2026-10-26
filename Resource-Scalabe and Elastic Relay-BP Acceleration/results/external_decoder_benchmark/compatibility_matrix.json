@@ -1,0 +1,101 @@
+[
+  {
+    "decoder": "Standard BP",
+    "author_code": "Installed quantumgizmos/ldpc 2.4.1 BpDecoder",
+    "exact_code_dem": "YES exact sparse H columns",
+    "priors": "YES exact per-fault p",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "1940 parallel min-sum iterations; matches maximum per-trajectory count only",
+    "observable_prediction": "A@predicted_faults mod2",
+    "runtime_measurement": "Measured CPU decode wall time; setup/scoring separate",
+    "required_adaptation_or_blocker": "None beyond validated sparse DEM adapter"
+  },
+  {
+    "decoder": "BP-OSD",
+    "author_code": "Installed quantumgizmos/ldpc 2.4.1 BpOsdDecoder; bp_osd repository directs implementation to LDPC",
+    "exact_code_dem": "YES exact sparse H columns",
+    "priors": "YES exact per-fault p",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "1940 BP iterations + OSD_0/order0; additional elimination work is not budget matched",
+    "observable_prediction": "A@predicted_faults mod2",
+    "runtime_measurement": "Measured CPU decode wall time includes OSD; setup/scoring separate",
+    "required_adaptation_or_blocker": "OSD0 baseline only; not all standard OSD orders"
+  },
+  {
+    "decoder": "Astra",
+    "author_code": "Author GitHub inspected; Torch absent; no compatible trained checkpoint identified",
+    "exact_code_dem": "NOT validated; author graph uses code-capacity Pauli nodes",
+    "priors": "DEM-fault prior interface not validated",
+    "noise_model": "Published code-capacity depolarizing noise differs",
+    "decoding_budget": "GNN budget/checkpoint not matched",
+    "observable_prediction": "Four-class Pauli outputs need DEM-fault observable mapping",
+    "runtime_measurement": "Unavailable; not run",
+    "required_adaptation_or_blocker": "Need circuit-DEM binary fault graph/features/prior adaptation, validated inference weights, Torch/PanQEC/custom LDPC fork; no retraining authorized"
+  },
+  {
+    "decoder": "Local preprocessing BP-OSD",
+    "author_code": "Author paper inspected; no runnable author repository identified in paper/targeted search",
+    "exact_code_dem": "Circuit-level method conceptually compatible, exact event indices NOT validated",
+    "priors": "Method intentionally updates priors using circuit-local signatures",
+    "noise_model": "Published circuit differs; same nominal p/rounds is insufficient",
+    "decoding_budget": "Published p=.003 BP cap1000 differs from ours",
+    "observable_prediction": "Need unchanged detector/event/logical maps after prior hints",
+    "runtime_measurement": "Unavailable; not run",
+    "required_adaptation_or_blocker": "Need author preprocessing code, detector/check/time/gate map, merged DEM fault event correspondence and calibrated channel scaling; do not substitute BP-OSD"
+  },
+  {
+    "decoder": "Sequential BP",
+    "author_code": "Author paper inspected; runnable author implementation not identified",
+    "exact_code_dem": "Binary-H adaptation conceivable; not validated paper implementation",
+    "priors": "Pauli-X code-capacity prior model differs",
+    "noise_model": "Published independent-X model differs from circuit model",
+    "decoding_budget": "SCNS/SVNS/SBPGD sweeps not equivalent to parallel iteration counts",
+    "observable_prediction": "Need validated syndrome-domain fault prediction mapping",
+    "runtime_measurement": "Unavailable; not run",
+    "required_adaptation_or_blocker": "Require author schedule/decimation implementation and equivalence/adaptation tests; library serial mode is not labeled this method"
+  },
+  {
+    "decoder": "Relay-BP N1",
+    "author_code": "Local reference/relay_bp_fixed.py; results/n-scaling-canonical/run_study.py",
+    "exact_code_dem": "YES archived canonical package and sample hashes verified",
+    "priors": "YES same fault probabilities converted to fixed-point LLR",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "1 trajectories, each 80+31*60=1940 iteration maximum; R32/S1, gamma .125 then seeded random gamma",
+    "observable_prediction": "Archived per-shot logical scores; raw fault predictions not stored in canonical CSV",
+    "runtime_measurement": "Archived modeled P4 FPGA architectural cycles only; measured Relay software wall time unavailable",
+    "required_adaptation_or_blocker": "Reuse archived outcomes/winners; independent raw Relay re-scoring unavailable without predictions; no rerun"
+  },
+  {
+    "decoder": "Relay-BP N2",
+    "author_code": "Local reference/relay_bp_fixed.py; results/n-scaling-canonical/run_study.py",
+    "exact_code_dem": "YES archived canonical package and sample hashes verified",
+    "priors": "YES same fault probabilities converted to fixed-point LLR",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "2 trajectories, each 80+31*60=1940 iteration maximum; R32/S1, gamma .125 then seeded random gamma",
+    "observable_prediction": "Archived per-shot logical scores; raw fault predictions not stored in canonical CSV",
+    "runtime_measurement": "Archived modeled P4 FPGA architectural cycles only; measured Relay software wall time unavailable",
+    "required_adaptation_or_blocker": "Reuse archived outcomes/winners; independent raw Relay re-scoring unavailable without predictions; no rerun"
+  },
+  {
+    "decoder": "Relay-BP N4",
+    "author_code": "Local reference/relay_bp_fixed.py; results/n-scaling-canonical/run_study.py",
+    "exact_code_dem": "YES archived canonical package and sample hashes verified",
+    "priors": "YES same fault probabilities converted to fixed-point LLR",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "4 trajectories, each 80+31*60=1940 iteration maximum; R32/S1, gamma .125 then seeded random gamma",
+    "observable_prediction": "Archived per-shot logical scores; raw fault predictions not stored in canonical CSV",
+    "runtime_measurement": "Archived modeled P4 FPGA architectural cycles only; measured Relay software wall time unavailable",
+    "required_adaptation_or_blocker": "Reuse archived outcomes/winners; independent raw Relay re-scoring unavailable without predictions; no rerun"
+  },
+  {
+    "decoder": "Relay-BP N8",
+    "author_code": "Local reference/relay_bp_fixed.py; results/n-scaling-canonical/run_study.py",
+    "exact_code_dem": "YES archived canonical package and sample hashes verified",
+    "priors": "YES same fault probabilities converted to fixed-point LLR",
+    "noise_model": "YES canonical circuit samples",
+    "decoding_budget": "8 trajectories, each 80+31*60=1940 iteration maximum; R32/S1, gamma .125 then seeded random gamma",
+    "observable_prediction": "Archived per-shot logical scores; raw fault predictions not stored in canonical CSV",
+    "runtime_measurement": "Archived modeled P4 FPGA architectural cycles only; measured Relay software wall time unavailable",
+    "required_adaptation_or_blocker": "Reuse archived outcomes/winners; independent raw Relay re-scoring unavailable without predictions; no rerun"
+  }
+]

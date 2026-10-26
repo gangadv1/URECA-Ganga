@@ -1,0 +1,19 @@
+{
+  "fault": {
+    "initial_retries": 316775,
+    "greedy_retries": 189284,
+    "final_retries": 189210,
+    "accepted_swaps": 55,
+    "capacities": [
+      51588,
+      51588,
+      51588,
+      51588
+    ],
+    "passes": 2,
+    "refinement_fault_limit": 512
+  },
+  "edge": {
+    "frozen_existing_BA2_edge_map": true
+  }
+}

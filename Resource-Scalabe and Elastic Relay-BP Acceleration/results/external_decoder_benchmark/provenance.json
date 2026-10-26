@@ -1,0 +1,83 @@
+{
+  "versions": {
+    "ldpc": "2.4.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "stim": "1.15.0"
+  },
+  "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "processor": "arm",
+  "machine": "arm64",
+  "hardware_timing_measured": false,
+  "implementation_sha256": "eb21a725cb45ea8ff6f20d69c1ec38883cf53feb406c8e35499e9a53842baa34",
+  "ldpc_source_hashes": {
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/mod2/_mod2.pyx": "e8cb38a243f9789bc783e24dbb876bcf3c843f105d60ac13fb4830742f5d8c69",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/union_find_decoder/_union_find_decoder.pyx": "cfb73e441c9030ba2413eedf28eadf00b949e755e493b84b28d5c8ff177a95b3",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/mbp_decoder/_mbp_decoder.pyx": "0d8478da78a68df0625d9976a2a0ee0fb7d4df356231df25e3ffdab02ab46511",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/bposd_decoder/_bposd_decoder.pyx": "c5eecf8d90f37d913055f230b86e7b232b7af73978c3e8511a38f5a4161bc2ac",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/bp_decoder/_bp_decoder.pyx": "8f0370457b3fb7e2d7d2c8c3e1cecd77fe6a35fd21c1c21c9e8ec049db675597",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/belief_find_decoder/_belief_find_decoder.pyx": "b81b04bb9780cd023e922a23acdd92aed00bd427081afe9d8606600210a7b9ed",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/lsd_decoder/_lsd_decoder.pyx": "9fdecd2913ace1c862cdb25e590e7d20e2d00f1e55e8b334ece4db4256b7ef50",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/bplsd_decoder/_bplsd_decoder.pyx": "7064a43fc09fc8f3cb8001f7d737e38d341151e0f1ecfa5313b4c0a3fdfb2145",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/lib/python3.13/site-packages/ldpc/bp_flip/_bp_flip.pyx": "ba0463ff0082e3bbd7fb472e078275db75a36a9633005b28534fe01b1e7b6816"
+  },
+  "input_hashes": {
+    "results/circuit-level-multiseed/paired_samples.npz": "acc4290dd1ff30a7436a9b22fea2e5bb11238559be2506c111e8b2ce75e0eded",
+    "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/faults.npz": "6d741bfb9db734aad5f1cf36d9829b5f25bab2a0570b7599041ccf2896d7f390",
+    "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/edge_lists.npz": "256b43714d9d257e95038520bac71ad38f207f0fb4cf8c18eeb5b1e74c6856ad",
+    "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/circuit.stim": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20",
+    "graphs/generated/gross_circuit_level/memory_Z_r12_p0p003/detector_error_model.dem": "76eb991fc30617b4ac194978d5a6f9cdd382270c8c60b30fbb69535f865f9325",
+    "results/n-scaling-canonical/per_shot_results.csv": "9a1cff31826559963607bb243a6de28044a59a93614287b7f6aba7b298d08dcc"
+  },
+  "sample_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812
+  ],
+  "trajectory_seeds": "Relay canonical CSV s0..s7 unchanged; external BP deterministic parallel, random schedule disabled",
+  "command": "MPLCONFIGDIR=/private/tmp/relay-external-matplotlib OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B results/external_decoder_benchmark/run_benchmark.py",
+  "benchmark_scope": "58 paired canonical samples, indices 0..57; remaining 70 not externally decoded",
+  "postprocessing_sha256": {
+    "plot_results.py": "5c833e6da779baa8fe21e5816bdb9cc840bc5e5a5a5557da5dac85feb15b5495",
+    "validate_outputs.py": "59075915f7f7e5203b406828ecbee8ef7d84167861495cbdbec5bb7e8a9f107c"
+  },
+  "configuration_sha256": "9ca011c27bd4c4e9452c591eeb6d9711846de61c07a6581efcd15945548c6733",
+  "attempts_sha256": "607b64b4f4195d7b176720fe269eefdbb8435264876c4ebe8fd4af6a6e0f5a76",
+  "references_sha256": "b5388b5e711c62fc86e50e6ec03973523d11cc665ab3ee9f30b546f7317335ce",
+  "outputs": {
+    "BP_results.json": "babd3c07267f71a42c2cd91cb601e918cc434192e658129be88de2abffa4bc09",
+    "graph1_paired_outcomes.png": "bb605286ba316321b6d13bd756c32b1a697a796593cd454d1a95d640761973c4",
+    "BP_progress.jsonl": "1cbdfeaaad02ba567905cef729aaab759eab34337fe3f122a314b035604492ef",
+    "run_benchmark.py": "eb21a725cb45ea8ff6f20d69c1ec38883cf53feb406c8e35499e9a53842baa34",
+    "graph1_paired_outcomes.pdf": "ab17de23ca49ed075f545142f39182309fac75ff9c63627031c1c40447680fc1",
+    "timing.json": "a37388110d6d9f17fc1ca1b88b53bf03182f8bd8a7fe7df757155bf83a62b52a",
+    "validate_outputs.py": "59075915f7f7e5203b406828ecbee8ef7d84167861495cbdbec5bb7e8a9f107c",
+    "REPORT.md": "fcd2566bc181576c99b1663a386e8f1d7689a97ba33f5ed0671947a7427641ad",
+    "graph2_separate_timing_domains.pdf": "69dd00fb373166438d1cd42948cd0278e6417004479d60575c9ebbd446904b8c",
+    "attempts.json": "607b64b4f4195d7b176720fe269eefdbb8435264876c4ebe8fd4af6a6e0f5a76",
+    "graph2_separate_timing_domains.png": "0d13b5e4e58df4a977fdecfeb65ab61e540e7cee7ecfdf1d5a8f7d6869801b57",
+    "STOPPED.json": "167fecb464f910e78cbbe9061ee80390594b9272599491efbf5037a0e6ec672b",
+    "BP_OSD0_predictions.npz": "3786061f19898afc85cf57900b29eb99fd32b264ea53cdc56fa2f6d2499827a0",
+    "BP_OSD0_progress.jsonl": "3b6b45ccefc580f7f1f71791f2298372fb8b81e8136006a5167636f6e796f342",
+    "comparison.json": "3e802c585d798efce4a668504358863cf02e9eb32c6a67bd719cf284a4e1352f",
+    "research_references.json": "b5388b5e711c62fc86e50e6ec03973523d11cc665ab3ee9f30b546f7317335ce",
+    "protected_hashes.json": "23d95f082e8cbdfa22ae24fe0411c18efb27975c1c43dde44f085f23de19b96b",
+    "commands.json": "93dce89435416ad10796e5fb8788357348a7b61383ab6e8f2024516d4d2ef007",
+    "DEM_roundtrip_diagnostic.json": "41ad44c9f83137c9f0e2e580adfc77db6aa811a3cde866ce2454322d9fbca994",
+    "configuration.json": "9ca011c27bd4c4e9452c591eeb6d9711846de61c07a6581efcd15945548c6733",
+    "compatibility_matrix.json": "2f75861ef83dcef145bbbf7d18e72fbeca4031e069dc280ca0db86471a701d23",
+    "validation.json": "12e621406f16529f05eb6d11ee92d87d7fb99b1f94b41adf697fd4aa71684927",
+    "comparison.csv": "78b99861e9ff55c0d7ff744d94a51c178735e8c4597fc2b455e211766b3e5310",
+    "smoke.json": "c3963ed1752a22e6157b4ebb2a0a8bc28c262151005e9227bdf108cfe80c88be",
+    "per_shot_external.json": "f1412075cf012cc16d96640e62ab8abc4aa4936e9319f65756493e24db7f7c80",
+    "BP_predictions.npz": "06262601d4eeb489c60aae47e8b6f5394d63c3f8d49f6cc5a6fbcea158ecaaa2",
+    "plot_results.py": "5c833e6da779baa8fe21e5816bdb9cc840bc5e5a5a5557da5dac85feb15b5495",
+    "preflight.json": "facfd3a5493fcb196ecc57586ffe9b11db1f17eca7b598d9efcf8f18b172f066",
+    "compatibility_matrix.csv": "e38c93c3008569efdb48f443e1e34bcb5753440e2be49c4cd0ec45f92128b828",
+    "paired_indices.json": "59ed6edc7d55d1099d343cccc0253b994e3d7715319d6848bda4fb413fece823",
+    "BP_OSD0_results.json": "1e64ca285ed2e12c7c300147901c0afce150b1e8c210630d1381149f9c42758f",
+    "Relay_archived_records.json": "98a98d02de801334f6e6492d0eab250c56aff43123bddbbdebecd3c70689b3aa"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "total_failure": {
+    "count": 0,
+    "shots": 1,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.7934506856227626
+    ]
+  },
+  "nonconvergence": {
+    "count": 0,
+    "shots": 1,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.7934506856227626
+    ]
+  },
+  "syndrome_valid_logical_error": {
+    "count": 0,
+    "shots": 1,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.7934506856227626
+    ]
+  },
+  "modeled_latency_cycles": {
+    "count": 1,
+    "mean": 65447081.0,
+    "p50": 65447081.0,
+    "p95": 65447081.0,
+    "max": 65447081.0
+  },
+  "winner_iterations": {
+    "count": 1,
+    "mean": 17.0,
+    "p50": 17.0,
+    "p95": 17.0,
+    "max": 17.0
+  },
+  "winner_legs": {
+    "count": 1,
+    "mean": 1.0,
+    "p50": 1.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "per_engine_iterations": {
+    "0": {
+      "count": 1,
+      "mean": 17.0,
+      "p50": 17.0,
+      "p95": 17.0,
+      "max": 17.0
+    }
+  },
+  "per_engine_legs": {
+    "0": {
+      "count": 1,
+      "mean": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    }
+  },
+  "folding_metrics": null,
+  "timing_phase_costs": {
+    "check": 508753,
+    "variable": 2489173,
+    "convergence": 790855,
+    "relay_init": 969916
+  },
+  "cancellation_aware_executed_work": null,
+  "cancellation_ack_or_drain_cycles": null,
+  "elapsed_cycle_PE_utilization": null,
+  "measured_hardware_latency": null,
+  "unavailable_reason": "No per-engine cancellation/phase/issue timestamps; folding occupancy is over issue groups only",
+  "timing_scope": "Locked Gross P4/S1 calibration including controller/RNG overhead",
+  "folding_scope": "One execution of each phase; occupancy denominator is issued groups, not elapsed cycles",
+  "quantity_kind": "modeled_software_cycles_not_measured_FPGA_timing"
+}

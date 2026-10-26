@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "shots": 128,
+  "raw_means_p99_match_aggregates": true,
+  "counts_match_aggregate": true,
+  "N1_N8_archive_row_equality": true,
+  "all_mean_and_p99_points_nondominated": true,
+  "source_hashes_unchanged": true,
+  "area_delay_product": "UNAVAILABLE",
+  "hypothetical_deadline_examples": [
+    {
+      "hypothetical_deadline_cycles": 2000000000,
+      "N": 2,
+      "completion_by_deadline_count": 125,
+      "shots": 128,
+      "completion_by_deadline_fraction": 0.9765625,
+      "logical_success_by_deadline_count": 125,
+      "logical_success_by_deadline_fraction": 0.9765625
+    },
+    {
+      "hypothetical_deadline_cycles": 1100000000,
+      "N": 4,
+      "completion_by_deadline_count": 124,
+      "shots": 128,
+      "completion_by_deadline_fraction": 0.96875,
+      "logical_success_by_deadline_count": 124,
+      "logical_success_by_deadline_fraction": 0.96875
+    },
+    {
+      "hypothetical_deadline_cycles": 750000000,
+      "N": 8,
+      "completion_by_deadline_count": 128,
+      "shots": 128,
+      "completion_by_deadline_fraction": 1.0,
+      "logical_success_by_deadline_count": 128,
+      "logical_success_by_deadline_fraction": 1.0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "source_sha256": {
+    "results/n-scaling-canonical/per_shot_results.csv": "9a1cff31826559963607bb243a6de28044a59a93614287b7f6aba7b298d08dcc",
+    "results/n-scaling-canonical/aggregate_summary.json": "3551d5833ff4d24549fe38195fbf9122c854766e71d8eee4a06c6378338b6113",
+    "results/n-scaling-canonical/manifest.json": "b497de74b1b8c49e60695cc44c5c0cb9b28dd12d2ac2025d6e2a8b60fbebbc65",
+    "results/n-scaling-canonical-n8-complete/per_shot_results.csv": "da64ad01841df92960979b23e50f9a5ea2bfebc64c98752ee035e3df5c96dfd3",
+    "results/m4-memory-fabric-synthesis/final_synthesis_report.md": "3b3c691cc0ff8c670040bb6a5fc30906835264c1647e3bdbef7e24526fde480d",
+    "results/m4-memory-fabric-synthesis/full_fabric_resources.csv": "cdba00d3ddc96cbe08feb2360bc13fd9c6e53b07251148025ddd10bfd5373f56",
+    "results/m4-memory-fabric-synthesis/timing_summary.csv": "cb59f7dea2c554df3b517c84f997f02efec61925ed921a2d772ee4be6995a19f",
+    "results/m4-memory-fabric-rtl/synthesis_summary.csv": "d34357a79b19ab21e10ab875f11cc94d537a51a296742d8832dbabcf5fd752f1",
+    "results/vivado-n1-baseline/summary.md": "581097ce3c7a7e63b5b10d8efb75650d429b54031d9b3dfdbcb94f833be5ad4d",
+    "results/gari-vs-relaybp-system/relaybp_memory_summary.json": "6c3b77bec35ce12f13a12b38423d68d59144645dc0e4ec3bf0516425e2414b65",
+    "results/relaybp-memory-optimization/final_memory_report.md": "85aeeaedac61357328be46ef82bd13eda7d4ae9f77ef4974716f86349e5a0a34"
+  },
+  "script_sha256": "77a197d5803f0a8a0ed9ff69e894f904899914eb05ec784c1cb238031f9f31e5",
+  "versions": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.7"
+  },
+  "command": "MPLCONFIGDIR=/private/tmp/relay-resource-matplotlib ../.venv/bin/python -B results/resource_tradeoff_analysis/analyze.py",
+  "outputs": {
+    "graph2_p99_latency_vs_lanes.png": "88f582d95886231dafd8c8748f6c907e57b8644f4e81efc26cfbb96dc4d3b034",
+    "graph2_p99_latency_vs_lanes.pdf": "c8e56238105005c520d8b4341a797d81fc3985dbf8d1a6bb261b6e0d8beb17a6",
+    "report.md": "69522ef88a3ec8e16bd1cf0a3b624c8000286ea085e585ca8eb4fd9c5153d10f",
+    "graph1_mean_latency_vs_lanes.png": "738e5f244f7122cf32093250f42ab0fc21ac7e79e53d6d0f4e03aea743589346",
+    "graph1_mean_latency_vs_lanes.pdf": "593075ae87185a95a6957e579b939e1f38e015308ea630f31b1310602f2b48e2",
+    "validation.json": "98fb454b18a39672cb6181dbb84e6aa7cd5d309fc9d0c1b906ac4e520be9e0c2",
+    "comparison.csv": "f4d64b24f5230f1ef339c584a0e8ccdfd4aa9adcecc1a874b88336caa61deb96",
+    "hypothetical_deadlines.csv": "6e1f0b6fe20a0575b2d594c7f770de90c298fd2602249d59a8dd23eda2a152c7",
+    "graph3_hypothetical_deadlines.pdf": "65ba09e892589b27c083eb853db319e66ff7743720dfb612968a2c24ed5325de",
+    "graph3_hypothetical_deadlines.png": "fb5f2db052bb737bf6b34f2e700b7bdc8b154593ea53f935345fe9574a63fda1",
+    "analyze.py": "77a197d5803f0a8a0ed9ff69e894f904899914eb05ec784c1cb238031f9f31e5"
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "N": 1,
+    "layout": "original",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      }
+    ]
+  },
+  {
+    "N": 1,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "original",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 3993290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 279364,
+        "critical_conflict_events": 279364,
+        "critical_issue_group_occupancy": 0.5800805563995285
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 1,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 2,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 3510290,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 86108,
+        "critical_conflict_events": 86108,
+        "critical_issue_group_occupancy": 0.6548924975875522
+      }
+    ]
+  }
+]

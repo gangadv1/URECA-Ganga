@@ -1,0 +1,86 @@
+{
+  "code": {
+    "l": 12,
+    "m": 12,
+    "A": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "B": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "n": 288,
+    "k": 12,
+    "d": null,
+    "rank_hx": 138,
+    "rank_hz": 138,
+    "convention": "index=x*m+y; row(x,y) connects column(x+dx,y+dy); Hx=[A B], Hz=[B.T A.T]; GF(2)",
+    "matrix_sha256": "e0bfc89e9e892febfbd6224809c637d391af34ac53a25d245c661e9fb6ad5c14",
+    "noise_model": "gari_uniform_p_memory_z",
+    "memory_basis": "Z",
+    "distance_status": "not computed",
+    "logical_basis_sha256": "5054a29320c1abe3bea9669840e24da3d01475b524552c7cfcd283589e6f319f",
+    "generator_sources": {
+      "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+      "graphs/parameterized_bb.py": "7789d173f7299443f745828d749b8b1e3d181f89b0a15f64a5d7a9b7ad6ba1d7",
+      "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+      "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7",
+      "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe"
+    }
+  },
+  "N": 2,
+  "P": 4,
+  "dimensions": {
+    "detectors": 432,
+    "faults": 3168,
+    "logical_observables": 12,
+    "edges": 10944
+  },
+  "selected_banking": "weighted_ba2",
+  "timing_label": "structural extrapolation; not measured RTL/FPGA timing; excludes controller/RNG/cancellation/drain overhead",
+  "exact_cancellation_aware_work": null,
+  "elapsed_PE_utilization": null,
+  "bank_occupancy_label": "issued-group lane occupancy, not elapsed PE utilization",
+  "results": {
+    "original": {
+      "total_failure": 2,
+      "shots": 2,
+      "mean_completion_cycles": 585084.0,
+      "mean_iterations": 4.0
+    },
+    "ba2": {
+      "total_failure": 2,
+      "shots": 2,
+      "mean_completion_cycles": 530366.0,
+      "mean_iterations": 4.0
+    },
+    "weighted_ba2": {
+      "total_failure": 2,
+      "shots": 2,
+      "mean_completion_cycles": 525884.0,
+      "mean_iterations": 4.0
+    }
+  },
+  "elapsed_seconds": 3.7363752499222755
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "shot": 0,
+    "engine": 0,
+    "iterations": 1,
+    "legs": 1,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 0,
+    "engine": 1,
+    "iterations": 1,
+    "legs": 1,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 1,
+    "engine": 0,
+    "iterations": 1,
+    "legs": 1,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 1,
+    "engine": 1,
+    "iterations": 1,
+    "legs": 1,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 2,
+    "engine": 0,
+    "iterations": 11,
+    "legs": 2,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 2,
+    "engine": 1,
+    "iterations": 15,
+    "legs": 2,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  },
+  {
+    "shot": 3,
+    "engine": 0,
+    "iterations": 16,
+    "legs": 2,
+    "syndrome_converged": false,
+    "nonconvergence": 1,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 1
+  },
+  {
+    "shot": 3,
+    "engine": 1,
+    "iterations": 16,
+    "legs": 2,
+    "syndrome_converged": true,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "total_failure": 0
+  }
+]

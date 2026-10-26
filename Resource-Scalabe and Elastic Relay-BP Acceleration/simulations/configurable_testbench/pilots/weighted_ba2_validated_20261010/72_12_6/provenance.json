@@ -1,0 +1,87 @@
+{
+  "configuration": {
+    "code": "72_12_6",
+    "package": null,
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 20261010,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": null,
+    "shots": 4,
+    "shot_offset": 0,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "input_package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb72_test",
+  "input_manifest_sha256": "da4403a63ee649bbc2719d74f20451ca298486e910675d0bebd8ecd62dabda81",
+  "paired_config_sha256": "385ce2c28d690d44f3f7f1e680ccb5c87e0aa4112adaab1f798937d42ce107e6",
+  "paired_engine_csv_sha256": "b8884b8d8af67f55b64af562a17e470ed6fa5a79065263f299983e99332367de",
+  "objective": {
+    "method": "budget-weighted deterministic greedy weight sweep with explicit BA2 fallback",
+    "statistics": {
+      "selected": "weight_0.5",
+      "records": [
+        {
+          "candidate": "BA2",
+          "convergence_retries": 10609,
+          "relay_retries": 21836,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 258324.0
+        },
+        {
+          "candidate": "weight_0.5",
+          "convergence_retries": 9873,
+          "relay_retries": 19562,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 235848.0
+        },
+        {
+          "candidate": "weight_1",
+          "convergence_retries": 10495,
+          "relay_retries": 18352,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 236052.0
+        },
+        {
+          "candidate": "weight_2",
+          "convergence_retries": 12216,
+          "relay_retries": 16680,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 246672.0
+        }
+      ],
+      "expected_iterations": 4.0,
+      "expected_relay_legs": 2.0,
+      "objective": "3*(mean_iterations*convergence_retries + mean_legs*relay_retries)",
+      "sweep_relay_multipliers": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "optimization_seconds": 0.5674383749719709,
+      "expected_total_cycles_BA2": 3510290.0,
+      "expected_total_cycles_selected": 3487814.0
+    },
+    "P": 4
+  },
+  "mapping_semantics": "Explicit mathematical ID <-> physical address maps; gamma/priors generated in original order then indexed by fault_new_to_old; decisions/trace mapped back before comparison",
+  "timing_semantics": "Archived phase service formulas only; no top-level/RNG/cancellation overhead; no integrated hardware latency measurement",
+  "wall_seconds": 2.528692999971099,
+  "trace_iterations": 32,
+  "output_hashes": {
+    "decoder_equivalence.json": "b4b88ac1ccb6ed66760d4999aec12492edd8b2dfc7787f11fa0eb9afc5fa5ef3",
+    "per_shot_selection.json": "78341afc0596cd1fe306d8e3268c7f7a1a63d3922f4087880b509314ebf24e0b",
+    "invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "comparison.json": "879ede7c51d8a92e10e2813f6cb18e8f4a33811cac318914de25d90b19461510",
+    "phase_profiles.json": "873cd998a84c2e1f9dcf4eb7edd358746783f16bcf99e3cda109b2a110327bfc",
+    "storage_maps.npz": "05786ebdc42b2fa0ac979264eab651ec16c9dd195ad1721f534669b2b47246f4",
+    "weight_sweep.json": "7c68ec23fda63f5bcd4734371565b2ac65459f87168878c78ad206234d7c0cce",
+    "bank_assignment_statistics.json": "94a79972e7429bb6d4464fe2a74f2f6f95e838b166a344faacb09503362b4bc5"
+  }
+}

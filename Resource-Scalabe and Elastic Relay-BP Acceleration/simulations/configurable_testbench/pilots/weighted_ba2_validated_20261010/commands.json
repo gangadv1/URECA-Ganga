@@ -1,0 +1,30 @@
+[
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py",
+    "--code",
+    "288_12_18"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py",
+    "--code",
+    "18_4_3"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py",
+    "--code",
+    "72_12_6"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py",
+    "--code",
+    "144_12_12"
+  ]
+]

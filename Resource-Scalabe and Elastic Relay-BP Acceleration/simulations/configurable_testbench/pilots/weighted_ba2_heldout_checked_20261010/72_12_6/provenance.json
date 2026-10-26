@@ -1,0 +1,89 @@
+{
+  "configuration": {
+    "code": "72_12_6",
+    "package": null,
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 2026101101,
+    "trajectory_base_seed": 11400714819323198485,
+    "engine_seeds": null,
+    "shots": 4,
+    "shot_offset": 0,
+    "first_limit": 8,
+    "later_limit": 8,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "input_package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb72_test",
+  "input_manifest_sha256": "da4403a63ee649bbc2719d74f20451ca298486e910675d0bebd8ecd62dabda81",
+  "paired_config_sha256": "385ce2c28d690d44f3f7f1e680ccb5c87e0aa4112adaab1f798937d42ce107e6",
+  "paired_engine_csv_sha256": "b8884b8d8af67f55b64af562a17e470ed6fa5a79065263f299983e99332367de",
+  "objective": {
+    "method": "Frozen training assignment; no held-out optimization",
+    "statistics": {
+      "selected": "weight_0.5",
+      "records": [
+        {
+          "candidate": "BA2",
+          "convergence_retries": 10609,
+          "relay_retries": 21836,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 258324.0
+        },
+        {
+          "candidate": "weight_0.5",
+          "convergence_retries": 9873,
+          "relay_retries": 19562,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 235848.0
+        },
+        {
+          "candidate": "weight_1",
+          "convergence_retries": 10495,
+          "relay_retries": 18352,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 236052.0
+        },
+        {
+          "candidate": "weight_2",
+          "convergence_retries": 12216,
+          "relay_retries": 16680,
+          "expected_variable_cycle_constant": true,
+          "expected_conflict_cycles": 246672.0
+        }
+      ],
+      "expected_iterations": 4.0,
+      "expected_relay_legs": 2.0,
+      "objective": "3*(mean_iterations*convergence_retries + mean_legs*relay_retries)",
+      "sweep_relay_multipliers": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "optimization_seconds": 0.5674383749719709,
+      "expected_total_cycles_BA2": 3510290.0,
+      "expected_total_cycles_selected": 3487814.0
+    },
+    "P": 4
+  },
+  "mapping_semantics": "Explicit mathematical ID <-> physical address maps; gamma/priors generated in original order then indexed by fault_new_to_old; decisions/trace mapped back before comparison",
+  "timing_semantics": "Archived phase service formulas only; no top-level/RNG/cancellation overhead; no integrated hardware latency measurement",
+  "wall_seconds": 2.5884511249605566,
+  "trace_iterations": 127,
+  "output_hashes": {
+    "decoder_equivalence.json": "e4e61da227202254e7fda7a3efbcdb1f6a4a5e2c27773b37807dd1ceb9227603",
+    "per_shot_selection.json": "96145b84344e1a93573eb6530c90474d2ef6398b45e1a64c4d12a3af211205b0",
+    "sample_hashes.json": "03e4d6946ed79e87fc769a149deb0aef7653879e37565941dc3d1fdacb482640",
+    "invariants.json": "7d9b53da34f3dc9c43e7bc0acc65917d0f4881df12674bef279209357b564183",
+    "comparison.json": "497e137c3b08cb5eee182778c33434ae46756568df026914034d79d868cdc9ae",
+    "phase_profiles.json": "0a4b0cc8061c2a65f5a896715ae7049163b6d90b58fcb5608b5f86573f6064a9",
+    "engine_iterations.json": "721c6aab38d066bd671cbce175cd9cce483002579d8c0501e1bf935aae543c31",
+    "requested_config.json": "495fed93313d083fb552337a2f41aee3b9be2f74f7b406091922ae3d189870f2",
+    "progress.json": "568dd2fc42fdd0b91c9bf47d0338258da8da03ba83ea3e3360c62261572a3d91",
+    "frozen_layout.json": "15b23273786a301c9c38a41b8b64ab9ebeadb899c5268354e001aa996a37696a"
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "method": "Astra",
+    "paper": "https://arxiv.org/html/2408.07038v1",
+    "code": "https://github.com/arshpreetmaan/astra",
+    "inspected_code": [
+      "https://raw.githubusercontent.com/arshpreetmaan/astra/main/bb_test.py",
+      "https://raw.githubusercontent.com/arshpreetmaan/astra/main/bb_panq_functions.py"
+    ]
+  },
+  {
+    "method": "Preprocessing",
+    "paper": "https://arxiv.org/html/2509.01892v1",
+    "author_code_found": false,
+    "search_query": "\"Accelerating BP-OSD\" preprocessing github"
+  },
+  {
+    "method": "Sequential BP",
+    "paper": "https://arxiv.org/abs/2602.13420",
+    "html": "https://arxiv.org/html/2602.13420v1",
+    "author_code_found": false,
+    "search_query": "\"Sequential BP-based Decoding\" github"
+  },
+  {
+    "method": "BP/BP-OSD",
+    "code": "https://github.com/quantumgizmos/bp_osd",
+    "docs": "https://software.roffe.eu/ldpc/quantum_decoder.html",
+    "local": "../.venv/lib/python3.13/site-packages/ldpc/"
+  }
+]

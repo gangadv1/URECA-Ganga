@@ -1,0 +1,9 @@
+{
+  "first_run_script_sha256": "e24d4f5c8600e1c96153df98114b95fe3b8dc7340d798e59b42b333398663f33",
+  "BP_cached_records": 58,
+  "first_BP_method_wall_seconds": 90.0152740420308,
+  "OSD_initialization_failure": "Installed BpOsdDecoder requires list error_channel, unlike BpDecoder; no OSD decoding occurred",
+  "DEM_initial_preflight_failure": "DEM text rounds probabilities; fresh source DEM matches canonical binary priors exactly",
+  "resume": "Reuse all BP records and run OSD only on identical completed canonical sample IDs",
+  "OSD_second_initialization_failure": "BpOsdDecoder rejects random_serial_schedule keyword; removed for parallel schedule, inherited default False; no OSD decoding occurred"
+}

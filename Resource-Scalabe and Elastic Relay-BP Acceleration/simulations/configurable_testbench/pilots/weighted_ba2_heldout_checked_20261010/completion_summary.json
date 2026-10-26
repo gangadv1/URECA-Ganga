@@ -1,0 +1,146 @@
+[
+  {
+    "code": "18_4_3",
+    "N": 1,
+    "shots": 4,
+    "completion_reduction_percent": 0.4323449554961112,
+    "paired_cycle_differences": [
+      1326,
+      1326,
+      3597,
+      4122
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 1,
+    "failure_wilson95": [
+      0.04558726080970055,
+      0.6993581574175981
+    ]
+  },
+  {
+    "code": "18_4_3",
+    "N": 2,
+    "shots": 4,
+    "completion_reduction_percent": 0.4323449554961112,
+    "paired_cycle_differences": [
+      1326,
+      1326,
+      3597,
+      4122
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 0,
+    "failure_wilson95": [
+      0,
+      0.4898908364545973
+    ]
+  },
+  {
+    "code": "72_12_6",
+    "N": 1,
+    "shots": 4,
+    "completion_reduction_percent": 0.39154836149908334,
+    "paired_cycle_differences": [
+      48972,
+      46764,
+      48972,
+      48972
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 3,
+    "failure_wilson95": [
+      0.30064184258240184,
+      0.9544127391902995
+    ]
+  },
+  {
+    "code": "72_12_6",
+    "N": 2,
+    "shots": 4,
+    "completion_reduction_percent": 0.39154836149908334,
+    "paired_cycle_differences": [
+      48972,
+      46764,
+      48972,
+      48972
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 3,
+    "failure_wilson95": [
+      0.30064184258240184,
+      0.9544127391902995
+    ]
+  },
+  {
+    "code": "144_12_12",
+    "N": 1,
+    "shots": 4,
+    "completion_reduction_percent": 0.3772338832529698,
+    "paired_cycle_differences": [
+      202092,
+      202092,
+      202092,
+      202092
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 4,
+    "failure_wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  },
+  {
+    "code": "144_12_12",
+    "N": 2,
+    "shots": 4,
+    "completion_reduction_percent": 0.3772338832529698,
+    "paired_cycle_differences": [
+      202092,
+      202092,
+      202092,
+      202092
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 4,
+    "failure_wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  },
+  {
+    "code": "288_12_18",
+    "N": 1,
+    "shots": 4,
+    "completion_reduction_percent": 0.38493611221205315,
+    "paired_cycle_differences": [
+      631728,
+      631728,
+      631728,
+      631728
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 4,
+    "failure_wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  },
+  {
+    "code": "288_12_18",
+    "N": 2,
+    "shots": 4,
+    "completion_reduction_percent": 0.38493611221205315,
+    "paired_cycle_differences": [
+      631728,
+      631728,
+      631728,
+      631728
+    ],
+    "all_paired_completions_improved": true,
+    "failures": 4,
+    "failure_wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  }
+]

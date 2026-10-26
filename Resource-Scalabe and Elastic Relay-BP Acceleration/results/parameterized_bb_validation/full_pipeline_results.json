@@ -1,0 +1,374 @@
+[
+  {
+    "code": "18_4_3",
+    "N": 1,
+    "P": 2,
+    "n": 18,
+    "k": 4,
+    "dimensions": {
+      "detectors": 27,
+      "faults": 198,
+      "logical_observables": 4,
+      "edges": 648
+    },
+    "seconds": 0.6764569580554962,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 31583.0,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 30142.5,
+        "mean_iterations": 2.5
+      }
+    }
+  },
+  {
+    "code": "18_4_3",
+    "N": 2,
+    "P": 4,
+    "n": 18,
+    "k": 4,
+    "dimensions": {
+      "detectors": 27,
+      "faults": 198,
+      "logical_observables": 4,
+      "edges": 648
+    },
+    "seconds": 0.6727125420002267,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 22498.0,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 20455.5,
+        "mean_iterations": 2.5
+      },
+      "weighted_ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 20151.0,
+        "mean_iterations": 2.5
+      }
+    }
+  },
+  {
+    "code": "72_12_6",
+    "N": 1,
+    "P": 2,
+    "n": 72,
+    "k": 12,
+    "dimensions": {
+      "detectors": 108,
+      "faults": 792,
+      "logical_observables": 12,
+      "edges": 2736
+    },
+    "seconds": 1.272442416055128,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 58269.0,
+        "mean_iterations": 1.0
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 55042.0,
+        "mean_iterations": 1.0
+      }
+    }
+  },
+  {
+    "code": "72_12_6",
+    "N": 2,
+    "P": 4,
+    "n": 72,
+    "k": 12,
+    "dimensions": {
+      "detectors": 108,
+      "faults": 792,
+      "logical_observables": 12,
+      "edges": 2736
+    },
+    "seconds": 1.370389916934073,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 40404.0,
+        "mean_iterations": 1.0
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 36832.0,
+        "mean_iterations": 1.0
+      },
+      "weighted_ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 36370.0,
+        "mean_iterations": 1.0
+      }
+    }
+  },
+  {
+    "code": "144_12_12",
+    "N": 1,
+    "P": 2,
+    "n": 144,
+    "k": 12,
+    "dimensions": {
+      "detectors": 216,
+      "faults": 1584,
+      "logical_observables": 12,
+      "edges": 5472
+    },
+    "seconds": 2.194260625052266,
+    "results": {
+      "original": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 416868.0,
+        "mean_iterations": 4.0
+      },
+      "ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 388838.0,
+        "mean_iterations": 4.0
+      }
+    }
+  },
+  {
+    "code": "144_12_12",
+    "N": 2,
+    "P": 4,
+    "n": 144,
+    "k": 12,
+    "dimensions": {
+      "detectors": 216,
+      "faults": 1584,
+      "logical_observables": 12,
+      "edges": 5472
+    },
+    "seconds": 2.3046977090416476,
+    "results": {
+      "original": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 293920.0,
+        "mean_iterations": 4.0
+      },
+      "ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 264938.0,
+        "mean_iterations": 4.0
+      },
+      "weighted_ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 262898.0,
+        "mean_iterations": 4.0
+      }
+    }
+  },
+  {
+    "code": "288_12_18",
+    "N": 1,
+    "P": 2,
+    "n": 288,
+    "k": 12,
+    "dimensions": {
+      "detectors": 432,
+      "faults": 3168,
+      "logical_observables": 12,
+      "edges": 10944
+    },
+    "seconds": 3.875648249988444,
+    "results": {
+      "original": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 827494.0,
+        "mean_iterations": 4.0
+      },
+      "ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 779054.0,
+        "mean_iterations": 4.0
+      }
+    }
+  },
+  {
+    "code": "288_12_18",
+    "N": 2,
+    "P": 4,
+    "n": 288,
+    "k": 12,
+    "dimensions": {
+      "detectors": 432,
+      "faults": 3168,
+      "logical_observables": 12,
+      "edges": 10944
+    },
+    "seconds": 4.196999000036158,
+    "results": {
+      "original": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 585084.0,
+        "mean_iterations": 4.0
+      },
+      "ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 530366.0,
+        "mean_iterations": 4.0
+      },
+      "weighted_ba2": {
+        "total_failure": 2,
+        "shots": 2,
+        "mean_completion_cycles": 525884.0,
+        "mean_iterations": 4.0
+      }
+    }
+  },
+  {
+    "code": "new_36_A",
+    "N": 1,
+    "P": 2,
+    "n": 36,
+    "k": 4,
+    "dimensions": {
+      "detectors": 54,
+      "faults": 396,
+      "logical_observables": 4,
+      "edges": 1368
+    },
+    "seconds": 0.9024527909932658,
+    "results": {
+      "original": {
+        "total_failure": 1,
+        "shots": 2,
+        "mean_completion_cycles": 66635.5,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 1,
+        "shots": 2,
+        "mean_completion_cycles": 62287.5,
+        "mean_iterations": 2.5
+      }
+    }
+  },
+  {
+    "code": "new_36_A",
+    "N": 2,
+    "P": 4,
+    "n": 36,
+    "k": 4,
+    "dimensions": {
+      "detectors": 54,
+      "faults": 396,
+      "logical_observables": 4,
+      "edges": 1368
+    },
+    "seconds": 0.8906555830035359,
+    "results": {
+      "original": {
+        "total_failure": 1,
+        "shots": 2,
+        "mean_completion_cycles": 47018.0,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 1,
+        "shots": 2,
+        "mean_completion_cycles": 42418.5,
+        "mean_iterations": 2.5
+      },
+      "weighted_ba2": {
+        "total_failure": 1,
+        "shots": 2,
+        "mean_completion_cycles": 41962.5,
+        "mean_iterations": 2.5
+      }
+    }
+  },
+  {
+    "code": "new_36_B",
+    "N": 1,
+    "P": 2,
+    "n": 36,
+    "k": 4,
+    "dimensions": {
+      "detectors": 54,
+      "faults": 396,
+      "logical_observables": 4,
+      "edges": 1296
+    },
+    "seconds": 0.9009266670327634,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 63493.5,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 60286.5,
+        "mean_iterations": 2.5
+      }
+    }
+  },
+  {
+    "code": "new_36_B",
+    "N": 2,
+    "P": 4,
+    "n": 36,
+    "k": 4,
+    "dimensions": {
+      "detectors": 54,
+      "faults": 396,
+      "logical_observables": 4,
+      "edges": 1296
+    },
+    "seconds": 0.8990972919855267,
+    "results": {
+      "original": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 44848.5,
+        "mean_iterations": 2.5
+      },
+      "ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 40677.0,
+        "mean_iterations": 2.5
+      },
+      "weighted_ba2": {
+        "total_failure": 0,
+        "shots": 2,
+        "mean_completion_cycles": 40419.0,
+        "mean_iterations": 2.5
+      }
+    }
+  }
+]

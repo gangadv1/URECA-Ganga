@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "protected_files_unchanged": 2287,
+  "full_pipeline_configurations": 12,
+  "existing_testbench_tests": 7,
+  "portable_P8": "PASS",
+  "statistical_claims": false,
+  "code_distance_claimed": false
+}

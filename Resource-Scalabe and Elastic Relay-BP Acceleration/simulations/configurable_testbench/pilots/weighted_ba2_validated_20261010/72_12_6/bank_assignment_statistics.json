@@ -1,0 +1,47 @@
+{
+  "fault": {
+    "selected": "weight_0.5",
+    "records": [
+      {
+        "candidate": "BA2",
+        "convergence_retries": 10609,
+        "relay_retries": 21836,
+        "expected_variable_cycle_constant": true,
+        "expected_conflict_cycles": 258324.0
+      },
+      {
+        "candidate": "weight_0.5",
+        "convergence_retries": 9873,
+        "relay_retries": 19562,
+        "expected_variable_cycle_constant": true,
+        "expected_conflict_cycles": 235848.0
+      },
+      {
+        "candidate": "weight_1",
+        "convergence_retries": 10495,
+        "relay_retries": 18352,
+        "expected_variable_cycle_constant": true,
+        "expected_conflict_cycles": 236052.0
+      },
+      {
+        "candidate": "weight_2",
+        "convergence_retries": 12216,
+        "relay_retries": 16680,
+        "expected_variable_cycle_constant": true,
+        "expected_conflict_cycles": 246672.0
+      }
+    ],
+    "expected_iterations": 4.0,
+    "expected_relay_legs": 2.0,
+    "objective": "3*(mean_iterations*convergence_retries + mean_legs*relay_retries)",
+    "sweep_relay_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "optimization_seconds": 0.5674383749719709
+  },
+  "edge": {
+    "frozen_existing_BA2_edge_map": true
+  }
+}

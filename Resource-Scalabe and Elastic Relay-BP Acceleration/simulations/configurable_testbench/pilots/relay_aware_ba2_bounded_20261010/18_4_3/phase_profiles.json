@@ -1,0 +1,661 @@
+{
+  "original": {
+    "phases": {
+      "check": {
+        "phase": "check",
+        "logical_accesses": 26892,
+        "issued_groups": 6912,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 162,
+          "2": 108,
+          "3": 54,
+          "4": 6588
+        },
+        "partition_logical": [
+          26892,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.890625,
+        "mean_lane_utilization": 0.97265625,
+        "full_4_lane_fraction": 0.953125,
+        "worst_local_nodes": [],
+        "estimated_cycles": 11737
+      },
+      "variable": {
+        "phase": "variable",
+        "logical_accesses": 39330,
+        "issued_groups": 25872,
+        "conflict_events": 4470,
+        "retry_subsets": 4470,
+        "lane_hist": {
+          "1": 18268,
+          "2": 3482,
+          "3": 2390,
+          "4": 1732
+        },
+        "partition_logical": [
+          39330,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.5201762523191094,
+        "mean_lane_utilization": 0.38004406307977734,
+        "full_4_lane_fraction": 0.06694495980210266,
+        "worst_local_nodes": [
+          {
+            "node": 699,
+            "retry_subsets": 10
+          },
+          {
+            "node": 445,
+            "retry_subsets": 8
+          },
+          {
+            "node": 454,
+            "retry_subsets": 8
+          },
+          {
+            "node": 492,
+            "retry_subsets": 8
+          },
+          {
+            "node": 533,
+            "retry_subsets": 8
+          },
+          {
+            "node": 539,
+            "retry_subsets": 8
+          },
+          {
+            "node": 553,
+            "retry_subsets": 8
+          },
+          {
+            "node": 554,
+            "retry_subsets": 8
+          },
+          {
+            "node": 593,
+            "retry_subsets": 8
+          },
+          {
+            "node": 626,
+            "retry_subsets": 8
+          }
+        ],
+        "estimated_cycles": 59848
+      },
+      "convergence": {
+        "phase": "convergence",
+        "logical_accesses": 17982,
+        "issued_groups": 5866,
+        "conflict_events": 1204,
+        "retry_subsets": 1204,
+        "lane_hist": {
+          "1": 1196,
+          "2": 487,
+          "3": 920,
+          "4": 3263
+        },
+        "partition_logical": [
+          17982,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.0654619843163995,
+        "mean_lane_utilization": 0.7663654960790999,
+        "full_4_lane_fraction": 0.5562563927719059,
+        "worst_local_nodes": [
+          {
+            "node": 41,
+            "retry_subsets": 48
+          },
+          {
+            "node": 43,
+            "retry_subsets": 45
+          },
+          {
+            "node": 24,
+            "retry_subsets": 43
+          },
+          {
+            "node": 40,
+            "retry_subsets": 43
+          },
+          {
+            "node": 25,
+            "retry_subsets": 42
+          },
+          {
+            "node": 42,
+            "retry_subsets": 42
+          },
+          {
+            "node": 39,
+            "retry_subsets": 41
+          },
+          {
+            "node": 44,
+            "retry_subsets": 41
+          },
+          {
+            "node": 26,
+            "retry_subsets": 40
+          },
+          {
+            "node": 38,
+            "retry_subsets": 40
+          }
+        ],
+        "estimated_cycles": 17545
+      },
+      "relay_init": {
+        "phase": "relay_init",
+        "logical_accesses": 26730,
+        "issued_groups": 7944,
+        "conflict_events": 1260,
+        "retry_subsets": 1260,
+        "lane_hist": {
+          "1": 1100,
+          "2": 417,
+          "3": 912,
+          "4": 5515
+        },
+        "partition_logical": [
+          26730,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.3648036253776437,
+        "mean_lane_utilization": 0.8412009063444109,
+        "full_4_lane_fraction": 0.6942346424974823,
+        "worst_local_nodes": [
+          {
+            "node": 7200,
+            "retry_subsets": 3
+          },
+          {
+            "node": 152,
+            "retry_subsets": 2
+          },
+          {
+            "node": 356,
+            "retry_subsets": 2
+          },
+          {
+            "node": 924,
+            "retry_subsets": 2
+          },
+          {
+            "node": 1288,
+            "retry_subsets": 2
+          },
+          {
+            "node": 1488,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2220,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2804,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2876,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2924,
+            "retry_subsets": 2
+          }
+        ],
+        "estimated_cycles": 21605
+      }
+    },
+    "total": {
+      "phase": "all_phases_once",
+      "logical_accesses": 110934,
+      "issued_groups": 46594,
+      "conflict_events": 6934,
+      "retry_subsets": 6934,
+      "lane_hist": {
+        "1": 20726,
+        "2": 4494,
+        "3": 4276,
+        "4": 17098
+      },
+      "partition_logical": [
+        110934,
+        0,
+        0,
+        0
+      ],
+      "mean_active_lanes": 2.3808644889899986,
+      "mean_lane_utilization": 0.5952161222474996,
+      "full_4_lane_fraction": 0.3669571189423531,
+      "worst_local_nodes": [],
+      "estimated_cycles": 110735
+    }
+  },
+  "BA2": {
+    "phases": {
+      "check": {
+        "phase": "check",
+        "logical_accesses": 26892,
+        "issued_groups": 6912,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 162,
+          "2": 108,
+          "3": 54,
+          "4": 6588
+        },
+        "partition_logical": [
+          26892,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.890625,
+        "mean_lane_utilization": 0.97265625,
+        "full_4_lane_fraction": 0.953125,
+        "worst_local_nodes": [],
+        "estimated_cycles": 11737
+      },
+      "variable": {
+        "phase": "variable",
+        "logical_accesses": 39330,
+        "issued_groups": 21402,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 13896,
+          "2": 1512,
+          "3": 1566,
+          "4": 4428
+        },
+        "partition_logical": [
+          39330,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.8376787216148023,
+        "mean_lane_utilization": 0.45941968040370057,
+        "full_4_lane_fraction": 0.20689655172413793,
+        "worst_local_nodes": [],
+        "estimated_cycles": 48673
+      },
+      "convergence": {
+        "phase": "convergence",
+        "logical_accesses": 17982,
+        "issued_groups": 5790,
+        "conflict_events": 1128,
+        "retry_subsets": 1128,
+        "lane_hist": {
+          "1": 1247,
+          "2": 170,
+          "3": 1097,
+          "4": 3276
+        },
+        "partition_logical": [
+          17982,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.105699481865285,
+        "mean_lane_utilization": 0.7764248704663212,
+        "full_4_lane_fraction": 0.5658031088082901,
+        "worst_local_nodes": [
+          {
+            "node": 26,
+            "retry_subsets": 38
+          },
+          {
+            "node": 39,
+            "retry_subsets": 37
+          },
+          {
+            "node": 25,
+            "retry_subsets": 36
+          },
+          {
+            "node": 32,
+            "retry_subsets": 35
+          },
+          {
+            "node": 43,
+            "retry_subsets": 33
+          },
+          {
+            "node": 30,
+            "retry_subsets": 32
+          },
+          {
+            "node": 37,
+            "retry_subsets": 31
+          },
+          {
+            "node": 40,
+            "retry_subsets": 31
+          },
+          {
+            "node": 35,
+            "retry_subsets": 30
+          },
+          {
+            "node": 36,
+            "retry_subsets": 30
+          }
+        ],
+        "estimated_cycles": 17317
+      },
+      "relay_init": {
+        "phase": "relay_init",
+        "logical_accesses": 26730,
+        "issued_groups": 8781,
+        "conflict_events": 2097,
+        "retry_subsets": 2097,
+        "lane_hist": {
+          "1": 1871,
+          "2": 716,
+          "3": 1349,
+          "4": 4845
+        },
+        "partition_logical": [
+          26730,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.044072429108302,
+        "mean_lane_utilization": 0.7610181072770755,
+        "full_4_lane_fraction": 0.5517594806969593,
+        "worst_local_nodes": [
+          {
+            "node": 3960,
+            "retry_subsets": 3
+          },
+          {
+            "node": 4376,
+            "retry_subsets": 3
+          },
+          {
+            "node": 5364,
+            "retry_subsets": 3
+          },
+          {
+            "node": 7104,
+            "retry_subsets": 3
+          },
+          {
+            "node": 7184,
+            "retry_subsets": 3
+          },
+          {
+            "node": 7420,
+            "retry_subsets": 3
+          },
+          {
+            "node": 7972,
+            "retry_subsets": 3
+          },
+          {
+            "node": 44,
+            "retry_subsets": 2
+          },
+          {
+            "node": 276,
+            "retry_subsets": 2
+          },
+          {
+            "node": 312,
+            "retry_subsets": 2
+          }
+        ],
+        "estimated_cycles": 24116
+      }
+    },
+    "total": {
+      "phase": "all_phases_once",
+      "logical_accesses": 110934,
+      "issued_groups": 42885,
+      "conflict_events": 3225,
+      "retry_subsets": 3225,
+      "lane_hist": {
+        "1": 17176,
+        "2": 2506,
+        "3": 4066,
+        "4": 19137
+      },
+      "partition_logical": [
+        110934,
+        0,
+        0,
+        0
+      ],
+      "mean_active_lanes": 2.586778593913956,
+      "mean_lane_utilization": 0.646694648478489,
+      "full_4_lane_fraction": 0.44623994403637635,
+      "worst_local_nodes": [],
+      "estimated_cycles": 101843
+    }
+  },
+  "BA2_relay": {
+    "phases": {
+      "check": {
+        "phase": "check",
+        "logical_accesses": 26892,
+        "issued_groups": 6912,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 162,
+          "2": 108,
+          "3": 54,
+          "4": 6588
+        },
+        "partition_logical": [
+          26892,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.890625,
+        "mean_lane_utilization": 0.97265625,
+        "full_4_lane_fraction": 0.953125,
+        "worst_local_nodes": [],
+        "estimated_cycles": 11737
+      },
+      "variable": {
+        "phase": "variable",
+        "logical_accesses": 39330,
+        "issued_groups": 21402,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 13896,
+          "2": 1512,
+          "3": 1566,
+          "4": 4428
+        },
+        "partition_logical": [
+          39330,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.8376787216148023,
+        "mean_lane_utilization": 0.45941968040370057,
+        "full_4_lane_fraction": 0.20689655172413793,
+        "worst_local_nodes": [],
+        "estimated_cycles": 48673
+      },
+      "convergence": {
+        "phase": "convergence",
+        "logical_accesses": 17982,
+        "issued_groups": 6678,
+        "conflict_events": 2016,
+        "retry_subsets": 2016,
+        "lane_hist": {
+          "1": 1956,
+          "2": 723,
+          "3": 1416,
+          "4": 2583
+        },
+        "partition_logical": [
+          17982,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 2.692722371967655,
+        "mean_lane_utilization": 0.6731805929919138,
+        "full_4_lane_fraction": 0.3867924528301887,
+        "worst_local_nodes": [
+          {
+            "node": 40,
+            "retry_subsets": 57
+          },
+          {
+            "node": 30,
+            "retry_subsets": 55
+          },
+          {
+            "node": 43,
+            "retry_subsets": 55
+          },
+          {
+            "node": 22,
+            "retry_subsets": 54
+          },
+          {
+            "node": 28,
+            "retry_subsets": 53
+          },
+          {
+            "node": 24,
+            "retry_subsets": 52
+          },
+          {
+            "node": 33,
+            "retry_subsets": 51
+          },
+          {
+            "node": 23,
+            "retry_subsets": 50
+          },
+          {
+            "node": 27,
+            "retry_subsets": 50
+          },
+          {
+            "node": 35,
+            "retry_subsets": 50
+          }
+        ],
+        "estimated_cycles": 19981
+      },
+      "relay_init": {
+        "phase": "relay_init",
+        "logical_accesses": 26730,
+        "issued_groups": 7922,
+        "conflict_events": 1238,
+        "retry_subsets": 1238,
+        "lane_hist": {
+          "1": 1117,
+          "2": 269,
+          "3": 1069,
+          "4": 5467
+        },
+        "partition_logical": [
+          26730,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 3.374147942438778,
+        "mean_lane_utilization": 0.8435369856096945,
+        "full_4_lane_fraction": 0.6901035092148448,
+        "worst_local_nodes": [
+          {
+            "node": 876,
+            "retry_subsets": 2
+          },
+          {
+            "node": 1608,
+            "retry_subsets": 2
+          },
+          {
+            "node": 1616,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2328,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2424,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2560,
+            "retry_subsets": 2
+          },
+          {
+            "node": 2748,
+            "retry_subsets": 2
+          },
+          {
+            "node": 3032,
+            "retry_subsets": 2
+          },
+          {
+            "node": 3476,
+            "retry_subsets": 2
+          },
+          {
+            "node": 3604,
+            "retry_subsets": 2
+          }
+        ],
+        "estimated_cycles": 21539
+      }
+    },
+    "total": {
+      "phase": "all_phases_once",
+      "logical_accesses": 110934,
+      "issued_groups": 42914,
+      "conflict_events": 3254,
+      "retry_subsets": 3254,
+      "lane_hist": {
+        "1": 17131,
+        "2": 2612,
+        "3": 4105,
+        "4": 19066
+      },
+      "partition_logical": [
+        110934,
+        0,
+        0,
+        0
+      ],
+      "mean_active_lanes": 2.5850305261686164,
+      "mean_lane_utilization": 0.6462576315421541,
+      "full_4_lane_fraction": 0.4442839166705504,
+      "worst_local_nodes": [],
+      "estimated_cycles": 101930
+    }
+  }
+}

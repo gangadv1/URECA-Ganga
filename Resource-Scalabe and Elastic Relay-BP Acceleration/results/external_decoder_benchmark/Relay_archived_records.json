@@ -1,0 +1,6556 @@
+[
+  {
+    "N": 1,
+    "index": 0,
+    "sample_seed": 20260809,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 141222861,
+    "iterations": [
+      37
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      8797755741708845560
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 1,
+    "sample_seed": 20260809,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 194265907,
+    "iterations": [
+      51
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      12605300877999184540
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 2,
+    "sample_seed": 20260809,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      2266240012809103972
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 3,
+    "sample_seed": 20260809,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      11596314071846552675
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 4,
+    "sample_seed": 20260809,
+    "shot": 4,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      10141677951677065804
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 5,
+    "sample_seed": 20260809,
+    "shot": 5,
+    "winner": 0,
+    "modeled_completion_cycles": 651053028,
+    "iterations": [
+      171
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      8763808320666350717
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 6,
+    "sample_seed": 20260809,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 1309713131,
+    "iterations": [
+      344
+    ],
+    "legs": [
+      6
+    ],
+    "trajectory_seeds": [
+      16046846968248299819
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 7,
+    "sample_seed": 20260809,
+    "shot": 7,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      14472511681705215893
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 8,
+    "sample_seed": 20260809,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 205632274,
+    "iterations": [
+      54
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      4195653764737705966
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 9,
+    "sample_seed": 20260809,
+    "shot": 9,
+    "winner": 0,
+    "modeled_completion_cycles": 445392521,
+    "iterations": [
+      117
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      4113981703839189640
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 10,
+    "sample_seed": 20260809,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      17802734268392651266
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 11,
+    "sample_seed": 20260809,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 396137709,
+    "iterations": [
+      104
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      1621262887729756765
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 12,
+    "sample_seed": 20260809,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 228365008,
+    "iterations": [
+      60
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      15283566630660765739
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 13,
+    "sample_seed": 20260809,
+    "shot": 13,
+    "winner": 0,
+    "modeled_completion_cycles": 688941111,
+    "iterations": [
+      181
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      14705238778227004122
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 14,
+    "sample_seed": 20260809,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 148800439,
+    "iterations": [
+      39
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      15725056645400374487
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 15,
+    "sample_seed": 20260809,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 628320181,
+    "iterations": [
+      165
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      8289395461930775230
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 16,
+    "sample_seed": 20260809,
+    "shot": 16,
+    "winner": 0,
+    "modeled_completion_cycles": 860502694,
+    "iterations": [
+      226
+    ],
+    "legs": [
+      4
+    ],
+    "trajectory_seeds": [
+      3545954161664281249
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 17,
+    "sample_seed": 20260809,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      1848792289959952852
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 18,
+    "sample_seed": 20260809,
+    "shot": 18,
+    "winner": -1,
+    "modeled_completion_cycles": 7384342706,
+    "iterations": [
+      1940
+    ],
+    "legs": [
+      32
+    ],
+    "trajectory_seeds": [
+      15462074353113131334
+    ],
+    "logical_correct": 0,
+    "nonconvergence": 1,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 19,
+    "sample_seed": 20260809,
+    "shot": 19,
+    "winner": 0,
+    "modeled_completion_cycles": 156378017,
+    "iterations": [
+      41
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      2400398014029770069
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 20,
+    "sample_seed": 20260809,
+    "shot": 20,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      1875523349383067887
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 21,
+    "sample_seed": 20260809,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 99546182,
+    "iterations": [
+      26
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      551847097978454530
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 22,
+    "sample_seed": 20260809,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 152589228,
+    "iterations": [
+      40
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      8845461622687559147
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 23,
+    "sample_seed": 20260809,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 384771834,
+    "iterations": [
+      101
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      6062447919674616279
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 24,
+    "sample_seed": 20260809,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 483279848,
+    "iterations": [
+      127
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      7757827362317347828
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 25,
+    "sample_seed": 20260809,
+    "shot": 25,
+    "winner": 0,
+    "modeled_completion_cycles": 760928116,
+    "iterations": [
+      200
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      13260707096550732358
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 26,
+    "sample_seed": 20260809,
+    "shot": 26,
+    "winner": 0,
+    "modeled_completion_cycles": 506012855,
+    "iterations": [
+      133
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      6932175579934644575
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 27,
+    "sample_seed": 20260809,
+    "shot": 27,
+    "winner": 0,
+    "modeled_completion_cycles": 875658044,
+    "iterations": [
+      230
+    ],
+    "legs": [
+      4
+    ],
+    "trajectory_seeds": [
+      11884719810708706365
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 28,
+    "sample_seed": 20260809,
+    "shot": 28,
+    "winner": 0,
+    "modeled_completion_cycles": 1104051354,
+    "iterations": [
+      290
+    ],
+    "legs": [
+      5
+    ],
+    "trajectory_seeds": [
+      3658223131164006700
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 29,
+    "sample_seed": 20260809,
+    "shot": 29,
+    "winner": 0,
+    "modeled_completion_cycles": 2097189874,
+    "iterations": [
+      551
+    ],
+    "legs": [
+      9
+    ],
+    "trajectory_seeds": [
+      11201231684163992143
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 30,
+    "sample_seed": 20260809,
+    "shot": 30,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      5972348325028625597
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 31,
+    "sample_seed": 20260809,
+    "shot": 31,
+    "winner": 0,
+    "modeled_completion_cycles": 84391026,
+    "iterations": [
+      22
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      15718977782930520314
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 32,
+    "sample_seed": 20260810,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 254886531,
+    "iterations": [
+      67
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      8839714986294915775
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 33,
+    "sample_seed": 20260810,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 118490127,
+    "iterations": [
+      31
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      6287634936413551160
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 34,
+    "sample_seed": 20260810,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      13648327618015960820
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 35,
+    "sample_seed": 20260810,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 418870669,
+    "iterations": [
+      110
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      12235124074519564628
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 36,
+    "sample_seed": 20260810,
+    "shot": 4,
+    "winner": 0,
+    "modeled_completion_cycles": 3680790570,
+    "iterations": [
+      967
+    ],
+    "legs": [
+      16
+    ],
+    "trajectory_seeds": [
+      7832633304671189574
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 37,
+    "sample_seed": 20260810,
+    "shot": 5,
+    "winner": 0,
+    "modeled_completion_cycles": 186688329,
+    "iterations": [
+      49
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      17891653386005265156
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 38,
+    "sample_seed": 20260810,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 88179815,
+    "iterations": [
+      23
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      2119602893334385276
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 39,
+    "sample_seed": 20260810,
+    "shot": 7,
+    "winner": 0,
+    "modeled_completion_cycles": 723040225,
+    "iterations": [
+      190
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      6756052867238520307
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 40,
+    "sample_seed": 20260810,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 392348996,
+    "iterations": [
+      103
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      17347899464711564992
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 41,
+    "sample_seed": 20260810,
+    "shot": 9,
+    "winner": 0,
+    "modeled_completion_cycles": 5443529947,
+    "iterations": [
+      1430
+    ],
+    "legs": [
+      24
+    ],
+    "trajectory_seeds": [
+      10680904030723624696
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 42,
+    "sample_seed": 20260810,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 160166806,
+    "iterations": [
+      42
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      14108626171013595552
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 43,
+    "sample_seed": 20260810,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 190477118,
+    "iterations": [
+      50
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      15744908322155961522
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 44,
+    "sample_seed": 20260810,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 129856494,
+    "iterations": [
+      34
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      2570941975186273792
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 45,
+    "sample_seed": 20260810,
+    "shot": 13,
+    "winner": 0,
+    "modeled_completion_cycles": 719251299,
+    "iterations": [
+      189
+    ],
+    "legs": [
+      3
+    ],
+    "trajectory_seeds": [
+      3119474908883429183
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 46,
+    "sample_seed": 20260810,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 239731375,
+    "iterations": [
+      63
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      13921168073012108925
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 47,
+    "sample_seed": 20260810,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 65447081,
+    "iterations": [
+      17
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      12682690586956095751
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 48,
+    "sample_seed": 20260810,
+    "shot": 16,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      4778280623693829611
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 49,
+    "sample_seed": 20260810,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 145011650,
+    "iterations": [
+      38
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      3673036723463323741
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 50,
+    "sample_seed": 20260810,
+    "shot": 18,
+    "winner": 0,
+    "modeled_completion_cycles": 273830476,
+    "iterations": [
+      72
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      5998232605694163604
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 51,
+    "sample_seed": 20260810,
+    "shot": 19,
+    "winner": 0,
+    "modeled_completion_cycles": 2093401264,
+    "iterations": [
+      550
+    ],
+    "legs": [
+      9
+    ],
+    "trajectory_seeds": [
+      431526302299323507
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 52,
+    "sample_seed": 20260810,
+    "shot": 20,
+    "winner": 0,
+    "modeled_completion_cycles": 1085107620,
+    "iterations": [
+      285
+    ],
+    "legs": [
+      5
+    ],
+    "trajectory_seeds": [
+      1807615973557573114
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 53,
+    "sample_seed": 20260810,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 396138120,
+    "iterations": [
+      104
+    ],
+    "legs": [
+      2
+    ],
+    "trajectory_seeds": [
+      6813046155664075182
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 54,
+    "sample_seed": 20260810,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 292774421,
+    "iterations": [
+      77
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      18318094137074377224
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 55,
+    "sample_seed": 20260810,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      14775790003291655981
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 56,
+    "sample_seed": 20260810,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 251097742,
+    "iterations": [
+      66
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      6432755272563781537
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 1,
+    "index": 57,
+    "sample_seed": 20260810,
+    "shot": 25,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58
+    ],
+    "legs": [
+      1
+    ],
+    "trajectory_seeds": [
+      14075516971552651714
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 0,
+    "sample_seed": 20260809,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 141222861,
+    "iterations": [
+      37,
+      37
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8797755741708845560,
+      4046486799679479078
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 1,
+    "sample_seed": 20260809,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 194265907,
+    "iterations": [
+      51,
+      51
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12605300877999184540,
+      884961374727021234
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 2,
+    "sample_seed": 20260809,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2266240012809103972,
+      4774499527954843691
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 3,
+    "sample_seed": 20260809,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      11596314071846552675,
+      10184384423030001450
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 4,
+    "sample_seed": 20260809,
+    "shot": 4,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      10141677951677065804,
+      7652924299329715263
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 5,
+    "sample_seed": 20260809,
+    "shot": 5,
+    "winner": 1,
+    "modeled_completion_cycles": 609376421,
+    "iterations": [
+      171,
+      160
+    ],
+    "legs": [
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      8763808320666350717,
+      8612741554530423899
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 6,
+    "sample_seed": 20260809,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 1309713131,
+    "iterations": [
+      344,
+      458
+    ],
+    "legs": [
+      6,
+      8
+    ],
+    "trajectory_seeds": [
+      16046846968248299819,
+      4229790578053323825
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 7,
+    "sample_seed": 20260809,
+    "shot": 7,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14472511681705215893,
+      7896154883791277071
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 8,
+    "sample_seed": 20260809,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 205632274,
+    "iterations": [
+      54,
+      54
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4195653764737705966,
+      12631610141971852844
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 9,
+    "sample_seed": 20260809,
+    "shot": 9,
+    "winner": 0,
+    "modeled_completion_cycles": 445392521,
+    "iterations": [
+      117,
+      699
+    ],
+    "legs": [
+      2,
+      12
+    ],
+    "trajectory_seeds": [
+      4113981703839189640,
+      10216336629036633155
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 10,
+    "sample_seed": 20260809,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17802734268392651266,
+      5614213855103928757
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 11,
+    "sample_seed": 20260809,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 396137709,
+    "iterations": [
+      104,
+      221
+    ],
+    "legs": [
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      1621262887729756765,
+      16128902808687320708
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 12,
+    "sample_seed": 20260809,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 228365008,
+    "iterations": [
+      60,
+      60
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15283566630660765739,
+      12547269875732112094
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 13,
+    "sample_seed": 20260809,
+    "shot": 13,
+    "winner": 0,
+    "modeled_completion_cycles": 688941111,
+    "iterations": [
+      181,
+      660
+    ],
+    "legs": [
+      3,
+      11
+    ],
+    "trajectory_seeds": [
+      14705238778227004122,
+      15001961393019595652
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 14,
+    "sample_seed": 20260809,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 148800439,
+    "iterations": [
+      39,
+      39
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15725056645400374487,
+      6712535225929805219
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 15,
+    "sample_seed": 20260809,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 628320181,
+    "iterations": [
+      165,
+      200
+    ],
+    "legs": [
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      8289395461930775230,
+      3610373903898914109
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 16,
+    "sample_seed": 20260809,
+    "shot": 16,
+    "winner": 1,
+    "modeled_completion_cycles": 609376020,
+    "iterations": [
+      226,
+      160
+    ],
+    "legs": [
+      4,
+      3
+    ],
+    "trajectory_seeds": [
+      3545954161664281249,
+      14965624683064202006
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 17,
+    "sample_seed": 20260809,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1848792289959952852,
+      8369804307740391728
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 18,
+    "sample_seed": 20260809,
+    "shot": 18,
+    "winner": 1,
+    "modeled_completion_cycles": 2261174639,
+    "iterations": [
+      1940,
+      594
+    ],
+    "legs": [
+      32,
+      10
+    ],
+    "trajectory_seeds": [
+      15462074353113131334,
+      6948219666594607190
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 19,
+    "sample_seed": 20260809,
+    "shot": 19,
+    "winner": 0,
+    "modeled_completion_cycles": 156378017,
+    "iterations": [
+      41,
+      41
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2400398014029770069,
+      9790198515552160532
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 20,
+    "sample_seed": 20260809,
+    "shot": 20,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1875523349383067887,
+      650155048283116494
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 21,
+    "sample_seed": 20260809,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 99546182,
+    "iterations": [
+      26,
+      26
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      551847097978454530,
+      5569293638566506660
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 22,
+    "sample_seed": 20260809,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 152589228,
+    "iterations": [
+      40,
+      40
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8845461622687559147,
+      11311453404091587701
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 23,
+    "sample_seed": 20260809,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 384771834,
+    "iterations": [
+      101,
+      320
+    ],
+    "legs": [
+      2,
+      5
+    ],
+    "trajectory_seeds": [
+      6062447919674616279,
+      8898354168403465168
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 24,
+    "sample_seed": 20260809,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 483279848,
+    "iterations": [
+      127,
+      128
+    ],
+    "legs": [
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      7757827362317347828,
+      2855576777253091380
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 25,
+    "sample_seed": 20260809,
+    "shot": 25,
+    "winner": 1,
+    "modeled_completion_cycles": 601798441,
+    "iterations": [
+      200,
+      158
+    ],
+    "legs": [
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      13260707096550732358,
+      6605776833461096963
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 26,
+    "sample_seed": 20260809,
+    "shot": 26,
+    "winner": 1,
+    "modeled_completion_cycles": 392349061,
+    "iterations": [
+      133,
+      103
+    ],
+    "legs": [
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      6932175579934644575,
+      16404895323214951940
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 27,
+    "sample_seed": 20260809,
+    "shot": 27,
+    "winner": 1,
+    "modeled_completion_cycles": 407504576,
+    "iterations": [
+      230,
+      107
+    ],
+    "legs": [
+      4,
+      2
+    ],
+    "trajectory_seeds": [
+      11884719810708706365,
+      18108705045625852507
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 28,
+    "sample_seed": 20260809,
+    "shot": 28,
+    "winner": 0,
+    "modeled_completion_cycles": 1104051354,
+    "iterations": [
+      290,
+      368
+    ],
+    "legs": [
+      5,
+      6
+    ],
+    "trajectory_seeds": [
+      3658223131164006700,
+      9110900935259390341
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 29,
+    "sample_seed": 20260809,
+    "shot": 29,
+    "winner": 1,
+    "modeled_completion_cycles": 521168386,
+    "iterations": [
+      551,
+      137
+    ],
+    "legs": [
+      9,
+      2
+    ],
+    "trajectory_seeds": [
+      11201231684163992143,
+      986750089430005861
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 30,
+    "sample_seed": 20260809,
+    "shot": 30,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5972348325028625597,
+      7927756242589418523
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 31,
+    "sample_seed": 20260809,
+    "shot": 31,
+    "winner": 0,
+    "modeled_completion_cycles": 84391026,
+    "iterations": [
+      22,
+      22
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15718977782930520314,
+      9253345292079577902
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 32,
+    "sample_seed": 20260810,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 254886531,
+    "iterations": [
+      67,
+      67
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8839714986294915775,
+      11252400628020589870
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 33,
+    "sample_seed": 20260810,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 118490127,
+    "iterations": [
+      31,
+      31
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6287634936413551160,
+      14094043944543510361
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 34,
+    "sample_seed": 20260810,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13648327618015960820,
+      4516680958580097677
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 35,
+    "sample_seed": 20260810,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 418870669,
+    "iterations": [
+      110,
+      152
+    ],
+    "legs": [
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      12235124074519564628,
+      11018947222633287285
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 36,
+    "sample_seed": 20260810,
+    "shot": 4,
+    "winner": 1,
+    "modeled_completion_cycles": 696518604,
+    "iterations": [
+      967,
+      183
+    ],
+    "legs": [
+      16,
+      3
+    ],
+    "trajectory_seeds": [
+      7832633304671189574,
+      9365783717583519640
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 37,
+    "sample_seed": 20260810,
+    "shot": 5,
+    "winner": 0,
+    "modeled_completion_cycles": 186688329,
+    "iterations": [
+      49,
+      49
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17891653386005265156,
+      14949428090912688785
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 38,
+    "sample_seed": 20260810,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 88179815,
+    "iterations": [
+      23,
+      23
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2119602893334385276,
+      1514891312455342317
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 39,
+    "sample_seed": 20260810,
+    "shot": 7,
+    "winner": 1,
+    "modeled_completion_cycles": 658630943,
+    "iterations": [
+      190,
+      173
+    ],
+    "legs": [
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      6756052867238520307,
+      993519143548042848
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 40,
+    "sample_seed": 20260810,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 392348996,
+    "iterations": [
+      103,
+      135
+    ],
+    "legs": [
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      17347899464711564992,
+      16242277150676000938
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 41,
+    "sample_seed": 20260810,
+    "shot": 9,
+    "winner": 1,
+    "modeled_completion_cycles": 2066879370,
+    "iterations": [
+      1430,
+      543
+    ],
+    "legs": [
+      24,
+      9
+    ],
+    "trajectory_seeds": [
+      10680904030723624696,
+      10467770150244613314
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 42,
+    "sample_seed": 20260810,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 160166806,
+    "iterations": [
+      42,
+      42
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14108626171013595552,
+      12887485610898404021
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 43,
+    "sample_seed": 20260810,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 190477118,
+    "iterations": [
+      50,
+      50
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15744908322155961522,
+      14529248077396426700
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 44,
+    "sample_seed": 20260810,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 129856494,
+    "iterations": [
+      34,
+      34
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2570941975186273792,
+      7454319751143994661
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 45,
+    "sample_seed": 20260810,
+    "shot": 13,
+    "winner": 1,
+    "modeled_completion_cycles": 524956982,
+    "iterations": [
+      189,
+      138
+    ],
+    "legs": [
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      3119474908883429183,
+      18264905140061471670
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 46,
+    "sample_seed": 20260810,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 239731375,
+    "iterations": [
+      63,
+      63
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13921168073012108925,
+      7002749854099204387
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 47,
+    "sample_seed": 20260810,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 65447081,
+    "iterations": [
+      17,
+      17
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12682690586956095751,
+      4540782341996322137
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 48,
+    "sample_seed": 20260810,
+    "shot": 16,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4778280623693829611,
+      17401568351486913378
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 49,
+    "sample_seed": 20260810,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 145011650,
+    "iterations": [
+      38,
+      38
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      3673036723463323741,
+      1734109629132500786
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 50,
+    "sample_seed": 20260810,
+    "shot": 18,
+    "winner": 0,
+    "modeled_completion_cycles": 273830476,
+    "iterations": [
+      72,
+      72
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5998232605694163604,
+      17636983845610381020
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 51,
+    "sample_seed": 20260810,
+    "shot": 19,
+    "winner": 1,
+    "modeled_completion_cycles": 1895319381,
+    "iterations": [
+      550,
+      498
+    ],
+    "legs": [
+      9,
+      8
+    ],
+    "trajectory_seeds": [
+      431526302299323507,
+      14491980786553029103
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 52,
+    "sample_seed": 20260810,
+    "shot": 20,
+    "winner": 1,
+    "modeled_completion_cycles": 426448331,
+    "iterations": [
+      285,
+      112
+    ],
+    "legs": [
+      5,
+      2
+    ],
+    "trajectory_seeds": [
+      1807615973557573114,
+      584914519830305683
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 53,
+    "sample_seed": 20260810,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 396138120,
+    "iterations": [
+      104,
+      216
+    ],
+    "legs": [
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      6813046155664075182,
+      3541383146123096606
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 54,
+    "sample_seed": 20260810,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 292774421,
+    "iterations": [
+      77,
+      77
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      18318094137074377224,
+      11792925387749738074
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 55,
+    "sample_seed": 20260810,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14775790003291655981,
+      9440711780698823099
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 56,
+    "sample_seed": 20260810,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 251097742,
+    "iterations": [
+      66,
+      66
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6432755272563781537,
+      4082382190877665539
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 2,
+    "index": 57,
+    "sample_seed": 20260810,
+    "shot": 25,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14075516971552651714,
+      2534713456459404202
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 0,
+    "sample_seed": 20260809,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 141222861,
+    "iterations": [
+      37,
+      37,
+      37,
+      37
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8797755741708845560,
+      4046486799679479078,
+      5478164851480253976,
+      15605255772535667452
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 1,
+    "sample_seed": 20260809,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 194265907,
+    "iterations": [
+      51,
+      51,
+      51,
+      51
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12605300877999184540,
+      884961374727021234,
+      3292909295008761696,
+      17548837207819755971
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 2,
+    "sample_seed": 20260809,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2266240012809103972,
+      4774499527954843691,
+      13865111075063579468,
+      6027565879965372690
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 3,
+    "sample_seed": 20260809,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      11596314071846552675,
+      10184384423030001450,
+      14590889525336413742,
+      15501533069486074426
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 4,
+    "sample_seed": 20260809,
+    "shot": 4,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53,
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      10141677951677065804,
+      7652924299329715263,
+      10469070698460948334,
+      12213013971847301441
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 5,
+    "sample_seed": 20260809,
+    "shot": 5,
+    "winner": 1,
+    "modeled_completion_cycles": 609376421,
+    "iterations": [
+      171,
+      160,
+      183,
+      169
+    ],
+    "legs": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      8763808320666350717,
+      8612741554530423899,
+      17019221213435504463,
+      18024218339995203717
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 6,
+    "sample_seed": 20260809,
+    "shot": 6,
+    "winner": 2,
+    "modeled_completion_cycles": 632109213,
+    "iterations": [
+      344,
+      458,
+      166,
+      278
+    ],
+    "legs": [
+      6,
+      8,
+      3,
+      5
+    ],
+    "trajectory_seeds": [
+      16046846968248299819,
+      4229790578053323825,
+      13089556862965044731,
+      4914661607628090427
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 7,
+    "sample_seed": 20260809,
+    "shot": 7,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14472511681705215893,
+      7896154883791277071,
+      11627094531267489173,
+      15892881923633400285
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 8,
+    "sample_seed": 20260809,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 205632274,
+    "iterations": [
+      54,
+      54,
+      54,
+      54
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4195653764737705966,
+      12631610141971852844,
+      2875604248429452519,
+      3209806993358201289
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 9,
+    "sample_seed": 20260809,
+    "shot": 9,
+    "winner": 3,
+    "modeled_completion_cycles": 415082433,
+    "iterations": [
+      117,
+      699,
+      163,
+      109
+    ],
+    "legs": [
+      2,
+      12,
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      4113981703839189640,
+      10216336629036633155,
+      11742326065375311926,
+      5598667336250636250
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 10,
+    "sample_seed": 20260809,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53,
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17802734268392651266,
+      5614213855103928757,
+      14849080725098169978,
+      14291528333637181956
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 11,
+    "sample_seed": 20260809,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 396137709,
+    "iterations": [
+      104,
+      221,
+      111,
+      119
+    ],
+    "legs": [
+      2,
+      4,
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      1621262887729756765,
+      16128902808687320708,
+      3490018498715410626,
+      1499523371498738133
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 12,
+    "sample_seed": 20260809,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 228365008,
+    "iterations": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15283566630660765739,
+      12547269875732112094,
+      4859823193783493802,
+      16486611213675004948
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 13,
+    "sample_seed": 20260809,
+    "shot": 13,
+    "winner": 2,
+    "modeled_completion_cycles": 494646763,
+    "iterations": [
+      181,
+      660,
+      130,
+      223
+    ],
+    "legs": [
+      3,
+      11,
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      14705238778227004122,
+      15001961393019595652,
+      16259381703601182350,
+      3470887690853068040
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 14,
+    "sample_seed": 20260809,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 148800439,
+    "iterations": [
+      39,
+      39,
+      39,
+      39
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15725056645400374487,
+      6712535225929805219,
+      17714835664481827566,
+      1941164525585965043
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 15,
+    "sample_seed": 20260809,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 628320181,
+    "iterations": [
+      165,
+      200,
+      574,
+      786
+    ],
+    "legs": [
+      3,
+      3,
+      10,
+      13
+    ],
+    "trajectory_seeds": [
+      8289395461930775230,
+      3610373903898914109,
+      5697005432108474762,
+      6474420321059818982
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 16,
+    "sample_seed": 20260809,
+    "shot": 16,
+    "winner": 1,
+    "modeled_completion_cycles": 609376020,
+    "iterations": [
+      226,
+      160,
+      294,
+      165
+    ],
+    "legs": [
+      4,
+      3,
+      5,
+      3
+    ],
+    "trajectory_seeds": [
+      3545954161664281249,
+      14965624683064202006,
+      16861754459609796612,
+      8702906712875144495
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 17,
+    "sample_seed": 20260809,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1848792289959952852,
+      8369804307740391728,
+      12716017321532480164,
+      12157061158210928932
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 18,
+    "sample_seed": 20260809,
+    "shot": 18,
+    "winner": 3,
+    "modeled_completion_cycles": 1876373866,
+    "iterations": [
+      1940,
+      594,
+      1940,
+      493
+    ],
+    "legs": [
+      32,
+      10,
+      32,
+      8
+    ],
+    "trajectory_seeds": [
+      15462074353113131334,
+      6948219666594607190,
+      7142286488060204266,
+      4827261599480028049
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 19,
+    "sample_seed": 20260809,
+    "shot": 19,
+    "winner": 0,
+    "modeled_completion_cycles": 156378017,
+    "iterations": [
+      41,
+      41,
+      41,
+      41
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2400398014029770069,
+      9790198515552160532,
+      15849044574035648685,
+      4825704396553578181
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 20,
+    "sample_seed": 20260809,
+    "shot": 20,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1875523349383067887,
+      650155048283116494,
+      415567361325699596,
+      264448554441166240
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 21,
+    "sample_seed": 20260809,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 99546182,
+    "iterations": [
+      26,
+      26,
+      26,
+      26
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      551847097978454530,
+      5569293638566506660,
+      9941794654140991538,
+      14150144354995165645
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 22,
+    "sample_seed": 20260809,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 152589228,
+    "iterations": [
+      40,
+      40,
+      40,
+      40
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8845461622687559147,
+      11311453404091587701,
+      6436863892459803647,
+      15918019280496877299
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 23,
+    "sample_seed": 20260809,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 384771834,
+    "iterations": [
+      101,
+      320,
+      122,
+      178
+    ],
+    "legs": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      6062447919674616279,
+      8898354168403465168,
+      12530011171754741929,
+      12145104578430674775
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 24,
+    "sample_seed": 20260809,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 483279848,
+    "iterations": [
+      127,
+      128,
+      127,
+      527
+    ],
+    "legs": [
+      2,
+      2,
+      2,
+      9
+    ],
+    "trajectory_seeds": [
+      7757827362317347828,
+      2855576777253091380,
+      2995324197639132411,
+      7760223062761515172
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 25,
+    "sample_seed": 20260809,
+    "shot": 25,
+    "winner": 3,
+    "modeled_completion_cycles": 441603677,
+    "iterations": [
+      200,
+      158,
+      244,
+      116
+    ],
+    "legs": [
+      3,
+      3,
+      4,
+      2
+    ],
+    "trajectory_seeds": [
+      13260707096550732358,
+      6605776833461096963,
+      289219008130809828,
+      17561840726245214630
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 26,
+    "sample_seed": 20260809,
+    "shot": 26,
+    "winner": 3,
+    "modeled_completion_cycles": 380982613,
+    "iterations": [
+      133,
+      103,
+      106,
+      100
+    ],
+    "legs": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      6932175579934644575,
+      16404895323214951940,
+      2195719759829778351,
+      13678382055998350530
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 27,
+    "sample_seed": 20260809,
+    "shot": 27,
+    "winner": 1,
+    "modeled_completion_cycles": 407504576,
+    "iterations": [
+      230,
+      107,
+      135,
+      136
+    ],
+    "legs": [
+      4,
+      2,
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      11884719810708706365,
+      18108705045625852507,
+      1565860182141286790,
+      15590703475305234162
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 28,
+    "sample_seed": 20260809,
+    "shot": 28,
+    "winner": 2,
+    "modeled_completion_cycles": 662419769,
+    "iterations": [
+      290,
+      368,
+      174,
+      527
+    ],
+    "legs": [
+      5,
+      6,
+      3,
+      9
+    ],
+    "trajectory_seeds": [
+      3658223131164006700,
+      9110900935259390341,
+      2993986314051797311,
+      8314128162536399505
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 29,
+    "sample_seed": 20260809,
+    "shot": 29,
+    "winner": 2,
+    "modeled_completion_cycles": 426448415,
+    "iterations": [
+      551,
+      137,
+      112,
+      188
+    ],
+    "legs": [
+      9,
+      2,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      11201231684163992143,
+      986750089430005861,
+      16282601840042668484,
+      9307772821155360932
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 30,
+    "sample_seed": 20260809,
+    "shot": 30,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5972348325028625597,
+      7927756242589418523,
+      90638685417659769,
+      6740459219886835240
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 31,
+    "sample_seed": 20260809,
+    "shot": 31,
+    "winner": 0,
+    "modeled_completion_cycles": 84391026,
+    "iterations": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15718977782930520314,
+      9253345292079577902,
+      11632886508618833776,
+      9979481083436274487
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 32,
+    "sample_seed": 20260810,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 254886531,
+    "iterations": [
+      67,
+      67,
+      67,
+      67
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8839714986294915775,
+      11252400628020589870,
+      5064884100151038272,
+      3755559786090829250
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 33,
+    "sample_seed": 20260810,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 118490127,
+    "iterations": [
+      31,
+      31,
+      31,
+      31
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6287634936413551160,
+      14094043944543510361,
+      9152530957575195984,
+      1637871047066838744
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 34,
+    "sample_seed": 20260810,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13648327618015960820,
+      4516680958580097677,
+      6574535250180131706,
+      11280450036442931413
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 35,
+    "sample_seed": 20260810,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 418870669,
+    "iterations": [
+      110,
+      152,
+      579,
+      558
+    ],
+    "legs": [
+      2,
+      3,
+      10,
+      9
+    ],
+    "trajectory_seeds": [
+      12235124074519564628,
+      11018947222633287285,
+      6440154053549947453,
+      3176918694068461216
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 36,
+    "sample_seed": 20260810,
+    "shot": 4,
+    "winner": 1,
+    "modeled_completion_cycles": 696518604,
+    "iterations": [
+      967,
+      183,
+      213,
+      290
+    ],
+    "legs": [
+      16,
+      3,
+      4,
+      5
+    ],
+    "trajectory_seeds": [
+      7832633304671189574,
+      9365783717583519640,
+      4701113118765620801,
+      5402251027171831096
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 37,
+    "sample_seed": 20260810,
+    "shot": 5,
+    "winner": 0,
+    "modeled_completion_cycles": 186688329,
+    "iterations": [
+      49,
+      49,
+      49,
+      49
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17891653386005265156,
+      14949428090912688785,
+      17039806656703923867,
+      15585561498578577998
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 38,
+    "sample_seed": 20260810,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 88179815,
+    "iterations": [
+      23,
+      23,
+      23,
+      23
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2119602893334385276,
+      1514891312455342317,
+      1165055019931007997,
+      7551003906483113110
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 39,
+    "sample_seed": 20260810,
+    "shot": 7,
+    "winner": 3,
+    "modeled_completion_cycles": 426448187,
+    "iterations": [
+      190,
+      173,
+      305,
+      112
+    ],
+    "legs": [
+      3,
+      3,
+      5,
+      2
+    ],
+    "trajectory_seeds": [
+      6756052867238520307,
+      993519143548042848,
+      529847171793594266,
+      445642841502018990
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 40,
+    "sample_seed": 20260810,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 392348996,
+    "iterations": [
+      103,
+      135,
+      765,
+      103
+    ],
+    "legs": [
+      2,
+      2,
+      13,
+      2
+    ],
+    "trajectory_seeds": [
+      17347899464711564992,
+      16242277150676000938,
+      10011031792521770431,
+      1177562860685895882
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 41,
+    "sample_seed": 20260810,
+    "shot": 9,
+    "winner": 1,
+    "modeled_completion_cycles": 2066879370,
+    "iterations": [
+      1430,
+      543,
+      1334,
+      1095
+    ],
+    "legs": [
+      24,
+      9,
+      22,
+      18
+    ],
+    "trajectory_seeds": [
+      10680904030723624696,
+      10467770150244613314,
+      11526822263270266274,
+      10600552788143517940
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 42,
+    "sample_seed": 20260810,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 160166806,
+    "iterations": [
+      42,
+      42,
+      42,
+      42
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14108626171013595552,
+      12887485610898404021,
+      5026783557640918368,
+      7088372637934754470
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 43,
+    "sample_seed": 20260810,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 190477118,
+    "iterations": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15744908322155961522,
+      14529248077396426700,
+      10120451127766730030,
+      12334394994909765351
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 44,
+    "sample_seed": 20260810,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 129856494,
+    "iterations": [
+      34,
+      34,
+      34,
+      34
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2570941975186273792,
+      7454319751143994661,
+      5450711137316755903,
+      3089208554893069693
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 45,
+    "sample_seed": 20260810,
+    "shot": 13,
+    "winner": 2,
+    "modeled_completion_cycles": 445392312,
+    "iterations": [
+      189,
+      138,
+      117,
+      283
+    ],
+    "legs": [
+      3,
+      2,
+      2,
+      5
+    ],
+    "trajectory_seeds": [
+      3119474908883429183,
+      18264905140061471670,
+      11825818377293789257,
+      14004374986067402978
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 46,
+    "sample_seed": 20260810,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 239731375,
+    "iterations": [
+      63,
+      63,
+      63,
+      63
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13921168073012108925,
+      7002749854099204387,
+      18397987533501434381,
+      1685308312870921942
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 47,
+    "sample_seed": 20260810,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 65447081,
+    "iterations": [
+      17,
+      17,
+      17,
+      17
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12682690586956095751,
+      4540782341996322137,
+      15418501526720252337,
+      13602555190452954721
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 48,
+    "sample_seed": 20260810,
+    "shot": 16,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47,
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4778280623693829611,
+      17401568351486913378,
+      9414072887827956002,
+      12269681997306181828
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 49,
+    "sample_seed": 20260810,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 145011650,
+    "iterations": [
+      38,
+      38,
+      38,
+      38
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      3673036723463323741,
+      1734109629132500786,
+      11873230919755611793,
+      10433979722847405976
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 50,
+    "sample_seed": 20260810,
+    "shot": 18,
+    "winner": 0,
+    "modeled_completion_cycles": 273830476,
+    "iterations": [
+      72,
+      72,
+      72,
+      72
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5998232605694163604,
+      17636983845610381020,
+      17408893329955374078,
+      7055554145594812147
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 51,
+    "sample_seed": 20260810,
+    "shot": 19,
+    "winner": 2,
+    "modeled_completion_cycles": 1168460609,
+    "iterations": [
+      550,
+      498,
+      307,
+      607
+    ],
+    "legs": [
+      9,
+      8,
+      5,
+      10
+    ],
+    "trajectory_seeds": [
+      431526302299323507,
+      14491980786553029103,
+      16610634425742876147,
+      8755579399750500677
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 52,
+    "sample_seed": 20260810,
+    "shot": 20,
+    "winner": 1,
+    "modeled_completion_cycles": 426448331,
+    "iterations": [
+      285,
+      112,
+      162,
+      120
+    ],
+    "legs": [
+      5,
+      2,
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      1807615973557573114,
+      584914519830305683,
+      2338358221336335607,
+      14473416950425782943
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 53,
+    "sample_seed": 20260810,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 396138120,
+    "iterations": [
+      104,
+      216,
+      130,
+      229
+    ],
+    "legs": [
+      2,
+      4,
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      6813046155664075182,
+      3541383146123096606,
+      11057998748488147954,
+      8687497250582482820
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 54,
+    "sample_seed": 20260810,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 292774421,
+    "iterations": [
+      77,
+      77,
+      77,
+      77
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      18318094137074377224,
+      11792925387749738074,
+      8850339575597371360,
+      2791214864748009952
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 55,
+    "sample_seed": 20260810,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47,
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14775790003291655981,
+      9440711780698823099,
+      14977790824328456804,
+      1113158446097044901
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 56,
+    "sample_seed": 20260810,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 251097742,
+    "iterations": [
+      66,
+      66,
+      66,
+      66
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6432755272563781537,
+      4082382190877665539,
+      3771418572746203501,
+      6308024595730456512
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 4,
+    "index": 57,
+    "sample_seed": 20260810,
+    "shot": 25,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14075516971552651714,
+      2534713456459404202,
+      8652758802271260859,
+      3413969091685154368
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 0,
+    "sample_seed": 20260809,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 141222861,
+    "iterations": [
+      37,
+      37,
+      37,
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8797755741708845560,
+      4046486799679479078,
+      5478164851480253976,
+      15605255772535667452,
+      6012492034683896848,
+      11915261712914477568,
+      6744102668608319501,
+      15536911853979242887
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 1,
+    "sample_seed": 20260809,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 194265907,
+    "iterations": [
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12605300877999184540,
+      884961374727021234,
+      3292909295008761696,
+      17548837207819755971,
+      5163538110011941831,
+      8355428294560560731,
+      8709917126356494911,
+      4879750978436725701
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 2,
+    "sample_seed": 20260809,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2266240012809103972,
+      4774499527954843691,
+      13865111075063579468,
+      6027565879965372690,
+      4957904318500644681,
+      10771087398132387119,
+      13564814803789703621,
+      15029777108514027046
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 3,
+    "sample_seed": 20260809,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      11596314071846552675,
+      10184384423030001450,
+      14590889525336413742,
+      15501533069486074426,
+      12542624223067484811,
+      1642213104721205204,
+      11196746455918571986,
+      8669604995128110382
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 4,
+    "sample_seed": 20260809,
+    "shot": 4,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      10141677951677065804,
+      7652924299329715263,
+      10469070698460948334,
+      12213013971847301441,
+      10978616445446646546,
+      15286516887789305594,
+      12868016322348522289,
+      16477752227225495592
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 5,
+    "sample_seed": 20260809,
+    "shot": 5,
+    "winner": 6,
+    "modeled_completion_cycles": 498435684,
+    "iterations": [
+      171,
+      160,
+      183,
+      169,
+      136,
+      319,
+      131,
+      187
+    ],
+    "legs": [
+      3,
+      3,
+      3,
+      3,
+      2,
+      5,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      8763808320666350717,
+      8612741554530423899,
+      17019221213435504463,
+      18024218339995203717,
+      4383866386444041260,
+      14890614044029774959,
+      11731502130854287873,
+      6409099182833941315
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 6,
+    "sample_seed": 20260809,
+    "shot": 6,
+    "winner": 5,
+    "modeled_completion_cycles": 411292928,
+    "iterations": [
+      344,
+      458,
+      166,
+      278,
+      217,
+      108,
+      162,
+      115
+    ],
+    "legs": [
+      6,
+      8,
+      3,
+      5,
+      4,
+      2,
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      16046846968248299819,
+      4229790578053323825,
+      13089556862965044731,
+      4914661607628090427,
+      10189874156038039830,
+      17040256955512541635,
+      8975682713133848441,
+      5365161855684706502
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 7,
+    "sample_seed": 20260809,
+    "shot": 7,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14472511681705215893,
+      7896154883791277071,
+      11627094531267489173,
+      15892881923633400285,
+      3998650653630430852,
+      4494867949342438513,
+      4362268688023261778,
+      2577717510248090735
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 8,
+    "sample_seed": 20260809,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 205632274,
+    "iterations": [
+      54,
+      54,
+      54,
+      54,
+      54,
+      54,
+      54,
+      54
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4195653764737705966,
+      12631610141971852844,
+      2875604248429452519,
+      3209806993358201289,
+      1915939974816859771,
+      16442386662449076033,
+      121915104207274265,
+      7014275686049437448
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 9,
+    "sample_seed": 20260809,
+    "shot": 9,
+    "winner": 3,
+    "modeled_completion_cycles": 415082433,
+    "iterations": [
+      117,
+      699,
+      163,
+      109,
+      455,
+      156,
+      569,
+      345
+    ],
+    "legs": [
+      2,
+      12,
+      3,
+      2,
+      8,
+      3,
+      10,
+      6
+    ],
+    "trajectory_seeds": [
+      4113981703839189640,
+      10216336629036633155,
+      11742326065375311926,
+      5598667336250636250,
+      11538896081163942956,
+      16686812156384113802,
+      14172363764107627538,
+      12547369792384814822
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 10,
+    "sample_seed": 20260809,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 201843485,
+    "iterations": [
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17802734268392651266,
+      5614213855103928757,
+      14849080725098169978,
+      14291528333637181956,
+      6503569671332895891,
+      13191545997360356793,
+      10219451044404390667,
+      11150671373599823762
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 11,
+    "sample_seed": 20260809,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 396137709,
+    "iterations": [
+      104,
+      221,
+      111,
+      119,
+      467,
+      223,
+      170,
+      191
+    ],
+    "legs": [
+      2,
+      4,
+      2,
+      2,
+      8,
+      4,
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      1621262887729756765,
+      16128902808687320708,
+      3490018498715410626,
+      1499523371498738133,
+      11595874555619465581,
+      10530035366775283799,
+      12607919801786137154,
+      3320561947567014707
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 12,
+    "sample_seed": 20260809,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 228365008,
+    "iterations": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15283566630660765739,
+      12547269875732112094,
+      4859823193783493802,
+      16486611213675004948,
+      14716069076131326641,
+      16921965757268457987,
+      4957358053397075864,
+      15981979989852455403
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 13,
+    "sample_seed": 20260809,
+    "shot": 13,
+    "winner": 6,
+    "modeled_completion_cycles": 483280090,
+    "iterations": [
+      181,
+      660,
+      130,
+      223,
+      463,
+      1538,
+      127,
+      278
+    ],
+    "legs": [
+      3,
+      11,
+      2,
+      4,
+      8,
+      26,
+      2,
+      5
+    ],
+    "trajectory_seeds": [
+      14705238778227004122,
+      15001961393019595652,
+      16259381703601182350,
+      3470887690853068040,
+      3553580219755819336,
+      12862963839451727004,
+      5472650912914504595,
+      547868610149743286
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 14,
+    "sample_seed": 20260809,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 148800439,
+    "iterations": [
+      39,
+      39,
+      39,
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15725056645400374487,
+      6712535225929805219,
+      17714835664481827566,
+      1941164525585965043,
+      7367808665146512201,
+      862673250561496479,
+      17192065885329540693,
+      10308884802809271192
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 15,
+    "sample_seed": 20260809,
+    "shot": 15,
+    "winner": 7,
+    "modeled_completion_cycles": 509801489,
+    "iterations": [
+      165,
+      200,
+      574,
+      786,
+      368,
+      194,
+      250,
+      134
+    ],
+    "legs": [
+      3,
+      3,
+      10,
+      13,
+      6,
+      3,
+      4,
+      2
+    ],
+    "trajectory_seeds": [
+      8289395461930775230,
+      3610373903898914109,
+      5697005432108474762,
+      6474420321059818982,
+      966905814408681640,
+      8796833833760615995,
+      13347025083146776184,
+      4093084431627227241
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 16,
+    "sample_seed": 20260809,
+    "shot": 16,
+    "winner": 4,
+    "modeled_completion_cycles": 377193419,
+    "iterations": [
+      226,
+      160,
+      294,
+      165,
+      99,
+      115,
+      112,
+      162
+    ],
+    "legs": [
+      4,
+      3,
+      5,
+      3,
+      2,
+      2,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      3545954161664281249,
+      14965624683064202006,
+      16861754459609796612,
+      8702906712875144495,
+      4839082142812890626,
+      1670206052579292691,
+      4575078189333793525,
+      4986817468500126981
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 17,
+    "sample_seed": 20260809,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1848792289959952852,
+      8369804307740391728,
+      12716017321532480164,
+      12157061158210928932,
+      6056075144105958298,
+      17763432679851480664,
+      5959068152360806633,
+      12476934977507193090
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 18,
+    "sample_seed": 20260809,
+    "shot": 18,
+    "winner": 6,
+    "modeled_completion_cycles": 418870802,
+    "iterations": [
+      1940,
+      594,
+      1940,
+      493,
+      701,
+      525,
+      110,
+      1940
+    ],
+    "legs": [
+      32,
+      10,
+      32,
+      8,
+      12,
+      9,
+      2,
+      32
+    ],
+    "trajectory_seeds": [
+      15462074353113131334,
+      6948219666594607190,
+      7142286488060204266,
+      4827261599480028049,
+      3789401145337676568,
+      9588522626792710590,
+      2389391048337561865,
+      16112156780438454925
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 19,
+    "sample_seed": 20260809,
+    "shot": 19,
+    "winner": 0,
+    "modeled_completion_cycles": 156378017,
+    "iterations": [
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2400398014029770069,
+      9790198515552160532,
+      15849044574035648685,
+      4825704396553578181,
+      11228367153298218112,
+      4684765016637217506,
+      3304498530471913249,
+      17819928896772568283
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 20,
+    "sample_seed": 20260809,
+    "shot": 20,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      1875523349383067887,
+      650155048283116494,
+      415567361325699596,
+      264448554441166240,
+      13359516120288148460,
+      7038797721437701180,
+      10234913877660414744,
+      13160303412811045929
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 21,
+    "sample_seed": 20260809,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 99546182,
+    "iterations": [
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      551847097978454530,
+      5569293638566506660,
+      9941794654140991538,
+      14150144354995165645,
+      14301225852533584672,
+      14172014928882605497,
+      728249287408711047,
+      9986098357018244831
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 22,
+    "sample_seed": 20260809,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 152589228,
+    "iterations": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8845461622687559147,
+      11311453404091587701,
+      6436863892459803647,
+      15918019280496877299,
+      13362608418757307417,
+      17878599550686206181,
+      16311880190896988095,
+      9772386284546246032
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 23,
+    "sample_seed": 20260809,
+    "shot": 23,
+    "winner": 4,
+    "modeled_completion_cycles": 380982747,
+    "iterations": [
+      101,
+      320,
+      122,
+      178,
+      100,
+      161,
+      105,
+      109
+    ],
+    "legs": [
+      2,
+      5,
+      2,
+      3,
+      2,
+      3,
+      2,
+      2
+    ],
+    "trajectory_seeds": [
+      6062447919674616279,
+      8898354168403465168,
+      12530011171754741929,
+      12145104578430674775,
+      1692683255287405347,
+      11047275906040448700,
+      15181286522626434278,
+      13261673366349139465
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 24,
+    "sample_seed": 20260809,
+    "shot": 24,
+    "winner": 7,
+    "modeled_completion_cycles": 434025752,
+    "iterations": [
+      127,
+      128,
+      127,
+      527,
+      167,
+      339,
+      192,
+      114
+    ],
+    "legs": [
+      2,
+      2,
+      2,
+      9,
+      3,
+      6,
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      7757827362317347828,
+      2855576777253091380,
+      2995324197639132411,
+      7760223062761515172,
+      15140109479633847994,
+      12461161124428116949,
+      16932944562575288515,
+      18130886339127103296
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 25,
+    "sample_seed": 20260809,
+    "shot": 25,
+    "winner": 6,
+    "modeled_completion_cycles": 380982796,
+    "iterations": [
+      200,
+      158,
+      244,
+      116,
+      285,
+      317,
+      100,
+      186
+    ],
+    "legs": [
+      3,
+      3,
+      4,
+      2,
+      5,
+      5,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      13260707096550732358,
+      6605776833461096963,
+      289219008130809828,
+      17561840726245214630,
+      7029552052431696409,
+      6178480507861677797,
+      13931882974466322665,
+      17647073445818356720
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 26,
+    "sample_seed": 20260809,
+    "shot": 26,
+    "winner": 3,
+    "modeled_completion_cycles": 380982613,
+    "iterations": [
+      133,
+      103,
+      106,
+      100,
+      225,
+      117,
+      157,
+      110
+    ],
+    "legs": [
+      2,
+      2,
+      2,
+      2,
+      4,
+      2,
+      3,
+      2
+    ],
+    "trajectory_seeds": [
+      6932175579934644575,
+      16404895323214951940,
+      2195719759829778351,
+      13678382055998350530,
+      13086157345841163225,
+      17240337117378712414,
+      4985928929745001445,
+      16493919608806493832
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 27,
+    "sample_seed": 20260809,
+    "shot": 27,
+    "winner": 5,
+    "modeled_completion_cycles": 380982767,
+    "iterations": [
+      230,
+      107,
+      135,
+      136,
+      290,
+      100,
+      219,
+      108
+    ],
+    "legs": [
+      4,
+      2,
+      2,
+      2,
+      5,
+      2,
+      4,
+      2
+    ],
+    "trajectory_seeds": [
+      11884719810708706365,
+      18108705045625852507,
+      1565860182141286790,
+      15590703475305234162,
+      15818925480745604165,
+      15854942726363783734,
+      15655144371053854332,
+      12912706612631213791
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 28,
+    "sample_seed": 20260809,
+    "shot": 28,
+    "winner": 6,
+    "modeled_completion_cycles": 426448329,
+    "iterations": [
+      290,
+      368,
+      174,
+      527,
+      132,
+      132,
+      112,
+      214
+    ],
+    "legs": [
+      5,
+      6,
+      3,
+      9,
+      2,
+      2,
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      3658223131164006700,
+      9110900935259390341,
+      2993986314051797311,
+      8314128162536399505,
+      17081579755288038094,
+      15447444043163887374,
+      9420909747532577851,
+      8434236472860247291
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 29,
+    "sample_seed": 20260809,
+    "shot": 29,
+    "winner": 2,
+    "modeled_completion_cycles": 426448415,
+    "iterations": [
+      551,
+      137,
+      112,
+      188,
+      166,
+      191,
+      527,
+      788
+    ],
+    "legs": [
+      9,
+      2,
+      2,
+      3,
+      3,
+      3,
+      9,
+      13
+    ],
+    "trajectory_seeds": [
+      11201231684163992143,
+      986750089430005861,
+      16282601840042668484,
+      9307772821155360932,
+      3913985752495007133,
+      3132111623741732406,
+      14040400514634418905,
+      11357579570580491120
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 30,
+    "sample_seed": 20260809,
+    "shot": 30,
+    "winner": 0,
+    "modeled_completion_cycles": 213209852,
+    "iterations": [
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5972348325028625597,
+      7927756242589418523,
+      90638685417659769,
+      6740459219886835240,
+      16254997884961689042,
+      3901205886602120418,
+      14154635901828787624,
+      2767558067283749348
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 31,
+    "sample_seed": 20260809,
+    "shot": 31,
+    "winner": 0,
+    "modeled_completion_cycles": 84391026,
+    "iterations": [
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15718977782930520314,
+      9253345292079577902,
+      11632886508618833776,
+      9979481083436274487,
+      1601373823441309909,
+      15202285885366075843,
+      11833614992396629183,
+      4562623499936521881
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 32,
+    "sample_seed": 20260810,
+    "shot": 0,
+    "winner": 0,
+    "modeled_completion_cycles": 254886531,
+    "iterations": [
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      8839714986294915775,
+      11252400628020589870,
+      5064884100151038272,
+      3755559786090829250,
+      9492604966710519014,
+      8805139959757634371,
+      4954040453926763108,
+      8176388544069355092
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 33,
+    "sample_seed": 20260810,
+    "shot": 1,
+    "winner": 0,
+    "modeled_completion_cycles": 118490127,
+    "iterations": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6287634936413551160,
+      14094043944543510361,
+      9152530957575195984,
+      1637871047066838744,
+      2507803496364919658,
+      8860439646438379984,
+      1667473140606261107,
+      10410963750701041321
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 34,
+    "sample_seed": 20260810,
+    "shot": 2,
+    "winner": 0,
+    "modeled_completion_cycles": 281408054,
+    "iterations": [
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13648327618015960820,
+      4516680958580097677,
+      6574535250180131706,
+      11280450036442931413,
+      711044640020681656,
+      14695774022695831640,
+      7292003571182873554,
+      7395031337345955055
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 35,
+    "sample_seed": 20260810,
+    "shot": 3,
+    "winner": 0,
+    "modeled_completion_cycles": 418870669,
+    "iterations": [
+      110,
+      152,
+      579,
+      558,
+      1421,
+      1870,
+      364,
+      226
+    ],
+    "legs": [
+      2,
+      3,
+      10,
+      9,
+      24,
+      31,
+      6,
+      4
+    ],
+    "trajectory_seeds": [
+      12235124074519564628,
+      11018947222633287285,
+      6440154053549947453,
+      3176918694068461216,
+      10482985600889073884,
+      15249147176719653560,
+      12690471174157902413,
+      14450480304279920172
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 36,
+    "sample_seed": 20260810,
+    "shot": 4,
+    "winner": 1,
+    "modeled_completion_cycles": 696518604,
+    "iterations": [
+      967,
+      183,
+      213,
+      290,
+      619,
+      222,
+      256,
+      497
+    ],
+    "legs": [
+      16,
+      3,
+      4,
+      5,
+      10,
+      4,
+      4,
+      8
+    ],
+    "trajectory_seeds": [
+      7832633304671189574,
+      9365783717583519640,
+      4701113118765620801,
+      5402251027171831096,
+      10827197000174322824,
+      13581617450900986212,
+      8591070961785409901,
+      12284846293047704029
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 37,
+    "sample_seed": 20260810,
+    "shot": 5,
+    "winner": 0,
+    "modeled_completion_cycles": 186688329,
+    "iterations": [
+      49,
+      49,
+      49,
+      49,
+      49,
+      49,
+      49,
+      49
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      17891653386005265156,
+      14949428090912688785,
+      17039806656703923867,
+      15585561498578577998,
+      1524005309296894290,
+      5885302325518283494,
+      12521697728684242679,
+      12199440506893188590
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 38,
+    "sample_seed": 20260810,
+    "shot": 6,
+    "winner": 0,
+    "modeled_completion_cycles": 88179815,
+    "iterations": [
+      23,
+      23,
+      23,
+      23,
+      23,
+      23,
+      23,
+      23
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2119602893334385276,
+      1514891312455342317,
+      1165055019931007997,
+      7551003906483113110,
+      4632100484683637698,
+      14156490361309850742,
+      7323515482282570020,
+      13781583783198891366
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 39,
+    "sample_seed": 20260810,
+    "shot": 7,
+    "winner": 3,
+    "modeled_completion_cycles": 426448187,
+    "iterations": [
+      190,
+      173,
+      305,
+      112,
+      218,
+      200,
+      403,
+      242
+    ],
+    "legs": [
+      3,
+      3,
+      5,
+      2,
+      4,
+      3,
+      7,
+      4
+    ],
+    "trajectory_seeds": [
+      6756052867238520307,
+      993519143548042848,
+      529847171793594266,
+      445642841502018990,
+      9942357146381613002,
+      1694259716162312226,
+      7748835435483031953,
+      1729125798688941627
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 40,
+    "sample_seed": 20260810,
+    "shot": 8,
+    "winner": 0,
+    "modeled_completion_cycles": 392348996,
+    "iterations": [
+      103,
+      135,
+      765,
+      103,
+      245,
+      138,
+      278,
+      412
+    ],
+    "legs": [
+      2,
+      2,
+      13,
+      2,
+      4,
+      2,
+      5,
+      7
+    ],
+    "trajectory_seeds": [
+      17347899464711564992,
+      16242277150676000938,
+      10011031792521770431,
+      1177562860685895882,
+      5631444874415406111,
+      2252505322682145698,
+      1613522344933977094,
+      3749133525102588410
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 41,
+    "sample_seed": 20260810,
+    "shot": 9,
+    "winner": 7,
+    "modeled_completion_cycles": 483280380,
+    "iterations": [
+      1430,
+      543,
+      1334,
+      1095,
+      1848,
+      1600,
+      655,
+      127
+    ],
+    "legs": [
+      24,
+      9,
+      22,
+      18,
+      31,
+      27,
+      11,
+      2
+    ],
+    "trajectory_seeds": [
+      10680904030723624696,
+      10467770150244613314,
+      11526822263270266274,
+      10600552788143517940,
+      15533646941837013537,
+      4751062985411545006,
+      8196457258214811922,
+      5236874514211910540
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 42,
+    "sample_seed": 20260810,
+    "shot": 10,
+    "winner": 0,
+    "modeled_completion_cycles": 160166806,
+    "iterations": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14108626171013595552,
+      12887485610898404021,
+      5026783557640918368,
+      7088372637934754470,
+      7314258710142156647,
+      11611783750460470040,
+      8952558774650370443,
+      7075644645281965028
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 43,
+    "sample_seed": 20260810,
+    "shot": 11,
+    "winner": 0,
+    "modeled_completion_cycles": 190477118,
+    "iterations": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      15744908322155961522,
+      14529248077396426700,
+      10120451127766730030,
+      12334394994909765351,
+      8651794360742132198,
+      14324393327257734008,
+      15033471020990691523,
+      5775210552364074479
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 44,
+    "sample_seed": 20260810,
+    "shot": 12,
+    "winner": 0,
+    "modeled_completion_cycles": 129856494,
+    "iterations": [
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      2570941975186273792,
+      7454319751143994661,
+      5450711137316755903,
+      3089208554893069693,
+      5080019979350277403,
+      2362529024534272458,
+      5634925552797498583,
+      15870540611316749146
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 45,
+    "sample_seed": 20260810,
+    "shot": 13,
+    "winner": 4,
+    "modeled_completion_cycles": 418870729,
+    "iterations": [
+      189,
+      138,
+      117,
+      283,
+      110,
+      355,
+      190,
+      165
+    ],
+    "legs": [
+      3,
+      2,
+      2,
+      5,
+      2,
+      6,
+      3,
+      3
+    ],
+    "trajectory_seeds": [
+      3119474908883429183,
+      18264905140061471670,
+      11825818377293789257,
+      14004374986067402978,
+      7439075808480339108,
+      14603708009632910843,
+      4153696411641702459,
+      3206131002747265984
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 46,
+    "sample_seed": 20260810,
+    "shot": 14,
+    "winner": 0,
+    "modeled_completion_cycles": 239731375,
+    "iterations": [
+      63,
+      63,
+      63,
+      63,
+      63,
+      63,
+      63,
+      63
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      13921168073012108925,
+      7002749854099204387,
+      18397987533501434381,
+      1685308312870921942,
+      14898487302291238820,
+      1123174990313217315,
+      383820164332688869,
+      14607251838972224851
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 47,
+    "sample_seed": 20260810,
+    "shot": 15,
+    "winner": 0,
+    "modeled_completion_cycles": 65447081,
+    "iterations": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      12682690586956095751,
+      4540782341996322137,
+      15418501526720252337,
+      13602555190452954721,
+      8316538870150950655,
+      14913339933665529306,
+      12153260411329801090,
+      771942273586210134
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 48,
+    "sample_seed": 20260810,
+    "shot": 16,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47,
+      47,
+      47,
+      47,
+      47,
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      4778280623693829611,
+      17401568351486913378,
+      9414072887827956002,
+      12269681997306181828,
+      12729143310637600056,
+      8019177276786212521,
+      6545348605909363640,
+      5551080353640115481
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 49,
+    "sample_seed": 20260810,
+    "shot": 17,
+    "winner": 0,
+    "modeled_completion_cycles": 145011650,
+    "iterations": [
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      3673036723463323741,
+      1734109629132500786,
+      11873230919755611793,
+      10433979722847405976,
+      13233865809437383434,
+      6844509166942923615,
+      2335161263432591308,
+      8955536028973842854
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 50,
+    "sample_seed": 20260810,
+    "shot": 18,
+    "winner": 0,
+    "modeled_completion_cycles": 273830476,
+    "iterations": [
+      72,
+      72,
+      72,
+      72,
+      72,
+      72,
+      72,
+      72
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      5998232605694163604,
+      17636983845610381020,
+      17408893329955374078,
+      7055554145594812147,
+      3221669440005458355,
+      13662887532882860322,
+      13211205030936067770,
+      18180448830022001668
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 51,
+    "sample_seed": 20260810,
+    "shot": 19,
+    "winner": 7,
+    "modeled_completion_cycles": 430236992,
+    "iterations": [
+      550,
+      498,
+      307,
+      607,
+      343,
+      490,
+      257,
+      113
+    ],
+    "legs": [
+      9,
+      8,
+      5,
+      10,
+      6,
+      8,
+      4,
+      2
+    ],
+    "trajectory_seeds": [
+      431526302299323507,
+      14491980786553029103,
+      16610634425742876147,
+      8755579399750500677,
+      13380099064302032340,
+      5787948702612253773,
+      7482963178015465623,
+      18295408223300868974
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 52,
+    "sample_seed": 20260810,
+    "shot": 20,
+    "winner": 6,
+    "modeled_completion_cycles": 415082023,
+    "iterations": [
+      285,
+      112,
+      162,
+      120,
+      139,
+      216,
+      109,
+      213
+    ],
+    "legs": [
+      5,
+      2,
+      3,
+      2,
+      2,
+      4,
+      2,
+      4
+    ],
+    "trajectory_seeds": [
+      1807615973557573114,
+      584914519830305683,
+      2338358221336335607,
+      14473416950425782943,
+      4214714399616132371,
+      2977200734128650736,
+      13699289207986771136,
+      5862579322867099363
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 53,
+    "sample_seed": 20260810,
+    "shot": 21,
+    "winner": 0,
+    "modeled_completion_cycles": 396138120,
+    "iterations": [
+      104,
+      216,
+      130,
+      229,
+      137,
+      151,
+      122,
+      150
+    ],
+    "legs": [
+      2,
+      4,
+      2,
+      4,
+      2,
+      3,
+      2,
+      3
+    ],
+    "trajectory_seeds": [
+      6813046155664075182,
+      3541383146123096606,
+      11057998748488147954,
+      8687497250582482820,
+      13520672147558783109,
+      2480268984323040019,
+      4283886240475467998,
+      10626845313004266998
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 54,
+    "sample_seed": 20260810,
+    "shot": 22,
+    "winner": 0,
+    "modeled_completion_cycles": 292774421,
+    "iterations": [
+      77,
+      77,
+      77,
+      77,
+      77,
+      77,
+      77,
+      77
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      18318094137074377224,
+      11792925387749738074,
+      8850339575597371360,
+      2791214864748009952,
+      11192433893714420193,
+      18041154676462040345,
+      11346650912730574291,
+      9796215096460109538
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 55,
+    "sample_seed": 20260810,
+    "shot": 23,
+    "winner": 0,
+    "modeled_completion_cycles": 179110751,
+    "iterations": [
+      47,
+      47,
+      47,
+      47,
+      47,
+      47,
+      47,
+      47
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14775790003291655981,
+      9440711780698823099,
+      14977790824328456804,
+      1113158446097044901,
+      5404443073482976623,
+      6871412894899335300,
+      13480569073626963814,
+      5279760597110301380
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 56,
+    "sample_seed": 20260810,
+    "shot": 24,
+    "winner": 0,
+    "modeled_completion_cycles": 251097742,
+    "iterations": [
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      6432755272563781537,
+      4082382190877665539,
+      3771418572746203501,
+      6308024595730456512,
+      11883765267546757450,
+      9486272747826258778,
+      9977459588270124997,
+      7489453613102959497
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  },
+  {
+    "N": 8,
+    "index": 57,
+    "sample_seed": 20260810,
+    "shot": 25,
+    "winner": 0,
+    "modeled_completion_cycles": 220787430,
+    "iterations": [
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58
+    ],
+    "legs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "trajectory_seeds": [
+      14075516971552651714,
+      2534713456459404202,
+      8652758802271260859,
+      3413969091685154368,
+      4006285227745220908,
+      5729293714314779562,
+      12262059591882798214,
+      6880480560100444901
+    ],
+    "logical_correct": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0
+  }
+]

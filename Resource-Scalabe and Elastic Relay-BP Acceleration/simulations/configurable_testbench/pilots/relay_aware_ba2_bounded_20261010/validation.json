@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "decoder_trajectories": 32,
+  "exact_trace_iterations": 116,
+  "all_graph_and_prior_gamma_logical_invariants_exact": true,
+  "frozen_BA2_edge_maps_exact": true,
+  "paired_pilot_reproduction": true,
+  "selection_changes": [],
+  "protected_files_unchanged": 2075,
+  "wall_seconds": 41.20121341699269,
+  "limitations": [
+    "Bounded four-shot/R2/S1 validation, not universal equivalence or LER evidence",
+    "Physical storage maps are evaluated by a model; decoder uses its own mapped CSR",
+    "No exact cancellation, integrated RTL, contention or measured hardware timing",
+    "Relay-only objective may regress convergence retries; all regressions retained"
+  ],
+  "heuristic_unit_tests": {
+    "passed": 2,
+    "runtime_seconds": 0.007
+  }
+}

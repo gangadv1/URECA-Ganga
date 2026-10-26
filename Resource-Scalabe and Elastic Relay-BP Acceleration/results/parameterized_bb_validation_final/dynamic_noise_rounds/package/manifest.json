@@ -1,0 +1,140 @@
+{
+  "circuit": {
+    "final_measurement_convention": "noiseless M on all data; no disable_noise annotation",
+    "final_noise_disabled_measurement_count": 1,
+    "final_perfect_measurement": true,
+    "generator_profile": "existing GARI/Gong memory-Z; not canonical Relay uniform_circuit",
+    "has_final_noise_disabled_measurement": true,
+    "memory_basis": "Z",
+    "noise_model": "gari_uniform_p_memory_z",
+    "noise_probability_values": [
+      0.007
+    ],
+    "noisy_instruction_count": 972,
+    "noisy_qec_rounds": 3,
+    "physical_error_probability": 0.007,
+    "stim_version": "1.15.0",
+    "tick_count": 25
+  },
+  "construction": {
+    "A": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "B": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "convention": "index=x*m+y; row(x,y) connects column(x+dx,y+dy); Hx=[A B], Hz=[B.T A.T]; GF(2)",
+    "d": null,
+    "distance_status": "not computed",
+    "generator_sources": {
+      "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+      "graphs/parameterized_bb.py": "562472302bda4c2fc6d97105c48300b6d5a8207910dd83d03e23a7345c36fc9c",
+      "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe",
+      "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+      "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7"
+    },
+    "k": 4,
+    "l": 3,
+    "logical_basis_sha256": "62817f71169699fff69a52fd8b68af89c2d10069096e1f85f0c306cfb7654cd1",
+    "m": 6,
+    "matrix_sha256": "0516fd149b4b2c367a6bb3d685cef6b34c82e77a05bbb66e1ecdab2c4064613c",
+    "memory_basis": "Z",
+    "n": 36,
+    "noise_model": "gari_uniform_p_memory_z",
+    "rank_hx": 16,
+    "rank_hz": 16
+  },
+  "graph": {
+    "code": "BB [[36,4]] (distance unknown)",
+    "detector_count": 72,
+    "detector_edge_count": 1998,
+    "detector_incidence_sha256": "4c872731ce8c2567c73d94c887e077774eeb2d0fe5ade43a709eac4783d9f05d",
+    "fault_count": 576,
+    "logical_edge_count": 748,
+    "observable_count": 4,
+    "tier": "tier-2-circuit-level"
+  },
+  "notes": [
+    "The exact full hypergraph DEM is retained; no graphlike decomposition was forced.",
+    "Logical masks are the fault-to-observable incidence in faults.npz and edge_lists.npz.",
+    "This package is separate from and does not replace the Tier-1 package."
+  ],
+  "provenance": {
+    "artifact_hashes": {
+      "circuit.stim": "ab94cb4e271f60c80605933334da03d7aa246b94b5a1ba3ad00afd3c9ca1a759",
+      "circuit_samples.npz": "67c307d92da2f9846a674997aeef898c63d85ca43dd4a3f6433bcffef35f013a",
+      "dem_samples.npz": "3cd44ee9ea9514f6dd0d78a8ca86b54ca58b2ba77318367538ccb35f12762c68",
+      "detector_coordinates.npz": "2e0fc6a9577b258169bf63c3fc2f214fac95e43e11dcd82659ee80499aeb1aef",
+      "detector_error_model.dem": "3a9d9e1e2f2e270682eba33a4b0a0cc62d7f828e3d6828c1e53b4aa88d2b9611",
+      "edge_lists.npz": "4c872731ce8c2567c73d94c887e077774eeb2d0fe5ade43a709eac4783d9f05d",
+      "faults.npz": "0df78b691a9c2072b9b4362d0a0fc2880b94525436e9a300e54ea219a6357107",
+      "incidence.csv": "5e8da4ca5be3f02d0a43d1b33604266b96258e91ca68d9c3c314035b5a20e85d",
+      "package.json": "e28e21cde69ba5a7d1aa150a875ee7a36f12305000c100939b7ab628df489632"
+    },
+    "artifact_paths": [
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/circuit.stim",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/detector_error_model.dem",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/faults.npz",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/edge_lists.npz",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/detector_coordinates.npz",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/incidence.csv",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/circuit_samples.npz",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/dem_samples.npz",
+      "results/parameterized_bb_validation_final/dynamic_noise_rounds/package/package.json"
+    ],
+    "generated_source_blob_sha1": "a260b1f0e70392809bd7b69c8467184ab3a07e48",
+    "generator_sources": {
+      "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+      "graphs/parameterized_bb.py": "562472302bda4c2fc6d97105c48300b6d5a8207910dd83d03e23a7345c36fc9c",
+      "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe",
+      "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+      "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7"
+    },
+    "project_git_commit": "5ec2e13e4cc9abd5b7d4d28b7f84c0bc8d513d85",
+    "source_circuit_sha256": "ab94cb4e271f60c80605933334da03d7aa246b94b5a1ba3ad00afd3c9ca1a759",
+    "upstream_commit": null,
+    "upstream_repository": null,
+    "upstream_source_path": null
+  },
+  "sampling": {
+    "circuit_detector_shape": [
+      2,
+      72
+    ],
+    "circuit_observable_shape": [
+      2,
+      4
+    ],
+    "dem_fault_shape": [
+      2,
+      576
+    ],
+    "extracted_incidence_verified_against_dem_samples": true,
+    "fixed_seed_reproducible": true,
+    "seed": 555,
+    "shots": 2
+  },
+  "schema_version": 1
+}

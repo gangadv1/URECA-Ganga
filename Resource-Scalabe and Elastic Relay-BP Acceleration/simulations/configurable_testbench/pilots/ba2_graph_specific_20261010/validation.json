@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "decoder_trajectories": 32,
+  "exact_trace_iterations": 116,
+  "all_graph_and_prior_gamma_logical_invariants_exact": true,
+  "archived_Gross_BA2_maps_exact": true,
+  "paired_pilot_reproduction": true,
+  "selection_changes": [],
+  "protected_files_unchanged": 2034,
+  "wall_seconds": 39.489270417019725,
+  "limitations": [
+    "Bounded four-shot/R2/S1 validation, not universal equivalence or LER evidence",
+    "Physical storage maps are evaluated by a model; decoder uses its own mapped CSR",
+    "No exact cancellation, integrated RTL, contention or measured hardware timing",
+    "Frozen fault objective uses pre-edge-remapping relay groups; regressions are retained"
+  ]
+}

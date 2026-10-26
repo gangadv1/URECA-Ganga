@@ -1,0 +1,31 @@
+{
+  "source_directory": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/n-scaling-canonical",
+  "shots": 128,
+  "trajectory_counts": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "P": 4,
+  "input_sha256": {
+    "manifest.json": "b497de74b1b8c49e60695cc44c5c0cb9b28dd12d2ac2025d6e2a8b60fbebbc65",
+    "per_shot_results.csv": "9a1cff31826559963607bb243a6de28044a59a93614287b7f6aba7b298d08dcc"
+  },
+  "analysis_sha256": "80edfc6836c0fcd904e435c89840c027ec13da82900d2f7161a57a9d3e26c7a8",
+  "phase_costs": {
+    "check": 508753,
+    "variable": 2489173,
+    "convergence": 790855,
+    "relay_init": 969916
+  },
+  "assumptions": [
+    "Simultaneous launch with P dedicated lanes per engine",
+    "No new memory/resource stalls introduced by cancellation",
+    "Engine stop/quiescence no later than natural completion",
+    "No exact request, acknowledgement or drain timing inferred"
+  ],
+  "historical_active_work": "N-scaling sum of natural runtimes; historical N1/N2 cancellation model remains separate",
+  "quantity_kind": "modeled_bounds_not_hardware_measurements"
+}

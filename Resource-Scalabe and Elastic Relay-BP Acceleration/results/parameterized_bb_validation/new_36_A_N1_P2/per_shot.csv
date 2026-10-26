@@ -1,0 +1,5 @@
+layout,shot,winner,modeled_completion_cycles,provisioned_lanes,provisioned_lane_cycles,nonconvergence,syndrome_valid_logical_error,total_failure
+original,0,-1,104148,2,208296,1,0,1
+ba2,0,-1,97178,2,194356,1,0,1
+original,1,0,29123,2,58246,0,0,0
+ba2,1,0,27397,2,54794,0,0,0

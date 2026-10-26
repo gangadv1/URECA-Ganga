@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "tests": 4,
+  "failures": 0,
+  "errors": 0,
+  "archives_unchanged": true,
+  "protected_file_count": 2287,
+  "elapsed_seconds": 24.74537150003016,
+  "command": [
+    "simulations/parameterized_bb/test_pipeline.py",
+    "--output",
+    "results/parameterized_bb_validation_final"
+  ]
+}

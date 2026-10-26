@@ -1,0 +1,19 @@
+{
+  "code": "144_12_12",
+  "package": null,
+  "physical_p": 0.003,
+  "source_circuit": null,
+  "N": 2,
+  "P": 4,
+  "sample_seed": 20261010,
+  "trajectory_base_seed": 7640891576956012809,
+  "engine_seeds": null,
+  "shots": 4,
+  "shot_offset": 0,
+  "first_limit": 2,
+  "later_limit": 2,
+  "R": 2,
+  "S": 1,
+  "timing_model": "folding_original",
+  "sample_mode": "circuit"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "N": 1,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": 0,
+        "modeled_cycles": 101843,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 3225,
+        "critical_conflict_events": 3225,
+        "critical_issue_group_occupancy": 0.646694648478489
+      },
+      {
+        "shot": 1,
+        "winner": 0,
+        "modeled_cycles": 101843,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 3225,
+        "critical_conflict_events": 3225,
+        "critical_issue_group_occupancy": 0.646694648478489
+      },
+      {
+        "shot": 2,
+        "winner": 0,
+        "modeled_cycles": 903229,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 16602,
+        "critical_conflict_events": 16602,
+        "critical_issue_group_occupancy": 0.6236879497639456
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 1291864,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 22242,
+        "critical_conflict_events": 22242,
+        "critical_issue_group_occupancy": 0.6217415389204334
+      }
+    ]
+  },
+  {
+    "N": 1,
+    "layout": "weighted",
+    "records": [
+      {
+        "shot": 0,
+        "winner": 0,
+        "modeled_cycles": 100517,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 2783,
+        "critical_conflict_events": 2783,
+        "critical_issue_group_occupancy": 0.6534293051857786
+      },
+      {
+        "shot": 1,
+        "winner": 0,
+        "modeled_cycles": 100517,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 2783,
+        "critical_conflict_events": 2783,
+        "critical_issue_group_occupancy": 0.6534293051857786
+      },
+      {
+        "shot": 2,
+        "winner": 0,
+        "modeled_cycles": 899632,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 15403,
+        "critical_conflict_events": 15403,
+        "critical_issue_group_occupancy": 0.6255980097418437
+      },
+      {
+        "shot": 3,
+        "winner": -1,
+        "modeled_cycles": 1287742,
+        "nonconvergence": 1,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 1,
+        "critical_retry_subsets": 20868,
+        "critical_conflict_events": 20868,
+        "critical_issue_group_occupancy": 0.6232619978214904
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "BA2",
+    "records": [
+      {
+        "shot": 0,
+        "winner": 0,
+        "modeled_cycles": 101843,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 3225,
+        "critical_conflict_events": 3225,
+        "critical_issue_group_occupancy": 0.646694648478489
+      },
+      {
+        "shot": 1,
+        "winner": 0,
+        "modeled_cycles": 101843,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 3225,
+        "critical_conflict_events": 3225,
+        "critical_issue_group_occupancy": 0.646694648478489
+      },
+      {
+        "shot": 2,
+        "winner": 0,
+        "modeled_cycles": 903229,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 16602,
+        "critical_conflict_events": 16602,
+        "critical_issue_group_occupancy": 0.6236879497639456
+      },
+      {
+        "shot": 3,
+        "winner": 1,
+        "modeled_cycles": 1291864,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 22242,
+        "critical_conflict_events": 22242,
+        "critical_issue_group_occupancy": 0.6217415389204334
+      }
+    ]
+  },
+  {
+    "N": 2,
+    "layout": "weighted",
+    "records": [
+      {
+        "shot": 0,
+        "winner": 0,
+        "modeled_cycles": 100517,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 2783,
+        "critical_conflict_events": 2783,
+        "critical_issue_group_occupancy": 0.6534293051857786
+      },
+      {
+        "shot": 1,
+        "winner": 0,
+        "modeled_cycles": 100517,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 2783,
+        "critical_conflict_events": 2783,
+        "critical_issue_group_occupancy": 0.6534293051857786
+      },
+      {
+        "shot": 2,
+        "winner": 0,
+        "modeled_cycles": 899632,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 15403,
+        "critical_conflict_events": 15403,
+        "critical_issue_group_occupancy": 0.6255980097418437
+      },
+      {
+        "shot": 3,
+        "winner": 1,
+        "modeled_cycles": 1287742,
+        "nonconvergence": 0,
+        "syndrome_valid_logical_error": 0,
+        "total_failure": 0,
+        "critical_retry_subsets": 20868,
+        "critical_conflict_events": 20868,
+        "critical_issue_group_occupancy": 0.6232619978214904
+      }
+    ]
+  }
+]

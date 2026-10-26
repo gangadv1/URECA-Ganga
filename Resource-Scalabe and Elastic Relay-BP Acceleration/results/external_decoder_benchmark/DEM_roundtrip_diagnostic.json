@@ -1,0 +1,6 @@
+{
+  "serialized_probability_max_abs_difference": 4.336808689942018e-19,
+  "serialized_probability_mismatch_count": 36288,
+  "source_in_memory_probabilities_binary_exact": true,
+  "decoder_priors": "Original canonical faults.npz probabilities, not rounded DEM text"
+}

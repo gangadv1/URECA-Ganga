@@ -1,0 +1,59 @@
+{
+  "configuration": {
+    "code": "18_4_3",
+    "package": null,
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 12345,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": null,
+    "shots": 1,
+    "shot_offset": 0,
+    "first_limit": 1,
+    "later_limit": 1,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "package_directory": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb18_test",
+  "dimensions": {
+    "detectors": 54,
+    "faults": 1800,
+    "observables": 4
+  },
+  "input_hashes": {
+    "package": "45610383f28516c714bda7fe4f54e0291f4613f6a0148c7502a8ec79eca75230",
+    "manifest": "7da89544c9b4d6419448cbcb07ee663d1ef8ce6920da5052ec14b1608d367bd4",
+    "source": "3821d7f09bd931d774e777945fee0811546779830bc110d9b412465b74a63800"
+  },
+  "implementation_hashes": {
+    "simulations/configurable_testbench/testbench.py": "a8ab8d8b269681ef71594f7e1fd51ea482fed0e604d7e369ca9c6ba31cad6978",
+    "reference/relay_bp_fixed.py": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "reference/fixedpoint.py": "833b85034a4adad5b4703d5753be5f4282478a35c74ad1c57efd459eba6238db",
+    "fpga/verification/parallel_n2/gamma_rng_reference.py": "8024fa22ff0e70ad24acf097ef186edb13ddc5bf2982977a16b7abd6c9f505a8",
+    "graphs/build_circuit_level.py": "c1ae5b01e171290f28acaa0a75d39b02e324c50160517e26ff48d3d1852a4934",
+    "results/graph-partitioning-folding-model/run_folding_layout_comparison.py": "41ea4d6444844fa42ab3ae073b80fec04ca8c2048ef89c5b910a35ad0ec4e735"
+  },
+  "output_hashes": {
+    "per_shot.csv": "e79e6afccdd55efbd1bbe467412992dbfcb4628974fc0ebc320ef6c859c8d0f1",
+    "per_engine.csv": "7a2a63047c94b560e9c73d2321bd3c27b81ce23e9a75bebb974da90b3f3d48d8",
+    "summary.json": "7fbadbcadeae99503ae4ac4c0066b87f249422ddf3304f229cce39ae94f00432"
+  },
+  "versions": {
+    "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "stim": "1.15.0"
+  },
+  "git_commit": "5ec2e13e4cc9abd5b7d4d28b7f84c0bc8d513d85",
+  "assumptions": [
+    "Dedicated P lanes per trajectory; no shared pool or cross-engine contention",
+    "First eligible syndrome-valid decoder completion wins; lowest index breaks ties",
+    "All-fail waits for last engine; natural engine execution recorded without cancellation",
+    "folding_original extrapolates archived service formulas; excludes RNG/controller overhead",
+    "canonical_p4 uses locked graph/P4/S1 calibration; no hardware timing measured"
+  ]
+}

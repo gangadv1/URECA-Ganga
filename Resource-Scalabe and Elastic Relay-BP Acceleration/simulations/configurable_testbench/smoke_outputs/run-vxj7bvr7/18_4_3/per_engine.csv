@@ -1,0 +1,3 @@
+shot,engine,syndrome_converged,iterations,legs,natural_cycles,result_cycles,seed,rng_words,nonconvergence,syndrome_valid_logical_error,total_failure,decision_hash
+0,0,True,1,1,110735,110735,14952669490340151019,0,0,0,0,09cec5a5bd8afffbb758753810a20c55ccb06a46d7bf54eda69ecd2ad645ef11
+0,1,True,1,1,110735,110735,14094917056748118596,0,0,0,0,09cec5a5bd8afffbb758753810a20c55ccb06a46d7bf54eda69ecd2ad645ef11

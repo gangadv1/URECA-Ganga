@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "decoder_trajectories": 32,
+  "exact_trace_iterations": 445,
+  "all_graph_and_prior_gamma_logical_invariants_exact": true,
+  "frozen_BA2_edge_maps_exact": true,
+  "heldout_seed_disjoint": true,
+  "frozen_layouts_exact": true,
+  "selection_changes": [],
+  "protected_files_unchanged": 2166,
+  "wall_seconds": 48.075920833973214,
+  "limitations": [
+    "Requested four shots; runtime-budget reduction recorded per code; 8/8 R2/S1; no LER conclusion",
+    "Physical storage maps are evaluated by a model; decoder uses its own mapped CSR",
+    "No exact cancellation, integrated RTL, contention or measured hardware timing",
+    "Profiles reused from training: sample-seed independent, not held-out evidence"
+  ],
+  "heldout_unit_tests": {
+    "passed": 1,
+    "runtime_seconds": 0.077
+  },
+  "decoder_calls": 96,
+  "requested_shots_per_code": 4,
+  "completed_shots_per_code": {
+    "18_4_3": 4,
+    "72_12_6": 4,
+    "144_12_12": 4,
+    "288_12_18": 4
+  },
+  "profiles_seed_independent_reused": true,
+  "all_paired_completion_costs_improved": true
+}

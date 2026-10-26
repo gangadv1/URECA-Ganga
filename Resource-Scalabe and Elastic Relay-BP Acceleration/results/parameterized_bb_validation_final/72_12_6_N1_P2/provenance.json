@@ -1,0 +1,72 @@
+{
+  "command": [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/parameterized_bb/run.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/parameterized_bb_validation_final/72_12_6_N1_P2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/parameterized_bb_validation_final/72_12_6_N1_P2",
+    "--worker"
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "stim": "1.15.0"
+  },
+  "resolved_decoder_config": {
+    "code": "parameterized",
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/parameterized_bb_validation_final/72_12_6_N1_P2/package",
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 1,
+    "P": 2,
+    "sample_seed": 20261011,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": null,
+    "shots": 2,
+    "shot_offset": 0,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "circuit_profile": "gari_uniform_p_memory_z",
+  "generator_sources": {
+    "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+    "graphs/parameterized_bb.py": "562472302bda4c2fc6d97105c48300b6d5a8207910dd83d03e23a7345c36fc9c",
+    "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+    "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7",
+    "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe"
+  },
+  "sources": {
+    "graphs/build_circuit_level.py": "b1f0cfdf23cc298b551cb486e642deb8047e362a3cc706555e946ea16153faf7",
+    "simulations/configurable_testbench/testbench.py": "a0c57b2ce89a22b8853f1149d0ecd02b3afbd076f19075ca26e031123ec234fe",
+    "results/bank-aware-folding-layout/run_bank_aware_layout.py": "e02a0bf55e5242e87b85fe37a6049d4af43306deef8db34b0ce9fbcb754dbece",
+    "results/graph-partitioning-folding-model/run_folding_layout_comparison.py": "41ea4d6444844fa42ab3ae073b80fec04ca8c2048ef89c5b910a35ad0ec4e735",
+    "simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py": "6dadc5410585f5fdb0a68cf0a2e85f3db36a3b42f5d652a830b1b60ff34a0e5a",
+    "simulations/parameterized_bb/run.py": "5d724741f692c1a0ba5ec006466a32fb4c3fb53b98d9232181b4363cffea8d78"
+  },
+  "output_hashes": {
+    "summary.json": "29fc01e583ba18855c8b666e3953312cd3cf1566cfc2a678e8d996d9eb9731d4",
+    "bank_optimization.json": "fc37788f0fd2b36e5f7f1e4ac7081aeeac82ecb7d69c39f3d2c9460bb1855285",
+    "code_matrices.npz": "3994688e59c8e55e8c91bd5a4a3c1eacf24c20e250bdce2d4a1eb2c6fd198546",
+    "decoder_equivalence.json": "bedb8e4eed5b10c8ff2758f076365c39cf322fcb47e3aa597b934805aea26bf8",
+    "per_engine.csv": "29b8436f287ec8c25effd4c97cb475c5debcd834c31fa6e82533296de35ba733",
+    "ba2_storage_maps.npz": "3922817404f5711bdc64aa0cb5e1cc4e3c084e29452239807412966964e7d929",
+    "per_shot.csv": "184cf7f3d0961033380179878f458da979437edfa332ae18e0825c443248e853",
+    "generated_source.stim": "96cf4356fe5d867756b3e0d894edb61b1be43b0b6f5abba262ffd905640b0560",
+    "configuration.json": "8eaa71127b0b28835e469e951d3f2c003f149da4c101111991f2100c5f9f0a40",
+    "validation.json": "d3c33e856eafe9fe7ebdfdc2e169a6f1d0a8196c8a9e5052b1a8a0ee2e41ef46",
+    "banking_profiles.json": "202d21ac4e85f848162df473610580aba0e4786d9661ba252fdf395c8d988dc7",
+    "package/detector_coordinates.npz": "f88308f7fb155e6c6eac93f4a8d83bc33f3476647d4fa2c7cddf61f24cf1810b",
+    "package/incidence.csv": "c9fff74165f01b6d2ed3c0622eb5ba9eee31e815aedee13fc37b41e7e8e9e251",
+    "package/dem_samples.npz": "c859e0afafe0e2bb377af69c2eafa961f7e4268d4ebcaeb1a43d10519ba5c437",
+    "package/package.json": "9827873201804d7f87b2e057e3a657cb93cb996be94630eeeb0806d81e8d1006",
+    "package/circuit.stim": "96cf4356fe5d867756b3e0d894edb61b1be43b0b6f5abba262ffd905640b0560",
+    "package/manifest.json": "a6afb4e9d2be1f02322fb9a5e516e956a281308137540442233154183026acec",
+    "package/faults.npz": "78d2393d70716d3f941709744cca60aaae02a8481b6238379301db3f068796cb",
+    "package/detector_error_model.dem": "ab200889b69c49477e3b872972cea5aacb421ff928468833f7cd114e9ffdc910",
+    "package/circuit_samples.npz": "e381db8fbb7112d2df39161ddfafe6ef09ec1d4983849ac38ca82b2a54710cb5",
+    "package/edge_lists.npz": "c4a6f5b55fa610343a96efca1d80f82a51f52d92c424f0afe00b31358fb0ad42"
+  }
+}

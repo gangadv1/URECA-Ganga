@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "paired_samples": 58,
+  "preflight_sample_count": 128,
+  "api_smoke_pass": true,
+  "real_smoke_indices": [
+    0,
+    18
+  ],
+  "no_Relay_decoding_rerun": true,
+  "BP_results_reused_on_resume": true,
+  "Relay_scores_reused_not_raw_predictions": true,
+  "labels_decoder_inaccessible": true,
+  "archived_files_hash_identical": 548,
+  "external_budget_max_iterations": 1940,
+  "global_wall_seconds": 86.26284041698091,
+  "external_predictions_independently_rescored": true,
+  "BP_stage_iteration_convergence_decision_equivalence": true,
+  "comparison_completed_full_128": false,
+  "comparison_sample_indices": "0..57",
+  "paired_seed_shots": {
+    "20260809": 32,
+    "20260810": 26
+  },
+  "software_timing_not_hardware": true
+}

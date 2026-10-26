@@ -1,0 +1,47 @@
+{
+  "weighted_available": true,
+  "weight_source": "predeclared maximum iteration/leg budgets, no samples or logical labels",
+  "selected": "weight_0.5",
+  "records": [
+    {
+      "candidate": "BA2",
+      "convergence_retries": 176,
+      "relay_retries": 349,
+      "expected_variable_cycle_constant": true,
+      "expected_conflict_cycles": 4206
+    },
+    {
+      "candidate": "weight_0.5",
+      "convergence_retries": 153,
+      "relay_retries": 286,
+      "expected_variable_cycle_constant": true,
+      "expected_conflict_cycles": 3552
+    },
+    {
+      "candidate": "weight_1",
+      "convergence_retries": 185,
+      "relay_retries": 265,
+      "expected_variable_cycle_constant": true,
+      "expected_conflict_cycles": 3810
+    },
+    {
+      "candidate": "weight_2",
+      "convergence_retries": 207,
+      "relay_retries": 229,
+      "expected_variable_cycle_constant": true,
+      "expected_conflict_cycles": 3858
+    }
+  ],
+  "expected_iterations": 4,
+  "expected_relay_legs": 2,
+  "objective": "3*(mean_iterations*convergence_retries + mean_legs*relay_retries)",
+  "sweep_relay_multipliers": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "optimization_seconds": 0.011591833084821701,
+  "BA2_budget_weighted_cycles": 66356,
+  "selected_budget_weighted_cycles": 65702,
+  "measured_structural_budget_objective_improved": true
+}

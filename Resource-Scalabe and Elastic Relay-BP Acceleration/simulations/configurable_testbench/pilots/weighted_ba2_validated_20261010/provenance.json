@@ -1,0 +1,73 @@
+{
+  "command": [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py"
+  ],
+  "base_git_commit": "5ec2e13e4cc9abd5b7d4d28b7f84c0bc8d513d85",
+  "implementation_hashes": {
+    "simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py": "6dadc5410585f5fdb0a68cf0a2e85f3db36a3b42f5d652a830b1b60ff34a0e5a",
+    "simulations/configurable_testbench/testbench.py": "a8ab8d8b269681ef71594f7e1fd51ea482fed0e604d7e369ca9c6ba31cad6978",
+    "reference/relay_bp_fixed.py": "f513445730316d7760a5ceaf675e7a5180421a1c879c288a3e877536d7717bfd",
+    "results/bank-aware-folding-layout/run_bank_aware_layout.py": "e02a0bf55e5242e87b85fe37a6049d4af43306deef8db34b0ce9fbcb754dbece",
+    "results/graph-partitioning-folding-model/run_folding_layout_comparison.py": "41ea4d6444844fa42ab3ae073b80fec04ca8c2048ef89c5b910a35ad0ec4e735"
+  },
+  "versions": {
+    "python": "3.13.6 (v3.13.6:4e665351082, Aug  6 2025, 11:22:35) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.2.6",
+    "stim": "1.15.0"
+  },
+  "outputs": {
+    "compare_weighted.py": "6dadc5410585f5fdb0a68cf0a2e85f3db36a3b42f5d652a830b1b60ff34a0e5a",
+    "REPORT.md": "88f0c7fa49b319d7d3d2166c59310ffa09077949aff70b30c912d1476285d74a",
+    "phase_retries.png": "a14187baf43ab3a7a8a3242a2b25c9c8fa7d882456f2d8faef999e12a1d2270d",
+    "comparison.json": "1347e335cb06cdf1dc18a5278d7bebd35a1a5d85ffb44b5bfcce6364c6465a27",
+    "protected_hashes.json": "b93f7b6265afd6190ac1c07aefab8d56d38bcdc0bc08acc8df77cb812eaaa5bd",
+    "commands.json": "daef9b5243431d302655980c78d3b71c7ee51db542992dfcfad8badae9780c02",
+    "test_weighted.py": "f673b74c05e8b7b91667ebc80272d3c28f3674309c34f9357c573972cc82a405",
+    "validation.json": "74ee72284971e81d2d2d0c9c8fefd304fcde0ec972da284d8cebb55c25eebcfb",
+    "comparison.csv": "9a46be2adb1476abe70411c124862bff7aef7ebc1533dd7f45f0fadb53d3ba22",
+    "improvement_summary.json": "3edc2ae4e31bca1915bec3f8981da87f5699dec4227f0a6e56bf61148181a9d4",
+    "structural_comparison.png": "bb88766df27ccc13893d35fa08e5364ac9b6acb1a9c396d353ebe75526b9440d",
+    "144_12_12/provenance.json": "4729354bf9923da2f5e88ea1dced73da7e69b44ba2548d3439ee326eda2822ae",
+    "144_12_12/decoder_equivalence.json": "93abe1ea070f3c829609e9e4c8233307ca7eef9b867e05a400f6853e23f84c52",
+    "144_12_12/per_shot_selection.json": "4ea15c8cb751b899457d52d5eec75064e5b1b99a80e2d37436d3f70153ec9eba",
+    "144_12_12/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "144_12_12/comparison.json": "2874029b30063f14e92739ec90ff836663a0cf133a5087a3ce51a82175886017",
+    "144_12_12/phase_profiles.json": "872ae18f2e1350b44f990317078e69f63e7aa3fcf3b21d4d3d77aac2ce45241f",
+    "144_12_12/storage_maps.npz": "af6c4f7a24cb6f8587465b93a44bf93bd57f26306e019c1f1826e722b53e669f",
+    "144_12_12/weight_sweep.json": "5c648f3d31dae50a4ba073d60fe7f4add2dab5b14fb99168504a79ddba661597",
+    "144_12_12/bank_assignment_statistics.json": "058bd561661e8cc2bb65a38a938d824df1e22cf87d1ade6e995cea838711680c",
+    "288_12_18/provenance.json": "b2d4c846c99cc9b6a6f1fee1aca218580e8124511277c7f0e5206dcff5b7415c",
+    "288_12_18/decoder_equivalence.json": "36c8b485b33f196bce09a6e254e6c8552a88b1eef36c74422dee3752d0ab6433",
+    "288_12_18/per_shot_selection.json": "5231b488688223a66554cd0dd84fa4ca0cb9b5556a621f29920bd3e97b17b1a1",
+    "288_12_18/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "288_12_18/comparison.json": "b7316daec435ba9a825746d4bf0f2f2e62b6221a1aab6009c62ea829c2877be8",
+    "288_12_18/phase_profiles.json": "87c279e6c4b78033c8bac6d0f7bf52c2b056ae1a9ddf45cf1663998b557381bb",
+    "288_12_18/storage_maps.npz": "97252af26711751236e669e08dca97d7c9ca1083bf8b4776a88e4ec056b07be4",
+    "288_12_18/weight_sweep.json": "d4fb0f21a4b6b9f746f08607301ee7e91358d664d6ff9d8ab010cd2cb28510f3",
+    "288_12_18/bank_assignment_statistics.json": "523d8fca59b46756dbd346d61b027d940a04b681549166ef750dd5a8aec9fa4c",
+    "18_4_3/provenance.json": "4988acb382906ec61b2b0e22806064579656f64d746e6a4c8dba77317c19579a",
+    "18_4_3/decoder_equivalence.json": "2dc62670976fceaa845b4d4514f0b90736c69bb7daff96b5a0d6dcb17f25d37f",
+    "18_4_3/per_shot_selection.json": "994a5cf23db30073f9f8eb3888aebdad339a13c0fd321c5352373c47a7561ee3",
+    "18_4_3/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "18_4_3/comparison.json": "3a0cbdb4c395b8d6bb6dbe18836b04c2f9a5f2e37226c2c088674b713cb7bb5a",
+    "18_4_3/phase_profiles.json": "d02cc5af6d4cfaccf5d031b1f1b7c4c3b45f263e83dbeab074db679949ecdb29",
+    "18_4_3/storage_maps.npz": "2973afa146b1fca1a0cd466605d09d7e97f5a0d593800c6bb4b2b60c90ced254",
+    "18_4_3/weight_sweep.json": "a3394fe08e0440e3c9515a9c9bf834ea6312ed5c6cc32b3df660a1edf8f7d33b",
+    "18_4_3/bank_assignment_statistics.json": "9d3b21a2ebac6b43ba9ac287736297399ee0f100212487f6c96a25e5a0e99b79",
+    "72_12_6/provenance.json": "3b50a7c5861b3951a3adca2fcd872163443cd9067dae50d958af1c97da08ffa6",
+    "72_12_6/decoder_equivalence.json": "b4b88ac1ccb6ed66760d4999aec12492edd8b2dfc7787f11fa0eb9afc5fa5ef3",
+    "72_12_6/per_shot_selection.json": "78341afc0596cd1fe306d8e3268c7f7a1a63d3922f4087880b509314ebf24e0b",
+    "72_12_6/invariants.json": "128ef0e9c39095ff3d95849b8864a0fdc3f4b89ecd84693fe53d71862a549226",
+    "72_12_6/comparison.json": "879ede7c51d8a92e10e2813f6cb18e8f4a33811cac318914de25d90b19461510",
+    "72_12_6/phase_profiles.json": "873cd998a84c2e1f9dcf4eb7edd358746783f16bcf99e3cda109b2a110327bfc",
+    "72_12_6/storage_maps.npz": "05786ebdc42b2fa0ac979264eab651ec16c9dd195ad1721f534669b2b47246f4",
+    "72_12_6/weight_sweep.json": "7c68ec23fda63f5bcd4734371565b2ac65459f87168878c78ad206234d7c0cce",
+    "72_12_6/bank_assignment_statistics.json": "94a79972e7429bb6d4464fe2a74f2f6f95e838b166a344faacb09503362b4bc5"
+  },
+  "invocation_environment": {
+    "MPLCONFIGDIR": "/private/tmp/relay-ba2-matplotlib"
+  },
+  "prior_failed_attempt_stop_sha256": "47c9ef1deee32734f45279559ac5aa03bf7c81402ce8fedf77984e0271555d9f"
+}

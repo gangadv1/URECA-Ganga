@@ -1,0 +1,15 @@
+{
+  "code": "18_4_3",
+  "physical_p": 0.003,
+  "N": 2,
+  "P": 4,
+  "sample_seed": 12345,
+  "trajectory_base_seed": 7640891576956012809,
+  "shots": 1,
+  "first_limit": 1,
+  "later_limit": 1,
+  "R": 2,
+  "S": 1,
+  "timing_model": "folding_original",
+  "sample_mode": "circuit"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "decoder_trajectories": 32,
+  "exact_trace_iterations": 116,
+  "all_graph_and_prior_gamma_logical_invariants_exact": true,
+  "frozen_BA2_edge_maps_exact": true,
+  "paired_pilot_reproduction": true,
+  "selection_changes": [],
+  "protected_files_unchanged": 2118,
+  "wall_seconds": 47.92307616688777,
+  "limitations": [
+    "Bounded four-shot/R2/S1 validation, not universal equivalence or LER evidence",
+    "Physical storage maps are evaluated by a model; decoder uses its own mapped CSR",
+    "No exact cancellation, integrated RTL, contention or measured hardware timing",
+    "Pilot frequency tuning is in-sample; unselected weight seeds receive capacity checks only, not decoder trace validation"
+  ],
+  "heuristic_unit_tests": {
+    "passed": 2,
+    "runtime_seconds": 0.003
+  },
+  "all_selected_total_structural_and_completion_costs_improved": true,
+  "unselected_seeds_trace_validated": false
+}

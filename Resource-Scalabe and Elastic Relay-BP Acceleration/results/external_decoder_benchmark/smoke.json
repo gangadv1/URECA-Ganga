@@ -1,0 +1,62 @@
+{
+  "BP_OSD0": [
+    {
+      "index": 0,
+      "sample_seed": 20260809,
+      "shot": 0,
+      "decode_seconds": 0.5947917910525575,
+      "bp_iterations": 285,
+      "bp_converged": true,
+      "osd_fallback": false,
+      "nonconvergence": 0,
+      "syndrome_valid_logical_error": 0,
+      "total_failure": 0,
+      "syndrome_valid": true,
+      "score_seconds": 0.00023250002413988113,
+      "decision_sha256": "965906afc9787b2e8ae2b9e0996eeede4623228d01950e2f11bb2db51d2e02ad",
+      "observable_prediction": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "index": 18,
+      "sample_seed": 20260809,
+      "shot": 18,
+      "decode_seconds": 0.7294455000665039,
+      "bp_iterations": 256,
+      "bp_converged": true,
+      "osd_fallback": false,
+      "nonconvergence": 0,
+      "syndrome_valid_logical_error": 0,
+      "total_failure": 0,
+      "syndrome_valid": true,
+      "score_seconds": 0.000167582998983562,
+      "decision_sha256": "00865a2a3648685b76f32fe2f3086b36f7b1781b1f0b2060d2b8fe0af0e94347",
+      "observable_prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "decode_seconds": 3.7882419580128044,
+  "bp_iterations": 1940,
+  "bp_converged": false,
+  "osd_fallback": true,
+  "nonconvergence": 0,
+  "syndrome_valid_logical_error": 1,
+  "total_failure": 1,
+  "canonical_index": 36,
+  "sample_seed": 20260810,
+  "shot": 4,
+  "configuration_changes": [],
+  "fresh_decoder_instance": true,
+  "decision_identical_to_archive": true,
+  "decision_sha256": "9a89fe4480dfd888b72d25ea6433511a3dc26b2b9589a152257db61542ddb7ff",
+  "syndrome_residual_weight": 0,
+  "observed_logicals": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "predicted_logicals": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "logical_mismatch_indices": [
+    0,
+    2,
+    3,
+    5,
+    6
+  ],
+  "initialization": {
+    "ready": true,
+    "initialization_seconds": 0.48908462503459305,
+    "configuration": {
+      "error_channel": "exact package fault probabilities",
+      "max_iter": 1940,
+      "bp_method": "minimum_sum",
+      "ms_scaling_factor": 1.0,
+      "schedule": "parallel",
+      "omp_thread_count": 1,
+      "random_schedule_seed": 1,
+      "input_vector_type": "syndrome",
+      "osd_method": "OSD_0",
+      "osd_order": 0
+    }
+  }
+}

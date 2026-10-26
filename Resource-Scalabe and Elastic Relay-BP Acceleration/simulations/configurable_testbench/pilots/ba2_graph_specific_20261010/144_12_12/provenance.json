@@ -1,0 +1,46 @@
+{
+  "configuration": {
+    "code": "144_12_12",
+    "package": null,
+    "physical_p": 0.003,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 20261010,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": null,
+    "shots": 4,
+    "shot_offset": 0,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "input_package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+  "input_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609",
+  "paired_config_sha256": "2e95c03823eeab0429fc21dabec3d86ef78b4abfe2c9944609beebe390fb6526",
+  "paired_engine_csv_sha256": "46303341eaa493670e20cf5f2314f7365b9e26087012f197e48c428835f4727e",
+  "objective": {
+    "fault_weights": "3*convergence + 3*relay_init in ORIGINAL edge order",
+    "edge_weight": 5,
+    "balance_lambda": 0.25,
+    "locality_lambda": 0,
+    "order": "weighted degree then original identity",
+    "P": 4
+  },
+  "mapping_semantics": "Explicit mathematical ID <-> physical address maps; gamma/priors generated in original order then indexed by fault_new_to_old; decisions/trace mapped back before comparison",
+  "timing_semantics": "Archived phase service formulas only; no top-level/RNG/cancellation overhead; no integrated hardware latency measurement",
+  "wall_seconds": 8.938033082988113,
+  "trace_iterations": 32,
+  "output_hashes": {
+    "decoder_equivalence.json": "93abe1ea070f3c829609e9e4c8233307ca7eef9b867e05a400f6853e23f84c52",
+    "per_shot_selection.json": "777c0cbd289750c0ad1e5ac8bd92bdd28715e5b6695fdff136aa388b6fa2b423",
+    "invariants.json": "b0ab98640f5503b57b4dbfd90cb652f67bdfbdc36a8e8653c8ee3e9ee0d98f38",
+    "comparison.json": "cbc2ad32f373334a1d880124899315c22d498e25e597f5b403484207f8db93b8",
+    "phase_profiles.json": "b85b894f725ec9a95244e354a36f436443e58c48da1a966cb548ebdf84ddccb3",
+    "storage_maps.npz": "1a92d568f306c13bfabef8b944eb1657d99c2261112e083cda3aca8ec75e5fe4",
+    "bank_assignment_statistics.json": "c9b230f9e583bdcaf23de249cca95d33eb79d338b5683b6e63fc0f6efe723509"
+  }
+}

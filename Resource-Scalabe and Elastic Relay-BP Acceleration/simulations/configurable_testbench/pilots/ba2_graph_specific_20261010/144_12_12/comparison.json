@@ -1,0 +1,106 @@
+[
+  {
+    "code": "144_12_12",
+    "N": 1,
+    "layout": "original",
+    "shots": 4,
+    "structural_cycles": 4758697,
+    "structural_retry_subsets": 336291,
+    "structural_conflict_events": 336291,
+    "structural_issue_group_occupancy": 0.602719286455368,
+    "mean_completion_cycles": 17094956.0,
+    "mean_critical_retry_subsets": 1220314.0,
+    "mean_critical_issue_group_occupancy": 0.5808856360133247,
+    "total_failure": 4,
+    "nonconvergence": 4,
+    "logical_errors": 0,
+    "failure_statistics": {
+      "count": 4,
+      "shots": 4,
+      "rate": 1.0,
+      "wilson95": [
+        0.5101091635454027,
+        1
+      ]
+    },
+    "timing_label": "structural_extrapolation_not_RTL_calibrated"
+  },
+  {
+    "code": "144_12_12",
+    "N": 1,
+    "layout": "BA2",
+    "shots": 4,
+    "structural_cycles": 4283590,
+    "structural_retry_subsets": 142566,
+    "structural_conflict_events": 142566,
+    "structural_issue_group_occupancy": 0.6678492061367105,
+    "mean_completion_cycles": 14996450.0,
+    "mean_critical_retry_subsets": 379388.0,
+    "mean_critical_issue_group_occupancy": 0.6572926781656372,
+    "total_failure": 4,
+    "nonconvergence": 4,
+    "logical_errors": 0,
+    "failure_statistics": {
+      "count": 4,
+      "shots": 4,
+      "rate": 1.0,
+      "wilson95": [
+        0.5101091635454027,
+        1
+      ]
+    },
+    "timing_label": "structural_extrapolation_not_RTL_calibrated"
+  },
+  {
+    "code": "144_12_12",
+    "N": 2,
+    "layout": "original",
+    "shots": 4,
+    "structural_cycles": 4758697,
+    "structural_retry_subsets": 336291,
+    "structural_conflict_events": 336291,
+    "structural_issue_group_occupancy": 0.602719286455368,
+    "mean_completion_cycles": 17094956.0,
+    "mean_critical_retry_subsets": 1220314.0,
+    "mean_critical_issue_group_occupancy": 0.5808856360133247,
+    "total_failure": 4,
+    "nonconvergence": 4,
+    "logical_errors": 0,
+    "failure_statistics": {
+      "count": 4,
+      "shots": 4,
+      "rate": 1.0,
+      "wilson95": [
+        0.5101091635454027,
+        1
+      ]
+    },
+    "timing_label": "structural_extrapolation_not_RTL_calibrated"
+  },
+  {
+    "code": "144_12_12",
+    "N": 2,
+    "layout": "BA2",
+    "shots": 4,
+    "structural_cycles": 4283590,
+    "structural_retry_subsets": 142566,
+    "structural_conflict_events": 142566,
+    "structural_issue_group_occupancy": 0.6678492061367105,
+    "mean_completion_cycles": 14996450.0,
+    "mean_critical_retry_subsets": 379388.0,
+    "mean_critical_issue_group_occupancy": 0.6572926781656372,
+    "total_failure": 4,
+    "nonconvergence": 4,
+    "logical_errors": 0,
+    "failure_statistics": {
+      "count": 4,
+      "shots": 4,
+      "rate": 1.0,
+      "wilson95": [
+        0.5101091635454027,
+        1
+      ]
+    },
+    "timing_label": "structural_extrapolation_not_RTL_calibrated"
+  }
+]

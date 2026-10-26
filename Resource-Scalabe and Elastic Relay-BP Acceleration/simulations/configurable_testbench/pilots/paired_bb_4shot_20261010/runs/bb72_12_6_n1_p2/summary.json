@@ -1,0 +1,179 @@
+{
+  "total_failure": {
+    "count": 4,
+    "shots": 4,
+    "rate": 1.0,
+    "wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  },
+  "nonconvergence": {
+    "count": 4,
+    "shots": 4,
+    "rate": 1.0,
+    "wilson95": [
+      0.5101091635454027,
+      1
+    ]
+  },
+  "syndrome_valid_logical_error": {
+    "count": 0,
+    "shots": 4,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.4898908364545973
+    ]
+  },
+  "modeled_latency_cycles": {
+    "count": 4,
+    "mean": 5957372.0,
+    "p50": 5957372.0,
+    "p95": 5957372.0,
+    "max": 5957372.0
+  },
+  "winner_iterations": null,
+  "winner_legs": null,
+  "per_engine_iterations": {
+    "0": {
+      "count": 4,
+      "mean": 4.0,
+      "p50": 4.0,
+      "p95": 4.0,
+      "max": 4.0
+    }
+  },
+  "per_engine_legs": {
+    "0": {
+      "count": 4,
+      "mean": 2.0,
+      "p50": 2.0,
+      "p95": 2.0,
+      "max": 2.0
+    }
+  },
+  "folding_metrics": {
+    "phases": {
+      "check": {
+        "phase": "check",
+        "logical_accesses": 274644,
+        "issued_groups": 138132,
+        "conflict_events": 0,
+        "retry_subsets": 0,
+        "lane_hist": {
+          "1": 1620,
+          "2": 136512
+        },
+        "partition_logical": [
+          274644,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.9882720875684128,
+        "mean_lane_utilization": 0.9941360437842064,
+        "full_P_lane_fraction": 0.9882720875684128,
+        "estimated_cycles": 231949
+      },
+      "variable": {
+        "phase": "variable",
+        "logical_accesses": 386496,
+        "issued_groups": 311352,
+        "conflict_events": 48624,
+        "retry_subsets": 48624,
+        "lane_hist": {
+          "1": 236208,
+          "2": 75144
+        },
+        "partition_logical": [
+          386496,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.2413474138595544,
+        "mean_lane_utilization": 0.6206737069297772,
+        "full_P_lane_fraction": 0.24134741385955447,
+        "estimated_cycles": 746737
+      },
+      "convergence": {
+        "phase": "convergence",
+        "logical_accesses": 183528,
+        "issued_groups": 103875,
+        "conflict_events": 11355,
+        "retry_subsets": 11355,
+        "lane_hist": {
+          "1": 24222,
+          "2": 79653
+        },
+        "partition_logical": [
+          183528,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.7668158844765343,
+        "mean_lane_utilization": 0.8834079422382671,
+        "full_P_lane_fraction": 0.7668158844765343,
+        "estimated_cycles": 311194
+      },
+      "relay_init": {
+        "phase": "relay_init",
+        "logical_accesses": 273348,
+        "issued_groups": 148161,
+        "conflict_events": 11487,
+        "retry_subsets": 11487,
+        "lane_hist": {
+          "1": 22974,
+          "2": 125187
+        },
+        "partition_logical": [
+          273348,
+          0,
+          0,
+          0
+        ],
+        "mean_active_lanes": 1.8449389515459533,
+        "mean_lane_utilization": 0.9224694757729767,
+        "full_P_lane_fraction": 0.8449389515459534,
+        "estimated_cycles": 398926
+      }
+    },
+    "all_phases_once": {
+      "phase": "all_phases_once",
+      "logical_accesses": 1118016,
+      "issued_groups": 701520,
+      "conflict_events": 71466,
+      "retry_subsets": 71466,
+      "lane_hist": {
+        "1": 285024,
+        "2": 416496
+      },
+      "partition_logical": [
+        1118016,
+        0,
+        0,
+        0
+      ],
+      "mean_active_lanes": 1.593705097502566,
+      "mean_lane_utilization": 0.796852548751283,
+      "full_P_lane_fraction": 0.5937050975025658,
+      "estimated_cycles": 1688806
+    }
+  },
+  "timing_phase_costs": {
+    "check": 231949,
+    "variable": 746737,
+    "convergence": 311194,
+    "relay_init": 398926
+  },
+  "cancellation_aware_executed_work": null,
+  "cancellation_ack_or_drain_cycles": null,
+  "elapsed_cycle_PE_utilization": null,
+  "measured_hardware_latency": null,
+  "unavailable_reason": "No per-engine cancellation/phase/issue timestamps; folding occupancy is over issue groups only",
+  "timing_scope": "Original-layout structural service extrapolation; excludes controller/RNG overhead",
+  "folding_scope": "One execution of each phase; occupancy denominator is issued groups, not elapsed cycles",
+  "quantity_kind": "modeled_software_cycles_not_measured_FPGA_timing"
+}

@@ -1,0 +1,146 @@
+[
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb288_12_18_n2_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb288_12_18_n2_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb18_4_3_n1_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb18_4_3_n1_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb18_4_3_n1_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb18_4_3_n1_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb18_4_3_n2_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb18_4_3_n2_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb18_4_3_n2_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb18_4_3_n2_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb72_12_6_n1_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb72_12_6_n1_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb72_12_6_n1_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb72_12_6_n1_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb72_12_6_n2_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb72_12_6_n2_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb72_12_6_n2_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb72_12_6_n2_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb144_12_12_n1_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb144_12_12_n1_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb144_12_12_n1_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb144_12_12_n1_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb144_12_12_n2_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb144_12_12_n2_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb144_12_12_n2_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb144_12_12_n2_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb288_12_18_n1_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb288_12_18_n1_p2"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb288_12_18_n1_p4.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb288_12_18_n1_p4"
+  ],
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/testbench.py",
+    "--config",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/configs/bb288_12_18_n2_p2.json",
+    "--output",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/paired_bb_4shot_20261010/runs/bb288_12_18_n2_p2"
+  ]
+]

@@ -1,0 +1,36 @@
+{
+  "total_failure": {
+    "count": 2,
+    "shots": 4,
+    "rate": 0.5,
+    "wilson95": [
+      0.15003898915214947,
+      0.8499610108478506
+    ]
+  },
+  "nonconvergence": {
+    "count": 2,
+    "shots": 4,
+    "rate": 0.5,
+    "wilson95": [
+      0.15003898915214947,
+      0.8499610108478506
+    ]
+  },
+  "syndrome_valid_logical_error": {
+    "count": 0,
+    "shots": 4,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.4898908364545973
+    ]
+  },
+  "modeled_latency_cycles": {
+    "count": 4,
+    "mean": 255232.5,
+    "p50": 255232.5,
+    "p95": 399730.0,
+    "max": 399730.0
+  }
+}

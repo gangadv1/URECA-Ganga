@@ -1,0 +1,36 @@
+{
+  "code": "bb_72_12_6",
+  "code_parameters": {
+    "d": 6,
+    "k": 12,
+    "n": 72
+  },
+  "detector_count": 432,
+  "detector_edge_count": 91116,
+  "fault_count": 16164,
+  "files": {
+    "circuit": "circuit.stim",
+    "circuit_samples": "circuit_samples.npz",
+    "dem_samples": "dem_samples.npz",
+    "detector_coordinates": "detector_coordinates.npz",
+    "detector_error_model": "detector_error_model.dem",
+    "edge_lists": "edge_lists.npz",
+    "faults": "faults.npz",
+    "incidence": "incidence.csv"
+  },
+  "final_perfect_measurement": true,
+  "loader_contract_version": 1,
+  "logical_edge_count": 26242,
+  "logical_masks_available": true,
+  "max_detector_fault_degree": 9,
+  "max_logical_fault_degree": 7,
+  "memory_basis": "Z",
+  "noisy_rounds": 6,
+  "observable_count": 12,
+  "physical_error_probability": 0.003,
+  "qubit_count": 144,
+  "rounds": 6,
+  "sample_seed": 20250617,
+  "sample_shots": 16,
+  "tier": "tier-2-circuit-level"
+}

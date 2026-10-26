@@ -1,0 +1,13 @@
+{
+ "study_type":"retrospective archived-data analysis; frozen before new calculations, not prospectively preregistered before original sampling",
+ "N":[1,2,4,8,16],"P":4,"target_success_probability":0.95,
+ "hypothetical_deadlines_cycles":[300000000,500000000,750000000,1000000000,1100000000,1500000000,2000000000,4000000000,8000000000],
+ "deadline_boundary":"completion_cycles <= deadline",
+ "success":"archived logical_correct AND completion by deadline; nonconvergence, logical errors and deadline misses fail",
+ "pointwise_interval":"two-sided exact Clopper-Pearson 95%",
+ "fixed_deadline_selection":"one-sided exact lower bounds alpha=.05/5; simultaneous over five N for a single prespecified deadline",
+ "primary_grid_selection":"one-sided exact lower bounds alpha=.05/45; simultaneous over five N and nine deadlines",
+ "paired_tests":"two-sided exact discordant-pair binomial (McNemar); Holm correction over three N2/N4/N8 pairs times nine deadlines",
+ "new_decoding_budget":0,"reason":"complete paired canonical data already available; report uncertainty without unnecessary decoding",
+ "future_validation_policy":"freeze one externally justified deadline before fresh validation; pilot at most one new syndrome through16 nested engines, 60s hard pilot cap; estimate total run before continuation; refuse projected runtime>600s; no such decoding launched in this study"
+}

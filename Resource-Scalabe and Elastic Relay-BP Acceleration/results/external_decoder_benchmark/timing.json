@@ -1,0 +1,34 @@
+{
+  "BP": {
+    "status": "RUNTIME_CAPPED",
+    "reason": "10-second decode or campaign cap",
+    "completed_unique_samples": 58,
+    "method_elapsed_seconds": 90.0152740420308,
+    "sum_decode_seconds": 89.2132253786549,
+    "first_timed_out_sample_index": 58
+  },
+  "BP_OSD0": {
+    "ready": true,
+    "initialization_seconds": 0.4635670830029994,
+    "configuration": {
+      "error_channel": "exact package fault probabilities",
+      "max_iter": 1940,
+      "bp_method": "minimum_sum",
+      "ms_scaling_factor": 1.0,
+      "schedule": "parallel",
+      "omp_thread_count": 1,
+      "random_schedule_seed": 1,
+      "input_vector_type": "syndrome",
+      "osd_method": "OSD_0",
+      "osd_order": 0
+    },
+    "smoke_projection_seconds": 84.75118663161993,
+    "requested_prefix_shots": 113,
+    "status": "RUNTIME_SCOPE_REDUCED",
+    "reason": "Smoke projection 84.75s exceeds reserved decoding budget; prefix limit 113, plus stress smoke",
+    "completed_unique_samples": 58,
+    "method_elapsed_seconds": 86.08457358402666,
+    "sum_decode_seconds": 85.29560016316827,
+    "actual_scope": "Completed all 58 available paired BP sample IDs; did not attempt the remaining 70 canonical samples"
+  }
+}

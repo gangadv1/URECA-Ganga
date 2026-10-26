@@ -1,0 +1,9 @@
+[
+  [
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/.venv/bin/python",
+    "-B",
+    "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/simulations/configurable_testbench/pilots/weighted_ba2_heldout_20261010/validate_heldout.py",
+    "--code",
+    "288_12_18"
+  ]
+]

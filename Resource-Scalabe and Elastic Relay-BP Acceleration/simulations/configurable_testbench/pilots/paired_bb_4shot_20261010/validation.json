@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "pairing_and_regression_checks": 248,
+  "protected_files_unchanged": 1919,
+  "P_selection_changes": [],
+  "N_first_success_changes": [],
+  "elapsed_seconds": 49.38473570893984,
+  "cancellations": "Unavailable: no acknowledgement/quiescence timestamps",
+  "occupancy_scope": "Critical natural trajectory; issued-group occupancy, not elapsed PE utilization",
+  "budgets": {
+    "shots": 4,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "max_iterations": 4
+  },
+  "timing_policy": "All 16 configurations use folding_original for like-for-like P comparison; Gross P4 canonical calibration is available but not mixed in"
+}

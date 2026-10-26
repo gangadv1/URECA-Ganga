@@ -1,0 +1,26 @@
+[
+  {
+    "code": "18_4_3",
+    "selected": "weight_1",
+    "structural_reduction_percent": 1.3020040650805642,
+    "completion_reduction_percent": 0.9084933717729338
+  },
+  {
+    "code": "72_12_6",
+    "selected": "weight_0.5",
+    "structural_reduction_percent": 0.9016988485615274,
+    "completion_reduction_percent": 0.6402889789732469
+  },
+  {
+    "code": "144_12_12",
+    "selected": "weight_0.5",
+    "structural_reduction_percent": 0.9019070452587652,
+    "completion_reduction_percent": 0.6341500821861135
+  },
+  {
+    "code": "288_12_18",
+    "selected": "weight_0.5",
+    "structural_reduction_percent": 1.0172259417937424,
+    "completion_reduction_percent": 0.6953615034760663
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "fault": {
+    "counts": [
+      450,
+      450,
+      450,
+      450
+    ],
+    "workloads": [
+      4458.0,
+      4456.0,
+      4456.0,
+      4450.0
+    ],
+    "workload_imbalance": 0.001122334455667784,
+    "weighted_same_residue_cost": 7422.0
+  },
+  "edge": {
+    "counts": [
+      2228,
+      2228,
+      2227,
+      2227
+    ],
+    "workloads": [
+      4456.0,
+      4456.0,
+      4454.0,
+      4454.0
+    ],
+    "workload_imbalance": 0.00022446689113353457,
+    "weighted_same_residue_cost": 0.0
+  }
+}

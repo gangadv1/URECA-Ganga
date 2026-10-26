@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "dimensions": {
+    "detectors": 1728,
+    "faults": 67752,
+    "observables": 12,
+    "edges": 391320
+  },
+  "canonical_unique_samples": 128,
+  "seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812
+  ],
+  "shots_by_seed": {
+    "20260809": 32,
+    "20260810": 32,
+    "20260811": 32,
+    "20260812": 32
+  },
+  "all_sample_hashes_exact": true,
+  "DEM_H_A_probability_column_order_exact": true,
+  "source_circuit_matches_DEM": true,
+  "no_fault_merging_or_permutation": true,
+  "labels_only_used_for_scoring": true
+}

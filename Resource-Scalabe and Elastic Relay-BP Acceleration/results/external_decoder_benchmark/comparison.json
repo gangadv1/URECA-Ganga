@@ -1,0 +1,158 @@
+[
+  {
+    "decoder": "BP",
+    "shots": 58,
+    "logical_success": 45,
+    "total_failure": 13,
+    "nonconvergence": 13,
+    "syndrome_valid_logical_error": 0,
+    "bp_nonconvergence_before_OSD": 13,
+    "osd_calls": 0,
+    "mean_iterations": 755.3103448275862,
+    "max_iterations": 1940,
+    "decode_wall_seconds": 89.2132253786549,
+    "mean_software_decode_seconds": 1.5381590582526707,
+    "p99_software_decode_seconds": 4.271732967688004,
+    "mean_modeled_cycles": null,
+    "p99_modeled_cycles": null,
+    "failure_stats": {
+      "count": 13,
+      "shots": 58,
+      "rate": 0.22413793103448276,
+      "wilson95": [
+        0.1359366061140974,
+        0.3466111763891869
+      ]
+    }
+  },
+  {
+    "decoder": "BP_OSD0",
+    "shots": 58,
+    "logical_success": 57,
+    "total_failure": 1,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 1,
+    "bp_nonconvergence_before_OSD": 13,
+    "osd_calls": 13,
+    "mean_iterations": 755.3103448275862,
+    "max_iterations": 1940,
+    "decode_wall_seconds": 85.29560016316827,
+    "mean_software_decode_seconds": 1.4706137959166943,
+    "p99_software_decode_seconds": 4.013054736631457,
+    "mean_modeled_cycles": null,
+    "p99_modeled_cycles": null,
+    "failure_stats": {
+      "count": 1,
+      "shots": 58,
+      "rate": 0.017241379310344827,
+      "wilson95": [
+        0.0030500384460675004,
+        0.09140858093468013
+      ]
+    }
+  },
+  {
+    "decoder": "Relay_N1",
+    "shots": 58,
+    "logical_success": 57,
+    "total_failure": 1,
+    "nonconvergence": 1,
+    "syndrome_valid_logical_error": 0,
+    "bp_nonconvergence_before_OSD": null,
+    "osd_calls": null,
+    "mean_iterations": 181.25862068965517,
+    "max_iterations": null,
+    "decode_wall_seconds": null,
+    "mean_software_decode_seconds": null,
+    "p99_software_decode_seconds": null,
+    "mean_modeled_cycles": 690067925.3965517,
+    "p99_modeled_cycles": 6278079433.369999,
+    "failure_stats": {
+      "count": 1,
+      "shots": 58,
+      "rate": 0.017241379310344827,
+      "wilson95": [
+        0.0030500384460675004,
+        0.09140858093468013
+      ]
+    }
+  },
+  {
+    "decoder": "Relay_N2",
+    "shots": 58,
+    "logical_success": 58,
+    "total_failure": 0,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "bp_nonconvergence_before_OSD": null,
+    "osd_calls": null,
+    "mean_iterations": 112.36206896551724,
+    "max_iterations": null,
+    "decode_wall_seconds": null,
+    "mean_software_decode_seconds": null,
+    "p99_software_decode_seconds": null,
+    "mean_modeled_cycles": 427838492.86206895,
+    "p99_modeled_cycles": 2150426335.67,
+    "failure_stats": {
+      "count": 0,
+      "shots": 58,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.062117855787202914
+      ]
+    }
+  },
+  {
+    "decoder": "Relay_N4",
+    "shots": 58,
+    "logical_success": 58,
+    "total_failure": 0,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "bp_nonconvergence_before_OSD": null,
+    "osd_calls": null,
+    "mean_iterations": 98.62068965517241,
+    "max_iterations": null,
+    "decode_wall_seconds": null,
+    "mean_software_decode_seconds": null,
+    "p99_software_decode_seconds": null,
+    "mean_modeled_cycles": 375536284.36206895,
+    "p99_modeled_cycles": 1958291232.72,
+    "failure_stats": {
+      "count": 0,
+      "shots": 58,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.062117855787202914
+      ]
+    }
+  },
+  {
+    "decoder": "Relay_N8",
+    "shots": 58,
+    "logical_success": 58,
+    "total_failure": 0,
+    "nonconvergence": 0,
+    "syndrome_valid_logical_error": 0,
+    "bp_nonconvergence_before_OSD": null,
+    "osd_calls": null,
+    "mean_iterations": 76.48275862068965,
+    "max_iterations": null,
+    "decode_wall_seconds": null,
+    "mean_software_decode_seconds": null,
+    "p99_software_decode_seconds": null,
+    "mean_modeled_cycles": 291274286.7241379,
+    "p99_modeled_cycles": 590089848.4499999,
+    "failure_stats": {
+      "count": 0,
+      "shots": 58,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.062117855787202914
+      ]
+    }
+  }
+]

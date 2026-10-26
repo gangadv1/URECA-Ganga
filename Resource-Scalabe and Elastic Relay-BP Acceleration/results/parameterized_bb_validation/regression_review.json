@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "tests": 2,
+  "note": "Original failed equality assertion corrected for pre-existing additive code_parameters; rechecked all historical payloads without regenerating existing packages"
+}

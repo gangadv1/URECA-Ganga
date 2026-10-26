@@ -1,0 +1,10 @@
+deadline_cycles,empirical_minimum_N,pointwise_minimum_N,fixed_deadline_minimum_N,whole_grid_minimum_N
+300000000,none,no statistically certified optimum,no statistically certified optimum,no statistically certified optimum
+500000000,8,no statistically certified optimum,no statistically certified optimum,no statistically certified optimum
+750000000,8,8,8,no statistically certified optimum
+1000000000,8,8,8,no statistically certified optimum
+1100000000,4,8,8,no statistically certified optimum
+1500000000,4,4,8,no statistically certified optimum
+2000000000,2,4,8,no statistically certified optimum
+4000000000,1,2,4,no statistically certified optimum
+8000000000,1,2,2,no statistically certified optimum

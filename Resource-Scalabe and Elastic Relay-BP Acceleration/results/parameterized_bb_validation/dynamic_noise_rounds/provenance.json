@@ -1,0 +1,71 @@
+{
+  "command": [
+    "simulations/parameterized_bb/test_pipeline.py"
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "stim": "1.15.0"
+  },
+  "resolved_decoder_config": {
+    "code": "parameterized",
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/results/parameterized_bb_validation/dynamic_noise_rounds/package",
+    "physical_p": 0.007,
+    "source_circuit": null,
+    "N": 2,
+    "P": 4,
+    "sample_seed": 555,
+    "trajectory_base_seed": 7640891576956012809,
+    "engine_seeds": [
+      123,
+      456
+    ],
+    "shots": 2,
+    "shot_offset": 0,
+    "first_limit": 2,
+    "later_limit": 2,
+    "R": 2,
+    "S": 1,
+    "timing_model": "folding_original",
+    "sample_mode": "circuit"
+  },
+  "circuit_profile": "gari_uniform_p_memory_z",
+  "generator_sources": {
+    "graphs/bb_code.py": "5c4bf82d74263827974ac7a1da4e956d244edb329a279d5675ae94e263ccf408",
+    "graphs/parameterized_bb.py": "7789d173f7299443f745828d749b8b1e3d181f89b0a15f64a5d7a9b7ad6ba1d7",
+    "results/gari-same-stim-adapter/official_gari/codes_q.py": "c82017dae90b94fcd636bca3fde518d00c4def38890ee42a713fc9040f3eb450",
+    "results/gari-same-stim-adapter/official_gari/utils.py": "556d51325be6bd99820037e34ea0165073ef490aeb9a09e1ae392629991fddb7",
+    "results/gari-same-stim-adapter/official_gari/build_circuit.py": "c733dd3c9277712c8b4728e75d165a8147f4588387be2b001591412242e6eafe"
+  },
+  "sources": {
+    "graphs/build_circuit_level.py": "6bcfb273b1910283667e84dc503e4eec4ba84e779e6c6ae8a10d3b067003c6e6",
+    "simulations/configurable_testbench/testbench.py": "a0c57b2ce89a22b8853f1149d0ecd02b3afbd076f19075ca26e031123ec234fe",
+    "results/bank-aware-folding-layout/run_bank_aware_layout.py": "e02a0bf55e5242e87b85fe37a6049d4af43306deef8db34b0ce9fbcb754dbece",
+    "results/graph-partitioning-folding-model/run_folding_layout_comparison.py": "41ea4d6444844fa42ab3ae073b80fec04ca8c2048ef89c5b910a35ad0ec4e735",
+    "simulations/configurable_testbench/pilots/weighted_ba2_validated_20261010/compare_weighted.py": "6dadc5410585f5fdb0a68cf0a2e85f3db36a3b42f5d652a830b1b60ff34a0e5a",
+    "simulations/parameterized_bb/run.py": "5d724741f692c1a0ba5ec006466a32fb4c3fb53b98d9232181b4363cffea8d78"
+  },
+  "output_hashes": {
+    "summary.json": "7b21ea29e149f5d54e3a275d5b47c7da5ba1b5ca6f0a2bd60631d830e0fbab7a",
+    "bank_optimization.json": "e2490cc6b49196e3cdfdbacf6271ab82eeebd10a259eeaf1bd24ec19ffeec825",
+    "code_matrices.npz": "9cd3ae0586708013b234e0cc6150f07299cdaf28d0080305b589a81bfd1d6e4b",
+    "decoder_equivalence.json": "2888bed79209486a80e7bb28dbf17a5ad886269bf14f4e8db92c8283098cbcfd",
+    "per_engine.csv": "b73b7e1fc006257e7ef0c66fd253ff2646ea8f7fcdba8c8d983ffe8f80481542",
+    "ba2_storage_maps.npz": "c2d2112fd99b32e81a06050794ed0200f3ee3f80afb6c5b8cc8bd94d6de3f921",
+    "per_shot.csv": "6ea439de785ed0872ad1f5a7848152edf7c457e4181d2ac3c4c884f800eadc63",
+    "generated_source.stim": "ab94cb4e271f60c80605933334da03d7aa246b94b5a1ba3ad00afd3c9ca1a759",
+    "configuration.json": "2e6638f18f88ba08140f7d90d288d96de81d1794ec9b04f875b4c79525ac21a1",
+    "validation.json": "21e30dd124c15aadaa4070973089fc6022f766be04bc11c9386858a7abdc81bf",
+    "weighted_ba2_storage_maps.npz": "2e0fae72a83c0ead7ee3c56b2edf4344b9c62c45005f661cc6fee7ebcc2bf5cc",
+    "banking_profiles.json": "bd239b6aa4f11801e83064903b8367db9609f22aa907b3aa9efeb2e26a1a08ab",
+    "package/detector_coordinates.npz": "2e0fc6a9577b258169bf63c3fc2f214fac95e43e11dcd82659ee80499aeb1aef",
+    "package/incidence.csv": "5e8da4ca5be3f02d0a43d1b33604266b96258e91ca68d9c3c314035b5a20e85d",
+    "package/dem_samples.npz": "3cd44ee9ea9514f6dd0d78a8ca86b54ca58b2ba77318367538ccb35f12762c68",
+    "package/package.json": "744a86d224e0fe2752fe604ab97c542e9727dc7be6928fe94f9bc6df2894707a",
+    "package/circuit.stim": "ab94cb4e271f60c80605933334da03d7aa246b94b5a1ba3ad00afd3c9ca1a759",
+    "package/manifest.json": "bf5c78530ef6c4d7438326dd8023b4ca9f15bab0672c3703cf22e242c688088c",
+    "package/faults.npz": "0df78b691a9c2072b9b4362d0a0fc2880b94525436e9a300e54ea219a6357107",
+    "package/detector_error_model.dem": "3a9d9e1e2f2e270682eba33a4b0a0cc62d7f828e3d6828c1e53b4aa88d2b9611",
+    "package/circuit_samples.npz": "67c307d92da2f9846a674997aeef898c63d85ca43dd4a3f6433bcffef35f013a",
+    "package/edge_lists.npz": "4c872731ce8c2567c73d94c887e077774eeb2d0fe5ade43a709eac4783d9f05d"
+  }
+}

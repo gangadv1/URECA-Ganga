@@ -1,0 +1,42 @@
+{
+  "18_4_3": {
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb18_test",
+    "dimensions": [
+      54,
+      1800,
+      4
+    ],
+    "source_sha256": "3821d7f09bd931d774e777945fee0811546779830bc110d9b412465b74a63800",
+    "package_manifest_sha256": "7da89544c9b4d6419448cbcb07ee663d1ef8ce6920da5052ec14b1608d367bd4"
+  },
+  "72_12_6": {
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb72_test",
+    "dimensions": [
+      432,
+      16164,
+      12
+    ],
+    "source_sha256": "5c4f87414590f9f066474b9c312766fc8de257e5c70019cb05f257080c33ab01",
+    "package_manifest_sha256": "da4403a63ee649bbc2719d74f20451ca298486e910675d0bebd8ecd62dabda81"
+  },
+  "144_12_12": {
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/gross_circuit_level/memory_Z_r12_p0p003",
+    "dimensions": [
+      1728,
+      67752,
+      12
+    ],
+    "source_sha256": "839d2fa8ce95c62e32e2d465fb646a835e184be6ceca6e4b32f046f5c506cd20",
+    "package_manifest_sha256": "c6eac5f571fc5f60a75f9f8ba99a78a24542a6aabecb6a56333f5f95acc74609"
+  },
+  "288_12_18": {
+    "package": "/Users/gangadevi.aa/Desktop/URECA-Ganga/Resource-Scalabe and Elastic Relay-BP Acceleration/graphs/generated/_bb288_test",
+    "dimensions": [
+      5184,
+      206352,
+      12
+    ],
+    "source_sha256": "f2863e12e0972523c0158cd6b38b9b7c8a27f5c80cc4250222f8501d742592e7",
+    "package_manifest_sha256": "25d89f65bafc871972085cee71ec1788f65da328e90456048c15494906239e33"
+  }
+}
